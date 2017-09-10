@@ -1,0 +1,16 @@
+.flex-grid article
+    opacity 0
+.flex-grid article.shown
+    opacity 1
+.flex-grid article.animate
+    animation moveUp 0.65s
+    opacity 1
+
+@keyframes moveUp
+    from {
+        transform translateY(200px)
+    }
+    to { 
+        transform: translateY(0);
+        opacity: 1;
+    }

@@ -1,0 +1,67 @@
+html,
+body
+    height 100%
+
+.bar-header
+    background-color #141414
+    padding rem(10px) rem(15px)
+    position fixed
+    width 100%
+    z-index 10
+    transition top 0.5s
+    +above(cut)
+        padding rem(15px) rem(0px)
+    .logo
+        margin 0
+        height rem(32px)
+        line-height rem(32px)
+    .logo a
+        color accentDark
+        text-decoration none
+        font-size rem(32px)
+    .icon-menu
+        float left
+        cursor pointer
+        margin rem(5px) rem(20px) rem(5px) 0
+        width rem(20px)
+        height rem(20px)
+        fill accentDark
+        +above(cut)
+            margin rem(5px) rem(20px) rem(5px) rem(25px)
+    .dosearch
+        float right
+        display inline-block
+        width rem(30px)
+        height rem(30px)
+        cursor pointer
+        margin 0 0 0 0
+        +above(cut)
+            margin 0 rem(20px) 0 0
+
+    .icon-search
+        width rem(20px)
+        height rem(20px)
+        fill accentDark
+        margin rem(5px)
+
+body.main-page
+    background-color #141414
+    .bar-header
+        background-color rgba(0,0,0,.7)
+        
+.overlay
+    position fixed
+    width 100%
+    height 100%
+    top 0
+    right 0
+    left 0
+    bottom 0
+    pointer-events none
+    background rgba(0, 0, 0, 0.6)
+    z-index 17
+    opacity 0
+    transition all 0.3s
+    &.show
+        pointer-events auto
+        opacity 1
