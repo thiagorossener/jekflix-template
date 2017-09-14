@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Minhas primeiras 5 impressões sobre Django
-description: Fiz um curso de Django, e essa é minha opinião.
+title: "Minhas primeiras 5 impressões sobre Django"
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/v1504809708/django_g7djdj.jpg'
 category: 'django'
-twitter_text: 'Fiz um curso de Django, e essa é minha opinião.'
-introduction: 'Fiz um curso de Django, e aqui eu conto o que achei desse framework Python.'
 tags:
- - django
+- django
+twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
 Fala galera!

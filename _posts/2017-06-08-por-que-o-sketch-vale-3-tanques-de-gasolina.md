@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Por que o Sketch vale 3 tanques de gasolina?
-description: Uma conta rápida de papel de pão pra mostrar o quanto essa ferramenta ajuda.
+title: "Por que o Sketch vale 3 tanques de gasolina?"
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 category: 'webdev'
-twitter_text: 'O Sketch não é barato, mas fazendo as contas, vale a pena comprar.'
-introduction: 'Comparando o preço do Sketch com o preço da gasolina eu procuro mostrar o quanto vale a pena adquirir essa ferramenta.'
 tags:
- - design
- - sketch
+- design
+- sketch
 image: 'https://res.cloudinary.com/dm7h7e8xj/image/upload/c_fill,h_399,w_760/v1501102987/sketch-fuel_eiwjbz.png'
+twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
 Há 1 mês atrás comecei a desenvolver o novo site da imobiliária <a href="http://aloisioimoveis.com.br/" target="_blank">Aloísio Imóveis</a> (ainda não está no ar).

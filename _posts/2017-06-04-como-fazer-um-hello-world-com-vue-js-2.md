@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Como fazer um Hello World com Vue.js 2
-description: É simples, é rápido, é sensacional.
+title: "Como fazer um Hello World com Vue.js 2"
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/v1504810464/hello-world-vue_ibatoy.jpg'
 category: 'tutorial'
-twitter_text: 'Aprenda rapidamente a fazer um Hello World usando Vue.js'
-introduction: 'Um simples tutorial para ensinar o básico desse framework Javascript incrível.'
 tags:
- - vuejs
- - javascript
- - tutorial
+- vuejs
+- javascript
+- tutorial
+twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
 Esse mês venho fazendo um curso de <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js 2</a> pelo Udemy e me apaixonando cada vez mais por esse framework que reúne o melhor do Angular 1 e do React.

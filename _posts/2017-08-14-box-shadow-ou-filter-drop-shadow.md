@@ -3,13 +3,13 @@ layout: post
 title: "box-shadow ou filter: drop-shadow?"
 date: 2017-08-14 22:55:45
 image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1502757949/o-sombra_xyw4wq.jpg'
-description: Duas escolhas, um único efeito. Saiba quando usar o estilo certo na hora certa.
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 category: 'css'
 tags:
- - css
- - frontend
-twitter_text: Duas escolhas, um único efeito. Saiba quando usar o estilo certo na hora certa.
-introduction: Descubra em que casos é melhor escolher um estilo ou o outro para fazer um efeito de sombra.
+- css
+- frontend
+twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
 Ta aí uma dúvida legal de responder.

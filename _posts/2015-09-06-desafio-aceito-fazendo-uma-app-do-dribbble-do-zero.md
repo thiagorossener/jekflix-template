@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Desafio aceito. Fazendo uma app do Dribbble do zero
-description: Um amigo me enviou esse desafio, eu aceitei.
+title: "Desafio aceito. Fazendo uma app do Dribbble do zero"
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1504807658/barney-stinson_eqt7kc.jpg'
 category: 'mobile'
-twitter_text: 'Um amigo me convidou para este desafio, eu aceitei.'
-introduction: 'Um amigo me convidou para este desafio, eu aceitei.'
 tags:
- - app
- - mobile
- - ios
- - desafio
+- app
+- mobile
+- ios
+twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
 Eaí galera,

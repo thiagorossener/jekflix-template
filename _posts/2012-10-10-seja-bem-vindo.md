@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Seja bem-vindo
-description: Criei esse blog para compartilhar.
+title: "Seja bem-vindo"
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1504807239/morpheus_xdzgg1.jpg'
 category: 'blog'
-twitter_text: 'Seja bem-vindo ao meu blog.'
-introduction: 'Mensagem de boas-vindas.'
+twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
 Eaí?

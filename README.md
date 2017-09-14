@@ -1,11 +1,13 @@
 # Jekflix Template
 ![Cover Image](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)
 
-A Jekyll template inspired by Netflix. See the [demo here](https://www.rossener.com/jekflyx-template).
+A Jekyll template inspired by Netflix. See the [demo here](https://www.rossener.com/jekflix-template).
 
 ## What is it?
 
-A template for Jekyll inspired by Netflix panel for who loves movies and series and would like to have a blog with this cool appearance.
+A template for Jekyll inspired by Netflix panel for who loves movies and series and would like to have a blog with this cool appearance ;)
+
+![Screenshot](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1505356678/jekflix-screenshot_ta9ax3.jpg)
 
 ## Features
 
