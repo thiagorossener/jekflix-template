@@ -16,7 +16,8 @@ A template for Jekyll inspired by Netflix panel for who loves movies and series 
 - Live Search
 - Minutes to Read
 - Reading Progress Bar
-![Progress Bar](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1505357769/jekflix-progress-bar_he7gqf.jpg)
+ 
+ ![Progress Bar](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1505357769/jekflix-progress-bar_he7gqf.jpg)
 - "New Post" tag
 - Load images on demand
 - Emojis 😎
