@@ -1,5 +1,5 @@
 # Jekflix Template
-![Cover Image](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1505043536/jekflix-logo_g3yp4k.png)
+![Cover Image](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)
 
 A Jekyll template inspired by Netflix. See the [demo here](https://www.rossener.com/jekflyx-template).
 
@@ -29,7 +29,7 @@ A template for Jekyll inspired by Netflix panel for who loves movies and series 
 
 ## Author
 
-[Thiago Rossener](https://www.rossener.com/)
+[Thiago Rossener](https://www.rossener.com/) based on [Cards Jekyll Template](https://github.com/willianjusten/cards-jekyll-template).
 
 ## License
 
