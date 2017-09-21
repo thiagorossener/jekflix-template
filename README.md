@@ -49,7 +49,7 @@ You have to fill some informations on `_config.yml` to customize your site.
 ```
 # Site Settings
 title: Thiago Rossener | Front-end Developer
-email: thiago.rossener@gmail.com
+email: youremail@xyz.com
 description: Some text about your blog.
 baseurl: "" # the subpath of your site, e.g. /blog/ or empty.
 url: "https://www.rossener.com" # the base hostname & protocol for your site

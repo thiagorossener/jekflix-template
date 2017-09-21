@@ -1,13 +1,13 @@
 # Site Settings
-title: Your Blog Title
+title: Jekflix | A theme for Jekyll
 email: youremail@xyz.com
 description: Some text about your blog.
-baseurl: ""
-url: "https://www.your-blog-url.com"
+baseurl: "/jekflix-template" # the subpath of your site, e.g. /blog
+url: "https://www.rossener.com" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
-username: Your Name
+username: Jekflix
 user_description: Some text about you.
 disqus_username: disqus_username
 
