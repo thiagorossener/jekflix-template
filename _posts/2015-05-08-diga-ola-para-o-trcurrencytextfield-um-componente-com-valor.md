@@ -11,136 +11,119 @@ tags:
 twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
-Está vivo.
 
-![Imagem de um médico maluco gritando Está Vivo!](//i1310.photobucket.com/albums/s647/rossener/its_alive_zpsqiuydofr.jpg)
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
-Depois de alguns dias codando e testando essa belezinha, eu finalmente posso dizer: valeu a pena. Se você está procurando por um componente como um campo de texto onde você pode apertar um dígito e magicamente formatá-lo para QUALQUER moeda do mundo, você pode deixar cair seu queixo agora. Você-o-encontrou.
+> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
-Graças ao <a href="https://github.com/peterboni/FormattedCurrencyInput" target="_blank">Peter Boni</a>, cujo trabalho me inspirou a fazer isso, eu posso apresentar a vocês, o <strong>TRCurrencyTextField</strong>.
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
-TRCurrencyTextField é um componente de código aberto facilmente encontrado no <a href="https://github.com/thiagoross/TRCurrencyTextField" target="_blank">GitHub</a>, e facilmente utilizável com <a href="https://cocoapods.org/pods/TRCurrencyTextField" target="_blank">CocoaPods</a>.
+## Inline HTML elements
 
-O que isso faz? Eu posso explicar... ou melhor, eu posso mostrar pra você em 12 passos. Aqui. E agora. Bora começar.
+HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
-## 1. Valor vazio formatado para zero
+- **To bold text**, use `<strong>`.
+- *To italicize text*, use `<em>`.
+- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
+- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
+- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
+- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
-Os exemplos aqui estão todos em BRL, ou seja, em reais. Porém, se você segurar as pontas aí por mais uns minutos eu te digo como vamos mudar isso.
+Most of these elements are styled by browsers with few modifications on our part.
 
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img01_zpsinzq5ss5.png)
+# Heading 1
 
-Então, nós começamos aqui, no zero. Como você pode ver, esse é o valor quando não temos nenhum valor. O queee? Exatamente. O componente não deixa você apagar o texto.
+## Heading 2
 
-> Rossener, mas eu quero apagar o texto ou meu iPhone vai explodir em mil pedaços.
+### Heading 3
 
-Espero que você tenha uma vassoura meu amigo.
+#### Heading 4
 
-## 2. Dígitos vêm da direita
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
-Você aperta a tecla 1 no teclado numérico, o texto muda pra R$ 0,01
+## Code
 
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img02_zpsrn6cxq1j.png)
+Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
 
-## 3. E continuam vindo da direita
+```js
+// Example can be run directly in your JavaScript console
 
-Então você aperta a tecla 2 no teclado numérico e o texto vira R$ 0,12
+// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function("a", "b", "return a + b");
 
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img03_zpsedto9ab7.png)
+// Call the function
+adder(2, 6);
+// > 8
+```
 
-## 4. Você não precisa apertar a "vírgula"
+Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
-Você aperta a tecla 3 no teclado numérico e o texto muda pra R$ 1,23
+## Lists
 
-Em reais, vírgula é o separador de decimal, e nós não precisamos apertar ela. Acredite em mim, ela já aparece lá.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img04_zpsxpr0tzyx.png)
+* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+* Donec id elit non mi porta gravida at eget metus.
+* Nulla vitae elit libero, a pharetra augue.
 
-## 5. Você não precisa apertar o "ponto"
+Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
 
-Como ponto é o separador de grupo em reais, quando você aperta 1-2-3-4-5-6, nós temos R$ 1.234,56
+1. Vestibulum id ligula porta felis euismod semper.
+2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img05_zps42syiq7u.png)
+Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
-## 6. Deletar-desloca-dígitos
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-Você deleta. Essa coisa desloca.
+## Images
 
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img06_zpsgxq0ldgl.png)
+Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-## 7. Edite de qualquer lugar
+![placeholder](https://placehold.it/800x400 "Large example image")
+![placeholder](https://placehold.it/400x200 "Medium example image")
+![placeholder](https://placehold.it/200x200 "Small example image")
 
-> "Rossener, eu não quero reiniciar a minha vida pra corrigir um único erro."
+## Tables
 
-Você tem certeza? Bem, você não precisa.
+Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-Você coloca o cursor depois do 1 e aperta Deletar, nós temos R$ 23,45
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img07_zpss3rlth5k.png)
-
-## 8. Cole de qualquer lugar
-
-Você é um cara preguiçoso e quer colar um valor da sua app de calculadora? Você pode.
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img08_zpsg9ro8kx4.png)
-
-Cole 1000 de qualquer lugar, ele vira R$ 1.000,00
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img09_zps1kdphsqv.png)
-
-## 9. Mude a moeda. Mude o formato.
-
-> "Finalmente, não aguento mais ver tudo em reais."
-
-Vamos mudar isso.
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img10_zpswkfhmoan.png)
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img11_zpsnppxg3sb.png)
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/img12-1_zpsztjq8ujg.png)
-
-## 10. Como também, o País
-
-> "Eu não conheço o código da minha moeda."
-
-Você deveria. Mas, nós podemos cuidar disso.
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img12_zpsd0imf4w2.png)
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img13_zpsggnl1vxb.png)
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img14_zpsqt6xafhj.png)
-
-## 11. Como também, o Locale
-
-Algumas vezes você tem um país ou uma moeda que possui mais de um único Locale, e dependendo do Locale, os símbolos são diferentes... bom, problema resolvido.
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img15_zpsssnre625.png)
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img16_zpssndryuos.png)
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img17_zpsdn9j2hqm.png)
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img18_zps3xldov0j.png)
-
-## 12. Finalmente, o Valor
-
-> "Rossener, você está mandando muito bem, tá tudo ótimo, esse componente vai salvar minha vida e meu casamento. MAS, e o valor?"
-
-Meu caro amigo, eu deixei o melhor para o final. Uma vez que você atribuiu alguma coisa ao componente, você pode fazer qualquer coisa que quiser. É como o milagre dos 5 pães e 2 peixes. Com poucas coisas, você pode conseguir muitas coisas.
-
-Deixa eu explicar.
-
-Uma vez que você mudou a moeda para USD, você pode pegar do componente, não um, mas TODOS os países que usam essa moeda, como também pode pegar o texto mostrado pelo componente na tela e aquela coisa que você mais quer: **o valor numérico**.
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img19_zpspklsiodw.png)
-
-![Imagem de um iPhone exibindo o exemplo](http://i1310.photobucket.com/albums/s647/rossener/TRCurrencyTextField/nova-img20_zpsr3g6hyiy.png)
-
-Além de tudo isso, você pode também, se você quer o *espaço em branco* próximo do símbolo da moeda e o *número máximo de dígitos* que você quer deixar seu usuário digitar.
-
-TRCurrencyTextField é um componente aberto. Você pode enviar *pull requests* pra ele. Você pode *forkar* ele. Você pode amar ele. Vamos fazer ele melhor juntos.
-
-Dúvidas? Comentários? Hi-fives? Por favor, deixe eles aqui. Estou ansioso pra saber sua opinião.
-
-PS: Você saber detalhes sobre o uso, instalação e outras coisas no <a href="https://github.com/thiagoross/TRCurrencyTextField" target="_blank">GitHub</a>.
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Upvotes</th>
+      <th>Downvotes</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Totals</td>
+      <td>21</td>
+      <td>23</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+-----
+
+Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>

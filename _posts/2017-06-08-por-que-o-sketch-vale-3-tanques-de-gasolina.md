@@ -11,136 +11,118 @@ twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
-Há 1 mês atrás comecei a desenvolver o novo site da imobiliária <a href="http://aloisioimoveis.com.br/" target="_blank">Aloísio Imóveis</a> (ainda não está no ar).
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
-Basicamente, estou fazendo tudo do zero. No entanto, antes de terminar todo o sistema do site para entregar, decidi primeiro entregar um novo layout funcional, responsivo e moderno.
+> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
-Durante os últimos 5 anos, tudo o que eu fazia em relação a layouts era no **Photoshop**. Não sou nenhum profissional na ferramenta, mas consigo criar uns memes e melhorar umas fotos.
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
-Porém, hoje estou focado em produtividade. Isso tem consumido a minha vida nesse último mês, e estou buscando formas de fazer o mesmo trabalho com qualidade e em menos tempo.
+## Inline HTML elements
 
-Bem, como você deve imaginar, é aí que entra o <a href="https://www.sketchapp.com/" target="_blank">Sketch</a>.
+HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
-Essa ferramenta foi apresentada para mim por um amigo. Confesso que no começo não dei muita bola, principalmente porque ela custa **99 dólares**, e esse não é um dinheiro que a gente tem toda hora pra pagar à vista por um software que você acha que não precisa.
+- **To bold text**, use `<strong>`.
+- *To italicize text*, use `<em>`.
+- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
+- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
+- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
+- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
-O Sketch é um software só para MacOS, o que já sugere que ele tem excelência na usabilidade, como todo produto da Apple. Mesmo assim, pagar 99 *trumps* por um software quando existem tantos outros gratuitos no mercado? *Eu devo estar ficando louco*.
+Most of these elements are styled by browsers with few modifications on our part.
 
-Antes de tudo, não, esse não é um post patrocinado. Eu estou aqui fazendo propaganda de graça e *salvando a sua vida*.
+# Heading 1
 
-<center><iframe class="giphy-embed" src="https://giphy.com/embed/glmRyiSI3v5E4" width="480" height="354" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
+## Heading 2
 
-Lá fui eu usar o trial do **Sketch por um mês**, o tempo todo com o pensamento "me convença". Fiz um <a href="https://medium.com/sketch-app-sources/sketch-app-tutorial-series-part-1-of-4-1e4ee4265073" target="_blank">tutorial de 5 partes</a> pra entender o poder que esse software oferece, e mais abaixo mostrarei meus resultados.
+### Heading 3
 
-## Meu carro faz 11,6 km/l
+#### Heading 4
 
-Eu possuo um Palio Attractive 1.6 ano 2013. É um carro relativamente novo, comprei ele 0km, mas hoje em dia ele dá umas engasgadas pra ligar.
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
-Nesse último mês tenho abastecido ele só com gasolina, e ele obteve uma autonomia de **11,6 km/l**. Mas nos últimos meses abasteci ele somente com álcool.
+## Code
 
-> Beleza Rossener, onde você quer chegar com isso?
+Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
 
-Fazendo uma matemática simples:
+```js
+// Example can be run directly in your JavaScript console
 
-A gasolina está hoje a **R$ 3,19** aqui em Taubaté (minha cidade natal). Já o álcool está por volta dos **R$ 2,19**, normalmente tem ficado em 1 real de diferença.
+// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function("a", "b", "return a + b");
 
-O tanque do meu carro tem **48 litros**.
+// Call the function
+adder(2, 6);
+// > 8
+```
 
-Isso significa que se eu encher o tanque com **gasolina** o total fica **R$ 153,12**, e se eu encher com **álcool** fica **R$ 105,12**.
+Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
-Digamos que a autonomia de que falei é uma média, então digamos que eu coloque meio tanque de gasolina e meio tanque de álcool, logo:
+## Lists
 
-*1 tanque = R$ 129,12*
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
-**Guarde esse número.**
+* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+* Donec id elit non mi porta gravida at eget metus.
+* Nulla vitae elit libero, a pharetra augue.
 
-## O Sketch salvou o meu dia
+Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
 
-Essa semana eu estava melhorando o conteúdo do meu blog, principalmente na sessão "O Autor". Como eu pretendo trabalhar como freelancer nesses próximos meses, precisava demonstrar de forma clara qual é a minha capacidade e minhas habilidades atuais.
+1. Vestibulum id ligula porta felis euismod semper.
+2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
-Tentei escrever de várias formas as tecnologias que eu conheço e o meu tempo de experiência com cada uma delas. **Sem sucesso**.
+Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
-Foi aí que surgiu a ideia de montar um mapa, em que batendo o olho qualquer um saberia dizer o que eu sei e o que eu não sei fazer. O mapa foi esse aqui:
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-![Meus conhecimentos em Front-end](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1501103240/frontend1_tvsefn.png)
+## Images
 
-![Meus conhecimentos em Back-end](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1501103276/backend_cdzzmc.png)
+Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![Meus conhecimentos em Mobile](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1501103319/mobile_t8zskz.png)
+![placeholder](https://placehold.it/800x400 "Large example image")
+![placeholder](https://placehold.it/400x200 "Medium example image")
+![placeholder](https://placehold.it/200x200 "Small example image")
 
-![Meus conhecimentos em Bancos de Dados](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1501103361/databases_o4cx3s.png)
+## Tables
 
-![Meus conhecimentos em Ferraments](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1501103411/tools_zh6zkl.png)
+Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-Por uma questão de hábito, sem que eu percebesse, comecei a fazer o mapa no Photoshop.
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Upvotes</th>
+      <th>Downvotes</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Totals</td>
+      <td>21</td>
+      <td>23</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
 
-> Edição de imagem? Claro! Tenho o Photoshop aqui.
+Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-Eu não sei se você já montou um layout alguma vez na sua vida, mas não é algo que você faz, digamos, de primeira. O resultado final parece ser simples, mas ele só é obtido depois de testes e mais testes e mais testes, até chegar num ponto que você fica satisfeito.
+-----
 
-<center><iframe class="giphy-embed" src="https://giphy.com/embed/11ISwbgCxEzMyY" width="480" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
-
-Foram **3 horas** colocando e tirando elementos, arrastando, redimensionando, encaixando, refazendo. E não estava pronto, eu não estava satisfeito.
-
-E então me lembrei. *Puts, Eu tenho o Sketch!*
-
-Coitado, esquecido, jogado num canto depois de eu ter feito o tutorial e montado as páginas da Aloísio Imóveis, eu simplesmente esqueci o quanto ele me ajudou.
-
-Abri a app e me deparei com a mensagem dizendo que a minha versão trial havia expirado.
-
-Estava com pressa. Peguei meu cartão de crédito, preenchi os dados e antes de clicar no botão submeter, hesitei.
-
-> Cara, eu to gastando 3 tanques de gasolina nesse software.
-
-Cliquei em comprar. Usei o serial number fornecido, **20 minutos** depois, a imagem estava pronta.
-
-## Autonomia é tudo
-
-Lembra da conta?
-
- - *1 tanque = R$ 129,12*
- - *3 tanques = R$ 387,36*
- - **1 Sketch = US$ 99.00 = R$ 340,00 + IOF (R$ 21,69) = R$ 361,69**
-
-OU
-
- - *1 tanque = 557Km*
- - *3 tanques = 1670Km*
- - **1 Sketch = 1560Km**
-
-Na Dutra posso andar a **110 Km/h**.
-
-*1 Sketch = 1560 / 110 = 14 horas de viagem*
-
-Preste atenção nesse número, então comprar o Sketch é equivalente a *14 HORAS* dirigindo na estrada.
-
-Vamos ver, o tempo que eu gastei com 1 layout:
-
-*No Photoshop = 180 minutos*
-
-*No Sketch = 20 minutos*
-
-Para efeito de conta, digamos que para **1 layout** eu cobre **R$ 150,00**, em 14 horas:
-
-*No Photoshop = 4,7 layouts = R$ 705,00*
-
-**No Sketch = 42 layouts = R$ 6.300,00**
-
-Não se convenceu ainda?
-
-O que eu estou tentando dizer é que com **3 layouts**, o Sketch está **pago** e você ganhou, no mesmo tempo, **9x MAIS**.
-
-## Conclusão
-
-Voltando ao exemplo do carro. Digamos que o Sketch e o Photoshop sejam marcas de carro. Com os 3 tanques:
-
- - *O Sketch percorreria 1560Km.*
- - *O Photoshop percorreria 174Km.*
-
-Em **14 horas**, isso é o equivalente a:
-
- - *Sketch faria uma velocidade média de 111Km/h.*
- - *Photoshop faria uma velocidade média de 12Km/h.*
-
-Aí eu te pergunto:
-
-Se você tivesse que ir de São Paulo até o Rio de Janeiro, iria sentado dirigindo um Palio 1.6 ou iria *correndo*?
+Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>

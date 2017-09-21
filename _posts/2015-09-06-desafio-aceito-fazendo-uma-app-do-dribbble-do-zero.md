@@ -12,88 +12,118 @@ twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
-Eaí galera,
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
-Há alguns dias atrás, um amigo meu, <a href="https://github.com/brunogabriel" target="_blank">Bruno Gabriel</a>, me enviou um <a href="https://bitbucket.org/suporte_concrete/desafio-ios/" target="_blank">link</a> de um recrutamento de uma empresa de tecnologia onde eles pedem aos candidatos para fazerem uma app com a API do Dribbble desenvolvendo algumas features pré-definidas e outras como bonus.
+> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
-Eu fiz isso <a href="https://github.com/thiagoross/SimpleDribbble" target="_blank">aqui</a>.
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
-![Tom Cruise atendendo o celular](http://i1310.photobucket.com/albums/s647/rossener/Dribbble%20Challenge/your-mission_zpskxns2mho.png)
-*Sua missão, caso deseje aceitá-la é: fazer uma app do Dribbble com as seguintes funcionalidades.*
+## Inline HTML elements
 
-### Seu aplicativo deve conter
+HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
- - Os shots mais populares, apresentando eles como esse mock.
+- **To bold text**, use `<strong>`.
+- *To italicize text*, use `<em>`.
+- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
+- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
+- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
+- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
-![Imagem de exemplo do aplicativo](http://i1310.photobucket.com/albums/s647/rossener/Dribbble%20Challenge/mock_zpsie1ik4uo.png)
+Most of these elements are styled by browsers with few modifications on our part.
 
- - Arquivo .gitignore
- - Gerenciador de dependência de projeto. Ex: CocoaPods
- - Framework para se comunicar com a API. Ex: AFNetworking
- - Mapeamento JSON -&gt; Objeto. Ex: Mantle
- - API de lista de shots
- - Paginação automática (scroll infinito) na lista de shots
- - Paginação que deve detectar quando chegou na última página e para de pedir mais
- - Pull to refresh
- - Mostrar detalhes do shot em uma nova tela quando o shot é selecionado na lista
- - A tela de detalhes do shot deve conter o nome do autor e a foto e descrição do shot
+# Heading 1
 
-### Bonus
+## Heading 2
 
-- Testes unitários. Ex: XCTests / Spectra + Expecta
-- Testes funcionais. Ex: KIF
-- Ser uma app universal. Fazer funcionar com iPad \| iPhone \| Paisagem \| Retrato (classes de tamanho)
-- Cache de imagens. Ex: SDWebImage
-- Compartilhar shots no Facebook e no Twitter
+### Heading 3
 
-Bom, como eu precisava minhas novas habilidades de iOS.
+#### Heading 4
 
-![Meme Challenge Accepted](http://i1310.photobucket.com/albums/s647/rossener/Dribbble%20Challenge/challenge-accepted_zpsqwnlacvu.jpg)
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
-Eu não fiz **todas** a funcionalidades bonus listadas acima, como testes e compartilhar nas redes sociais. MAS, eu fiz um layout bem legal e efeitos pra aprender coisas como views personalizadas, barra de navegação personalizada, botão de voltar personalizado, layout usando diferentes tamanhos de células numa tabela, além de bibliotecas que eu nunca tinha usado antes :)
+## Code
 
-Aqui está a tela inicial, do que eu chamei, **Simple Dribbble**.
+Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
 
-![Tela de abertura do aplicativo SimpleDribbble](http://i1310.photobucket.com/albums/s647/rossener/launch-screen_zpskx1mm4gd.png)
+```js
+// Example can be run directly in your JavaScript console
 
-A lista de shots ficou assim.
+// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function("a", "b", "return a + b");
 
-![Tela de inicial do aplicativo SimpleDribbble](http://i1310.photobucket.com/albums/s647/rossener/shots-list_zps3pe3rabs.png)
+// Call the function
+adder(2, 6);
+// > 8
+```
 
-Quando você seleciona um desses shots (e somente dentro do shot, não na célula toda), você tem esse efeito.
+Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
-![Exemplo de transição quando o usuário clica no elemento](http://i1310.photobucket.com/albums/s647/rossener/selecting_zpsiycsug49.png)
+## Lists
 
-Quando a requisição falha.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
-![Mensagem quando ocorre um erro](http://i1310.photobucket.com/albums/s647/rossener/Dribbble%20Challenge/error-message_zpsylifpclp.png)
+* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+* Donec id elit non mi porta gravida at eget metus.
+* Nulla vitae elit libero, a pharetra augue.
 
-Quando você sai do aplicativo antes dele carregar algum shot e o aplicativo volta do background, a lista é automaticamente carregada.
+Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
 
-![Tela com loading](http://i1310.photobucket.com/albums/s647/rossener/Dribbble%20Challenge/auto-load_zpsi1xc9oi7.png)
+1. Vestibulum id ligula porta felis euismod semper.
+2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
-Quando o shot está carregando, tem esse placeholder com um ícone do Dribbble girando pra representar que está carregando a imagem.
+Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
-![Exemplo de elemento com placeholder](http://i1310.photobucket.com/albums/s647/rossener/Dribbble%20Challenge/loading-placeholder_zpsbbby7aoj.png)
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-Quando você já viu todas as páginas e faz um <em>pull to refresh</em>.
+## Images
 
-![Tela com Pull to Refresh](http://i1310.photobucket.com/albums/s647/rossener/Dribbble%20Challenge/pull-to-request_zpsep94dnws.png)
+Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![Tela com Pull to Refresh](http://i1310.photobucket.com/albums/s647/rossener/Dribbble%20Challenge/release-to-refresh_zpstqhgajpu.png)
+![placeholder](https://placehold.it/800x400 "Large example image")
+![placeholder](https://placehold.it/400x200 "Medium example image")
+![placeholder](https://placehold.it/200x200 "Small example image")
 
-![Tela quando não há mais atualizações](http://i1310.photobucket.com/albums/s647/rossener/Dribbble%20Challenge/end-push-to-refresh_zpslmgvdgps.png)
+## Tables
 
-Quando todas as páginas já foram vistas e você tenta carregar mais.
+Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-![Mensagem quando não há mais shots para carregar](http://i1310.photobucket.com/albums/s647/rossener/Dribbble%20Challenge/end-infinity-scroll_zpswdkleaoo.png)
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Upvotes</th>
+      <th>Downvotes</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Totals</td>
+      <td>21</td>
+      <td>23</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
 
-E então, a tela de detalhes.
+Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-![Tela de detalhes](http://i1310.photobucket.com/albums/s647/rossener/shots-details_zpsuzqh4brt.png)
+-----
 
-Nessa última tela você deve ter notado três partes, as quais eu fiz usando um UITableViewController com 3 células. A primeira tem um tamanho fixo contendo a foto e o título do shot, a segunda célula também é fixa e contem a foto do autor e seu nome, e a última é flexível, contem uma web view que carrega a descrição e seu tamanho é adaptável dependendo do conteúdo.
-
-Esse aplicativo é de longe bem simples, e você pode fazer UM MONTE de coisas legais usando a API do Dribbble, como o aplicativo nesse <a href="https://www.youtube.com/watch?v=MtcscjMxxq4" target="_blank">vídeo</a>. Mas para fins de aprendizado, é um desafio bem legal.
-
-Até mais!
+Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>

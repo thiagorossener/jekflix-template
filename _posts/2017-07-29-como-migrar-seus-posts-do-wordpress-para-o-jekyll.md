@@ -13,152 +13,120 @@ twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
-Foram 24 horas contabilizadas entre ter o primeiro contato com o Jekyll, fazer o novo
-layout do blog e migrar todos os posts do meu antigo blog em Wordpress.
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
-O mais chato de fazer em toda essa jornada eu diria que foi a **migração**.
+> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
-O site oficial do Jekyll [passa um comando configurável](http://import.jekyllrb.com/docs/wordpress/) para trazer todos os posts
-do Wordpress para o Jekyll:
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
-```ruby
-ruby -rubygems -e 'require "jekyll-import";
-    JekyllImport::Importers::WordPress.run({
-      "dbname"   => "",
-      "user"     => "",
-      "password" => "",
-      "host"     => "localhost",
-      "port"     => "3306",
-      "socket"   => "",
-      "table_prefix"   => "wp_",
-      "site_prefix"    => "",
-      "clean_entities" => true,
-      "comments"       => false,
-      "categories"     => false,
-      "tags"           => false,
-      "more_excerpt"   => false,
-      "more_anchor"    => false,
-      "extension"      => "md",
-      "status"         => ["publish"]
-    })'
+## Inline HTML elements
+
+HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+
+- **To bold text**, use `<strong>`.
+- *To italicize text*, use `<em>`.
+- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
+- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
+- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
+- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+
+Most of these elements are styled by browsers with few modifications on our part.
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+## Code
+
+Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
+
+```js
+// Example can be run directly in your JavaScript console
+
+// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function("a", "b", "return a + b");
+
+// Call the function
+adder(2, 6);
+// > 8
 ```
 
-Porém, apesar de tentar enxugar o máximo de coisas possível, a saída desse
-comando ainda é um arquivo cheio de coisas que você vai perder tempo apagando e 
-o pior, não estará formatado em markdown:
+Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
-![Imagem do arquivo de saída com a importação do Jekyll](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1501341957/migracao-com-jekyll_cvdiks.png)
+## Lists
 
-> **A solução:** Exportar um arquivo .xml com os posts do Wordpress e [pegar esse script muito maroto aqui](https://gist.github.com/evanwalsh/6131008) para fazer a importação no Jekyll.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
-Mesmo assim, como esse script ainda insere um monte de sujeira, fiz a minha própria
-versão dele, deixando somente o que achei necessário, e passando o nome do arquivo
-de exportação via argumento na linha de comando.
+* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+* Donec id elit non mi porta gravida at eget metus.
+* Nulla vitae elit libero, a pharetra augue.
 
-Assim, o arquivo fica formatado em markdown, incluse as imagens! Olha só como fica
-mais enxuto e agradável:
+Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
 
-![Imagem do arquivo de saída com a exportação via script](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1501341957/migracao-com-script_jnozbt.png)
+1. Vestibulum id ligula porta felis euismod semper.
+2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
-Então vamos lá, o que você precisa fazer é:
+Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
-1\. Abra o painel de administração do Wordpress e vá em **Ferramentas > Exportar**
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-![Screenshot da tela do Wordpress](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1501342670/Screen_Shot_2017-07-29_at_12.37.15_PM_ugbtrn.png)
+## Images
 
-2\. Selecione somente os posts e clique em **Download do arquivo de exportação**
+Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![Screenshot da tela do Wordpress](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1501342736/Screen_Shot_2017-07-29_at_12.38.19_PM_b7opb2.png)
+![placeholder](https://placehold.it/800x400 "Large example image")
+![placeholder](https://placehold.it/400x200 "Medium example image")
+![placeholder](https://placehold.it/200x200 "Small example image")
 
-3\. Coloque o arquivo **.xml** baixado na raiz do seu projeto Jekyll
+## Tables
 
-4\. Crie um arquivo `import.rb` também na raiz do seu projeto Jekyll e cole esse código,
-que também deixei disponível no [Github](https://github.com/thiagorossener/wordpress-to-jekyll-import):
+Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-```ruby
-# coding: utf-8
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Upvotes</th>
+      <th>Downvotes</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Totals</td>
+      <td>21</td>
+      <td>23</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
 
-require 'hpricot'
-require 'fileutils'
-require 'safe_yaml'
-require 'html2markdown'
+Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-module JekyllImport
-  # This importer takes a *.xml file, which can be exported from your
-  # wordpress.com blog (/wp-admin/export.php).
-  module WordpressDotCom
-    def self.process(filename = {:source => ARGV[0]})
-      import_count = Hash.new(0)
-      doc = Hpricot::XML(File.read(filename[:source]))
+-----
 
-      (doc/:channel/:item).each do |item|
-        title = item.at(:title).inner_text.strip
-        permalink_title = item.at('wp:post_name').inner_text.gsub("/","-")
-        # Fallback to "prettified" title if post_name is empty (can happen)
-        if permalink_title == ""
-          permalink_title = sluggify(title)
-        end
-
-        if item.at('wp:post_date')
-          begin
-            date = Time.parse(item.at('wp:post_date').inner_text)
-          rescue
-            date = Time.now
-          end
-        else
-          date = Time.now
-        end
-
-        name = "#{date.strftime('%Y-%m-%d')}-#{permalink_title}.md"
-        type = item.at('wp:post_type').inner_text
-        tags = item.search('category[@domain="post_tag"]').map{|t| t.inner_text}.uniq
-
-        header = {
-          'layout' => type,
-          'title' => title,
-          'tags' => tags
-        }
-
-        begin
-          FileUtils.mkdir_p "_#{type}s"
-          filename = "_#{type}s/#{name}"
-          File.open(filename, "w") do |f|
-            f.puts header.to_yaml
-            f.puts '---'
-            f.puts item.at('content:encoded').inner_text
-          end
-          p = HTMLPage.new(contents: File.read(filename))
-          File.open(filename, "w") { |f| f.puts p.markdown }
-        rescue => e
-          puts "Couldn't import post!"
-          puts "Title: #{title}"
-          puts "Name/Slug: #{name}\n"
-          puts "Error: #{e.message}"
-          next
-        end
-
-        import_count[type] += 1
-      end
-
-      import_count.each do |key, value|
-        puts "Imported #{value} #{key}s"
-      end
-    end
-
-    def self.sluggify(title)
-      title.gsub(/[^[:alnum:]]+/, '-').downcase
-    end
-  end
-end
-
-JekyllImport::WordpressDotCom.process
-```
-
-5\. No terminal, no diretório do seu blog, rode o comando `ruby import.rb nome-do-seu-arquivo-exportado.xml`
-
-> **Nota:** Se você não possui o ruby instalado, dá uma olhada nesse [link aqui de como instalar o Ruby](https://www.ruby-lang.org/pt/documentation/installation/). Talvez você também precise instalar as gems necessárias para rodar o
-arquivo, você pode fazer isso rodando `gem install hpricot fileutils safe_yaml html2markdown`
-
-Pronto! Seus posts no Wordpress estão todos importados e formatados em markdown.
+Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>
 
 

@@ -12,114 +12,121 @@ twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
-Ta aí uma dúvida legal de responder.
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
-Essa semana estive fazendo um trabalho como freelancer onde a ideia era desenvolver
-um componente totalmente personalizado. Eis que o componente em questão era esse
-aqui:
+> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
-![Imagem do componente](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1502758928/componente_d4u8hh.png)
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
-Como você pode ver, não é trivial. Nunca tinha feito um componente com tantas
-características singulares como esse, mas como eu não sou de abandonar um bom
-desafio, lá fui eu.
+## Inline HTML elements
 
-<center><iframe class="giphy-embed" src="https://giphy.com/embed/1YnVDruYQEgWQ" width="600" height="442" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
+HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
-Primeira questão: por onde começar?
+- **To bold text**, use `<strong>`.
+- *To italicize text*, use `<em>`.
+- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
+- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
+- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
+- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
-A voz da experiência logo me falou "comece pelo mais difícil".
+Most of these elements are styled by browsers with few modifications on our part.
 
-E a voz da diversão sem limites disse "comece pelo mais legal".
+# Heading 1
 
-E aí, na minha audácia e espírito de rebeldia falei "e se eu fizesse os dois?" 😎
+## Heading 2
 
-<center><iframe src="https://giphy.com/embed/Py4loHkx4eo1O" width="800" height="400" frameBorder="0" allowFullScreen></iframe></center>
+### Heading 3
 
-~~Ok, talvez eu não tenha falado isso em voz alta.~~
+#### Heading 4
 
-Então escolhi a aba em formato de seta.
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
-Foi um elemento bastante interessante de fazer, o mais desafiador,
-sem dúvida, foi fazer o lado esquerdo num formato irregular, o lado direito também 
-num formato irregular e o conteúdo da seta com largura flexível.
+## Code
 
-Eu normalmente faria isso usando imagens, mas dessa vez inovei, e usei SVG para poder
-deixar essa faixa colorida na lateral dinâmica, assim não tenho que fazer uma imagem
-nova sempre que quiser mudar de cor.
+Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
 
-Como fiz isso vou deixar para outro post, mas o que eu quero focar nesse aqui é
-só num desses problemas: **a sombra**.
+```js
+// Example can be run directly in your JavaScript console
 
-Imagine que temos um componente onde dois lados tem um formato totalmente não-quadrado,
-e no centro tem um `<div>` que se ajusta com o conteúdo.
+// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function("a", "b", "return a + b");
 
-![Imagem de um elemento irregular](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1502795756/no-shadow_tnqdm8.jpg)
+// Call the function
+adder(2, 6);
+// > 8
+```
 
-A nossa sombra tem que ficar fluída, e contornando todo o componente de acordo com
-seu formato, certo?
+Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
-Beleza, pra fazer uma sombra, o CSS oferece dois atributos nos quais podemos fazer
-esse efeito, são eles o `box-shadow` e o `filter: drop-shadow`.
+## Lists
 
-Vamos ver na prática a diferença.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
-Se aplicarmos a esse elemento o **box-shadow**, teremos o seguinte resultado:
+* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+* Donec id elit non mi porta gravida at eget metus.
+* Nulla vitae elit libero, a pharetra augue.
 
-![Resultado com o box-shadow](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1502795862/box-shadow_dkh7o5.jpg)
+Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
 
-Porém, se aplicarmos ao mesmo elemento o **filter: drop-shadow**, temos esse resultado:
+1. Vestibulum id ligula porta felis euismod semper.
+2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
-![Resultado com o drop-shadow](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1502795717/filter-drop-shadow_nrhzex.jpg)
+Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
-A diferença é clara, o filtro *drop-shadow* é capaz de perceber o formato da imagem
-que está sendo renderizada para aplicar a sombra, e isso também é válido se ao invés
-de uma imagem com fundo transparente, tivermos um SVG.
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-<p data-height="320" data-theme-id="dark" data-slug-hash="prdvjo" data-default-tab="result" data-user="thiagorossener" data-embed-version="2" data-pen-title="box-shadow vs filter: drop-shadow" class="codepen">See the Pen <a href="https://codepen.io/thiagorossener/pen/prdvjo/">box-shadow vs filter: drop-shadow</a> by Thiago Rossener (<a href="https://codepen.io/thiagorossener">@thiagorossener</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+## Images
 
-## Vantagens e desvantagens
+Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-Você provavelmente deve estar pensando:
+![placeholder](https://placehold.it/800x400 "Large example image")
+![placeholder](https://placehold.it/400x200 "Medium example image")
+![placeholder](https://placehold.it/200x200 "Small example image")
 
-> Demorou! Vou usar o **drop-shadow** _SEMPRE_!
+## Tables
 
-Acontece que infelizmente nem tudo é leite ninho com Nutella nessa vida.
+Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-O `box-shadow` é suportado por mais navegadores que o `filter: drop-shadow`, e
-principalmente por quais? Exatamente, navegadores da *Microsoft*.
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Upvotes</th>
+      <th>Downvotes</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Totals</td>
+      <td>21</td>
+      <td>23</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
 
-Dá uma olhada no suporte desses caras:
+Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-![Suporte para box-shadow](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1502757053/box-shadow_ldmnmo.jpg)
-*[Clique aqui para ver mais detalhes](http://caniuse.com/#feat=css-boxshadow)*
+-----
 
-![Suporte para drop-shadow](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1502757056/drop-shadow_zxpgoj.png)
-*[Clique aqui para ver mais detalhes](http://caniuse.com/#feat=css-filters)*
-
-## Conclusão
-
-Os dois estilos matam a pau o problema das sombras, mas se encaixam em diferentes
-situações.
-
-Para um caso onde a sombra é trivial, o `box-shadow` resolve o problema, mesmo porque
-ele tem outras vantagens como a possibilidade de criar sombras internas, e aplicar mais
-de uma sombra ao mesmo elemento.
-
-Porém, se você precisa que a sombra seja aplicada a elementos com formatos
-diferentões é muito mais negócio ficar com o `drop-shadow`, que possibilita o mesmo
-efeito para esses casos.
-
-Espero que esse artigo curtinho tenha deixado mais claro em quais situações é
-melhor usar cada um deles.
-
-Ficou com alguma dúvida? Tem alguma crítica? Pode mandar aqui nos comentários que ficarei
-feliz em respondê-las. ✌️
-
-> Não importa o quão devagar você vá, desde que você não pare.
->
-> -- **Confúcio**
+Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>
 
 
 
