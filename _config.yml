@@ -7,7 +7,7 @@ url: "https://www.rossener.com" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
-username: Jekflix
+username: Jekflix Template
 user_description: Some text about you.
 disqus_username: disqus_username
 

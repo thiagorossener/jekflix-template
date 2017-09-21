@@ -12,128 +12,126 @@ twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
-Hoje quase perdi **R$ 188,00** olhando a minha timeline no Facebook.
+Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
-Esse artigo é pra alertar quem costuma comprar coisas legais pela internet para
-ficar atento a alguns pontos e não perder dinheiro navegando.
+> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
-Em 2007 comprei um MP4 da China que levou 3 meses pra chegar, paguei um imposto quase
-mais caro que o aparelho, e a bateria durava 1h.
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
-![Genius](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1503151642/genius_foabwg.png)
+## Inline HTML elements
 
-Aparentemente não aprendi muita coisa, pois estava quase perdendo dinheiro de novo.
+HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
-Sábado de manhã, estava dando aquela passada rápida na timeline do Facebook quando
-pintou na tela esse anúncio:
+- **To bold text**, use `<strong>`.
+- *To italicize text*, use `<em>`.
+- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
+- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
+- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
+- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
-![Imagem do Anúncio](http://res.cloudinary.com/dm7h7e8xj/image/upload/q_80/v1503151704/anuncio_etpxre.jpg)
+Most of these elements are styled by browsers with few modifications on our part.
 
-O vídeo do anúncio é esse aqui:
+## Heading
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/aVBXDV0I79k" frameborder="0" allowfullscreen></iframe>
+Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
-Assisti ao vídeo e achei a mochila sensacional, quando viajei pra Europa em 2014 era
-exatamente uma mochila assim que estava procurando!
+### Code
 
-Cliquei no anúncio.
+Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
 
-![Imagem do site com o Anúncio](http://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,q_80,w_800/v1503151756/side-com-anuncio_qzhqir.jpg)
+```js
+// Example can be run directly in your JavaScript console
 
-O preço não estava nenhum absurdo pra uma mochila a prova d'água, anti-furto, 
-carregadora de celulares, protetora de notebooks, porta-canetas e salvadora de dores
-nas costas. Era praticamente a mochila da *Daenerys Targaryen*.
+// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function("a", "b", "return a + b");
 
-Alguns segundos depois, uma roleta apareceu na tela, era só colocar o e-mail
-ali e rodar a roleta que eu ainda poderia ganhar um desconto.
+// Call the function
+adder(2, 6);
+// > 8
+```
 
-Rodei a parada, e *voilà*, cupom de **5% de desconto**. Precisava pensar duas vezes?
+Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
-![Shut up and take my money](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1503152309/shut-up-and-take-my-money_xgnw7v.jpg)
+### Lists
 
-Cliquei em adicionar ao carrinho, preenchi meus dados e meu endereço, eu estava quase lá.
-Quando chegou a parte do cartão de crédito, uma voz, da consciência ou da conta bancária,
-saiu do meio das nuvens dizendo:
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
-![Mufasa saindo das nuvens](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1503152427/mufasa_n4vl2g.jpg)
-*Verificarás a origem do site para não te arrependeres*
+* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+* Donec id elit non mi porta gravida at eget metus.
+* Nulla vitae elit libero, a pharetra augue.
 
-**Fechei tudo.**
+Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
 
-Então parei pra pensar *"Calma, a mochila é daora, mas são quase R$ 200,00, dá uma pesquisada nos caras antes"*.
+1. Vestibulum id ligula porta felis euismod semper.
+2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
-Cliquei no **About Us** e dei de cara com essa página.
+Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
-![Imagem da página do About Us](http://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,q_80,w_600/v1503152541/about-us_axqwzg.jpg)
+<dl>
+  <dt>HyperText Markup Language (HTML)</dt>
+  <dd>The language used to describe and define the content of a Web page</dd>
 
-Cliquei com o *botão direito do mouse na primeira foto > Copiar endereço da imagem*.
+  <dt>Cascading Style Sheets (CSS)</dt>
+  <dd>Used to describe the appearance of Web content</dd>
 
-Abri a busca do [Google Imagens](https://images.google.com/) e colei o endereço.
+  <dt>JavaScript (JS)</dt>
+  <dd>The programming language used to build advanced Web sites and applications</dd>
+</dl>
 
-E então aquele suspiro de alívio de quem economizou R$ 188,00... Esse foi o resultado da
-busca:
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-![Imagem do resultado da busca](http://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,q_80,w_600/v1503152630/resultado_da_busca_kuvtlr.jpg)
+### Images
 
-15 sites com o mesmo **About Us**, mesmas imagens, só mudava o texto, o endereço
-do site e o título da página. Estranho? Suspeito? No mínimo um golpe super fácil
-de aplicar. É só comprar um domínio, instalar o mesmo template, mudar o nome do site,
-jogar uma promoção que chame atenção no anúncio do Facebook e pronto, esperar o
-dinheiro cair na conta vindo diretamente do interior de SP.
+Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-Se der algo errado, é fechar o site e abrir um novo.
+![placeholder](https://placehold.it/800x400 "Large example image")
+![placeholder](https://placehold.it/400x200 "Medium example image")
+![placeholder](https://placehold.it/200x200 "Small example image")
 
-<iframe src="https://giphy.com/embed/5fBH6z8aMV1RbA4FaSc" width="800" height="450" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+### Tables
 
-Para ter certeza mesmo bastou jogar na busca o "nome do site + é de confiança". Nesse
-caso em inglês "Dudes Gadget is reliable" para provar que se tratava de um esquema.
+Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-- Avaliações no [TrustPilot](https://www.trustpilot.com/review/dudegadgets.com)
-- Reclamações no [#reportscam](https://reportscam.com/dudegadgetscom/)
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Upvotes</th>
+      <th>Downvotes</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Totals</td>
+      <td>21</td>
+      <td>23</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
 
-Só uma nota 5, o restante só notas 1 e com comentários como esses:
+Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-![Comentário 1](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1503153240/avaliacao-1_cd09uq.jpg)
-*Eu nunca recebi meu pedido. Esperando por 3 meses!!! E nenhuma resposta da companhia.*
+-----
 
-![Comentário 2](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1503153294/avaliacao-2_ieolhs.jpg)
-*FRAUDE... NÃO USE. O produto nunca chegou e foi dito que eles não oferecem reembolso a menos que o produto seja retornado.*
-
-## Conclusão
-
-Tome muito cuidado com os anúncios do Facebook. Para evitar esse tipo de golpe
-sempre faça *no mínimo* essas perguntas:
-
-### A página no Facebook está coerente com o nome da empresa e com o que eles estão vendendo?
-
-No meu caso a página da empresa tinha na imagem de perfil um gato usando óculos de sol
-e na capa a foto de uma vista para o mar. O nome da página no anúncio era "Super Cool Stuffs" (*Coisas Super Legais*), enquanto o nome do site no link era "Dudes Gadget", não tem porque ser diferente se
-a empresa é séria.
-
-### Que empresa é essa?
-
-Dê uma olhada no "About Us" ou no "Sobre Nós", tente descobrir há quanto tempo essa
-empresa está ativa. Pegue a foto que aparece lá, seja do dono, ou de um funcionário,
-jogue na [busca do Google por imagens]((https://images.google.com/)) e veja se essa foto não foi tirada de outro site.
-
-### Procure no Google
-
-Parece um conselho óbvio, mas se você é impulsivo como eu, e vez ou outra acaba
-caindo nessas estratégias de engenharia social para te vender qualquer coisa na
-internet, faça uma busca com palavras-chave como "nome da empresa + *é confiável*, 
-*é boa*, *entrega o produto*".
-
-E se for uma empresa de fora, faça essa busca em inglês.
-
-Leia os comentários de avaliações (não do site do anúncio!) e reclamações que você achar e tire suas conclusões, muitos comentários sem resposta da empresa não é um bom sinal.
-
-## Alguma outra dica?
-
-Se conhece alguma outra dica para evitar cair nesse tipo de golpe deixa nos
-comentários aqui embaixo pra ~~me ajudar~~ ajudar a galera a não cometer mais
-esses erros :)
-
-> A dúvida é o princípio da sabedoria. **- Aristóteles**
+Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>
 
 
 
