@@ -30,6 +30,7 @@ A template for Jekyll inspired by Netflix panel for who loves movies and series 
 - Feed RSS
 - Sitemap.xml
 - Info Customization
+- Disqus
 - Google Analytics
 
 ## Setup
@@ -147,4 +148,4 @@ Ping me on Twitter [@thiagorossener](https://twitter.com/thiagorossener) or file
 
 ## License
 
-**Jekflix Template** is available under the MIT license. See the LICENSE file for more info.
+*Jekflix Template* is available under the MIT license. See the LICENSE file for more info.
