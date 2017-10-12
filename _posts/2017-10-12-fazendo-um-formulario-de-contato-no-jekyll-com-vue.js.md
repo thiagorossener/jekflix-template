@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "블로그 개설"
+title: "life"
 date: 2017-10-12 16:00:00
 image: '#'
 description: 첫글 기념.
 category: 'tutorial'
 tags:
-- life
 - jekyll
+- blahblah
 twitter_text: 첫글 기념.
 introduction: 블로그 개설 관련 기념글
 ---
