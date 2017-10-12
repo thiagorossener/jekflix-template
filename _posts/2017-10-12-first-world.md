@@ -2,7 +2,7 @@
 layout: post
 title: "first word"
 date: 2017-10-12 16:00:00
-image: 'https://www.dropbox.com/s/2vvk112qz8wkt2e/first_img.jpg?dl=0'
+image: 'https://photos-6.dropbox.com/t/2/AAC6yRn6AUtPm7tiz_VeWx3AjQPC3gHKVVz63PcPodKnGw/12/684875356/jpeg/32x32/1/_/1/2/first_img.jpg/EL-jnc8FGPulBCAHKAc/3kspqRw-bMcQY1L1VIWjNS1_oiBrvun6_7TbU0U8yJE?size=800x600&size_mode=3'
 description: 첫글 기념.
 category: 'life'
 tags:
