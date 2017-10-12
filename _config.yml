@@ -31,7 +31,6 @@ gems:
   - jemoji
 
 # Links to include in menu navigation
-# For external links add external: true
 links:
   - title: Home
     url: /
