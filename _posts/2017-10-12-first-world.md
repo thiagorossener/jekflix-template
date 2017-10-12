@@ -2,7 +2,7 @@
 layout: post
 title: "first word"
 date: 2017-10-12 16:00:00
-image: 'blog/images/first_img.jpg'
+image: 'images/first_img.jpg'
 description: 첫글 기념.
 category: 'life'
 tags:
