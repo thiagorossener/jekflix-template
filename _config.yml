@@ -1,9 +1,10 @@
+
 # Site Settings
 title: blog
 email: helllzzzooo@gmail.com
 description: Jamy Story
-baseurl: "https://crazyjamy.github.io/blog/"
-url:  #the base hostname & protocol for your site
+baseurl: /
+url: "https://crazyjamy.github.io/blog" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
@@ -18,7 +19,7 @@ facebook_username: crazyjamy
 twitter_username: crazyJamy0
 instagram_username: crazy_life_user
 linkedin_username: linkedin_username
-medium_username: @jamy_
+medium_username: jamy_
 
 # Build settings
 markdown: kramdown
