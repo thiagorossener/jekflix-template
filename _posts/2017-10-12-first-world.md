@@ -4,7 +4,7 @@ title: "life"
 date: 2017-10-12 16:00:00
 image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRNZqKM85Z_obj1zlOBE2DCtQHdjmAnDQQsw7wW_N_A5svSB2p8Q'
 description: 첫글 기념.
-category: 'tutorial'
+category: 'life'
 tags:
 - jekyll
 - blahblah
