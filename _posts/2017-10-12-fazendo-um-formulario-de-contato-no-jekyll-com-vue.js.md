@@ -2,7 +2,7 @@
 layout: post
 title: "블로그 개설"
 date: 2017-10-12 16:00:00
-image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrUEdIp7nAZM67vV1EGYtmhnUo7Dj515jxQwcrhAEzKGQruLkSkw'
+image: '#'
 description: 첫글 기념.
 category: 'tutorial'
 tags:
