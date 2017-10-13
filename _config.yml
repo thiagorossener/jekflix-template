@@ -1,8 +1,8 @@
 
 # Site Settings
-title: blog
+title: JAMY
 email: helllzzzooo@gmail.com
-description: Jamy Story
+description: blog
 baseurl:
 url: "https://crazyjamy.github.io/blog/" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
