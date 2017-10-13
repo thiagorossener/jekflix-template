@@ -1,24 +1,25 @@
+
 # Site Settings
-title: Jekflix | A theme for Jekyll
-email: youremail@xyz.com
-description: Some text about your blog.
-baseurl: "/jekflix-template" # the subpath of your site, e.g. /blog
-url: "https://www.rossener.com" # the base hostname & protocol for your site
+title: JAMY
+email: helllzzzooo@gmail.com
+description: blog
+baseurl:
+url: "https://crazyjamy.github.io/blog/" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
-username: Jekflix
-user_description: Some text about you.
+username: jamy
+user_description: just a designer.
 disqus_username: disqus_username
 
 # Social Media
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
+github_username: crazyjamy
+facebook_username: crazyjamy
+twitter_username: crazyJamy0
+instagram_username: crazy_life_user
 linkedin_username: linkedin_username
-medium_username: medium_username
+medium_username: jamy_
 
 # Build settings
 markdown: kramdown
@@ -30,14 +31,12 @@ gems:
   - jemoji
 
 # Links to include in menu navigation
-# For external links add external: true
 links:
   - title: Home
     url: /
   - title: About
     url: /about/
-  - title: Contact
-    url: /contact/
+#  - title: Contact url: /contact/
 
 # Exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
