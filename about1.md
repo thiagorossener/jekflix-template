@@ -2,10 +2,10 @@
 layout: page
 title: About
 description: Some description.
-permalink: /about/
+permalink: /about1/
 ---
 
-<img itemprop="image" class="img-rounded" src="http://res.cloudinary.com/dm7h7e8xj/image/upload/c_fill,h_200,w_200/v1504971955/neo_ruqszk.jpg" alt="Your Name">
+<img itemprop="image" class="img-rounded" src="http://res.cloudinary.com/dykavvkou/image/upload/v1511024989/profile_sf98xq.jpg" alt="Rishi Bhalodia">
 
 ## About
 
