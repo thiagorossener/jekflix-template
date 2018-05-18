@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "box-shadow ou filter: drop-shadow?"
-date: 2017-08-14 22:55:45
+date: 2018-05-16 22:55:45
 image: 'https://www.google.co.in/imgres?imgurl=http%3A%2F%2Fblog.stoneriverelearning.com%2Fwp-content%2Fuploads%2F2016%2F03%2Fansible.png&imgrefurl=http%3A%2F%2Fblog.stoneriverelearning.com%2Fwhat-is-ansible-and-how-does-it-work%2F&docid=_BhCG6oNupSvmM&tbnid=b1iX__ChVDtdPM%3A&vet=10ahUKEwil9pXx6o_bAhUKso8KHSpIDjcQMwhjKAAwAA..i&w=800&h=800&bih=742&biw=1264&q=ansible&ved=0ahUKEwil9pXx6o_bAhUKso8KHSpIDjcQMwhjKAAwAA&iact=mrc&uact=8'
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 category: 'css'
