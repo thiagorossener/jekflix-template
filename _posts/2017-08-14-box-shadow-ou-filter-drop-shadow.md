@@ -2,7 +2,7 @@
 layout: post
 title: "Ansible Installation"
 date: 2018-05-16 22:55:45
-image: 'http://blog.stoneriverelearning.com/wp-content/uploads/2016/03/ansible.png'
+image: http://blog.stoneriverelearning.com/wp-content/uploads/2016/03/ansible.png
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 category: 'ANSIBLE'
 tags:
