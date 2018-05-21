@@ -20,7 +20,7 @@ Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur puru
 
 ## Inline HTML elements
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the <br/> [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+HTML defines a long list of available inline tags, a complete list of which can be found on the <br/>  <br/> <br/> <br/> <br/> <br/> <br/> [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
 - **To bold text**, use `<strong>`.
 - *To italicize text*, use `<em>`.
