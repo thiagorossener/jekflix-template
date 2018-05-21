@@ -5,6 +5,7 @@ description: Sumit's official blog site.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "Sumit-Kumar-Jha.github.io" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
+logo: logo.jpg
 
 # User Settings
 username: Sumit
