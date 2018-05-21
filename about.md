@@ -5,7 +5,7 @@ description: Some description.
 permalink: /about/
 ---
 
-<img itemprop="image" class="img-rounded" src="{{ site.base_url }}/assets/img/{{ logo.jpg }}" alt="Sumit Kumar Jha">
+<img itemprop="image" class="img-rounded" src="{{ site.baseurl }}/assets/img/{{ site.logo }}" alt="Sumit Kumar Jha">
 
 ## About
 
