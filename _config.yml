@@ -2,8 +2,8 @@
 title: Sumit Kumar Jha
 email: youremail@xyz.com
 description: Sumit's official blog site.
-baseurl: "sumitjha.tech" # the subpath of your site, e.g. /blog
-url: "/" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "sumitjha.tech" # the base hostname & protocol for your site
 google_analytics: "UA-119590752-1"
 logo: logo.jpg
 
