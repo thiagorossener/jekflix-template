@@ -14,12 +14,12 @@ disqus_username: somusumit
 
 # Social Media
 # Remove the item if you don't need it
-github_username: Sumit-Kumar-Jha
-facebook_username: facebook_username
+#github_username:
+#facebook_username: facebook_username
 twitter_username: somusumit
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+#instagram_username: instagram_username
+linkedin_username: somu.sumit
+#medium_username: medium_username
 
 # Build settings
 markdown: kramdown
