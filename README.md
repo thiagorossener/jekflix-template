@@ -38,7 +38,7 @@ A template for Jekyll inspired by Netflix panel for who loves movies and series 
 1. Install Jekyll (use the command `gem install jekyll`)
 1. Fork the [Jekflix Template](https://github.com/thiagorossener/jekflix-template/fork)
 1. Clone the repo you just forked
-1. Edit `_config.yml` to personalize your site
+1. Edit `_config.yml` to personalize your site. 
 1. Check out the sample posts in `_posts` to see examples for assigning category, tags, image and other YAML data
 1. Read the documentation below for further customization pointers and documentation
 1. Remember to compile your assets files with Gulp
@@ -49,6 +49,7 @@ In order to compile the assets and run Jekyll on local you need to follow those 
 
 - Install [NodeJS](https://nodejs.org/) (remember to use the latest version)
 - Run `npm install`
+- Run `npm install -g gulp gulp-cli`
 - Open `_config.yml` and change to:
 ```
 baseurl: ""
