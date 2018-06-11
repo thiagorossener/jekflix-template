@@ -35,7 +35,7 @@ A template for Jekyll inspired by Netflix panel for who loves movies and series 
 
 ## Setup
 
-1. Install Jekyll (use the command `sudo gem install jekyll`)
+1. Install Jekyll (use the command `gem install jekyll`)
 1. Fork the [Jekflix Template](https://github.com/thiagorossener/jekflix-template/fork)
 1. Clone the repo you just forked
 1. Edit `_config.yml` to personalize your site
@@ -43,6 +43,18 @@ A template for Jekyll inspired by Netflix panel for who loves movies and series 
 1. Read the documentation below for further customization pointers and documentation
 1. Remember to compile your assets files with Gulp
 
+## Running local
+
+In order to compile the assets and run Jekyll on local you need to follow those steps:
+
+- Install [NodeJS](https://nodejs.org/) (remember to use the latest version)
+- Run `npm install`
+- Open `_config.yml` and change to:
+```
+baseurl: ""
+url: ""
+```
+- Run `gulp`
 
 ## Settings
 
@@ -129,18 +141,9 @@ introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do e
 
 **Your image size should have the proportion of a 600x315 image to look good on home page.**
 
-## Run locally
-
-In order to compile the assets and run Jekyll on local you need to follow those steps:
-
-- Install [NodeJS](https://nodejs.org/) (remember to use the latest version)
-- Run `sudo npm install`
-- Run `sudo npm install -g gulp gulp-cli`
-- Run `sudo gulp`
-
 ## Questions?
 
-Ping me on Twitter [@thiagorossener](https://twitter.com/thiagorossener) or file a [GitHub Issue](https://github.com/thiagorossener/jekflix-template/issues/new).
+File a [GitHub Issue](https://github.com/thiagorossener/jekflix-template/issues/new) please.
 
 ## Donation
 

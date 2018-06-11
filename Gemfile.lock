@@ -27,8 +27,6 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-redirect-from (0.12.1)
-      jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -70,7 +68,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-redirect-from
   jemoji
   rouge
 
