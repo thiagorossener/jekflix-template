@@ -7,7 +7,7 @@ layout: main
     {% for post in site.posts %}
         <article class="box-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
             <span class="category">
-                <a href="{{ site.url }}{{ site.baseurl }}/categoria/{{ post.category }}">
+                <a href="{{ site.url }}{{ site.baseurl }}/category/{{ post.category }}">
                     <span>{{ post.category }}</span>
                 </a>
             </span>

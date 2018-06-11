@@ -1,6 +1,8 @@
 .idea
 .DS_Store
 .sass-cache
+Gemfile.lock
+package-json.lock
 _site
 node_modules
 _drafts
