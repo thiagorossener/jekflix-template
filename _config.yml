@@ -1,24 +1,24 @@
 # Site Settings
-title: Jekflix | A theme for Jekyll
-email: youremail@xyz.com
+title: Unidecode | Experimentando y compartiendo usando azucar sintáctico
+# email: youremail@xyz.com
 description: Some text about your blog.
-baseurl: "/jekflix-template" # the subpath of your site, e.g. /blog
-url: "https://www.rossener.com" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://unidecode.github.io" # the base hostname & protocol for your site
+google_analytics: "UA-126220967-1"
 
 # User Settings
-username: Jekflix
-user_description: Some text about you.
-disqus_username: disqus_username
+username: Unidecode
+user_description: Experimentando y compartiendo usando azucar sintáctico
+disqus_username: cnexans
 
 # Social Media
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: unidecode-org
+# facebook_username: facebook_username
+twitter_username: unidecode
+# instagram_username: instagram_username
+# linkedin_username: linkedin_username
+# medium_username: medium_username
 
 # Build settings
 markdown: kramdown
@@ -29,6 +29,9 @@ permalink: /:title/
 gems:
   - jemoji
 
+plugins:
+  - jekyll-redirect-from
+
 # Links to include in menu navigation
 # For external links add external: true
 links:
@@ -36,8 +39,6 @@ links:
     url: /
   - title: About
     url: /about/
-  - title: Contact
-    url: /contact/
 
 # Exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']

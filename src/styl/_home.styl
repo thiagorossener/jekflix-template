@@ -22,7 +22,7 @@ main
     padding 0 rem(15px)
 
 .box-item
-    flex 1 0 300px
+    flex 0 0 300px
     margin 0 0 rem(30px)
     display inline-block
     min-height rem(285px)
@@ -40,7 +40,7 @@ main
             transform scale(1.05)
         .box-body
             time, p
-                color accentDark
+                color lightText
             .new-post:after
                 background-color #000
             .cover
@@ -58,9 +58,9 @@ main
         font-size rem(18px)
         padding 0 rem(15px)
         a
-            color accentDark
+            color lightText
     .box-body
-        img 
+        img
             width 100%
             height auto
             margin 0 auto
@@ -80,7 +80,7 @@ main
                 color 
         p
             margin 0 0 rem(30px)
-            color darken(lightGray, 20%)
+            color darken(lightText, 20%)
             font-size rem(17px)
             line-height rem(26px)
         .tags a
@@ -94,15 +94,15 @@ main
             margin 0 rem(10px) rem(10px) 0
             z-index 50
             &:hover
-                color primaryDark
+                color #1f1a14
                 background accentDark
                 border-color accentDark
         .new-post:after
-            content 'New post'
+            content 'Nuevo'
             text-transform uppercase
             display inline-block
             background themeColor
-            color #fff
+            color primaryDark
             font-size rem(13px)
             font-weight 700
             line-height rem(24px)
@@ -128,7 +128,7 @@ main
                 left 50%
                 margin-top rem(-40px)
                 margin-left rem(-40px)
-                border 2px solid #fff
+                border 2px solid #f5e9db
                 z-index 1000
             .preload
                 background url(../../assets/img/icons/preloader.svg) center center no-repeat
