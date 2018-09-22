@@ -20,6 +20,7 @@
         text-decoration none
         border none
         transition all .3s
+        fill lightText
         &:hover
             fill themeColor
     img
@@ -42,7 +43,7 @@
         a
             mainFont()
             text-decoration none
-            color black
+            color themeColor
             font-size rem(30px)
             &:hover
                 color texts
@@ -53,5 +54,6 @@
         margin rem(10px)
         font-size rem(16px)
         line-height rem(25px)
+        color: lightText
         +above(cut)
             font-size rem(18px)

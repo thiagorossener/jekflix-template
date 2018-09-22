@@ -5,13 +5,9 @@ description: Some description.
 permalink: /about/
 ---
 
-<img itemprop="image" class="img-rounded" src="http://res.cloudinary.com/dm7h7e8xj/image/upload/c_fill,h_200,w_200/v1504971955/neo_ruqszk.jpg" alt="Your Name">
+## Acerca de Unidecode
 
-## About
+Unicode es un proyecto que nace a raíz de las nuevas tecnologías emergentes para
+impulsar en el mundo hispano el conocimiento y el arte de experimentar. Hace una decena de años, los jóvenes hacían parte y vida en comunidades de aprendizaje, eran hackers que ahora están en el mundo profesional y usan Stackoverflow. Las tendencias se van moviendo, la gente va madurando pero la necesidad de emprender como tecnólogos sigue creciendo.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Este espacio está pensado para todos los jóvenes hackers que quieren explorar nuevos horizontes, nos proponemos ser un espacio colaborativo de conocimiento que va a ir creciendo. Unidecode es la wikipedia de hackers y entiendase hackers por aquellos quienes quieren hacer del mundo un mejor lugar, con tecnología y la curiosidad de un científico.
