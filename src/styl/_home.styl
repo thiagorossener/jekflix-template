@@ -8,7 +8,7 @@ main
 
 .row
     center(100%)
-    margin 0px 10px
+    margin 0px rem(rowMargin)
     
 .flex-grid
     display flex
@@ -22,7 +22,7 @@ main
     padding 0 rem(15px)
 
 .box-item
-    flex 1 0 300px
+    flex 1 0 itemMinWidth
     margin 0 0 rem(30px)
     display inline-block
     min-height rem(285px)
@@ -30,7 +30,13 @@ main
     position relative
     z-index 1
     +above(cut)
-        margin 0 rem(15px) rem(30px)
+        margin 0 rem(itemMargin) rem(30px)
+    // Fix leftover box item sizes up to 4K screen resolutions
+    factor = ceil((unit(max, px) - 2 * unit(rowMargin, px))/unit(itemMinWidth, px))
+    for n in (2..factor)
+        resolution = (2 * rowMargin) + (n * itemMinWidth)
+        +above(resolution)
+            max-width "calc(100%/%s - %s)" % (n itemMargin * 2)
     &:hover
         z-index 2
         transform scale(1.1)
