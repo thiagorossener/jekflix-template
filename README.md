@@ -31,6 +31,7 @@ A template for Jekyll inspired by Netflix panel for who loves movies and series 
 - Sitemap.xml
 - Info Customization
 - Disqus
+- Pagination
 - Google Analytics
 
 ## Setup

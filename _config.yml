@@ -24,10 +24,13 @@ medium_username: medium_username
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
+paginate: 21
+paginate_path: "/page/:num/"
 
 # Plugins
 plugins:
   - jemoji
+  - jekyll-paginate
 
 # Links to include in menu navigation
 # For external links add external: true

@@ -1,0 +1,30 @@
+.pagination
+    display flex
+    align-items center
+    justify-content center
+    width 100%
+    margin 0 auto
+
+    a.next,
+    a.previous
+        width: 40px
+        height: 40px
+        svg
+            width calc("100% - 20px", 50%)
+            height calc("100% - 20px", 50%)
+            fill #fff
+            margin 10px
+            transition all .3s ease
+        &:hover > svg
+            fill themeColor
+
+    a.previous
+        svg
+            transform rotate(180deg)
+
+
+    .page_number
+        color #fff
+        font-size rem(17px)
+        line-height rem(22px)
+        margin 0 rem(10px)
