@@ -1,9 +1,11 @@
+---
+---
 <svg width="50" height="50" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="a">
-            <stop stop-color="#ff0a16" stop-opacity="0" offset="0%"/>
-            <stop stop-color="#ff0a16" stop-opacity=".631" offset="63.146%"/>
-            <stop stop-color="#ff0a16" offset="100%"/>
+            <stop stop-color="{{ site.svg_color }}" stop-opacity="0" offset="0%"/>
+            <stop stop-color="{{ site.svg_color }}" stop-opacity=".631" offset="63.146%"/>
+            <stop stop-color="{{ site.svg_color }}" offset="100%"/>
         </linearGradient>
     </defs>
     <g fill="none" fill-rule="evenodd">
@@ -17,7 +19,7 @@
                     dur="1.9s"
                     repeatCount="indefinite" />
             </path>
-            <circle fill="#ff0a16" cx="36" cy="18" r="1">
+            <circle fill="{{ site.svg_color }}" cx="36" cy="18" r="1">
                 <animateTransform
                     attributeName="transform"
                     type="rotate"
