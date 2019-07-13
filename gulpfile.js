@@ -95,7 +95,7 @@ function imagemin () {
 function watch() {
   gulp.watch('src/styl/**/*.styl', ['stylus']);
   gulp.watch('src/js/**/*.js', ['js']);
-  gulp.watch(['**/*.html','index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+  gulp.watch(['**/*.html','index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyllrebuild']);
 }
 
 /**
