@@ -24,15 +24,15 @@ permalink: /contact/
         <input type="hidden" name="_language" value="en" />
 
         <input type="text" name="name" placeholder="Your name" v-validate="'required'"
-               :class="{ 'has-error': errors.has('name') }">
+              v-bind:class="{ 'has-error': errors.has('name') }">
         <span v-if="errors.has('name')" v-cloak>${ errors.first('name') }</span>
 
         <input type="text" name="email" placeholder="Your e-mail" v-validate="'required|email'"
-               :class="{ 'has-error': errors.has('email') }">
+              v-bind:class="{ 'has-error': errors.has('email') }">
         <span v-if="errors.has('email')" v-cloak>${ errors.first('email') }</span>
 
         <textarea name="message" onkeyup="adjust_textarea(this)" placeholder="Your message" v-validate="'required'"
-                  :class="{ 'has-error': errors.has('message') }"></textarea>
+              v-bind:class="{ 'has-error': errors.has('message') }"></textarea>
         <span v-if="errors.has('message')" v-cloak>${ errors.first('message') }</span>
 
         <button type="submit">Send</button>
