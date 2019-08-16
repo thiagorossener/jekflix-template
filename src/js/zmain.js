@@ -9,7 +9,7 @@
   $("#mask").click(function() {
     $("body").removeClass("push-menu-to-right");
     $("#sidebar").removeClass("open");
-    $(".overlay").removeClass("show");
+    $(".overlay").removeClass("show"); 
   });
 
   // Search
