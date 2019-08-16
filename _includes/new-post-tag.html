@@ -1,0 +1,7 @@
+{% capture weekago %}{{ "now" | date: "%s" | minus: 604800 }}{% endcapture %}
+{% capture posttime %}{{ include.date | date: "%s" }}{% endcapture %}
+{% if posttime > weekago %}
+{% assign isnewpost = true %}
+{% else %}
+{% assign isnewpost = false %}
+{% endif %}

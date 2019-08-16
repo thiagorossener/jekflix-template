@@ -1,0 +1,41 @@
+{
+  "name": "jekflix-pro-template",
+  "version": "1.0.0",
+  "description": "A Jekyll theme inspired by Netflix",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagorossener/jekflix-pro-template"
+  },
+  "keywords": [
+    "jekyll",
+    "blog",
+    "css",
+    "js",
+    "gulp",
+    "stylus"
+  ],
+  "author": "Thiago Rossener",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagorossener/jekflix-pro-template/issues"
+  },
+  "homepage": "https://github.com/thiagorossener/jekflix-pro-template#readme",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.14.0",
+    "browser-sync": "^2.18.13",
+    "child_process": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-include": "^2.4.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-yaml": "^2.0.4",
+    "jeet": "^7.1.0",
+    "kouto-swiss": "^1.1.0",
+    "minimist": "^1.2.0",
+    "rupture": "^0.6.2"
+  }
+}

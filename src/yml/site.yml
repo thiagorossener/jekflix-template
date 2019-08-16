@@ -1,0 +1,9 @@
+name: Jekflix Pro
+title: Jekflix Pro | A theme for Jekyll
+description: Some text about your site.
+tags:
+  - blog
+  - development
+email: youremail@xyz.com
+disqus_username: disqus_username
+show_hero: true
