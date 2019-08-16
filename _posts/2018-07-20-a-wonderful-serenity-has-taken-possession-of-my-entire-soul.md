@@ -2,7 +2,7 @@
 layout: post
 title: "A wonderful serenity has taken possession of my entire soul"
 date: 2018-07-20 12:26:40
-image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1504023028/braziljs-2017_mazdtw.jpg'
+image: 'https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1504023028/braziljs-2017_mazdtw.jpg'
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 category: 'blog'
 tags:

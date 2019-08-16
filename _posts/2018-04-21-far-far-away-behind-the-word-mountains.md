@@ -2,7 +2,7 @@
 layout: post
 title: "Far far away behind the word mountains"
 date: 2018-04-21 12:26:40
-image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/v1506567296/sniper-americano_wmr1a2.jpg'
+image: 'https://res.cloudinary.com/dm7h7e8xj/image/upload/v1506567296/sniper-americano_wmr1a2.jpg'
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 category: 'framework'
 tags:

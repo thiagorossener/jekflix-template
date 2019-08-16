@@ -2,7 +2,7 @@
 layout: post
 title: "Desafio aceito. Fazendo uma app do Dribbble do zero"
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1504807658/barney-stinson_eqt7kc.jpg'
+image: 'https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1504807658/barney-stinson_eqt7kc.jpg'
 category: 'mobile'
 tags:
 - app

@@ -2,7 +2,7 @@
 layout: post
 title: "The quick brown fox jumps over a lazy dog"
 date: 2018-10-09 12:26:40
-image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1506079212/jekflix-capa_vfhuzh.png'
+image: 'https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1506079212/jekflix-capa_vfhuzh.png'
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 category: 'css'
 tags:
