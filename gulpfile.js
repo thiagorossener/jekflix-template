@@ -40,13 +40,13 @@ function jekyll(done) {
 }
 
 /**
- * Sync Task
+ * Server Task
  * 
  * Launch server using BrowserSync.
  * 
  * @param {*} done 
  */
-function sync(done) {
+function server(done) {
   browserSync({
     server: {
       baseDir: '_site'
@@ -154,4 +154,4 @@ function clean() {
  * - Launch BrowserSync & watch files
  */
 
-exports.default = gulp.series(clean, gulp.parallel(js, css, images), jekyll, gulp.parallel(sync, watch));
+exports.default = gulp.series(clean, gulp.parallel(js, css, images), jekyll, gulp.parallel(server, watch));
