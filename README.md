@@ -149,4 +149,4 @@ File a [GitHub Issue](https://github.com/thiagorossener/jekflix-pro-template/iss
 
 ## License
 
-*Jekflix Pro Template* is available under the MIT license. See the LICENSE file for more info.
+*Jekflix Template* is available under the MIT license. See the LICENSE file for more info.
