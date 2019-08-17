@@ -64,9 +64,14 @@
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "{{ site.name }}",
-  "headline": "{{ site.title }}",
   "description": "{{ site.description }}",
   "url": "{{ site.url }}{{site.baseurl}}/",
+  "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{site.baseurl}}/assets/img/icons/mediumtile.png",
+      "width": "600",
+      "height": "315"
+  },
   "sameAs": [
     {{ social_urls | split: "," | join: "," }}
   ]

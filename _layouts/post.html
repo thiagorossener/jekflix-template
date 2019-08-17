@@ -110,7 +110,7 @@
             "description": "{{ page.description }}",
             "image": "{{ page.image }}",
             "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-            "articleBody": "{{ content | strip_html }}",
+            "articleBody": "{{ content | strip_html | xml_escape | textilize }}",
             "wordcount": "{{ content | number_of_words }}",
             "inLanguage": "{{ site.language }}",
             "dateCreated": "{{ page.date | date: '%Y-%m-%d/' }}",
@@ -142,8 +142,8 @@
                 }
             },
             "mainEntityOfPage": "True",
-            "genre": "{{ page.category | capitalize }}",
-            "articleSection": "{{ page.category | capitalize }}",
+            "genre": "{{ page.category }}",
+            "articleSection": "{{ page.category }}",
             "keywords": [{{ page.tags | join: '","' | append: '"' | prepend: '"' }}]
         }
         </script>
