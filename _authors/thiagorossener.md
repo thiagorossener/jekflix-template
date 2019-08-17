@@ -1,6 +1,6 @@
 ---
 layout: author
-photo: /assets/img/uploads/profile.jpg
+photo: /src/img/uploads/profile.png
 name: thiagorossener
 display_name: Thiago Rossener
 position: Chief Editor
