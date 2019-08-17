@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 publish_mode: editorial_workflow
-media_folder: "assets/img/uploads"
+media_folder: "src/img/uploads"
 collections:
   - label: "Categories"
     name: "categories"
