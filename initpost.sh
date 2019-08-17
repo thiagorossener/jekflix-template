@@ -46,7 +46,7 @@ POSTPATH="${BINPATH}/_posts"
 DIST_FOLDER="$POSTPATH"
 
 # Set your blog URL
-BLOG_URL="https://rossener.com/"
+BLOG_URL="https://jekflix.rossener.com/"
 
 # Set your assets URL
 ASSETS_URL="assets/img/"
@@ -110,15 +110,16 @@ EOT
 initpost_content() {
 
 echo "---"
+echo "date: ${CURRENT_DATE} ${TIME}"
 echo "layout: post"
 echo "title: \"${POST_TITLE}\""
 echo "subtitle:"
 echo "description:"
-echo "image: ''"
-echo "category: ''"
+echo "image:"
+echo "optimized_image:"
+echo "category:"
 echo "tags:"
-echo "date: ${CURRENT_DATE} ${TIME}"
-echo "paginate: false"
+echo "author:"
 echo "---"
 
 }

@@ -41,30 +41,29 @@
         mainFont(400)
         font-size rem(17px)
         line-height rem(30px)
-        letter-spacing 0.05rem
+        letter-spacing 0.025rem
         padding 0 rem(20px)
-        margin 0 auto rem(20px)
+        margin rem(20px) auto rem(20px)
         +above(cut)
             font-size rem(20px)
             line-height rem(40px)
-            margin 0 auto rem(29px)
+            margin rem(29px) auto rem(29px)
     h1.post-title 
-        margin 0 auto
-        line-height rem(40px)
-        +above(cut)
-            line-height rem(60px)
-            margin 0 auto rem(10px)
+        line-height 1.2
+        margin rem(5px) auto rem(10px)
     p.post-subtitle
         color: darken(lightGray,30%)
         font-size: rem(17px)
-        margin 0 auto rem(10px)
-        line-height rem(30px)
+        margin rem(10px) auto
+        line-height 1.6
         +above(cut)
             font-size rem(20px)
-            line-height rem(40px)
     img.post-cover
+        padding 0
+        margin-top rem(20px)
         margin-bottom rem(20px)
         +above(cut)
+            margin-top rem(29px)
             margin-bottom rem(29px)
     p.post-info
         mainFont(300)
@@ -73,7 +72,7 @@
         color: darken(lightGray,30%)
         margin 0 auto
         +above(cut)
-            font-size rem(16px)
+            font-size rem(15px)
         span, time
             vertical-align middle
         time
@@ -88,26 +87,31 @@
         color texts
         code
             font-size rem(15px)
-            color #bf616a
+            background #222
+            color #fff
             word-wrap break-word
-            background lightGray
             padding rem(3px) rem(5px)
             border-radius 3px
             +above(cut)
                 font-size rem(17px)
     a
-        color #0000ee
+        color themeColor
         text-decoration none
+        &:hover
+            color #a9a9a9
     iframe
         margin-top rem(30px)
         width 100%
     h1, h2, h3, h4, h5, h6
         mainFont(700)
+        margin-top rem(30px)
+        +above(cut)
+            margin-top rem(40px)
     h1
-        font-size rem(32px)
+        font-size rem(36px)
         line-height 1.4
         +above(cut)
-            font-size rem(47px)
+            font-size rem(50px)
     h2
         font-size rem(24px)
         line-height 1.4
@@ -119,7 +123,7 @@
         +above(cut)
             font-size rem(27px)
     ul, ol
-        padding-left rem(40px)
+        padding-left rem(60px)
     ul.post-list
         padding 0 rem(20px)
         +above(cut)
@@ -150,8 +154,9 @@
         mainFont(400)
         font-size rem(17px)
         line-height rem(35px)
-        letter-spacing 0.05rem
+        letter-spacing 0.025rem
         margin rem(50px) auto
+        border-collapse collapse
         +above(cut)
             font-size rem(20px)
         th, td
@@ -276,6 +281,7 @@
 /* Recommendation */
 
 .recommendation
+    mainFont(400)
     position fixed
     left 0
     right 0
@@ -290,7 +296,10 @@
     +above(cut)
         padding rem(15px)
     .message
-        font-size rem(17px)
+        display flex
+        flex-direction column
+        justify-content space-between
+        font-size rem(16px)
         color #fff
         padding-right rem(20px)
         +above(cut)
@@ -299,9 +308,27 @@
             display block
             margin rem(10px) 0
         a
-            font-size rem(15px)
+            display inline-block
+            font-size rem(13px)
             color #fff
             text-decoration none
+            +above(cut)
+                font-size rem(15px)
+        svg
+            fill #fff
+            width rem(22px)
+            height rem(22px)
+            transform rotate(-90deg)
+            border 1px solid #fff
+            border-radius 50%
+            padding 5px
+            margin-right 10px
+            vertical-align middle
+            +above(cut)
+                width rem(28px)
+                height rem(28px)
+        span
+            vertical-align middle
     .post-preview
         display flex
         align-items center
@@ -326,17 +353,17 @@
             max-width rem(200px)
             transition all .3s
         .title
-            font-size (16px)
+            font-size rem(16px)
             color #fff
             margin rem(5px) 0
             transition all .3s
             +above(cut)
-                font-size (25px)
+                font-size rem(23px)
                 margin 0 0 0 rem(20px)
 
 .icon-clock, .icon-calendar
-    width rem(15px)
-    height rem(15px)
+    width rem(14px)
+    height rem(14px)
     fill darken(lightGray,30%)
     vertical-align middle
     margin-right rem(3px)
@@ -350,12 +377,11 @@
         font-size rem(18px)
         margin 0 auto rem(29px)
         margin-top rem(30px)
-        letter-spacing 0.01rem
+        letter-spacing 0.025rem
         line-height rem(40px)
         padding 0 rem(10px)
         +above(cut)
             font-size rem(20px)
-            letter-spacing 0.05rem
             padding 0
         a
             font-size rem(14px)
@@ -367,21 +393,25 @@
             margin-right rem(2px)
             margin-bottom rem(8px)
             text-decoration none
-            transition all .3s
             +above(cut)
                 border-width 2px
             &:hover
                 color accentDark
                 background-color primaryDark
-    span.tag-title
+    .tag-title
         mainFont(300)
         center(rem(800px))
         font-size rem(30px)
         margin-top rem(20px)
         padding 0 rem(10px)
+        span
+            padding rem(3px) rem(10px)
+            background-color themeColor
+            border-radius rem(5px)
+            color #fff
         +above(cut)
-            font-size rem(38px)
-            margin-top rem(60px)
+            font-size rem(22px)
+            margin-top rem(80px)
             padding 0
     a.post-anchor
         display block
@@ -400,10 +430,7 @@
             border-bottom 1px solid darken(lightGray,10%)
             padding rem(10px) 0
             text-decoration none
-            transition all .5s
             font-size rem(18px)
-            &:hover
-                border-bottom 1px solid themeColor
         .entry-date
             float right
             +below(cut)

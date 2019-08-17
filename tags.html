@@ -21,7 +21,9 @@ permalink: /tags/
 
 {% for tag in site.tags  %}
   <a class="post-anchor" id="{{ tag[0] | slugify }}"></a>
-  <span class="tag-title">#{{ tag[0] }}</span>
+  <div class="tag-title">
+    <span>#{{ tag[0] }}</span>
+  </div>
   <ul class="post-list">
       {% assign pages_list = tag[1] %}
       {% for post in pages_list reversed %}
