@@ -195,15 +195,6 @@ function images() {
 }
 
 /**
- * Clean Task
- * 
- * Delete assets.
- */
-function clean() {
-  return del(['assets/', '_site/assets/']);
-}
-
-/**
  * Watch Task
  * 
  * Watch files to run proper tasks.
@@ -238,23 +229,21 @@ function watch() {
  * Default Task
  *
  * Running just `gulp` will:
- * - Clean assets
  * - Compile the theme, Stylus and JavaScript files
  * - Optimize and copy images to its folder
  * - Build the config file
  * - Compile the Jekyll site
  * - Launch BrowserSync & watch files
  */
-exports.default = gulp.series(clean, gulp.parallel(js, gulp.series(theme, css), images), config, jekyll, gulp.parallel(server, watch));
+exports.default = gulp.series(gulp.parallel(js, gulp.series(theme, css), images), config, jekyll, gulp.parallel(server, watch));
 
 /**
  * Build Task
  * 
  * Running just `gulp build` will:
- * - Clean assets
  * - Compile the theme, Stylus and JavaScript files
  * - Optimize and copy images to its folder
  * - Build the config file
  * - Compile the Jekyll site
  */
-exports.build = gulp.series(clean, gulp.parallel(js, gulp.series(theme, css), images), config, jekyll);
+exports.build = gulp.series(gulp.parallel(js, gulp.series(theme, css), images), config, jekyll);
