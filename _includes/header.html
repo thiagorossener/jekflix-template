@@ -1,15 +1,18 @@
 <header class="bar-header">
-    <a id="menu">
+    <a id="menu" role="button">
         <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
-    </a>
-    <a id="search" class="dosearch">
-        <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
     </a>
     <h1 class="logo">
         <a href="{{ site.baseurl }}/">
             {{ site.name }} <span class="version">v2.0.0</span>
         </a>
     </h1>
+    <a id="search" class="dosearch" role="button">
+        <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
+    </a>
+    <a href="https://github.com/thiagorossener/jekflix-template" class="get-theme" role="button">
+        Get this theme!
+    </a>
 </header>
 
 <div id="mask" class="overlay"></div>
