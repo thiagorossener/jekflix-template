@@ -34,7 +34,6 @@ A template for Jekyll inspired by Netflix panel for who loves movies and series 
 - [Paginated posts](https://github.com/thiagorossener/jekflix-template/wiki/Features#paginated-posts) *(optional)*
 - ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/Features#before-you-go-modal) *(optional)*
 - [Post recommendation](https://github.com/thiagorossener/jekflix-template/wiki/Features#post-recommendation)
-- [SEO](https://github.com/thiagorossener/jekflix-template/wiki/Features#seo)
 - [Netlify CMS ready](https://github.com/thiagorossener/jekflix-template/wiki/Features#netlify-cms-ready)
 
 ## SEO
