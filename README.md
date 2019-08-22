@@ -48,6 +48,12 @@ A template for Jekyll inspired by Netflix panel for who loves movies and series 
 
 File a [GitHub Issue](https://github.com/thiagorossener/jekflix-template/issues/new) please.
 
+## Donation
+
+Did you like my work? Buy me a beer 😁🍺
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SAKL66RSDGH48&source=url)
+
 ## Author
 
 [Thiago Rossener](https://rossener.com/)
