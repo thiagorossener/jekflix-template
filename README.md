@@ -8,7 +8,7 @@ See the [demo here](https://jekflix.rossener.com/).
 
 ## What is it?
 
-A template for Jekyll inspired by Netflix panel for who loves movies and series and would like to have a blog with this cool appearance ;)
+A template for Jekyll inspired by Netflix panel for who loves movies and series and would like to have a blog with this cool appearance.
 
 ![Jekflix Screenshot Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1566390829/jekflix-screenshot-2_zfiog2.jpg)
 
@@ -44,9 +44,47 @@ A template for Jekyll inspired by Netflix panel for who loves movies and series 
 - Sitemap.xml
 - Social Media ready
 
+## Setup
+
+- [Environment](https://github.com/thiagorossener/jekflix-template/wiki/setup#environment)
+- [Installing template](https://github.com/thiagorossener/jekflix-template/wiki/setup#installing-template)
+- [Running local](https://github.com/thiagorossener/jekflix-template/wiki/setup#running-local)
+
+## Customization
+
+See the [settings documentation](https://github.com/thiagorossener/jekflix-template/wiki/settings) to customize your theme colors, layout, titles and more.
+
+## Posts
+
+You can create posts manually using the [Front Matter properties](https://github.com/thiagorossener/jekflix-template/wiki/post#front-matter-properties) or automatically using the available [script](https://github.com/thiagorossener/jekflix-template/wiki/post#creating-a-post).
+
+## Release notes
+
+### v2.0.0
+- Added optional [sidebar](https://github.com/thiagorossener/jekflix-template/wiki/Features#posts-sidebar)
+- Added optional [Featured post](https://github.com/thiagorossener/jekflix-template/wiki/features#featured-post)
+- Added optional ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/features#before-you-go-modal)
+- Added optional [post pagination](https://github.com/thiagorossener/jekflix-template/wiki/features#paginated-posts)
+- Added [post recommendation](https://github.com/thiagorossener/jekflix-template/wiki/features#post-recommendation)
+- Added meta keywords to improve SEO
+- Added JSON-LD to improve SEO
+- Changed pagination to be [optional](https://github.com/thiagorossener/jekflix-template/wiki/features#home-page-pagination)
+- Improved [Tags page](https://github.com/thiagorossener/jekflix-template/wiki/features#tags-page)
+- Cleaned up and improved [Front Matter properties](https://github.com/thiagorossener/jekflix-template/wiki/post#front-matter-properties)
+- Set up [Netlify CMS](https://github.com/thiagorossener/jekflix-template/wiki/features#netlify-cms-ready)
+- Improved customization settings
+- Minor design updates
+
+### v1.0.1
+- Fixed bugs
+- Upgraded to Gulp 4
+
+### v1.0.0
+- Initial release
+
 ## Questions?
 
-File a [GitHub Issue](https://github.com/thiagorossener/jekflix-template/issues/new) please.
+File a [GitHub issue](https://github.com/thiagorossener/jekflix-template/issues/new) please.
 
 ## Donation
 
@@ -60,4 +98,4 @@ Did you like my work? Buy me a beer 😁🍺
 
 ## License
 
-*Jekflix Template* is available under the MIT license. See the LICENSE file for more info.
+*Jekflix Template* is available under the MIT license. See the [LICENSE](https://github.com/thiagorossener/jekflix-template/blob/master/LICENSE) file for more info.
