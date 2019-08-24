@@ -28,7 +28,7 @@
         padding-bottom rem(10px)
     button[type="submit"]
         display block
-        padding 19px 39px 18px 39px
+        padding rem(14px) rem(39px) rem(14px) rem(39px)
         color #ffffff
         background themeColor
         font-size rem(18px)
@@ -42,5 +42,7 @@
         outline none
         &:hover
             background darken(themeColor, 20%)
+        +above(cut)
+            padding rem(19px) rem(39px) rem(18px) rem(39px)
     [v-cloak]
         display none

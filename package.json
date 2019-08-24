@@ -1,7 +1,7 @@
 {
   "name": "jekflix-template",
-  "version": "1.0.1",
-  "description": "A Jekyll template inspired by Netflix.",
+  "version": "2.0.0",
+  "description": "A Jekyll theme inspired by Netflix",
   "main": "gulpfile.js",
   "homepage": "https://github.com/thiagorossener/jekflix-template.git#readme",
   "repository": {
@@ -12,7 +12,8 @@
     "jekyll",
     "template",
     "theme",
-    "blog"
+    "blog",
+    "netlify"
   ],
   "author": "Thiago Rossener",
   "license": "MIT",
@@ -27,11 +28,13 @@
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^6.0.0",
+    "gulp-include": "^2.4.1",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^3.0.0",
+    "gulp-yaml": "^2.0.4",
     "jeet": "^7.1.0",
     "kouto-swiss": "^1.1.0",
     "rupture": "^0.6.2",

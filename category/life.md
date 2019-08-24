@@ -1,4 +1,6 @@
 ---
 layout: category
-category: 'life'
+title: Life
+slug: life
+description: A category for life related posts.
 ---

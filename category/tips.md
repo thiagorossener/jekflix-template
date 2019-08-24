@@ -1,4 +1,6 @@
 ---
 layout: category
-category: 'tips'
+title: Tips
+slug: tips
+description: A category for tips.
 ---

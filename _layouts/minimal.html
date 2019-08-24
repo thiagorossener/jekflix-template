@@ -3,18 +3,16 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="{{ site.language }}">
     {% include head.html %}
     <body class="has-push-menu">
         {% include svg-icons.html %}
         {% include header.html %}
         <section class="post">
-
-            <article id="post" class="post-content" role="main" itemprop="mainContentOfPage">
+            <article id="post" class="post-content fullwidth" role="main">
                 {{ content }}
             </article>
-
-            {% include footer.html %}
         </section>
+        {% include footer.html %}
     </body>
 </html>

@@ -13,13 +13,27 @@ body
     +above(cut)
         padding rem(15px) rem(0px)
     .logo
+        display inline-block
         margin 0
         height rem(32px)
         line-height rem(32px)
     .logo a
+        display block
         color accentDark
         text-decoration none
         font-size rem(32px)
+        position relative
+    .version
+        color accentDark
+        font-size rem(10px)
+        font-weight normal
+        line-height 1
+        position absolute
+        top 0
+        right 0
+        display block
+        transform translateX(110%)
+        opacity .3
     .icon-menu
         float left
         cursor pointer
@@ -38,17 +52,29 @@ body
         margin 0 0 0 0
         +above(cut)
             margin 0 rem(20px) 0 0
-
     .icon-search
         width rem(20px)
         height rem(20px)
         fill accentDark
         margin rem(5px)
+    .get-theme
+        display none
+        font-size rem(13px)
+        font-weight bold
+        text-decoration none
+        background-color themeColor
+        color accentDark
+        padding rem(5px) rem(10px)
+        border-radius rem(5px)
+        float right
+        margin rem(5px) rem(15px) rem(5px) rem(5px)
+        +above(cut)
+            display inline-block
 
 body.main-page
     background-color #141414
     .bar-header
-        background-color rgba(0,0,0,.7)
+        background-color rgba(0,0,0,.85)
         
 .overlay
     position fixed
