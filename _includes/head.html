@@ -86,4 +86,9 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.min.css' | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+
+    <!-- JavaScript enabled/disabled -->
+    <script>
+        document.querySelector('html').classList.remove('no-js');
+    </script>
 </head>
