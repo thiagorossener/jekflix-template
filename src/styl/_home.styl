@@ -108,18 +108,21 @@
                 color primaryDark
                 background accentDark
                 border-color accentDark
-        .new-post:after
-            content 'New post'
-            text-transform uppercase
-            display inline-block
-            background themeColor
-            color #fff
-            font-size rem(13px)
-            font-weight 700
-            line-height rem(24px)
-            padding 0 rem(8px)
-            position absolute
-            margin-top rem(-35px)
+        .new-post
+            position relative
+            &:after
+                content 'New post'
+                text-transform uppercase
+                display inline-block
+                background themeColor
+                color #fff
+                font-size rem(13px)
+                font-weight 700
+                line-height rem(24px)
+                padding 0 rem(8px)
+                position absolute
+                bottom rem(8px)
+                left 0
         .cover
             position relative
             a:before
