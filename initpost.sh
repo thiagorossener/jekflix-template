@@ -120,6 +120,8 @@ echo "optimized_image:"
 echo "category:"
 echo "tags:"
 echo "author:"
+echo "paginate: false"
+echo "toc: false"
 echo "---"
 
 }
