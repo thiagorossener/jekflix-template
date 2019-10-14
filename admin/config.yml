@@ -62,7 +62,7 @@ collections:
         allow_multiple: false
         required: false
       - label: "Optimized Image"
-        name: "image"
+        name: "optimized_image"
         widget: "image"
         allow_multiple: false
         required: false
