@@ -43,11 +43,11 @@
         line-height rem(30px)
         letter-spacing 0.025rem
         padding 0 rem(20px)
-        margin rem(20px) auto rem(20px)
+        margin rem(20px) auto 0
         +above(cut)
             font-size rem(20px)
             line-height rem(40px)
-            margin rem(29px) auto rem(29px)
+            margin rem(29px) auto 0
     h1.post-title 
         line-height 1.2
         margin rem(5px) auto rem(10px)
@@ -104,9 +104,11 @@
         width 100%
     h1, h2, h3, h4, h5, h6
         mainFont(700)
-        margin-top rem(30px)
+        margin-top 0
+        padding-top rem(50px)
         +above(cut)
-            margin-top rem(40px)
+            margin-top 0
+            padding-top rem(60px)
     h1
         font-size rem(36px)
         line-height 1.4
