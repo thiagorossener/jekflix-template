@@ -6,7 +6,7 @@
 
     if (recommendation) {
         // Back to top button
-        var goBackToTop = recommendation.querySelector('.message > a');
+        var goBackToTop = recommendation.querySelector('.message button');
         goBackToTop.addEventListener('click', function () {
             scrollToTop();
             return false;

@@ -1,7 +1,12 @@
 <div class="recommendation">
     <div class="message">
         <strong>Why don't you read something next?</strong>
-        <a href="javascript:void(0);">Go back to top</a>
+        <div>
+            <button>
+                <svg><use xlink:href="#icon-arrow-right"></use></svg>
+                <span>Go back to top</span>
+            </button>
+        </div>
     </div>
     {% if page.next %}
         {% assign recommendation = page.next %}

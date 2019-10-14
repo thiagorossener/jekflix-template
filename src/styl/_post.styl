@@ -51,6 +51,7 @@
     h1.post-title 
         line-height 1.2
         margin rem(5px) auto rem(10px)
+        padding-top 0
     p.post-subtitle
         color: darken(lightGray,30%)
         font-size: rem(17px)
@@ -79,10 +80,6 @@
             margin-right rem(10px)
             +above(cut)
                 margin-right rem(30px)
-    li 
-        padding rem(10px) 0
-        ul 
-        margin-bottom 0
     p, li
         color texts
         code
@@ -94,6 +91,13 @@
             border-radius 3px
             +above(cut)
                 font-size rem(17px)
+    li 
+        padding rem(10px) 0
+        ul 
+            margin-bottom 0
+        p
+            margin-bottom 0
+            margin-top 0
     a
         color themeColor
         text-decoration none
@@ -115,12 +119,12 @@
         +above(cut)
             font-size rem(50px)
     h2
-        font-size rem(24px)
+        font-size rem(28px)
         line-height 1.4
         +above(cut)
             font-size rem(37px)
     h3
-        font-size rem(20px)
+        font-size rem(22px)
         line-height 1.4
         +above(cut)
             font-size rem(27px)
@@ -309,11 +313,15 @@
         strong
             display block
             margin rem(10px) 0
-        a
+        button
+            background-color transparent
+            border 0
+            color #fff
+            cursor pointer
             display inline-block
             font-size rem(13px)
-            color #fff
             text-decoration none
+            outline 0
             +above(cut)
                 font-size rem(15px)
         svg
