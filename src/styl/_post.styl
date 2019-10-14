@@ -177,6 +177,24 @@
     td.gutter.gl
         padding-right rem(25px)
         line-height rem(24px)
+    h1, h2, h3, h4, h5, h6
+        position relative
+        .anchor
+            display none
+            height rem(16px)
+            left 0
+            margin-top rem(30px)
+            position absolute
+            top 50%
+            transform translate(-50%, -50%)
+            width rem(16px)
+            +above(cut)
+                display block
+                opacity 0
+            img
+                padding 0
+        &:hover .anchor, .anchor:hover
+            opacity 1
 
 /* Table of contents */
 
