@@ -209,14 +209,6 @@
                       ]);
         elements.push(postInfo);
 
-        // Featured Image
-        if (!paginate) {
-          var image = entry.getIn(['data', 'image']);
-          var bg = this.props.getAsset(image);
-          var featuredImage = h('img', {'className': 'post-cover', 'src': bg.toString()});
-          elements.push(featuredImage);
-        }
-
         // Post Title
         var postTitle = h('h1', {'className': 'post-title'}, entry.getIn(['data', 'title']));
         elements.push(postTitle);
@@ -224,6 +216,14 @@
         // Post Subtitle
         var postSubtitle = h('p', {'className': 'post-subtitle'}, entry.getIn(['data', 'subtitle']));
         elements.push(postSubtitle);
+
+        // Featured Image
+        if (!paginate) {
+          var image = entry.getIn(['data', 'image']);
+          var bg = this.props.getAsset(image);
+          var featuredImage = h('img', {'className': 'post-cover', 'src': bg.toString()});
+          elements.push(featuredImage);
+        }
 
         // Space
         if (paginate) {
