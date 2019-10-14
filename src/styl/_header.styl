@@ -9,7 +9,7 @@ body
     left 0
     width 100%
     z-index 10
-    transition top 0.5s, left 0.3s ease
+    transition top 0.5s, left 0.3s ease, background-color .5s, box-shadow .5s
     +above(cut)
         padding rem(15px) rem(0px)
     .logo
@@ -75,7 +75,16 @@ body.main-page
     background-color #141414
     .bar-header
         background-color rgba(0,0,0,.85)
-        
+
+body.light:not(.main-page)
+    .bar-header
+        box-shadow 0px 0px 1px 1px rgba(0,0,0,.1)
+        background-color rgba(255,255,255,.95)
+        .icon-search, .icon-menu
+            fill primaryDark
+        .logo a, .version
+            color primaryDark
+
 .overlay
     position fixed
     width 100%

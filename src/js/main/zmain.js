@@ -12,6 +12,17 @@
     $(".overlay").removeClass("show");
   });
 
+  // Header
+  $(window).scroll(function () {
+    var top = $(this).scrollTop();
+    if (top > 0) {
+      $("body").addClass("light");
+    }
+    else {
+      $("body").removeClass("light");
+    }
+  });
+
   // Modals
 
   var $closeBtn = $('.modal .close');
