@@ -72,16 +72,10 @@ paginate_content:
     single:
       is_generated: true
 
-# Table of contents
-toc:
-  max_level: 2
-  list_class: table-of-contents
-
 # Plugins
 plugins:
   - jekyll-paginate
   - jekyll-paginate-content
-  - jekyll-toc
 
 # Exclude my node related stuff
 exclude: [

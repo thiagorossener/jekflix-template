@@ -89,10 +89,6 @@ collections:
         name: "paginate"
         widget: "boolean"
         default: false
-      - label: "Table of contents"
-        name: "toc"
-        widget: "boolean"
-        default: false
       - label: "Body"
         name: "body"
         widget: "markdown"
