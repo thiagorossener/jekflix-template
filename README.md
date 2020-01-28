@@ -54,7 +54,17 @@ A template for Jekyll inspired by Netflix panel for who loves movies and series 
 
 ## Customization
 
-See the [settings documentation](https://github.com/thiagorossener/jekflix-template/wiki/settings) to customize your theme colors, layout, titles and more.
+See the [settings documentation](https://github.com/thiagorossener/jekflix-template/wiki/settings) to customize layout, titles, social media and more.
+
+## Theme
+
+You can easily change the theme colors by changing the file `src/yml/theme.yml`, then running `gulp build` in your terminal.
+
+### GitHub pages
+
+It's a known issue that you can't run `gulp` when deploying the website into GitHub pages. If that's your case, you can change the theme colors in `src/_config.yml` and again in `src/styl/theme.json`.
+
+> **Attention:** Bear in mind that if you run `gulp` or `gulp build` locally, then deploy it into GitHub pages, the changes you've made on the two files above will be overlapped by the colors from `src/yml/theme.yml`.
 
 ## Posts
 
