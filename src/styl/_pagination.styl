@@ -7,9 +7,9 @@
         margin 0 auto
         a.next,
         a.previous
-            width: 40px
-            height: 40px
-            svg
+            width rem(40px)
+            height rem(40px)
+            .arrow
                 width calc("100% - 20px", 50%)
                 height calc("100% - 20px", 50%)
                 fill #fff
@@ -18,7 +18,7 @@
             &:hover > svg
                 fill themeColor
         a.previous
-            svg
+            .arrow
                 transform rotate(180deg)
         .page_number
             color #fff
@@ -49,7 +49,7 @@
             &:hover
                 -webkit-filter grayscale(100%)
                 filter grayscale(100%)
-            svg
+            .arrow
                 width rem(14px)
                 height rem(14px)
                 fill themeColor
