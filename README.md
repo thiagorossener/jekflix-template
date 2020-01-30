@@ -72,6 +72,10 @@ You can create posts manually using the [Front Matter properties](https://github
 
 ## Release notes
 
+### v2.0.1
+- Fixed bugs
+- Optimized to support disabled JS
+
 ### v2.0.0
 - Added optional [sidebar](https://github.com/thiagorossener/jekflix-template/wiki/Features#posts-sidebar)
 - Added optional [Featured post](https://github.com/thiagorossener/jekflix-template/wiki/features#featured-post)
