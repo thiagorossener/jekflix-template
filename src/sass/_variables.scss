@@ -1,0 +1,26 @@
+/**
+ * Set up here the general appearance of the theme.
+ */
+ 
+// Breakpoints
+$breakpoints: (
+  sm: 37.5rem
+);
+
+// Margins
+$rowMargin: 10px;
+$itemMargin: 15px;
+
+// Sizes
+$itemMinWidth: 300px;
+
+// Settings
+$maxItemsPerRow: 6;
+
+// Colors
+
+$themeColor:  #ff0a16;
+$primaryDark: #141414;
+$accentDark:  #ffffff;
+$lightGray:   #f2f2f2;
+$texts:       #333333;

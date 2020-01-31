@@ -1,20 +1,23 @@
-let gulp        = require('gulp'),
-    concat      = require('gulp-concat'),
-    imagemin    = require('gulp-imagemin'),
-    include     = require('gulp-include'),
-    plumber     = require('gulp-plumber'),
-    rename      = require('gulp-rename'),
-    sourcemaps  = require('gulp-sourcemaps'),
-    stylus      = require('gulp-stylus'),
-    uglify      = require('gulp-uglify'),
-    yaml        = require('gulp-yaml'),
-    prefixer    = require('autoprefixer-stylus'),
-    browserSync = require('browser-sync'),
-    cp          = require('child_process'),
-    del         = require('del'),
-    jeet        = require('jeet'),
-    koutoSwiss  = require('kouto-swiss'),
-    rupture     = require('rupture');
+let gulp         = require('gulp'),
+    concat       = require('gulp-concat'),
+    imagemin     = require('gulp-imagemin'),
+    include      = require('gulp-include'),
+    plumber      = require('gulp-plumber'),
+    postcss      = require('gulp-postcss'),
+    rename       = require('gulp-rename'),
+    sass         = require('gulp-sass'),
+    sourcemaps   = require('gulp-sourcemaps'),
+    // stylus       = require('gulp-stylus'),
+    uglify       = require('gulp-uglify'),
+    yaml         = require('gulp-yaml'),
+    // prefixer     = require('autoprefixer-stylus'),
+    autoprefixer = require('autoprefixer'),
+    browserSync  = require('browser-sync'),
+    cssnano      = require('cssnano'),
+    cp           = require('child_process');
+    // jeet         = require('jeet'),
+    // koutoSwiss   = require('kouto-swiss'),
+    // rupture      = require('rupture');
 
 /**
  * Notify
@@ -91,7 +94,7 @@ function reload(done) {
 function theme() {
   return gulp.src('src/yml/theme.yml')
     .pipe(yaml({ schema: 'DEFAULT_SAFE_SCHEMA' }))
-    .pipe(gulp.dest('src/styl/'));
+    .pipe(gulp.dest('src/sass/'));
 }
 
 /**
@@ -100,14 +103,34 @@ function theme() {
  * The regular Stylus files are run through kouto-swiss/prefixer/jeet/rupture
  * and placed into one single main styles.min.css file (and sourcemap)
  */
+// function mainCss() {
+//   notify('Compiling styles...');
+//   return gulp.src('src/styl/main.styl')
+//     .pipe(sourcemaps.init())
+//     .pipe(stylus({
+//       use: [koutoSwiss(), prefixer(), jeet(), rupture()],
+//       compress: true
+//     }))
+//     .pipe(rename('styles.min.css'))
+//     .pipe(plumber())
+//     .pipe(sourcemaps.write('.'))
+//     .pipe(gulp.dest('_site/assets/css/'))
+//     .pipe(browserSync.reload({ stream: true }))
+//     .pipe(gulp.dest('assets/css'));
+// }
 function mainCss() {
   notify('Compiling styles...');
-  return gulp.src('src/styl/main.styl')
+  return gulp.src('src/sass/main.scss')
     .pipe(sourcemaps.init())
-    .pipe(stylus({
-      use: [koutoSwiss(), prefixer(), jeet(), rupture()],
-      compress: true
-    }))
+    .pipe(sass({
+      includePaths: [
+        'node_modules/'
+      ]
+    }).on('error', sass.logError))
+    .pipe(postcss([
+        autoprefixer,
+        cssnano
+    ]))
     .pipe(rename('styles.min.css'))
     .pipe(plumber())
     .pipe(sourcemaps.write('.'))
@@ -122,28 +145,29 @@ function mainCss() {
  * The preview Stylus file is run through kouto-swiss/prefixer/jeet/rupture
  * and placed into one single preview.min.css file (and sourcemap)
  */
-function previewCss() {
-  notify('Compiling styles...');
-  return gulp.src('src/styl/preview.styl')
-    .pipe(sourcemaps.init())
-    .pipe(stylus({
-      use: [koutoSwiss(), prefixer(), jeet(), rupture()],
-      compress: true
-    }))
-    .pipe(rename('preview.min.css'))
-    .pipe(plumber())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('_site/assets/css/'))
-    .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('assets/css'));
-}
+// function previewCss() {
+//   notify('Compiling styles...');
+//   return gulp.src('src/styl/preview.styl')
+//     .pipe(sourcemaps.init())
+//     .pipe(stylus({
+//       use: [koutoSwiss(), prefixer(), jeet(), rupture()],
+//       compress: true
+//     }))
+//     .pipe(rename('preview.min.css'))
+//     .pipe(plumber())
+//     .pipe(sourcemaps.write('.'))
+//     .pipe(gulp.dest('_site/assets/css/'))
+//     .pipe(browserSync.reload({ stream: true }))
+//     .pipe(gulp.dest('assets/css'));
+// }
 
 /**
  * CSS Task
  * 
  * Run all the CSS related tasks.
  */
-const css = gulp.parallel(mainCss, previewCss);
+// const css = gulp.parallel(mainCss, previewCss);
+const css = gulp.parallel(mainCss);
 
 /**
  * Main JS Task
@@ -208,10 +232,11 @@ function watch() {
   gulp.watch(['src/yml/theme.yml'], gulp.series(theme, css, config, jekyll, reload));
 
   // Watch stylus files for changes & rebuild styles
-  gulp.watch(['src/styl/**/*.styl', '!src/styl/preview.styl'], gulp.series(theme, mainCss));
+  // gulp.watch(['src/styl/**/*.styl', '!src/styl/preview.styl'], gulp.series(theme, mainCss));
+  gulp.watch(['src/sass/**/*.scss', '!src/sass/preview.scss'], gulp.series(theme, mainCss));
 
   // Watch preview style file for changes, rebuild styles & reload
-  gulp.watch('src/styl/preview.styl', gulp.series(theme, previewCss, reload));
+  // gulp.watch('src/styl/preview.styl', gulp.series(theme, previewCss, reload));
 
   // Watch JS files for changes & recompile
   gulp.watch('src/js/main/**/*.js', mainJs);
