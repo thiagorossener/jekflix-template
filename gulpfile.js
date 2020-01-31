@@ -155,8 +155,8 @@ function mainCss() {
       ]
     }).on('error', sass.logError))
     .pipe(postcss([
-        autoprefixer,
-        cssnano
+      autoprefixer,
+      cssnano
     ]))
     .pipe(rename('styles.min.css'))
     .pipe(plumber())
@@ -187,6 +187,26 @@ function mainCss() {
 //     .pipe(browserSync.reload({ stream: true }))
 //     .pipe(gulp.dest('assets/css'));
 // }
+function previewCss() {
+  notify('Compiling styles...');
+  return gulp.src('src/sass/preview.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      includePaths: [
+        'node_modules/'
+      ]
+    }).on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer,
+      cssnano
+    ]))
+    .pipe(rename('preview.min.css'))
+    .pipe(plumber())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('_site/assets/css/'))
+    .pipe(browserSync.reload({ stream: true }))
+    .pipe(gulp.dest('assets/css'));
+}
 
 /**
  * CSS Task
@@ -194,7 +214,7 @@ function mainCss() {
  * Run all the CSS related tasks.
  */
 // const css = gulp.parallel(mainCss, previewCss);
-const css = gulp.parallel(mainCss);
+const css = gulp.parallel(mainCss, previewCss);
 
 /**
  * Main JS Task
@@ -264,6 +284,7 @@ function watch() {
 
   // Watch preview style file for changes, rebuild styles & reload
   // gulp.watch('src/styl/preview.styl', gulp.series(theme, previewCss, reload));
+  gulp.watch('src/sass/preview.scss', gulp.series(theme, previewCss, reload));
 
   // Watch JS files for changes & recompile
   gulp.watch('src/js/main/**/*.js', mainJs);
