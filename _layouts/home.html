@@ -39,7 +39,7 @@ layout: main
         {% for post in posts offset: offset %}
             <article class="box-item">
                 <span class="category">
-                    <a href="{{ site.baseurl }}/category/{{ post.category }}">
+                    <a href="{{ site.baseurl }}/{{ site.categories_folder }}/{{ post.category }}">
                         <span>{{ post.category }}</span>
                     </a>
                 </span>

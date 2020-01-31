@@ -90,7 +90,7 @@ function reload(done) {
  * 
  * These three tasks are responsible for:
  * 1. Converting src/yml/theme.yml to src/tmp/theme.json
- * 2. Converting src/tmp/theme.json to src/sass/_theme.scss
+ * 2. Converting src/tmp/theme.json to _sass/_theme.scss
  * 3. Deleting src/tmp
  * 
  * With these tasks we can apply the theme colors to SVGs and CSS elements using
@@ -109,7 +109,7 @@ function jsonTheme() {
       prefix: '$theme: ',
     }))
     .pipe(source('src/tmp/theme.json'))
-    .pipe(rename('src/sass/_theme.scss'))
+    .pipe(rename('_sass/_theme.scss'))
     .pipe(gulp.dest('./'));
 }
 
@@ -127,7 +127,7 @@ const theme = gulp.series(yamlTheme, jsonTheme, cleanTheme);
  */
 function mainCss() {
   notify('Compiling styles...');
-  return gulp.src('src/sass/main.scss')
+  return gulp.src('_sass/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: [
@@ -154,7 +154,7 @@ function mainCss() {
  */
 function previewCss() {
   notify('Compiling styles...');
-  return gulp.src('src/sass/preview.scss')
+  return gulp.src('_sass/preview.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: [
@@ -178,7 +178,6 @@ function previewCss() {
  * 
  * Run all the CSS related tasks.
  */
-// const css = gulp.parallel(mainCss, previewCss);
 const css = gulp.parallel(mainCss, previewCss);
 
 /**
@@ -244,10 +243,10 @@ function watch() {
   gulp.watch(['src/yml/theme.yml'], gulp.series(theme, css, config, jekyll, reload));
 
   // Watch SASS files for changes & rebuild styles
-  gulp.watch(['src/sass/**/*.scss', '!src/sass/preview.scss'], mainCss);
+  gulp.watch(['_sass/**/*.scss', '!_sass/preview.scss'], mainCss);
 
   // Watch preview style file for changes, rebuild styles & reload
-  gulp.watch('src/sass/preview.scss', gulp.series(theme, previewCss, reload));
+  gulp.watch('_sass/preview.scss', gulp.series(theme, previewCss, reload));
 
   // Watch JS files for changes & recompile
   gulp.watch('src/js/main/**/*.js', mainJs);
