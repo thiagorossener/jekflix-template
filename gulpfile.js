@@ -7,10 +7,8 @@ let gulp         = require('gulp'),
     rename       = require('gulp-rename'),
     sass         = require('gulp-sass'),
     sourcemaps   = require('gulp-sourcemaps'),
-    // stylus       = require('gulp-stylus'),
     uglify       = require('gulp-uglify'),
     yaml         = require('gulp-yaml'),
-    // prefixer     = require('autoprefixer-stylus'),
     autoprefixer = require('autoprefixer'),
     browserSync  = require('browser-sync'),
     cssnano      = require('cssnano'),
@@ -19,9 +17,6 @@ let gulp         = require('gulp'),
     fs           = require('fs'),
     jsonSass     = require('json-sass'),
     source       = require('vinyl-source-stream');
-    // jeet         = require('jeet'),
-    // koutoSwiss   = require('kouto-swiss'),
-    // rupture      = require('rupture');
 
 /**
  * Notify
@@ -127,24 +122,9 @@ const theme = gulp.series(yamlTheme, jsonTheme, cleanTheme);
 /**
  * Main CSS Task
  * 
- * The regular Stylus files are run through kouto-swiss/prefixer/jeet/rupture
+ * The regular SASS files are run through autoprefixer/cssnano
  * and placed into one single main styles.min.css file (and sourcemap)
  */
-// function mainCss() {
-//   notify('Compiling styles...');
-//   return gulp.src('src/styl/main.styl')
-//     .pipe(sourcemaps.init())
-//     .pipe(stylus({
-//       use: [koutoSwiss(), prefixer(), jeet(), rupture()],
-//       compress: true
-//     }))
-//     .pipe(rename('styles.min.css'))
-//     .pipe(plumber())
-//     .pipe(sourcemaps.write('.'))
-//     .pipe(gulp.dest('_site/assets/css/'))
-//     .pipe(browserSync.reload({ stream: true }))
-//     .pipe(gulp.dest('assets/css'));
-// }
 function mainCss() {
   notify('Compiling styles...');
   return gulp.src('src/sass/main.scss')
@@ -169,24 +149,9 @@ function mainCss() {
 /**
  * Preview CSS Task
  * 
- * The preview Stylus file is run through kouto-swiss/prefixer/jeet/rupture
+ * The preview SASS file is run through autoprefixer/cssnano
  * and placed into one single preview.min.css file (and sourcemap)
  */
-// function previewCss() {
-//   notify('Compiling styles...');
-//   return gulp.src('src/styl/preview.styl')
-//     .pipe(sourcemaps.init())
-//     .pipe(stylus({
-//       use: [koutoSwiss(), prefixer(), jeet(), rupture()],
-//       compress: true
-//     }))
-//     .pipe(rename('preview.min.css'))
-//     .pipe(plumber())
-//     .pipe(sourcemaps.write('.'))
-//     .pipe(gulp.dest('_site/assets/css/'))
-//     .pipe(browserSync.reload({ stream: true }))
-//     .pipe(gulp.dest('assets/css'));
-// }
 function previewCss() {
   notify('Compiling styles...');
   return gulp.src('src/sass/preview.scss')
@@ -278,12 +243,10 @@ function watch() {
   // Watch theme file for changes, rebuild styles & recompile
   gulp.watch(['src/yml/theme.yml'], gulp.series(theme, css, config, jekyll, reload));
 
-  // Watch stylus files for changes & rebuild styles
-  // gulp.watch(['src/styl/**/*.styl', '!src/styl/preview.styl'], gulp.series(theme, mainCss));
+  // Watch SASS files for changes & rebuild styles
   gulp.watch(['src/sass/**/*.scss', '!src/sass/preview.scss'], mainCss);
 
   // Watch preview style file for changes, rebuild styles & reload
-  // gulp.watch('src/styl/preview.styl', gulp.series(theme, previewCss, reload));
   gulp.watch('src/sass/preview.scss', gulp.series(theme, previewCss, reload));
 
   // Watch JS files for changes & recompile
@@ -303,7 +266,7 @@ function watch() {
  * Default Task
  *
  * Running just `gulp` will:
- * - Compile the theme, Stylus and JavaScript files
+ * - Compile the theme, SASS and JavaScript files
  * - Optimize and copy images to its folder
  * - Build the config file
  * - Compile the Jekyll site
@@ -315,7 +278,7 @@ exports.default = gulp.series(gulp.parallel(js, gulp.series(theme, css), images)
  * Build Task
  * 
  * Running just `gulp build` will:
- * - Compile the theme, Stylus and JavaScript files
+ * - Compile the theme, SASS and JavaScript files
  * - Optimize and copy images to its folder
  * - Build the config file
  * - Compile the Jekyll site
