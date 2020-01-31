@@ -14,7 +14,11 @@ let gulp         = require('gulp'),
     autoprefixer = require('autoprefixer'),
     browserSync  = require('browser-sync'),
     cssnano      = require('cssnano'),
-    cp           = require('child_process');
+    cp           = require('child_process'),
+    del          = require('del'),
+    fs           = require('fs'),
+    jsonSass     = require('json-sass'),
+    source       = require('vinyl-source-stream');
     // jeet         = require('jeet'),
     // koutoSwiss   = require('kouto-swiss'),
     // rupture      = require('rupture');
@@ -87,15 +91,38 @@ function reload(done) {
 }
 
 /**
- * Theme Task
+ * Theme Tasks
  * 
- * Create the JSON theme file.
+ * These three tasks are responsible for:
+ * 1. Converting src/yml/theme.yml to src/tmp/theme.json
+ * 2. Converting src/tmp/theme.json to src/sass/_theme.scss
+ * 3. Deleting src/tmp
+ * 
+ * With these tasks we can apply the theme colors to SVGs and CSS elements using
+ * just the src/yml/theme.yml file.
  */
-function theme() {
+
+function yamlTheme() {
   return gulp.src('src/yml/theme.yml')
     .pipe(yaml({ schema: 'DEFAULT_SAFE_SCHEMA' }))
-    .pipe(gulp.dest('src/sass/'));
+    .pipe(gulp.dest('src/tmp/'));
 }
+
+function jsonTheme() {
+  return fs.createReadStream('src/tmp/theme.json')
+    .pipe(jsonSass({
+      prefix: '$theme: ',
+    }))
+    .pipe(source('src/tmp/theme.json'))
+    .pipe(rename('src/sass/_theme.scss'))
+    .pipe(gulp.dest('./'));
+}
+
+function cleanTheme() {
+  return del(['src/tmp']);
+}
+
+const theme = gulp.series(yamlTheme, jsonTheme, cleanTheme);
 
 /**
  * Main CSS Task
@@ -233,7 +260,7 @@ function watch() {
 
   // Watch stylus files for changes & rebuild styles
   // gulp.watch(['src/styl/**/*.styl', '!src/styl/preview.styl'], gulp.series(theme, mainCss));
-  gulp.watch(['src/sass/**/*.scss', '!src/sass/preview.scss'], gulp.series(theme, mainCss));
+  gulp.watch(['src/sass/**/*.scss', '!src/sass/preview.scss'], mainCss);
 
   // Watch preview style file for changes, rebuild styles & reload
   // gulp.watch('src/styl/preview.styl', gulp.series(theme, previewCss, reload));
