@@ -17,6 +17,10 @@
                                         <div class="cover">
                                             {% include new-post-tag.html date=post.date %}
                                             <a href="{{ post.url | prepend: site.baseurl }}" {%if isnewpost %}class="new-post"{% endif %}>
+                                                {% include loader.html %}
+                                                <div class="read-icon">
+                                                    <svg><use xlink:href="#icon-read"></use></svg>
+                                                </div>
                                                 {% if post.optimized_image %}
                                                     <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}" class="preload">
                                                     <noscript>

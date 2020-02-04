@@ -2,13 +2,11 @@
  * Set up here the general appearance of the theme.
  */
 
-// Theme
-@import "theme";
-$themeColor: map-get($theme, themeColor);
-$primaryDark: map-get($theme, primaryDark);
-$accentDark: map-get($theme, accentDark);
-$lightGray: map-get($theme, lightGray);
-$texts: map-get($theme, texts);
+$themeColor: map-get($theme, themeColor) !default;
+$primaryDark: map-get($theme, primaryDark) !default;
+$accentDark: map-get($theme, accentDark) !default;
+$lightGray: map-get($theme, lightGray) !default;
+$texts: map-get($theme, texts) !default;
 
 // Breakpoints
 $breakpoints: (

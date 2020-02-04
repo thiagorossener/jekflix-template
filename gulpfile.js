@@ -243,7 +243,7 @@ function watch() {
   gulp.watch(['src/yml/theme.yml'], gulp.series(theme, css, config, jekyll, reload));
 
   // Watch SASS files for changes & rebuild styles
-  gulp.watch(['_sass/**/*.scss', '!_sass/preview.scss'], mainCss);
+  gulp.watch(['_sass/**/*.scss', '!_sass/preview.scss'], gulp.series(mainCss, jekyll, reload));
 
   // Watch preview style file for changes, rebuild styles & reload
   gulp.watch('_sass/preview.scss', gulp.series(theme, previewCss, reload));

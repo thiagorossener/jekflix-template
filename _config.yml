@@ -33,14 +33,6 @@ linkedin_username: linkedin_username
 medium_username: medium_username
 
 
-# Theme Settings
-themeColor: "#ff0a16"
-primaryDark: "#141414"
-accentDark: "#ffffff"
-lightGray: "#f2f2f2"
-texts: "#333333"
-
-
 # Posts Settings
 show_time_bar: true
 show_modal_on_exit: false
@@ -81,6 +73,10 @@ paginate_content:
       is_generated: true
     single:
       is_generated: true
+
+# SASS
+sass:
+  style: compressed
 
 # Plugins
 plugins:

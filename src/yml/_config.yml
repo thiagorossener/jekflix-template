@@ -5,9 +5,6 @@
 # Remove the item if you don't need it
 #=include social.yml
 
-# Theme Settings
-#=include theme.yml
-
 # Posts Settings
 #=include posts.yml
 
@@ -40,6 +37,10 @@ paginate_content:
       is_generated: true
     single:
       is_generated: true
+
+# SASS
+sass:
+  style: compressed
 
 # Plugins
 plugins:

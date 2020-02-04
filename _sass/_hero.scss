@@ -92,11 +92,12 @@
         box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);
       }
 
-      img {
+      svg {
         width: rem(25px);
         height: rem(25px);
         margin-right: rem(10px);
         vertical-align: middle;
+        color: $themeColor;
       }
 
       span {

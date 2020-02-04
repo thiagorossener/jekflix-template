@@ -1,9 +1,7 @@
-@import "normalize.css/normalize";
-@import "include-media/dist/include-media";
-@import "jeet/jeet";
-
-@import "variables";
+@import "include-media";
 @import "normalize";
+@import "theme";
+@import "variables";
 @import "functions";
 @import "mixins";
 @import "typo";
