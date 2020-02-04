@@ -3,7 +3,6 @@ layout: page
 title: Staff
 description: Meet our team.
 permalink: /staff/
-menu: true
 ---
 
 <h1>Staff</h1>

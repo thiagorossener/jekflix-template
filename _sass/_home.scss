@@ -74,11 +74,11 @@
         color: $accentDark;
       }
 
-      .new-post:after {
-        background-color: #000;
-      }
-
       .cover {
+        .new-post-tag {
+          background-color: #000;
+        }
+
         .read-icon {
           opacity: 1;
         }
@@ -153,11 +153,25 @@
       }
     }
 
-    .new-post {
+    .cover {
       position: relative;
+      display: block;
 
-      &::after {
-        content: "New post";
+      .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        color: $themeColor;
+        z-index: 1;
+      }
+
+      img {
+        position: relative;
+        z-index: 2;
+      }
+
+      .new-post-tag {
         text-transform: uppercase;
         display: inline-block;
         background: $themeColor;
@@ -169,11 +183,8 @@
         position: absolute;
         bottom: rem(8px);
         left: 0;
+        z-index: 3;
       }
-    }
-
-    .cover {
-      position: relative;
 
       .read-icon {
         opacity: 0;
@@ -192,25 +203,11 @@
         margin-left: rem(-40px);
         border: 2px solid #fff;
         color: $themeColor;
-        z-index: 1000;
+        z-index: 4;
 
         svg {
           width: rem(48px);
         }
-      }
-
-      .loader {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0);
-        color: $themeColor;
-        z-index: 1;
-      }
-
-      img {
-        position: relative;
-        z-index: 2;
       }
     }
   }

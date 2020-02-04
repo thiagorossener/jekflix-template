@@ -50,31 +50,27 @@ layout: main
                     </a>
                 </span>
                 <div class="box-body">
-                    <div class="cover">
+                    <a class="cover" href="{{ post.url | prepend: site.baseurl }}">
+                        {% include loader.html %}
+                        {% if post.optimized_image %}
+                            <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}" class="preload">
+                            <noscript>
+                                <img src="{{ post.optimized_image }}" width="100%">
+                            </noscript>
+                        {% elsif post.image %}
+                            <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.image }}" class="preload">
+                            <noscript>
+                                <img src="{{ post.image }}" width="100%">
+                            </noscript>
+                        {% else %}
+                            <img src="/assets/img/placeholder.png" width="100%" data-url="/assets/img/off.jpg" class="preload">
+                            <noscript>
+                                <img src="/assets/img/off.jpg" width="100%">
+                            </noscript>
+                        {% endif %}
                         {% include new-post-tag.html date=post.date %}
-                        <a href="{{ post.url | prepend: site.baseurl }}" {%if isnewpost %}class="new-post"{% endif %}>
-                            {% include loader.html %}
-                            <div class="read-icon">
-                                <svg><use xlink:href="#icon-read"></use></svg>
-                            </div>
-                            {% if post.optimized_image %}
-                                <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}" class="preload">
-                                <noscript>
-                                    <img src="{{ post.optimized_image }}" width="100%">
-                                </noscript>
-                            {% elsif post.image %}
-                                <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.image }}" class="preload">
-                                <noscript>
-                                    <img src="{{ post.image }}" width="100%">
-                                </noscript>
-                            {% else %}
-                                <img src="/assets/img/placeholder.png" width="100%" data-url="/assets/img/off.jpg" class="preload">
-                                <noscript>
-                                    <img src="/assets/img/off.jpg" width="100%">
-                                </noscript>
-                            {% endif %}
-                        </a>
-                    </div>
+                        {% include read-icon.html %}
+                    </a>
                     <div class="box-info">
                         <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
                             {% include date.html date=post.date %}
