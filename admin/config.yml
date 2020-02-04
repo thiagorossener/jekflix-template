@@ -314,6 +314,173 @@ collections:
             name: "two_columns_layout"
             widget: "boolean"
             default: true
+      - label: "Translations"
+        name: "translations"
+        file: "src/yml/translations.yml"
+        fields:
+          - label: "Texts"
+            name: "texts"
+            widget: "object"
+            fields:
+              - label: "New Post"
+                name: "new_post"
+                widget: "string"
+                required: false
+              - label: "See also"
+                name: "seel_also"
+                widget: "string"
+                required: false
+              - label: "Search"
+                name: "search"
+                widget: "string"
+                required: false
+              - label: "Share"
+                name: "share"
+                widget: "string"
+                required: false
+              - label: "Comments"
+                name: "comments"
+                widget: "string"
+                required: false
+          - label: "Buttons"
+            name: "button"
+            widget: "object"
+            fields:
+              - label: "Read Now"
+                name: "read_now"
+                widget: "string"
+                required: false
+              - label: "Share on Twitter"
+                name: "share_on_twitter"
+                widget: "string"
+                required: false
+              - label: "Share on Facebook"
+                name: "share_on_facebook"
+                widget: "string"
+                required: false
+          - label: "Pagination"
+            name: "pagination"
+            widget: "object"
+            fields:
+              - label: "Page"
+                name: "page"
+                widget: "string"
+                required: false
+              - label: "of"
+                name: "of"
+                widget: "string"
+                required: false
+              - label: "Next Page"
+                name: "next_page"
+                widget: "string"
+                required: false
+              - label: "Next Post"
+                name: "next_post"
+                widget: "string"
+                required: false
+          - label: "Recommendation"
+            name: "recommendation"
+            widget: "object"
+            fields:
+              - label: "Text"
+                name: "text"
+                widget: "string"
+                required: false
+              - label: "Go back to top"
+                name: "back_btn"
+                widget: "string"
+                required: false
+          - label: "Error 404"
+            name: "error_404"
+            widget: "object"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                required: false
+              - label: "Message"
+                name: "message"
+                widget: "string"
+                required: false
+              - label: "Image Alt"
+                name: "image_alt"
+                widget: "string"
+                required: false
+          - label: "Contact Page"
+            name: "contact"
+            widget: "object"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                required: false
+              - label: "Email Subject Title"
+                name: "subject"
+                widget: "string"
+                required: false
+              - label: "Submit Button Label"
+                name: "submit_btn"
+                widget: "string"
+                required: false
+              - label: "Fields Placeholder"
+                name: "placeholders"
+                widget: "object"
+                fields:
+                  - label: "Your Name"
+                    name: "name"
+                    widget: "string"
+                    required: false
+                  - label: "Your Email"
+                    name: "email"
+                    widget: "string"
+                    required: false
+                  - label: "Your Message"
+                    name: "message"
+                    widget: "string"
+                    required: false
+              - label: "Fields Error"
+                name: "errors"
+                widget: "object"
+                fields:
+                  - label: "Locale"
+                    name: "locale"
+                    widget: "string"
+                    default: "en"
+                    hint: "Ex: en"
+                  - label: "Empty Name"
+                    name: "empty_name"
+                    widget: "string"
+                    hint: "Ex: Insert your name"
+                    required: false
+                  - label: "Empty Email"
+                    name: "empty_email"
+                    widget: "string"
+                    hint: "Ex: Insert your email"
+                    required: false
+                  - label: "Invalid Email"
+                    name: "invalid_email"
+                    widget: "string"
+                    hint: "Ex: Email is invalid"
+                    required: false
+                  - label: "Empty Message"
+                    name: "empty_message"
+                    widget: "string"
+                    hint: "Ex: Insert your message"
+                    required: false
+              - label: "Contact Feedback Page"
+                name: "after_send"
+                widget: "object"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                    hint: "Ex: Message sent!"
+                    required: false
+                  - label: "Text"
+                    name: "message"
+                    widget: "string"
+                    hint: "Ex: Thank you for reaching us."
+                    required: false
       - label: "Advanced"
         name: "advanced"
         file: "src/yml/advanced.yml"
