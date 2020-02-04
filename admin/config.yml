@@ -213,6 +213,12 @@ collections:
             name: "show_hero"
             widget: "boolean"
             default: true
+          - label: "Posts per page"
+            name: "paginate"
+            widget: "number"
+            valueType: "int"
+            required: false
+            hint: "Leave it blank if you don't want pagination"
           - label: "Menu"
             name: "menu"
             widget: "list"
@@ -234,22 +240,7 @@ collections:
           - label: "Disqus Username"
             name: "disqus_username"
             widget: "string"
-            hint: "Leave it blank if you don't want comments"
-            required: false
-          - label: "Posts per page"
-            name: "paginate"
-            widget: "number"
-            valueType: "int"
-            required: false
-            hint: "Leave it blank if you don't want pagination"
-          - label: "Categories folder"
-            name: "categories_folder"
-            widget: "string"
-            hint: "Folder where all the categories pages are. Ex: category"
-            required: false
-          - label: "Contact Feedback URL"
-            name: "sent_message_url"
-            hint: "URL where the user will be redirected for after submit the contact form. Ex: /contact/message-sent/"
+            hint: "Leave it blank if you don't want comments in posts"
             required: false
       - label: "Social"
         name: "social"
@@ -343,5 +334,14 @@ collections:
             name: "language"
             widget: "string"
             hint: "Content language, ex: pt-BR, en, fr"
+          - label: "Categories folder"
+            name: "categories_folder"
+            widget: "string"
+            hint: "Folder where all the categories pages are. Ex: category"
+            required: false
+          - label: "Contact Feedback URL"
+            name: "sent_message_url"
+            hint: "URL where the user will be redirected for after submit the contact form. Ex: /contact/message-sent/"
+            required: false
 
 
