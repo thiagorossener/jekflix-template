@@ -36,12 +36,13 @@
   }
 
   img {
-    width: rem(180px);
+    width: rem(150px);
     border-radius: 50%;
     display: block;
     margin: auto;
 
     @include media(">=sm") {
+      width: rem(180px);
       float: left;
       margin-right: 3.125rem;
     }

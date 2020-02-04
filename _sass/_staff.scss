@@ -22,11 +22,16 @@
   h3 {
     margin-bottom: rem(10px);
 
+    &.name {
+      padding-top: rem(10px);
+    }
+
     &.position {
       font-size: rem(19px);
       font-weight: normal;
       font-style: italic;
       color: #999;
+      padding-top: 0;
       margin-bottom: rem(20px);
     }
   }
