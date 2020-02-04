@@ -44,6 +44,15 @@
     padding: 10px 0;
   }
 
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: $themeColor;
+    margin-top: rem(-2px);
+    margin-left: rem(3px);
+    margin-right: rem(3px);
+  }
+
   figure {
     margin: rem(20px) auto 0;
   }
@@ -140,7 +149,7 @@
 
     code {
       font-size: rem(15px);
-      background: #222;
+      background: #282a36;
       color: #fff;
       word-wrap: break-word;
       padding: rem(3px) rem(5px);
@@ -537,6 +546,7 @@
         font-size: rem(15px);
       }
     }
+
     svg {
       fill: #fff;
       width: rem(22px);
@@ -553,6 +563,7 @@
         height: rem(28px);
       }
     }
+
     span {
       vertical-align: middle;
     }
@@ -590,6 +601,7 @@
       max-width: rem(200px);
       transition: all 0.3s;
     }
+
     .title {
       font-size: rem(16px);
       color: #fff;
