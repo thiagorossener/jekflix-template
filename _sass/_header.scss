@@ -21,23 +21,24 @@ body {
     margin: 0;
     height: rem(32px);
     line-height: rem(32px);
-  }
 
-  .logo a {
-    display: block;
-    color: $accentDark;
-    text-decoration: none;
-    font-size: rem(32px);
-    position: relative;
-  }
+    a {
+      display: block;
+      color: $accentDark;
+      text-decoration: none;
+      font-size: rem(32px);
+      position: relative;
+      outline: 0;
+    }
 
-  .logo svg {
-    width: rem(120px);
-    height: rem(30px);
-    transition: all .4s;
-
-    @include media(">=sm") {
-      width: rem(205px);
+    svg {
+      width: rem(120px);
+      height: rem(30px);
+      transition: all .4s;
+  
+      @include media(">=sm") {
+        width: rem(205px);
+      }
     }
   }
 

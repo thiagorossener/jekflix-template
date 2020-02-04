@@ -13,7 +13,7 @@ pre {
   }
 
   code {
-    @include center(rem(800));
+    @include center(rem(800px));
     padding: 0 rem(20px);
 
     @include media("<sm") {

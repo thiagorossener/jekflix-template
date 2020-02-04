@@ -16,9 +16,13 @@ body {
 
   img {
     max-width: 100%;
-    margin: rem(0px) auto;
+    margin: 0 auto rem(20px);
     display: block;
     padding: 10px 0;
+
+    @include media(">=sm") {
+      margin: 0 auto rem(29px);
+    }
   }
 
   figure {
