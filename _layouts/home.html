@@ -22,13 +22,19 @@ layout: main
             <div class="pixels"></div>
             <div class="gradient"></div>
             <div class="content">
-                <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">{{ featured.date | date: "%m.%d.%Y" }}</time>
+                <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
+                    {% if site.date_format == nil %}
+                        {{ featured.date | date: "%m.%d.%Y" }}
+                    {% else %}
+                        {{ featured.date | date: site.date_format }}
+                    {% endif %}
+                </time>
                 <h1 class="title">{{ featured.title }}</h1>
                 <p class="description">{{ featured.subtitle }}</p>
                 <div class="buttons">
                     <a href="{{ featured.url }}" role="button" class="button">
                         <svg><use xlink:href="#icon-read"></use></svg>
-                        <span>Read Now</span>
+                        <span>{{ page.read_btn | default: "Read Now" }}</span>
                     </a>
                 </div>
             </div>

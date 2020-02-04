@@ -4,7 +4,11 @@
     </a>
     <h1 class="logo">
         <a href="{{ site.baseurl }}/">
-            {{ site.name }} <span class="version">v3.0.0</span>
+            {% if site.use_logo %}
+                {% include logo.html %}
+            {% else %}
+                {{ site.name }} <span class="version">{{ site.version }}</span>
+            {% endif %}
         </a>
     </h1>
     <a id="search" class="dosearch" role="button">
