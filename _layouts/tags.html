@@ -2,6 +2,8 @@
 layout: minimal
 ---
 
+{% assign date_format = site.date_format | default: "%m/%d/%Y" %}
+
 <div class="tags">
   {% assign tags_list = site.tags %}
     {% if tags_list.first[0] == null %}
@@ -26,7 +28,7 @@ layout: minimal
       {% for post in pages_list reversed %}
           {% if post.title != null and post.is_generated != true %}
             {% if group == null or group == post.group %}
-              <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m/%d/%Y" }}</time></a></li>
+              <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time></a></li>
             {% endif %}
           {% endif %}
       {% endfor %}
