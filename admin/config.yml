@@ -213,6 +213,19 @@ collections:
             name: "show_hero"
             widget: "boolean"
             default: true
+          - label: "Menu"
+            name: "menu"
+            widget: "list"
+            required: false
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                hint: "Text that will show up in the menu"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+                hint: "Ex: /contact"
           - label: "E-mail"
             name: "email"
             widget: "string"
@@ -229,6 +242,15 @@ collections:
             valueType: "int"
             required: false
             hint: "Leave it blank if you don't want pagination"
+          - label: "Categories folder"
+            name: "categories_folder"
+            widget: "string"
+            hint: "Folder where all the categories pages are. Ex: category"
+            required: false
+          - label: "Contact Feedback URL"
+            name: "sent_message_url"
+            hint: "URL where the user will be redirected for after submit the contact form. Ex: /contact/message-sent/"
+            required: false
       - label: "Social"
         name: "social"
         file: "src/yml/social.yml"
