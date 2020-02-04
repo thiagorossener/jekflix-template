@@ -11,6 +11,7 @@ email: youremail@xyz.com
 disqus_username: disqus_username
 show_hero: true
 categories_folder: category
+sent_message_url: "/contact/message-sent/"
 menu:
   - title: Home
     url: /
