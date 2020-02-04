@@ -12,7 +12,7 @@ layout: default
 </style>
 
 <div class="container">
-  <img src="/assets/img/message.gif" width="540" alt="Message sent!">
-  <p><strong>Message sent!</strong></p>
-  <p>Thank you for sending me a message. I'm going to answer ASAP.</p>
+  <img src="/assets/img/message.gif" width="540" alt="{{ site.translations.contact.after_send.title | default: 'Message sent!' }}">
+  <p><strong>{{ site.translations.contact.after_send.title | default: "Message sent!" }}</strong></p>
+  <p>{{ site.translations.contact.after_send.message | default: "Thank you for sending me a message. I'm going to answer ASAP." }}</p>
 </div>
