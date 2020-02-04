@@ -10,7 +10,6 @@ tags:
 email: youremail@xyz.com
 disqus_username: disqus_username
 show_hero: true
-paginate: 0
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
 menu:
