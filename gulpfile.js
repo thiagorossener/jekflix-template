@@ -3,15 +3,11 @@ let gulp         = require('gulp'),
     imagemin     = require('gulp-imagemin'),
     include      = require('gulp-include'),
     plumber      = require('gulp-plumber'),
-    postcss      = require('gulp-postcss'),
     rename       = require('gulp-rename'),
-    sass         = require('gulp-sass'),
     sourcemaps   = require('gulp-sourcemaps'),
     uglify       = require('gulp-uglify'),
     yaml         = require('gulp-yaml'),
-    autoprefixer = require('autoprefixer'),
     browserSync  = require('browser-sync'),
-    cssnano      = require('cssnano'),
     cp           = require('child_process'),
     del          = require('del'),
     fs           = require('fs'),
@@ -120,67 +116,6 @@ function cleanTheme() {
 const theme = gulp.series(yamlTheme, jsonTheme, cleanTheme);
 
 /**
- * Main CSS Task
- * 
- * The regular SASS files are run through autoprefixer/cssnano
- * and placed into one single main styles.min.css file (and sourcemap)
- */
-function mainCss() {
-  notify('Compiling styles...');
-  return gulp.src('_sass/main.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-      includePaths: [
-        'node_modules/'
-      ]
-    }).on('error', sass.logError))
-    .pipe(postcss([
-      autoprefixer,
-      cssnano
-    ]))
-    .pipe(rename('styles.min.css'))
-    .pipe(plumber())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('_site/assets/css/'))
-    .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('assets/css'));
-}
-
-/**
- * Preview CSS Task
- * 
- * The preview SASS file is run through autoprefixer/cssnano
- * and placed into one single preview.min.css file (and sourcemap)
- */
-function previewCss() {
-  notify('Compiling styles...');
-  return gulp.src('_sass/preview.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-      includePaths: [
-        'node_modules/'
-      ]
-    }).on('error', sass.logError))
-    .pipe(postcss([
-      autoprefixer,
-      cssnano
-    ]))
-    .pipe(rename('preview.min.css'))
-    .pipe(plumber())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('_site/assets/css/'))
-    .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('assets/css'));
-}
-
-/**
- * CSS Task
- * 
- * Run all the CSS related tasks.
- */
-const css = gulp.parallel(mainCss, previewCss);
-
-/**
  * Main JS Task
  * 
  * All regular .js files are collected, minified and concatonated into one
@@ -240,13 +175,10 @@ function watch() {
   gulp.watch(['src/yml/*.yml', '!src/yml/theme.yml'], gulp.series(config, jekyll, reload));
 
   // Watch theme file for changes, rebuild styles & recompile
-  gulp.watch(['src/yml/theme.yml'], gulp.series(theme, css, config, jekyll, reload));
+  gulp.watch(['src/yml/theme.yml'], gulp.series(theme, config, jekyll, reload));
 
   // Watch SASS files for changes & rebuild styles
-  gulp.watch(['_sass/**/*.scss', '!_sass/preview.scss'], gulp.series(mainCss, jekyll, reload));
-
-  // Watch preview style file for changes, rebuild styles & reload
-  gulp.watch('_sass/preview.scss', gulp.series(theme, previewCss, reload));
+  gulp.watch(['_sass/**/*.scss'], gulp.series(jekyll, reload));
 
   // Watch JS files for changes & recompile
   gulp.watch('src/js/main/**/*.js', mainJs);
@@ -271,7 +203,7 @@ function watch() {
  * - Compile the Jekyll site
  * - Launch BrowserSync & watch files
  */
-exports.default = gulp.series(gulp.parallel(js, gulp.series(theme, css), images), config, jekyll, gulp.parallel(server, watch));
+exports.default = gulp.series(gulp.parallel(js, theme, images), config, jekyll, gulp.parallel(server, watch));
 
 /**
  * Build Task
@@ -282,4 +214,4 @@ exports.default = gulp.series(gulp.parallel(js, gulp.series(theme, css), images)
  * - Build the config file
  * - Compile the Jekyll site
  */
-exports.build = gulp.series(gulp.parallel(js, gulp.series(theme, css), images), config, jekyll);
+exports.build = gulp.series(gulp.parallel(js, theme, images), config, jekyll);
