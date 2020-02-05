@@ -72,6 +72,10 @@ You can create posts manually using the [Front Matter properties](https://github
 
 ## Release notes
 
+### v3.0.1
+
+- Fixed post SVG icons
+
 ### v3.0.0
 
 - Created theme `gem`
