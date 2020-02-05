@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Thiago Rossener"]
   spec.email         = ["thiago@rossener.com"]
 
-  spec.summary       = "A Jekyll template inspired by Netflix."
+  spec.summary       = "A Jekyll theme inspired by Netflix."
   spec.homepage      = "https://jekflix.rossener.com/"
   spec.license       = "MIT"
 
