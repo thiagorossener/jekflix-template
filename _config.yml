@@ -11,8 +11,6 @@ tags:
 email: youremail@xyz.com
 disqus_username: disqus_username
 show_hero: true
-categories_folder: category
-sent_message_url: "/contact/message-sent/"
 menu:
   - title: Home
     url: /
@@ -46,6 +44,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
+categories_folder: category
+sent_message_url: "/contact/message-sent/"
 
 
 # Build settings

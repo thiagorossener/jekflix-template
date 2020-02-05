@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i) }
 
+  spec.add_runtime_dependency "rouge", "~> 3.3"
   spec.add_runtime_dependency "jekyll", "~> 3.8"
   spec.add_runtime_dependency "jekyll-paginate", "1.1.0"
   spec.add_runtime_dependency "jekyll-paginate-content", "1.1.0"
