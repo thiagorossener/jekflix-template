@@ -1,10 +1,10 @@
 <div class="recommendation">
     <div class="message">
-        <strong>Why don't you read something next?</strong>
+        <strong>{{ site.translations.recommendation.text | default: "Why don't you read something next?" }}</strong>
         <div>
             <button>
                 <svg><use xlink:href="#icon-arrow-right"></use></svg>
-                <span>Go back to top</span>
+                <span>{{ site.translations.recommendation.back_btn | default: "Go back to top" }}</span>
             </button>
         </div>
     </div>

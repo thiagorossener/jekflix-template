@@ -10,3 +10,12 @@ tags:
 email: youremail@xyz.com
 disqus_username: disqus_username
 show_hero: true
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+  - title: Feed
+    url: /feed.xml

@@ -5,9 +5,6 @@
 # Remove the item if you don't need it
 #=include social.yml
 
-# Theme Settings
-#=include theme.yml
-
 # Posts Settings
 #=include posts.yml
 
@@ -22,6 +19,8 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
+show_get_theme_btn: true
+use_logo: false
 
 # Content paginator
 paginate_content:
@@ -41,6 +40,10 @@ paginate_content:
     single:
       is_generated: true
 
+# SASS
+sass:
+  style: compressed
+
 # Plugins
 plugins:
   - jekyll-paginate
@@ -58,3 +61,6 @@ exclude: [
   'gulpfile.js',
   'README.md'
 ]
+
+# Theme
+version: v3.0.2

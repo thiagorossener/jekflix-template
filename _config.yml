@@ -11,6 +11,15 @@ tags:
 email: youremail@xyz.com
 disqus_username: disqus_username
 show_hero: true
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+  - title: Feed
+    url: /feed.xml
 
 
 # Social Media Settings
@@ -21,14 +30,6 @@ twitter_username: twitter_username
 instagram_username: instagram_username
 linkedin_username: linkedin_username
 medium_username: medium_username
-
-
-# Theme Settings
-themeColor: "#ff0a16"
-primaryDark: "#141414"
-accentDark: "#ffffff"
-lightGray: "#f2f2f2"
-texts: "#333333"
 
 
 # Posts Settings
@@ -43,6 +44,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
+categories_folder: category
+sent_message_url: "/contact/message-sent/"
 
 
 # Build settings
@@ -53,6 +56,8 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
+show_get_theme_btn: true
+use_logo: false
 
 # Content paginator
 paginate_content:
@@ -72,6 +77,10 @@ paginate_content:
     single:
       is_generated: true
 
+# SASS
+sass:
+  style: compressed
+
 # Plugins
 plugins:
   - jekyll-paginate
@@ -89,3 +98,6 @@ exclude: [
   'gulpfile.js',
   'README.md'
 ]
+
+# Theme
+version: v3.0.2

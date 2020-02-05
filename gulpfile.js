@@ -1,20 +1,18 @@
-let gulp        = require('gulp'),
-    concat      = require('gulp-concat'),
-    imagemin    = require('gulp-imagemin'),
-    include     = require('gulp-include'),
-    plumber     = require('gulp-plumber'),
-    rename      = require('gulp-rename'),
-    sourcemaps  = require('gulp-sourcemaps'),
-    stylus      = require('gulp-stylus'),
-    uglify      = require('gulp-uglify'),
-    yaml        = require('gulp-yaml'),
-    prefixer    = require('autoprefixer-stylus'),
-    browserSync = require('browser-sync'),
-    cp          = require('child_process'),
-    del         = require('del'),
-    jeet        = require('jeet'),
-    koutoSwiss  = require('kouto-swiss'),
-    rupture     = require('rupture');
+let gulp         = require('gulp'),
+    concat       = require('gulp-concat'),
+    imagemin     = require('gulp-imagemin'),
+    include      = require('gulp-include'),
+    plumber      = require('gulp-plumber'),
+    rename       = require('gulp-rename'),
+    sourcemaps   = require('gulp-sourcemaps'),
+    uglify       = require('gulp-uglify'),
+    yaml         = require('gulp-yaml'),
+    browserSync  = require('browser-sync'),
+    cp           = require('child_process'),
+    del          = require('del'),
+    fs           = require('fs'),
+    jsonSass     = require('json-sass'),
+    source       = require('vinyl-source-stream');
 
 /**
  * Notify
@@ -84,66 +82,38 @@ function reload(done) {
 }
 
 /**
- * Theme Task
+ * Theme Tasks
  * 
- * Create the JSON theme file.
+ * These three tasks are responsible for:
+ * 1. Converting src/yml/theme.yml to src/tmp/theme.json
+ * 2. Converting src/tmp/theme.json to _sass/_theme.scss
+ * 3. Deleting src/tmp
+ * 
+ * With these tasks we can apply the theme colors to SVGs and CSS elements using
+ * just the src/yml/theme.yml file.
  */
-function theme() {
+
+function yamlTheme() {
   return gulp.src('src/yml/theme.yml')
     .pipe(yaml({ schema: 'DEFAULT_SAFE_SCHEMA' }))
-    .pipe(gulp.dest('src/styl/'));
+    .pipe(gulp.dest('src/tmp/'));
 }
 
-/**
- * Main CSS Task
- * 
- * The regular Stylus files are run through kouto-swiss/prefixer/jeet/rupture
- * and placed into one single main styles.min.css file (and sourcemap)
- */
-function mainCss() {
-  notify('Compiling styles...');
-  return gulp.src('src/styl/main.styl')
-    .pipe(sourcemaps.init())
-    .pipe(stylus({
-      use: [koutoSwiss(), prefixer(), jeet(), rupture()],
-      compress: true
+function jsonTheme() {
+  return fs.createReadStream('src/tmp/theme.json')
+    .pipe(jsonSass({
+      prefix: '$theme: ',
     }))
-    .pipe(rename('styles.min.css'))
-    .pipe(plumber())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('_site/assets/css/'))
-    .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('assets/css'));
+    .pipe(source('src/tmp/theme.json'))
+    .pipe(rename('_sass/_theme.scss'))
+    .pipe(gulp.dest('./'));
 }
 
-/**
- * Preview CSS Task
- * 
- * The preview Stylus file is run through kouto-swiss/prefixer/jeet/rupture
- * and placed into one single preview.min.css file (and sourcemap)
- */
-function previewCss() {
-  notify('Compiling styles...');
-  return gulp.src('src/styl/preview.styl')
-    .pipe(sourcemaps.init())
-    .pipe(stylus({
-      use: [koutoSwiss(), prefixer(), jeet(), rupture()],
-      compress: true
-    }))
-    .pipe(rename('preview.min.css'))
-    .pipe(plumber())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('_site/assets/css/'))
-    .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('assets/css'));
+function cleanTheme() {
+  return del(['src/tmp']);
 }
 
-/**
- * CSS Task
- * 
- * Run all the CSS related tasks.
- */
-const css = gulp.parallel(mainCss, previewCss);
+const theme = gulp.series(yamlTheme, jsonTheme, cleanTheme);
 
 /**
  * Main JS Task
@@ -205,13 +175,10 @@ function watch() {
   gulp.watch(['src/yml/*.yml', '!src/yml/theme.yml'], gulp.series(config, jekyll, reload));
 
   // Watch theme file for changes, rebuild styles & recompile
-  gulp.watch(['src/yml/theme.yml'], gulp.series(theme, css, config, jekyll, reload));
+  gulp.watch(['src/yml/theme.yml'], gulp.series(theme, config, jekyll, reload));
 
-  // Watch stylus files for changes & rebuild styles
-  gulp.watch(['src/styl/**/*.styl', '!src/styl/preview.styl'], gulp.series(theme, mainCss));
-
-  // Watch preview style file for changes, rebuild styles & reload
-  gulp.watch('src/styl/preview.styl', gulp.series(theme, previewCss, reload));
+  // Watch SASS files for changes & rebuild styles
+  gulp.watch(['_sass/**/*.scss'], gulp.series(jekyll, reload));
 
   // Watch JS files for changes & recompile
   gulp.watch('src/js/main/**/*.js', mainJs);
@@ -230,21 +197,21 @@ function watch() {
  * Default Task
  *
  * Running just `gulp` will:
- * - Compile the theme, Stylus and JavaScript files
+ * - Compile the theme, SASS and JavaScript files
  * - Optimize and copy images to its folder
  * - Build the config file
  * - Compile the Jekyll site
  * - Launch BrowserSync & watch files
  */
-exports.default = gulp.series(gulp.parallel(js, gulp.series(theme, css), images), config, jekyll, gulp.parallel(server, watch));
+exports.default = gulp.series(gulp.parallel(js, theme, images), config, jekyll, gulp.parallel(server, watch));
 
 /**
  * Build Task
  * 
  * Running just `gulp build` will:
- * - Compile the theme, Stylus and JavaScript files
+ * - Compile the theme, SASS and JavaScript files
  * - Optimize and copy images to its folder
  * - Build the config file
  * - Compile the Jekyll site
  */
-exports.build = gulp.series(gulp.parallel(js, gulp.series(theme, css), images), config, jekyll);
+exports.build = gulp.series(gulp.parallel(js, theme, images), config, jekyll);

@@ -7,14 +7,14 @@
                 {% if include.progressBar %}
                     {% include progress-bar.html %}
                 {% endif %}
-                <span class="text">Next Page <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
+                <span class="text">{{ site.translations.pagination.next_page | default: "Next Page" }} <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
             </a>
         {% else if next_posts.first %}
             <a href="{{ next_posts.first.url }}">
                 {% if include.progressBar %}
                     {% include progress-bar.html finished=true %}
                 {% endif %}
-                <span class="text">Next Post <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
+                <span class="text">{{ site.translations.pagination.next_post | default: "Next Post" }} <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
             </a>
         {% endif %}
     </div>
