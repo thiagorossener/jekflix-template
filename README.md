@@ -74,6 +74,7 @@ You can create posts manually using the [Front Matter properties](https://github
 
 ### v3.0.1
 
+- Added assets folder
 - Fixed post SVG icons
 
 ### v3.0.0
