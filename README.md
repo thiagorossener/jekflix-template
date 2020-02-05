@@ -2,7 +2,7 @@
 
 # Jekflix Template
 
-Version 2.0 is [here](https://github.com/thiagorossener/jekflix-template#v200)! 🎉🎊
+Version 3.0 is [here](https://github.com/thiagorossener/jekflix-template#v300)! 🎉🎊
 
 ![Jekflix Template Cover Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)
 
@@ -71,6 +71,14 @@ To see how your website is going to look like when you deploy it, run `bundle ex
 You can create posts manually using the [Front Matter properties](https://github.com/thiagorossener/jekflix-template/wiki/post#front-matter-properties) or automatically using the available [script](https://github.com/thiagorossener/jekflix-template/wiki/post#creating-a-post).
 
 ## Release notes
+
+### v3.0.0
+
+- Created theme `gem`
+- Enabled text translations
+- Added heading anchor links
+- Changed code highlight colors
+- Changed from Stylus to SASS
 
 ### v2.0.1
 - Fixed bugs
