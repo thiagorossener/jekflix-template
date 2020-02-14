@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: gem
+  branch: master
 publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
 collections:
