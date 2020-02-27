@@ -1,15 +1,15 @@
 name: Jekflix
 title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+description: >-
+  Jekflix is a template for Jekyll inspired by Netflix and made by Thiago
+  Rossener.
 tags:
   - blog
   - template
   - jekyll
   - theme
   - netlify
-email: youremail@xyz.com
-disqus_username: disqus_username
-show_hero: true
+show_hero: false
 menu:
   - title: Home
     url: /
@@ -19,3 +19,5 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
+email: youremail@xyz.com
+disqus_username: disqus_username
