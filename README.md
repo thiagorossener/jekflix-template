@@ -37,6 +37,7 @@ A theme for Jekyll inspired by Netflix panel for who loves movies and series and
 - ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/Features#before-you-go-modal) *(optional)*
 - [Post recommendation](https://github.com/thiagorossener/jekflix-template/wiki/Features#post-recommendation)
 - [Netlify CMS ready](https://github.com/thiagorossener/jekflix-template/wiki/Features#netlify-cms-ready)
+- [Translations](https://github.com/thiagorossener/jekflix-template/wiki/setup#translations) **new!**
 
 ## SEO
 
