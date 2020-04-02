@@ -212,6 +212,12 @@ Use the [Front Matter properties](https://github.com/thiagorossener/jekflix-temp
 
 ## Release notes
 
+### v3.1.0
+
+- Fixed hero URL
+- Updated Google Analytics script, thanks to [@JHLeeeMe](https://github.com/JHLeeeMe)
+- Added MathJax library to render math expressions, thanks to [@XieGuochao](https://github.com/XieGuochao)
+
 ### v3.0.2
 
 - Added assets folder

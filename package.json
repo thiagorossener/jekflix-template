@@ -1,6 +1,6 @@
 {
   "name": "jekflix-template",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "description": "A Jekyll theme inspired by Netflix",
   "main": "gulpfile.js",
   "homepage": "https://github.com/thiagorossener/jekflix-template.git#readme",
