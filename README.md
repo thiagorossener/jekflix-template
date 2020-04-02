@@ -2,8 +2,6 @@
 
 # Jekflix Template
 
-Version 3.0 is [here](https://github.com/thiagorossener/jekflix-template#v300)! 🎉🎊
-
 ![Jekflix Template Cover Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)
 
 See the [demo here](https://jekflix.rossener.com/).
@@ -38,6 +36,7 @@ A theme for Jekyll inspired by Netflix panel for who loves movies and series and
 - [Post recommendation](https://github.com/thiagorossener/jekflix-template/wiki/Features#post-recommendation)
 - [Netlify CMS ready](https://github.com/thiagorossener/jekflix-template/wiki/Features#netlify-cms-ready)
 - [Translations](https://github.com/thiagorossener/jekflix-template/wiki/setup#translations) **new!**
+- [Math Expressions](https://github.com/thiagorossener/jekflix-template/wiki/Features#math-expressions) *(optional)* **new!**
 
 ## SEO
 
@@ -214,7 +213,7 @@ Use the [Front Matter properties](https://github.com/thiagorossener/jekflix-temp
 
 ### v3.1.0
 
-- Fixed hero URL
+- Fixed hero URL, thanks to [@JoelSalzesson](https://github.com/JoelSalzesson)
 - Updated Google Analytics script, thanks to [@JHLeeeMe](https://github.com/JHLeeeMe)
 - Added MathJax library to render math expressions, thanks to [@XieGuochao](https://github.com/XieGuochao)
 
