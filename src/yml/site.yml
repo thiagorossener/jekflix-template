@@ -1,14 +1,14 @@
-name: Yeonghyeon KO
-title: Yeonghyeon KO | A blog theme for Jekyll
+name: Marcel
+title: Marcel | Yeonghyeon KO's Blog
 description: Statistic, Math, Computer Programming(R, Python, SQL)
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - Statistic
+  - Math
+  - Computer Programming
+  - R / Python / SQL
+  - Sports
 email: dk02315@gmail.com
-disqus_username: disqus_username
+disqus_username: yeonghyeonKO
 show_hero: true
 menu:
   - title: Home
