@@ -1,8 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5f205b3a-73c2-472c-b052-82b95bdf36b7/deploy-status)](https://app.netlify.com/sites/sleepy-bhabha-00eedf/deploys)
 
 # Jekflix Template
+![Jekflix Template Cover Image](C:/Users/1234/Documents/GitHub/YeonghyeonKO.github.io/src/img/blog-image.png)
 
-![Jekflix Template Cover Image](/assets/img/blog-image.png)
 
 See the [demo here](https://jekflix.rossener.com/).
 
