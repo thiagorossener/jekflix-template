@@ -4,7 +4,7 @@ title: Marcel | Yeonghyeon KO's Blog
 description: Statistics, Math, Computer Programming(R, Python, SQL)
 tags:
   - Statistics
-  - Math
+  - Mathematics
   - Computer Programming
   - R / Python / SQL
   - Sports
@@ -14,6 +14,12 @@ show_hero: true
 menu:
   - title: Home
     url: /
+  - title : Statistics
+    url: 
+  - title : Mathematics
+    url:
+  - title : Computer Programming
+    url:
   - title: About
     url: /about
   - title: Contact
