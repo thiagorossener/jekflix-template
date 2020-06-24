@@ -2,7 +2,7 @@
 date: 2018-10-09 12:26:40
 layout: post
 title: WHY SO SERIOUS? 우하하
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+subtitle: 조커의 와이 쏘 씨리어스.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1506079212/jekflix-capa_vfhuzh.png
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1506079212/jekflix-capa_vfhuzh.png
