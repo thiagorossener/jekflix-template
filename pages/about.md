@@ -5,13 +5,27 @@ description: Some description.
 permalink: /about/
 ---
 
-<img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Thiago Rossener" width="200">
+<img class="img-rounded" src="/assets/img/uploads/profile.jpg" alt="Yeonghyeon KO" width="200">
 
 # About
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Yeonghyeon KO (Marcel)
+- Seoul National University
+ - Major : Archaeology & Industrial Engineering
+ - Minor : Statistics
+
+(2020 ~ )
+- Intern for Bioinformatics and Biostatistics Lab. in Seoul National University
+
+(2019)
+- Coala Univ. II : Web Crawling, Machine Learning Study, Project on Quant Modeling
+
+- Google Studyjam : ML Introductory(February), Cloud Intermediate(March), ML Intermediate(April), ML Advanced(June)
+
+(2017 ~ 2019)
+- Served in Air Force as a Computer Processing and Administrative Soldier
+
+(2014 ~ 2016)
+- SNU Baseball Team : played as a Third baseman and Outfielder, participated the friendly match with Tokyo University
+
+- Excavation in Azerbaijan : Ancient tombs in the Bronze Age
