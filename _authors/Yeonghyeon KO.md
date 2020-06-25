@@ -4,8 +4,7 @@ photo: /assets/img/uploads/profile.jpg
 name: Yeonghyeon Ko
 display_name: Yeonghyeon Ko
 position: Student
-bio: Studying Statistics & Industrial Engineering 
-in Seoul National University
+bio: Studying Statistics & Industrial Engineering in Seoul National University
 github_username: YeonghyeonKO
 facebook_username: yeong.hyeon.Ko95
 instagram_username: adv_english
