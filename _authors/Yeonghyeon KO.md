@@ -1,6 +1,6 @@
 ---
 layout: author
-photo: /assets/img/uploads/profile.png
+photo: /assets/img/uploads/profile.jpg
 name: Yeonghyeon Ko
 display_name: Yeonghyeon KO
 position: Student
