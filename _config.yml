@@ -52,6 +52,14 @@ categories_folder: category
 sent_message_url: "/contact/message-sent/"
 
 
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
