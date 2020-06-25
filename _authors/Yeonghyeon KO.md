@@ -2,9 +2,9 @@
 layout: author
 photo: /assets/img/uploads/profile.jpg
 name: Yeonghyeon Ko
-display_name: Yeonghyeon KO
+display_name: Yeonghyeon Ko
 position: Student
-bio: Just a developer.
+bio: Studying Statistics & Industrial Engineering in SEOUl NATIONAL UNIVERSITY
 github_username: YeonghyeonKO
 facebook_username: yeong.hyeon.Ko95
 instagram_username: adv_english
