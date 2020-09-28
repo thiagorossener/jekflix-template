@@ -20,4 +20,5 @@ menu:
     url: /feed.xml
 email: youremail@test.com
 disqus_username: disqus_username
+# add api key here
 vuukle_api: 
