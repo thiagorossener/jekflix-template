@@ -21,6 +21,8 @@ menu:
     url: /feed.xml
 email: youremail@test.com
 disqus_username: disqus_username
+# add your vuukle api key
+vuukle_api:
 
 
 # Social Media Settings
