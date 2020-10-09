@@ -1,11 +1,12 @@
 ---
 layout: author
 photo: /assets/img/uploads/profile.png
-name: thiagorossener
-display_name: Thiago Rossener
-position: Chief Editor
+name: Jinhwan-Suk
+display_name: Jinhwan Suk
+position: MS Candidate
 bio: Just a developer.
-github_username: thiagorossener
+github_username: vrvrv
+
 facebook_username: thiagorossener
 twitter_username: thiagorossener
 instagram_username: thiagorossener
