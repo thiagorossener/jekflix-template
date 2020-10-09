@@ -15,4 +15,5 @@ tags:
 author: Kyuyong-Shin
 ---
 XAI model that extract feature importance in Bayesian Deep Learning setting.
+
 [YouTube](https://youtu.be/vWCpziECyAw)
