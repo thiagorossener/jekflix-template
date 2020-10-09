@@ -16,4 +16,5 @@ tags:
 author: Kyuyong-Shin
 ---
 Find out relation between Dropout and Bayesian NN.
+
 [YouTube](https://youtu.be/LUs2f1WgIZw)

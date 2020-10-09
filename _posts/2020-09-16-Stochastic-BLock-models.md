@@ -16,4 +16,5 @@ tags:
 author: Kyuyong-Shin
 ---
 Latent Modeling via Indian Buffet Process with Graph Neural Networks.
+
 [YouTube](https://youtu.be/V6JtBWp6oC0)
