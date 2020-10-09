@@ -1,6 +1,6 @@
 # Site Settings
 name: GrootAI
-title: GrootAI | A blog theme for Jekyll
+title: GrootAI | Machine Learning Seminar
 description: Jekflix is a template for Jekyll inspired by Netflix and made by
   Thiago Rossener.
 tags:
@@ -19,7 +19,7 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: grootseminar@gmail.com
 disqus_username: disqus_username
 
 
@@ -101,4 +101,4 @@ exclude: [
 ]
 
 # Theme
-version: v3.1.0
+version: v1.0.0

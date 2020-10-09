@@ -2,14 +2,12 @@
 date: 2020-09-16T23:48:05.000Z
 layout: post
 title: Stochastic Blockmodels meet Graph Neural Networks
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
+  Latent Modeling via Indian Buffet Process with Graph Neural Networks
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dthouk4zq/image/upload/v1602256216/meet_GNN_gttrme.png
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602256216/meet_GNN_gttrme.png
 category: Stochastic Block Model
 tags:
   - GNN
