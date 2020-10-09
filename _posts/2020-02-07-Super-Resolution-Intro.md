@@ -1,16 +1,15 @@
 ---
-date: 2018-04-21 12:26:40
+date: 2020-02-07 13:24:49
 layout: post
-title: Candy, candies, candy!
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+title: Super Resolution Intro.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822137/theme11_vei7iw.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822137/theme11_vei7iw.jpg
-category: diet
+image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559824021/theme12_e0vxlr.jpg
+optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559824021/theme12_e0vxlr.jpg
+subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+category: Vision
 tags:
-  - food
-  - tips
-author: thiagorossener
+  - Vision
+author: Yongwoo, Kim
 ---
 
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
@@ -124,13 +123,5 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
 </table>
 
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-
-
-
-
-
-
-
 
 

@@ -1,16 +1,15 @@
 ---
-date: 2010-09-10 12:26:40
+date: 2020-02-15 22:55:45
 layout: post
-title: Birds can fly, but this you knew already
+title: Attention Is All You Need
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559825145/theme16_o0seet.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559825145/theme16_o0seet.jpg
-category: life
+image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme2_ylcxxz.jpg
+optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme2_ylcxxz.jpg
+category: NLP
 tags:
-  - life
-  - tips
-author: thiagorossener
+  - NLP
+author: Kyuyong, Shin
 ---
 
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
@@ -124,6 +123,12 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
 </table>
 
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+
+
+
+
+
 
 
 
