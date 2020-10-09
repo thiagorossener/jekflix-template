@@ -2,14 +2,12 @@
 date: 2020-07-31T23:48:05.000Z
 layout: post
 title: Interpreting Deep Neural Networks Through Variable Importance
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
+    XAI model that extract feature importance in Bayesian Deep Learning setting.
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dthouk4zq/image/upload/v1602257100/variable_iahd4r.png
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602257100/variable_iahd4r.png
 category: XAI
 tags:
   - XAI

@@ -2,15 +2,13 @@
 date: 2020-07-19T23:48:05.000Z
 layout: post
 title: Yarin Gal Thesis (Uncertainty in Deep Learning) Chapter 3
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
+  Find out relation between Dropout and Bayesian NN
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dthouk4zq/image/upload/v1602257098/uncertain_xhy6jq.png
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
-category: Deep Learning
+  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602257098/uncertain_xhy6jq.png
+category: Deep Learning Theory
 tags:
   - Deep Learning
   - Machine Learning
