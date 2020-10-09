@@ -14,7 +14,7 @@ category: Data Mining
 tags:
   - Data Mining
   - Machine Learning
-author: Jinhwan, Suk
+author: Jinhwan-Suk
 paginate: true
 ---
 

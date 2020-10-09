@@ -14,6 +14,6 @@ category: GNN, Vision
 tags:
   - GNN
   - Vision
-author: Eunbyeol, Cho
+author: Eunbyeol-Cho
 ---
 [YouTube](https://youtu.be/nK5-pL3_zXk)

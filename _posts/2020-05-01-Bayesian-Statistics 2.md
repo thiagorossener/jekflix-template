@@ -14,5 +14,5 @@ category: Statistics
 tags:
   - Statistics
   - Statistical Learning
-author: Yongwoo, Kim
+author: Yongwoo-Kim
 ---

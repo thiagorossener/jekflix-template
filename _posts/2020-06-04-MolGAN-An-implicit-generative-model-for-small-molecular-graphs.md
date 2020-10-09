@@ -13,6 +13,6 @@ optimized_image: >-
 category: GNN
 tags:
   - GNN
-author: Jayeon, Lee
+author: Jayeon-Lee
 ---
 [YouTube](https://youtu.be/ct0joqjM508)

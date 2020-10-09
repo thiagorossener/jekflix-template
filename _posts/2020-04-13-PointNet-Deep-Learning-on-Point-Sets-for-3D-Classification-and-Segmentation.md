@@ -10,7 +10,7 @@ category: Vision
 tags:
   - Vision
   - DL
-author: Eunbyeol, Cho
+author: Eunbyeol-Cho
 ---
 
 [YouTube](https://youtu.be/71p3fkuhNj0)

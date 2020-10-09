@@ -14,5 +14,5 @@ category: Clean Code
 tags:
   - Clean Code
   - Python
-author: Munjun, Hwang
+author: Munjun-Hwang
 ---

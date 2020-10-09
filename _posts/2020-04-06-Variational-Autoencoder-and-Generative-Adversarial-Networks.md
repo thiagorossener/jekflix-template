@@ -9,7 +9,7 @@ optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380
 category: Generative Model
 tags:
   - Generative Model
-author: Kyuyong, Shin
+author: Kyuyong-Shin
 ---
 
 [YouTube](https://youtu.be/VAVxQ6sCOOQ)

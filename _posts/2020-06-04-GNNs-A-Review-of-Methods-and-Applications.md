@@ -13,6 +13,6 @@ optimized_image: >-
 category: GNN
 tags:
   - GNN
-author: Hansam, Cho
+author: Hansam-Cho
 ---
 [YouTube](https://youtu.be/wVhhPfRqoDE)

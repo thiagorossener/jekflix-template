@@ -13,7 +13,7 @@ optimized_image: >-
 category: Deep Learning
 tags:
   - Attention Model
-author: Hansam, Cho
+author: Hansam-Cho
 paginate: true
 ---
 

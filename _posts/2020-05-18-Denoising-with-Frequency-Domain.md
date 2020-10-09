@@ -15,5 +15,5 @@ tags:
   - Image Processing
   - Fourier Transform
   - Wavelet
-author: Jayeon, Lee
+author: Jayeon-Lee
 ---

@@ -10,7 +10,7 @@ category: Statistical Learning
 tags:
   - Statistical Learning
   - Opimization
-author: Kyuyong, Shin
+author: Kyuyong-Shin
 paginate: true
 ---
 [YouTube](https://youtu.be/UPZDoZl-u5k)

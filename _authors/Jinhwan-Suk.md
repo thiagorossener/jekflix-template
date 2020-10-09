@@ -1,6 +1,6 @@
 ---
 layout: author
-photo: /assets/img/uploads/profile.png
+photo: /assets/img/uploads/jinhwan.png
 name: Jinhwan-Suk
 display_name: Jinhwan Suk
 position: MS Candidate

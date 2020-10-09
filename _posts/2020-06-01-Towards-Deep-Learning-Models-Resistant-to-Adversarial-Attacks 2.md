@@ -13,6 +13,6 @@ optimized_image: >-
 category: Adversarial Machine Learning
 tags:
   - Machine Learning
-author: Mihyun, Kang
+author: Mihyun-Kang
 ---
 [YouTube](https://youtu.be/G1FNHgrhEbE)

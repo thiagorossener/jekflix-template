@@ -14,6 +14,6 @@ category: GNN
 tags:
   - GNN
   - Node embedding
-author: Jinhwan, Suk
+author: Jinhwan-Suk
 ---
 [YouTube](https://youtu.be/uH9oU6rQYmk)

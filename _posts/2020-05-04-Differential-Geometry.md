@@ -14,7 +14,7 @@ category: Math
 tags:
   - Mathematics
   - Differential Geometry
-author: Kyuyong, Shin
+author: Kyuyong-Shin
 ---
 
 [YouTube](https://youtu.be/wY8G5QLgLmE)

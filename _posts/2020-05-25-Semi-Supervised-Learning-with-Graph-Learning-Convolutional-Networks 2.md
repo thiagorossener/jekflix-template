@@ -13,6 +13,6 @@ optimized_image: >-
 category: GNN
 tags:
   - GNN
-author: Eunbyeol, Cho
+author: Eunbyeol-Cho
 ---
 [YouTube](https://youtu.be/-n9pCK-pLFU)

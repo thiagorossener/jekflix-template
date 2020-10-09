@@ -9,7 +9,7 @@ image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559824306/theme13_dsh
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559824306/theme13_dshbqx.jpg
 tags:
   - Mathematics
-author: Jinhwan, Suk
+author: Jinhwan-Suk
 ---
 
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
