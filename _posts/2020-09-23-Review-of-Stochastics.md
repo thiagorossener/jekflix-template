@@ -2,7 +2,6 @@
 date: 2020-09-23T23:48:05.000Z
 layout: post
 title: Review of Stochastic Block Model - Lecture 2 (Invited Talk by Jakwang Kim
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
