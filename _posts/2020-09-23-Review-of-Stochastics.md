@@ -1,14 +1,13 @@
 ---
 date: 2020-09-23T23:48:05.000Z
 layout: post
-title: Review of Stochastic Block Model - Lecture 2 (Invited Talk by Jakwang Kim
+title: Review of Stochastic Block Model - Lecture 2 (Invited Talk by Jakwang Kim)
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
+  Study an algorithm that checks which geometry the graph was created from.
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dthouk4zq/image/upload/v1602254781/1_vosjns.png
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602254781/1_vosjns.png
 category: Stochastic Block Model
 tags:
   - Machine Learning
