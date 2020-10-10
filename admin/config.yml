@@ -78,7 +78,7 @@ collections:
         name: "tags"
         hint: "Separate with commas. These will also be used as keywords for search engines."
         widget: "list"
-      - label: "Presenter"
+      - label: "Author"
         name: "author"
         widget: "relation"
         collection: "authors"
