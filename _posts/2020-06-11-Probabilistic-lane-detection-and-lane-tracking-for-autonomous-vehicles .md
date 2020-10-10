@@ -2,14 +2,11 @@
 date: 2020-06-11T23:48:05.000Z
 layout: post
 title: Probabilistic lane detection and lane tracking for autonomous vehicles 
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dthouk4zq/image/upload/v1602304700/probabilisitic_kwghcx.png
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602304700/probabilisitic_kwghcx.png
 category: Vision
 tags:
   - Machine Learning
