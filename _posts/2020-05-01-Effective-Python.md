@@ -7,10 +7,10 @@ description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602310572/post_img/1_hCepk89R2z0Jp3OyWdvJ8Q_bvgiet.jpg
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
-category: Clean Code
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602310572/post_img/1_hCepk89R2z0Jp3OyWdvJ8Q_bvgiet.jpg
+category: Clean code
 tags:
   - Clean Code
   - Python
