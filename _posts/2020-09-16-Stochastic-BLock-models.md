@@ -15,6 +15,6 @@ tags:
   - XAI
 author: Kyuyong-Shin
 ---
-Latent Feature Modeling via Indian Buffet Process with Graph Neural Networks.
 
-[YouTube](https://youtu.be/V6JtBWp6oC0)
+### Video 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V6JtBWp6oC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

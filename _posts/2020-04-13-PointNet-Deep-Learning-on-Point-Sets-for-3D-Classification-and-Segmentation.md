@@ -3,8 +3,7 @@ date: 2020-04-13 12:26:40
 layout: post
 title: PointNet Deep Learning on Point Sets for 3D Classification and Segmentation
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602308314/post_img/Ikj1_plwmtg.gif
+description: PointNet
 optimized_image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602308314/post_img/Ikj1_plwmtg.gif
 category: Vision
 tags:
@@ -13,4 +12,8 @@ tags:
 author: Eunbyeol-Cho
 ---
 
-[YouTube](https://youtu.be/71p3fkuhNj0)
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/71p3fkuhNj0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Slide
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/4lsrQPhej0gkQF" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:0px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 

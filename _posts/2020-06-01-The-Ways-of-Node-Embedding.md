@@ -16,4 +16,8 @@ author: Jinhwan-Suk
 ---
 How to get a graph node representation by deep learning.
 
-[YouTube](https://youtu.be/uH9oU6rQYmk)
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uH9oU6rQYmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Slide
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/3ESDHUraTehLCh" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:0px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 

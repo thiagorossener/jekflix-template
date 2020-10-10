@@ -15,6 +15,6 @@ tags:
   - Statistical Learning
 author: Kyuyong-Shin
 ---
-Find out relation between Dropout and Bayesian NN.
 
-[YouTube](https://youtu.be/LUs2f1WgIZw)
+### Video 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LUs2f1WgIZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

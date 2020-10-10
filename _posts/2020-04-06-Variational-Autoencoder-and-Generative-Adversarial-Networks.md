@@ -12,7 +12,12 @@ tags:
 author: Kyuyong-Shin
 ---
 
-[YouTube](https://youtu.be/VAVxQ6sCOOQ)
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VAVxQ6sCOOQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Slide
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/7utKUSXWj2VrQJ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:0px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
 
 
 
