@@ -6,10 +6,8 @@ subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
-image: >-
-  /assets/img/post_image/logo-2020.png
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/c_fit,h_200,q_100,w_380/v1602312960/post_img/banners-6_pci7fb.jpg
 category: XAI
 tags:
   - XAI

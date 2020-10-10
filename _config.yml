@@ -1,7 +1,8 @@
 # Site Settings
 name: GrootAI
-title: GrootAI | Machine Learning Seminar
+title: GrootAI | A blog theme for Jekyll
 description: GrootAI is a Machine Learning seminar group involving wide variety of people.
+url: "https://grootai.github.io"
 tags:
   - blog
   - machine learning

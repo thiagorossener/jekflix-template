@@ -4,8 +4,8 @@ layout: post
 title: 55 Minute Reinforcement Learning
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307484/post_img/RashFlippantIbadanmalimbe-size_restricted_v5qqvt.gif
-optimized_image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307484/post_img/RashFlippantIbadanmalimbe-size_restricted_v5qqvt.gif
+image: https://res.cloudinary.com/dfnkx5mr1/image/upload/c_fit,h_399,w_760/v1602307484/post_img/RashFlippantIbadanmalimbe-size_restricted_v5qqvt.gif
+optimized_image: https://res.cloudinary.com/dfnkx5mr1/image/upload/c_fit,h_200,q_100,w_380/v1602307484/post_img/RashFlippantIbadanmalimbe-size_restricted_v5qqvt.gif
 category: Reinforcement Learning
 tags:
   - Reinforcement Learning
