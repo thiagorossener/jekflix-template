@@ -5,17 +5,53 @@ description: Meet our team.
 permalink: /staff/
 ---
 
-<h1>Staff</h1>
+<h1>Founders</h1>
 
 <div class="staff">
   {% for author in site.authors %}
-    <div class="item">
-      <h2 class="name">
-        <a href="{{ site.baseurl }}{{ author.url }}">{{ author.display_name }}</a>
-      </h2>
-      {% if author.position %}
-        <h3 class="position">{{ author.position }}</h3>
-      {% endif %}
-    </div>
+    {% if author.staff == founder %}
+      <div class="item">
+        <h2 class="name">
+          <a href="{{ site.baseurl }}{{ author.url }}">{{ author.display_name }}</a>
+        </h2>
+        {% if author.position %}
+          <h3 class="position">{{ author.position }}</h3>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h1>Members</h1>
+
+<div class="staff">
+  {% for author in site.authors %}
+    {% if author.staff == member %}
+      <div class="item">
+        <h2 class="name">
+          <a href="{{ site.baseurl }}{{ author.url }}">{{ author.display_name }}</a>
+        </h2>
+        {% if author.position %}
+          <h3 class="position">{{ author.position }}</h3>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h1>Special Guests</h1>
+
+<div class="staff">
+  {% for author in site.authors %}
+    {% if author.staff == guest %}
+      <div class="item">
+        <h2 class="name">
+          <a href="{{ site.baseurl }}{{ author.url }}">{{ author.display_name }}</a>
+        </h2>
+        {% if author.position %}
+          <h3 class="position">{{ author.position }}</h3>
+        {% endif %}
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
