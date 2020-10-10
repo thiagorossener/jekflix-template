@@ -5,9 +5,9 @@ title: Yarin Gal Thesis (Uncertainty in Deep Learning) Chapter 3
 description: >-
   Find out relation between Dropout and Bayesian NN.
 image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/v1602257098/uncertain_xhy6jq.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602310887/post_img/uncertainty_llc93a.jpg
 optimized_image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602257098/uncertain_xhy6jq.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602310887/post_img/uncertainty_llc93a.jpg
 category: Deep Learning Theory
 tags:
   - Deep Learning
