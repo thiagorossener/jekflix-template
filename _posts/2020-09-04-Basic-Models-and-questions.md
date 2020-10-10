@@ -14,6 +14,6 @@ tags:
   - Statistiacl Learninig
 author: Kyuyong-Shin
 ---
-What condition do we need for exact recovery in Stochastic Block Model.
 
-[YouTube](https://youtu.be/nb9VFeN78bk)
+### Video 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nb9VFeN78bk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

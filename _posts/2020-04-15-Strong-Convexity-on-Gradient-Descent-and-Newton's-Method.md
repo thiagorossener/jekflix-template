@@ -13,4 +13,10 @@ tags:
 author: Kyuyong-Shin
 paginate: true
 ---
-[YouTube](https://youtu.be/UPZDoZl-u5k)
+
+
+### Video 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UPZDoZl-u5k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Slide
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/pSy31c1WpOV3JS" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:0px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
