@@ -7,7 +7,7 @@ description: >-
 image: >-
   https://res.cloudinary.com/dthouk4zq/image/upload/v1602256217/basic_model_and_question_beqj3m.png
 optimized_image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602256217/basic_model_and_question_beqj3m.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/c_fit,h_200,q_100,w_380/v1602313137/post_img/iot-network-blog-min_ubnh6t.jpg
 category: Network Analysis
 tags:
   - Machine Learning
