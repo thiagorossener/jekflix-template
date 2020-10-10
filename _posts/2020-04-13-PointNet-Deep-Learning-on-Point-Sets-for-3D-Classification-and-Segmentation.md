@@ -4,8 +4,8 @@ layout: post
 title: PointNet Deep Learning on Point Sets for 3D Classification and Segmentation
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559820489/js-code_n83m7a.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559820489/js-code_n83m7a.jpg
+image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602308314/post_img/Ikj1_plwmtg.gif
+optimized_image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602308314/post_img/Ikj1_plwmtg.gif
 category: Vision
 tags:
   - Vision

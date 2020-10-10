@@ -4,8 +4,8 @@ layout: post
 title: Attention Is All You Need
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme2_ylcxxz.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme2_ylcxxz.jpg
+image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307993/post_img/luong2015-fig2-3_fpyymg.png
+optimized_image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307993/post_img/luong2015-fig2-3_fpyymg.png
 category: NLP
 tags:
   - NLP

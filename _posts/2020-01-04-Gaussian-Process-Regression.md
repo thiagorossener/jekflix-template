@@ -4,8 +4,8 @@ layout: post
 title: Gaussian Process Regression
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559825145/theme16_o0seet.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559825145/theme16_o0seet.jpg
+image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307643/post_img/GP_t82jyt.gif
+optimized_image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307643/post_img/GP_t82jyt.gif
 category: Statistical Learning
 tags:
   - Statistical Learning
