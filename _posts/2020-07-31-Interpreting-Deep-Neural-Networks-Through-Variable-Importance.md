@@ -14,6 +14,6 @@ tags:
   - Statistical Learning
 author: Kyuyong-Shin
 ---
-XAI model that extract feature importance in Bayesian Deep Learning setting.
 
-[YouTube](https://youtu.be/vWCpziECyAw)
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vWCpziECyAw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

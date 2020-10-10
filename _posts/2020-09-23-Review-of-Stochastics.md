@@ -14,6 +14,6 @@ tags:
   - Statistical Learning
 author: Jakwang-Kim
 ---
-Study an algorithm that checks which geometry the graph was created from.
 
-[YouTube](https://youtu.be/DC3YIJ2OeoE)
+### Video 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DC3YIJ2OeoE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
