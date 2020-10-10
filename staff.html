@@ -31,7 +31,6 @@ permalink: /staff/
         {% else %}
           <img class="img-rounded" src="/assets/img/user.jpg" alt="{{ author.display_name }}">
         {% endif %}
-        <p class="def">{{ site.translations.text.author | default: "Presenter" }}</p>
         <h3 class="name">
           <a href="{{ author.url }}">{{ author.display_name }}</a>
         </h3>
@@ -45,16 +44,6 @@ permalink: /staff/
           {% if author.facebook_username %}
             <a href="https://www.facebook.com/{{ author.facebook_username }}" title="Facebook">
               <svg><use xlink:href="#icon-facebook"></use></svg>
-            </a>
-          {% endif %}
-          {% if author.twitter_username %}
-            <a href="https://twitter.com/{{ author.twitter_username }}" title="Twitter">
-              <svg><use xlink:href="#icon-twitter"></use></svg>
-            </a>
-          {% endif %}
-          {% if author.medium_username %}
-            <a href="https://medium.com/@{{ author.medium_username }}" title="Medium">
-              <svg><use xlink:href="#icon-medium"></use></svg>
             </a>
           {% endif %}
           {% if author.instagram_username %}
@@ -77,12 +66,6 @@ permalink: /staff/
     {% endif %}
     {% if author.facebook_username %}
         {% assign author_urls = author_urls | append: '"https://www.facebook.com/' | append: author.facebook_username | append: '",' %}
-    {% endif %}
-    {% if author.twitter_username %}
-        {% assign author_urls = author_urls | append: '"https://twitter.com/' | append: author.twitter_username | append: '",' %}
-    {% endif %}
-    {% if author.medium_username %}
-        {% assign author_urls = author_urls | append: '"https://medium.com/@' | append: author.medium_username | append: '",' %}
     {% endif %}
     {% if author.instagram_username %}
         {% assign author_urls = author_urls | append: '"https://www.instagram.com/' | append: author.instagram_username | append: '",' %}
