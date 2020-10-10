@@ -1,5 +1,5 @@
 ---
-layout: Prsenter
+layout: author
 photo: /assets/img/uploads/jinhwan.png
 name: Jinhwan-Suk
 display_name: Jinhwan Suk

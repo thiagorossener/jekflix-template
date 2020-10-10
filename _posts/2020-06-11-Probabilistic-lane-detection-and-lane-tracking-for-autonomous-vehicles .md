@@ -16,3 +16,5 @@ author: Yongwoo-Kim
 
 ### Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AXTk32e9i4Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Among the lane detection algorithms required for autonomous driving, this method focus on increase the stability of lane detection in irregular situations by using a probabilistic method
