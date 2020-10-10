@@ -2,14 +2,11 @@
 date: 2020-06-01T23:48:05.000Z
 layout: post
 title: Towards Deep Learning Models Resistant to Adversarial Attacks
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dthouk4zq/image/upload/v1602304698/adversarial_ngfr1k.png
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602304698/adversarial_ngfr1k.png
 category: Adversarial Machine Learning
 tags:
   - Machine Learning
