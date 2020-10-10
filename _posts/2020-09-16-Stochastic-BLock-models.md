@@ -8,7 +8,7 @@ image: >-
   https://res.cloudinary.com/dthouk4zq/image/upload/v1602333954/ibp_rzbnpx.png
 optimized_image: >-
   https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602333954/ibp_rzbnpx.png
-category: Stochastic Block Model
+category: Statistical Learning
 tags:
   - GNN
   - Statistical Learning

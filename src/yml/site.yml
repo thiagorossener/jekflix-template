@@ -1,6 +1,6 @@
 name: GrootAI
 title: GrootAI | ML/DL group
-description: GrootAI is a Machine Learning seminar group involving wide variety of people.
+description: GrootAI is Machine Learning Study Group composed of people from various fields. It started in March 2018.
 url: "https://grootai.github.io"
 tags:
   - blog
@@ -13,11 +13,11 @@ paginate: 10
 menu:
   - title: Home
     url: /
+  - title: Presenters
+    url: /staff
   - title: About
     url: /about
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
 email: grootseminar@gmail.com
 disqus_username: anonymous
