@@ -4,8 +4,8 @@ layout: post
 title: Decision Tree
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822138/theme10_xenudc.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme10_xenudc.jpg
+image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602308089/post_img/giphy_bptqvv.gif
+optimized_image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602308089/post_img/giphy_bptqvv.gif
 category: Machine Learning
 tags:
   - Machine Learning

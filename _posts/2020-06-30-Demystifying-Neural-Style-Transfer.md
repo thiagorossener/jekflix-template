@@ -4,9 +4,9 @@ layout: post
 title: Demystifying Neural Style Transfer
 description: >-
 image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/v1602304699/demystifying_nfwa1u.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307229/post_img/1_XI3beonBnOwp-y5BwNOqCw_gmol6h.gif
 optimized_image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602304699/demystifying_nfwa1u.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307229/post_img/1_XI3beonBnOwp-y5BwNOqCw_gmol6h.gif
 category: Vision
 tags:
   - Generative Model

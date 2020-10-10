@@ -1,14 +1,16 @@
 # Site Settings
 name: GrootAI
-title: GrootAI | Machine Learning Seminar
+title: GrootAI | A blog theme for Jekyll
 description: GrootAI is a Machine Learning seminar group involving wide variety of people.
+url: "https://grootai.github.io"
 tags:
   - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - machine learning
+  - deep learning
+  - ai
+  - statistical learning
 show_hero: true
+paginate: 10
 menu:
   - title: Home
     url: /
@@ -19,7 +21,7 @@ menu:
   - title: Feed
     url: /feed.xml
 email: grootseminar@gmail.com
-disqus_username: disqus_username
+disqus_username: anonymous
 
 
 # Social Media Settings
@@ -34,8 +36,8 @@ medium_username: medium_username
 
 # Posts Settings
 show_time_bar: true
-show_modal_on_exit: false
-show_modal_on_finish_post: true
+show_modal_on_exit: true
+show_modal_on_finish_post: false
 two_columns_layout: true
 
 
@@ -100,4 +102,4 @@ exclude: [
 ]
 
 # Theme
-version: v1.0.0
+version: v3.1.0

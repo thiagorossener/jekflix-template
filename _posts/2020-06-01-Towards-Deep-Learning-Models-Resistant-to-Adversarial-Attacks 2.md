@@ -4,9 +4,9 @@ layout: post
 title: Towards Deep Learning Models Resistant to Adversarial Attacks
 description: >-
 image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/v1602304698/adversarial_ngfr1k.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602306727/post_img/robotic_arm_wrestling_by_ociacia-d78inix_bpzkbq.jpg
 optimized_image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602304698/adversarial_ngfr1k.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602306727/post_img/robotic_arm_wrestling_by_ociacia-d78inix_bpzkbq.jpg
 category: Adversarial Machine Learning
 tags:
   - Machine Learning

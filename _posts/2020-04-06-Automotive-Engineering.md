@@ -4,8 +4,8 @@ layout: post
 title: Automotive Engineering
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme1_eoyjtl.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821648/theme1_eoyjtl.jpg
+image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602308152/post_img/006d94384ad58b485eee32abb8e1da63_weor75.gif
+optimized_image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602308152/post_img/006d94384ad58b485eee32abb8e1da63_weor75.gif
 category: Machine Learning
 tags:
   - Machine Learning Systems

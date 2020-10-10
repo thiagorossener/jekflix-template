@@ -5,9 +5,9 @@ title: The Ways of Node Embedding - Node2vec, DeepWalk
 description: >-
   How to get a graph node representation by deep learning.
 image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/v1602304699/ways_of_fmdowm.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602306846/post_img/example-viz_kaqkmb.png
 optimized_image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602304699/ways_of_fmdowm.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602306846/post_img/example-viz_kaqkmb.png
 category: GNN
 tags:
   - GNN

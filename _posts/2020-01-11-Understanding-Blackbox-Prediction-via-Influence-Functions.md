@@ -4,8 +4,8 @@ layout: post
 title: Understanding Blackbox Prediction via Influence Functions
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559824822/theme15_oqsl4z.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559824822/theme15_oqsl4z.jpg
+image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307780/post_img/3D-black-box-artificial-intelligence-interviews-shutterstock-489987685_p014pw.jpg
+optimized_image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307780/post_img/3D-black-box-artificial-intelligence-interviews-shutterstock-489987685_p014pw.jpg
 category: XAI
 tags:
   - XAI

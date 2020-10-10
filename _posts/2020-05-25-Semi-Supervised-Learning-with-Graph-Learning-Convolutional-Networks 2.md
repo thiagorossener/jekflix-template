@@ -5,9 +5,9 @@ title: Semi-supervised Learning with Graph Learning-Convolutional Networks
 description: >-
   Thomas kipf's Graph Convolution Network using 1st order approximation of Cebyshev polynomial.
 image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/v1602305447/gcn_b3ph15.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307125/post_img/ki-t_en2rbd.jpg
 optimized_image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602305447/gcn_b3ph15.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602307125/post_img/ki-t_en2rbd.jpg
 category: GNN
 tags:
   - GNN

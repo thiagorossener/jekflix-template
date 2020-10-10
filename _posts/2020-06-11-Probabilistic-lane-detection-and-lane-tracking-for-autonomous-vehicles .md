@@ -4,9 +4,9 @@ layout: post
 title: Probabilistic lane detection and lane tracking for autonomous vehicles 
 description: >-
 image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/v1602304700/probabilisitic_kwghcx.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602303120/post_img/lane-support_lka_2018_iwrsdl.png
 optimized_image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602304700/probabilisitic_kwghcx.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602303120/post_img/lane-support_lka_2018_iwrsdl.png
 category: Vision
 tags:
   - Machine Learning

@@ -4,9 +4,9 @@ layout: post
 title: MolGAN - An implicit generative model for small molecular graphs
 description: >-
 image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/v1602305146/molgan_y8ngh7.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602303292/post_img/shutterstock_725874874_yrtbfg.jpg
 optimized_image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602305146/molgan_y8ngh7.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602303292/post_img/shutterstock_725874874_yrtbfg.jpg
 category: GNN
 tags:
   - GNN
