@@ -10,7 +10,7 @@ github_username: ShinKyuY
 facebook_username: thiagorossener
 twitter_username: thiagorossener
 instagram_username: thiagorossener
-linkedin_username: Kyuyong Shin
+linkedin_username: kyuyong-shin-26b285199/
 medium_username: thiagorossener
 ---
 
