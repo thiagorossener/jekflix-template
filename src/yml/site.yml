@@ -4,11 +4,12 @@ description: GrootAI is a Machine Learning seminar group involving wide variety 
 url: "https://grootai.github.io"
 tags:
   - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - machine learning
+  - deep learning
+  - ai
+  - statistical learning
 show_hero: true
+paginate: 10
 menu:
   - title: Home
     url: /
@@ -18,5 +19,5 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
-disqus_username: disqus_username
+email: grootseminar@gmail.com
+disqus_username: anonymous
