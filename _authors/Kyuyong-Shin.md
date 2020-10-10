@@ -1,6 +1,6 @@
 ---
 layout: author
-photo: /assets/img/uploads/profile.png
+photo: /assets/img/uploads/ky.jpg
 name: Kyuyong-Shin
 display_name: Kyuyong Shin
 position: Research Engineer
