@@ -12,4 +12,6 @@ author: Minseop-Kim
 ---
 
 ### Slide
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/3kGFg4G4abD6nz" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:0px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/3kGFg4G4abD6nz" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:0px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+From the beginning of Reinforcement Learning to the MC and TD algorithms in discrete state space. 

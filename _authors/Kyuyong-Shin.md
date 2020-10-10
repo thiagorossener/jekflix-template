@@ -1,5 +1,5 @@
 ---
-layout: Prsenter
+layout: author
 photo: /assets/img/uploads/profile.png
 name: Kyuyong-Shin
 display_name: Kyuyong Shin
