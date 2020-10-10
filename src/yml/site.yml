@@ -13,7 +13,7 @@ paginate: 10
 menu:
   - title: Home
     url: /
-  - title: Presenters
+  - title: Members
     url: /staff
   - title: About
     url: /about
