@@ -1,6 +1,9 @@
 # GrootAI Blog
 - https://grootai.github.io/
 
+## About Seminar
+- https://github.com/GrootAI/Groot_SEMINAR
+
 ## Author
 
 [Thiago Rossener](https://rossener.com/)
