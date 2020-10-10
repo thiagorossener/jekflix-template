@@ -4,9 +4,9 @@ layout: post
 title: Fourier and Wavelet transform in GCN
 description: >-
 image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/v1602305147/fourier_zr4jwe.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602302837/list-of-good-digital-signal-processing-projects_ihpsfw.jpg
 optimized_image: >-
-  https://res.cloudinary.com/dthouk4zq/image/upload/c_scale,w_380/v1602305147/fourier_zr4jwe.png
+  https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602302837/list-of-good-digital-signal-processing-projects_ihpsfw.jpg
 category: GNN
 tags:
   - GNN
