@@ -1,6 +1,6 @@
 # Site Settings
 name: GrootAI
-title: GrootAI | A blog theme for Jekyll
+title: GrootAI | ML/DL group
 description: GrootAI is a Machine Learning seminar group involving wide variety of people.
 url: "https://grootai.github.io"
 tags:
@@ -26,17 +26,17 @@ disqus_username: anonymous
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: GrootAI
+#facebook_username: facebook_username
+#twitter_username: twitter_username
+#instagram_username: instagram_username
+#linkedin_username: linkedin_username
+#medium_username: medium_username
 
 
 # Posts Settings
 show_time_bar: true
-show_modal_on_exit: true
+show_modal_on_exit: false
 show_modal_on_finish_post: false
 two_columns_layout: true
 
