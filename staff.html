@@ -22,6 +22,38 @@ permalink: /staff/
         {% if author.position %}
           <h3 class="position">{{ author.position }}</h3>
         {% endif %}
+        <p>
+        {% if author.github_username %}
+          <a href="https://github.com/{{ author.github_username }}" title="Github">
+            <svg><use xlink:href="#icon-github"></use></svg>
+          </a>
+        {% endif %}
+        {% if author.facebook_username %}
+          <a href="https://www.facebook.com/{{ author.facebook_username }}" title="Facebook">
+            <svg><use xlink:href="#icon-facebook"></use></svg>
+          </a>
+        {% endif %}
+        {% if author.twitter_username %}
+          <a href="https://twitter.com/{{ author.twitter_username }}" title="Twitter">
+            <svg><use xlink:href="#icon-twitter"></use></svg>
+          </a>
+        {% endif %}
+        {% if author.medium_username %}
+          <a href="https://medium.com/@{{ author.medium_username }}" title="Medium">
+            <svg><use xlink:href="#icon-medium"></use></svg>
+          </a>
+        {% endif %}
+        {% if author.instagram_username %}
+          <a href="https://www.instagram.com/{{ author.instagram_username }}" title="Instagram">
+            <svg><use xlink:href="#icon-instagram"></use></svg>
+          </a>
+        {% endif %}
+        {% if author.linkedin_username %}
+          <a href="https://www.linkedin.com/in/{{ author.linkedin_username }}" title="LinkedIn">
+            <svg><use xlink:href="#icon-linkedin"></use></svg>
+          </a>
+        {% endif %}
+        </p>
       </div>
     {% endif %}
   {% endfor %}
