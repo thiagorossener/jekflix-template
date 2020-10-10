@@ -9,7 +9,7 @@ permalink: /staff/
 
 <div class="staff">
   {% for author in site.authors %}
-    {% if author.staff == founder %}
+    {% if author.staff == 'founder' %}
       <div class="item">
         <h2 class="name">
           <a href="{{ site.baseurl }}{{ author.url }}">{{ author.display_name }}</a>
@@ -26,7 +26,7 @@ permalink: /staff/
 
 <div class="staff">
   {% for author in site.authors %}
-    {% if author.staff == member %}
+    {% if author.staff == 'member' %}
       <div class="item">
         <h2 class="name">
           <a href="{{ site.baseurl }}{{ author.url }}">{{ author.display_name }}</a>
@@ -43,7 +43,7 @@ permalink: /staff/
 
 <div class="staff">
   {% for author in site.authors %}
-    {% if author.staff == guest %}
+    {% if author.staff == 'guest' %}
       <div class="item">
         <h2 class="name">
           <a href="{{ site.baseurl }}{{ author.url }}">{{ author.display_name }}</a>
