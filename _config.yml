@@ -2,7 +2,6 @@
 name: GrootAI
 title: GrootAI | ML/DL group
 description: GrootAI is a Machine Learning seminar group involving wide variety of people.
-url: "https://grootai.github.io"
 tags:
   - blog
   - machine learning
@@ -102,4 +101,4 @@ exclude: [
 ]
 
 # Theme
-version: v3.1.0
+version: v1.0.0
