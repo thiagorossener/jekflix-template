@@ -13,7 +13,11 @@
     {% endif %}
 
     {% assign image = '' %}
-    {% assign image = "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url %}
+    {% if page.image %}
+        {% assign image = page.image %}
+    {% else %}
+        {% assign image = "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url %}
+    {% endif %}
 
     {% assign description = '' %}
     {% if page.description %}
@@ -38,7 +42,7 @@
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ title }}">
-    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:description" content="제123오는 짧은 소개글">
     <meta property="twitter:image:src" content="{{ image }}">
     {% if site.twitter_username %}
         <meta name="twitter:site" content="@{{ site.twitter_username }}">
@@ -48,7 +52,7 @@
     <meta property="og:url" content="{{ url }}">
     <meta property="og:title" content="{{ title }}">
     <meta property="og:image" content="{{ image }}">
-    <meta property="og:description" content="{{ description }}">
+    <meta property="og:description" content="제목아래쪽에 한줄 나오는 짧은 소개글">
     <meta property="og:site_name" content="{{ site.title }}">
 
     <!-- Favicon -->
