@@ -3,7 +3,7 @@ date: 2020-02-15 23:04:08
 layout: post
 title: Decision Tree
 subtitle: Introduction to Decision Tree Method.
-description: Decision Tree
+description: Introduction to Decision Tree Method
 image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602308089/post_img/giphy_bptqvv.gif
 optimized_image: https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602308089/post_img/giphy_bptqvv.gif
 category: Machine Learning
