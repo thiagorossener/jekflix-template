@@ -2,8 +2,9 @@
 date: 2020-06-01T23:48:05.000Z
 layout: post
 title: The Ways of Node Embedding - Node2vec, DeepWalk
+subtitle: Graph node representation methods
 description: >-
-  How to get a graph node representation by deep learning.
+  Graph node representation methods
 image: >-
   https://res.cloudinary.com/dfnkx5mr1/image/upload/v1602306846/post_img/example-viz_kaqkmb.png
 optimized_image: >-
@@ -14,7 +15,7 @@ tags:
   - Node embedding
 author: Jinhwan-Suk
 ---
-How to get a graph node representation by deep learning.
+Graph is one of the most popular object that is in non-euclidean space. One of obstacles before extracting information from Graph is that we cannot find proper representation graph by graph. Recently, there is huge development in learning algorithms for graph structured data. In this talk, we'll study Node2Vec algorithm and DeepWalk,.
 
 ### Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uH9oU6rQYmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
