@@ -3,6 +3,7 @@ date: 2020-06-01T23:48:05.000Z
 layout: post
 title: Dynamic Graph CNN for Learning on Point Clouds
 description: >-
+  Introduce EdgeConv which acts on graphs dynamically computed in each layer of the network.
 image: >-
   https://res.cloudinary.com/dthouk4zq/image/upload/v1602305147/point_cllud_xqqpqp.png
 optimized_image: >-
@@ -13,4 +14,8 @@ tags:
   - Vision
 author: Eunbyeol-Cho
 ---
-[YouTube](https://youtu.be/nK5-pL3_zXk)
+
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nK5-pL3_zXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Introduce edge convolution which acts on graphs dynamically computed in each layer of the network.

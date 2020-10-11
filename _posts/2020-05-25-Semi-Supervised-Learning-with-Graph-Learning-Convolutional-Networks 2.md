@@ -19,3 +19,5 @@ author: Eunbyeol-Cho
 
 ### Slide
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/EYz8oLUN9joVI0" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:0px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
+
+Introduce convolution directly on graphs.
