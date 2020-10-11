@@ -13,11 +13,7 @@
     {% endif %}
 
     {% assign image = '' %}
-    {% if page.image %}
-        {% assign image = page.image %}
-    {% else %}
-        {% assign image = "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url %}
-    {% endif %}
+    {% assign image = "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url %}
 
     {% assign description = '' %}
     {% if page.description %}
