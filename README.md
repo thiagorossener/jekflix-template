@@ -223,6 +223,12 @@ Use the [Front Matter properties](https://github.com/thiagorossener/jekflix-temp
 
 ## Release notes
 
+### v3.1.1
+
+- Added `formspree_form_id` config
+- Bumped up dependencies
+- Fixed minor bugs
+
 ### v3.1.0
 
 - Fixed hero URL, thanks to [@JoelSalzesson](https://github.com/JoelSalzesson)
