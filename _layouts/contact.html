@@ -2,7 +2,7 @@
 layout: page
 ---
 
-{% if site.email %}
+{% if site.email or site.formspree_form_id %}
 
 <style type="text/css" media="screen">
   .container {
@@ -16,7 +16,7 @@ layout: page
   <h2>{{ site.translations.contact.title | default: "Talk to me" }}</h2>
 
   <div id="form" class="contact-form">
-    <form accept-charset="UTF-8" method="POST" action="https://formspree.io/f/{{ site.formspree_form_id }}" v-on:submit.prevent="validateBeforeSubmit" ref="contact">
+    <form accept-charset="UTF-8" method="POST" action="https://formspree.io/{% if site.formspree_form_id %}f/{{ site.formspree_form_id }}{% else %}{{ site.email }}{% endif %}" v-on:submit.prevent="validateBeforeSubmit" ref="contact">
       <fieldset>
         <input type="hidden" name="_subject" value="{{ site.translations.contact.subject | default: 'New contact!' }}" />
         <input type="hidden" name="_next" value="{{ site.url }}{{ site.sent_message_url }}" />
