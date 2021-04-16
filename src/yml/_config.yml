@@ -46,21 +46,27 @@ sass:
 
 # Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-paginate-content
+  - jekyll-paginate-v2
 
-# Exclude my node related stuff
+# Exclude
 exclude: [
   'package.json',
   'package-lock.json',
   'src',
-  'node_modules',
   'initpost.sh',
+  'gulpfile.js',
+  'README.md',
+  '.sass-cache/',
+  '.jekyll-cache/',
+  'gemfiles/',
   'Gemfile',
   'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
+  'node_modules',
+  'vendor/bundle/',
+  'vendor/cache/',
+  'vendor/gems/',
+  'vendor/ruby/',
 ]
 
 # Theme
-version: v3.1.1
+version: v4.0.0
