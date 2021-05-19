@@ -9,4 +9,4 @@ permalink: /about/
 
 # About
 
-GravityNull is an entertainment webblog, created and maintained by [**rooban**](https://blog.gravitynull.in/authors/roobank1/)
+GravityNull is an entertainment webblog, created and maintained by [**Rooban K.**](https://blog.gravitynull.in/authors/roobank1/)
