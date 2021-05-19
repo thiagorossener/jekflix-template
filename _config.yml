@@ -33,7 +33,6 @@ facebook_username: gravitynull
 twitter_username: gravitynull_in
 instagram_username: gravitynull
 linkedin_username: roobank
-medium_username: medium_username
 
 
 # Posts Settings
@@ -61,7 +60,7 @@ collections:
     output: true
 paginate_path: "/page/:num/"
 show_get_theme_btn: true
-use_logo: true
+use_logo: false
 
 # Content paginator
 paginate_content:
