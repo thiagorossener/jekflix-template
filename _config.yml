@@ -1,14 +1,13 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: GravityNull Blog
+title: GravityNull | We do Cartoons
+description: We do Cartoons & Fun :D
 tags:
+  - graviyunull
   - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - teakadai
+  - cartoons
+  - roobank1
 show_hero: true
 menu:
   - title: Home
@@ -19,9 +18,9 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: gravitynull@yandex.com
 # See: https://disqus.com/
-disqus_username: disqus_username
+disqus_username: gravitynull
 # Contact Form Setting
 # See: https://formspree.io/
 formspree_form_id: formspree_form_id
@@ -29,17 +28,17 @@ formspree_form_id: formspree_form_id
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
+github_username: gravitynull
+facebook_username: gravitynull
+twitter_username: gravitynull_in
+instagram_username: gravitynull
+linkedin_username: roobank
 medium_username: medium_username
 
 
 # Posts Settings
 show_time_bar: true
-show_modal_on_exit: false
+show_modal_on_exit: true
 show_modal_on_finish_post: true
 two_columns_layout: true
 
@@ -54,8 +53,8 @@ sent_message_url: "/contact/message-sent/"
 
 
 # Build settings
-markdown: kramdown
-highlighter: rouge
+markdown: gravitynull
+highlighter: blog
 permalink: /:title/
 collections:
   authors:
