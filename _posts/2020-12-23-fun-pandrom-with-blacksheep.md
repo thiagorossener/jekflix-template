@@ -4,12 +4,12 @@ layout: post
 title: மரம் நடுரோம்.. Fun பன்றோம்..!
 subtitle: மரக்கன்றுகள் வனத்துறையில் பெறப்பட்டவையா? மரம் நடுவதை SIPCOT நிறுவனமே செய்கிறதா?
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://nitter.tedomum.net/pic/media%2FEpwON9VVEAEta_s.jpg%3Fname%3Dsmall
-optimized_image: https://nitter.tedomum.net/pic/media%2FEpwON9VVEAEta_s.jpg%3Fname%3Dsmall
-category: life
+image: https://lh3.googleusercontent.com/pw/ACtC-3exYXstVzeHvj0bV7UvjxJqmwUDOHik3loTklGCbwcrn1A3QxhfezLM4OBETghHM9FV-MXhDBtQWldnjtkgqkWejTDlCVhzacWN8ivrITgpTSEfonKjuzrRZ5eXABeapitYn6ZLtDESKmwFiKfmcJyoAQ=w679-h382-no
+optimized_image: https://lh3.googleusercontent.com/pw/ACtC-3exYXstVzeHvj0bV7UvjxJqmwUDOHik3loTklGCbwcrn1A3QxhfezLM4OBETghHM9FV-MXhDBtQWldnjtkgqkWejTDlCVhzacWN8ivrITgpTSEfonKjuzrRZ5eXABeapitYn6ZLtDESKmwFiKfmcJyoAQ=w679-h382-no
+category: social
 tags:
-  - books
-  - read
+  - blacksheep
+  - forest
 author: roobank1
 paginate: true
 ---
