@@ -1,6 +1,6 @@
 # Site Settings
 name: GravityNull Blog
-title: GravityNull | We do Cartoons
+title: GravityNull Blog
 description: We do Cartoons & Fun :D
 tags:
   - graviyunull
@@ -23,7 +23,7 @@ email: gravitynull@yandex.com
 disqus_username: gravitynull
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
+formspree_form_id: mdoyebar
 
 
 # Social Media Settings
@@ -61,7 +61,7 @@ collections:
     output: true
 paginate_path: "/page/:num/"
 show_get_theme_btn: true
-use_logo: false
+use_logo: true
 
 # Content paginator
 paginate_content:
