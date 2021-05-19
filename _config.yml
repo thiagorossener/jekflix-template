@@ -8,7 +8,7 @@ tags:
   - teakadai
   - cartoons
   - roobank1
-show_hero: false
+show_hero: true
 menu:
   - title: Home
     url: /
