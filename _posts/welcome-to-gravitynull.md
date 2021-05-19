@@ -1,20 +1,20 @@
 ---
-date: 2019-05-16T23:48:05.000Z
+date: 2021-01-01T12:12:12.000Z
 layout: post
-title: Welcome to the desert of the real
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+title: Welcome to GravityNull
+subtitle: 'GravityNull is an entertainment blog, here we do Cartoons, Memes & Fun :D'
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://cdn.glitch.com/e68e9bfc-04e8-4acb-91fc-4381e1c60480%2F117678222_3241061209325910_6383338474867901194_o.jpg?v=1611649078280
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  https://cdn.glitch.com/e68e9bfc-04e8-4acb-91fc-4381e1c60480%2F117678222_3241061209325910_6383338474867901194_o.jpg?v=1611649078280
 category: blog
 tags:
   - welcome
   - blog
-author: thiagorossener
+author: roobank1
 paginate: true
 ---
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
