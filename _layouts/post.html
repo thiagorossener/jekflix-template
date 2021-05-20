@@ -2,7 +2,6 @@
 <html lang="{{ site.language }}" class="no-js">
     {% include head.html %}
     <body class="has-push-menu">
-        {% include minutes-to-read.html %}
         {% include svg-icons.html %}
         {% include header.html %}
 
@@ -69,7 +68,6 @@
 
         <!-- Add time bar only for pages without pagination -->
         {% if paginator.activated == nil and site.show_time_bar == true %}
-            {% include time-bar.html %}
            <!-- {% include recommendation.html %} -->
         {% endif %}
 
