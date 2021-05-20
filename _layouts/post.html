@@ -20,6 +20,7 @@
                 </p>
                 <h1 class="post-title">{{ page.title }}</h1>
                 <p class="post-subtitle">{{ page.subtitle }}</p>
+                {% include share.html %}
 
                 {% if page.image and paginator.activated == nil %}
                     <img src="{{ page.image }}" alt="Featured image" class="post-cover">
@@ -74,7 +75,6 @@
         {% endif %}
 
         {% include subscription.html %}
-        {% include share.html %}
         {% include author.html %}
         {% include comments.html %}
         {% include footer.html %}
