@@ -24,7 +24,6 @@
                 {% if page.image and paginator.activated == nil %}
                     <img src="{{ page.image }}" alt="Featured image" class="post-cover">
                 {% endif %}
-                {% include share.html %}
 
                 {% include pagination-post.html progressBar=true %}
 
@@ -34,6 +33,7 @@
                 {% include pagination-post.html %}
 
             </article>
+                {% include toc.html %}
 
             {% if site.two_columns_layout %}
                 <aside class="see-also">
@@ -73,7 +73,6 @@
         {% if site.show_modal_on_exit %}
             {% include modal.html title="Don't go yet!" subtitle="You may also like..." closed=true showOnExit=true %}
         {% endif %}
-        {% include toc.html %}
         {% include comments.html %}
         {% include subscription.html %}
         {% include author.html %}
