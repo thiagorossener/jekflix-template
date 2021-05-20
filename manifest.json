@@ -1,0 +1,17 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "GravityNull Blog",
+    "short_name": "GravityNull Blo",
+    "scope": "/",
+    "display": "fullscreen",
+    "start_url": "https://blog.gravitynull.in/",
+    "background_color": "#141414",
+    "theme_color": "#141414",
+    "description": "We do Cartoons & Fun :D",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [],
+    "url": "https://blog.gravitynull.in"
+}
