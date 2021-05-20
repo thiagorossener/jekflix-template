@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 333px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: ivory;
-}
-
-.price {
-  color: grey;
-  font-size: 22px;
-}
-
-.card button {
+.blue{
+  background-color: DodgerBlue;
   border: none;
-  outline: 0;
-  padding: 10px;
   color: white;
-  background-color: #000;
-  text-align: center;
+  padding: 12px 16px;
+  font-size: 16px;
   cursor: pointer;
-  width: 333px;
-  font-size: 18px;
+  border-radius: 5px;
+}
+.white{
+  background-color: #FF7754;
+  border: none;
+  text-align: left;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.green{
+  background-color: #6FC056;
+  border: none;
+  text-align: left;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.card button:hover {
-  opacity: 0.7;
-}
 </style>
 </head>
 <body>
-
-<div class="card">
-  <iframe src="https://docs.google.com/presentation/d/1u45y6pOuK7m4F-8vOhgWwmvoM0DylpZ8bi964mvnmLs/embed?start=true&loop=true&delayms=3000" 
-frameborder="0" width="333px" height="222px"></iframe>
-<center>
-<b>Grab a free cartoon for all donations above <b>Rs.25 /-</b>
-<p><a href="upi://pay?pa=roobank1@okicici&pn=GRAVITYNULL&cu=INR" target="_blank"><button>Donate GravityNull via UPI
-</button></a>
-</div>
-
+<table>
+<td>
+<a href="/cartoons">
+<button class="white">GravityNull is 100% Ads. free | Help us to run this blog Ads. free forever by your Donations </button></a>
+</td><td>
+<a href="upi://pay?pa=roobank1@okicici&pn=GRAVITYNULL&cu=INR" target="_blank">
+<button class="blue"><i class="fa fa-dollar"></i> Donate </button></a>
+<td>
+</table>
+<a href="/cartoons">
+<button class="green">Grab a free cartoon for all donations above <b>Rs.25 /-</button>
+</a>
+</center>
 </body>
 </html>
