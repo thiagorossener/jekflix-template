@@ -1,17 +1,49 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ site.language }}" class="no-js">
+    {% include head.html %}
+    <body class="has-push-menu">
+        {% include header.html %}
 
-<div class="post">
+        <section class="post {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
+            <article role="article" class="post-content">
+                {{ content }}
 
-  <article class="post-content fullwidth">
-    {{ content }}
-  
-  </article>
-  
-  {% include share.html %}
-  
-</div>
+                {% include pagination-post.html %}
+                
+            </article>
+                
+
+            {% if site.two_columns_layout %}
+                <aside class="see-also">
+                    <h2>{{ site.translations.text.see_also | default: "See also" }}</h2>
+                    <ul>
+                        {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" %}
+                        {% assign shuffled_array = next_posts | shuffle %}
+                        {% for post in shuffled_array limit:3 %}
+                            <li>
+                                <a href="{{ post.url | prepend: site.baseurl }}">
+                                    {% if post.optimized_image %}
+                                        <img src="{{ post.optimized_image }}">
+                                    {% elsif post.image %}
+                                        <img src="{{ post.image }}">
+                                    {% else %}
+                                        <img src="/assets/img/off.jpg">
+                                    {% endif %}
+                                    <h3>{{ post.title }}</h3>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </aside>
+            {% endif %}
+
+        </section>
+
+        <!-- Add time bar only for pages without pagination -->
+        {% if paginator.activated == nil and site.show_time_bar == true %}
+            {% include time-bar.html %}
+           <!-- {% include recommendation.html %} -->
+        {% endif %}
 
     
 
@@ -19,3 +51,89 @@ layout: default
         {% if site.show_modal_on_exit %}
             {% include modal.html title="Don't go yet!" subtitle="You may also like..." closed=true showOnExit=true %}
         {% endif %}
+        {% include comments.html %}
+        {% include subscription.html %}
+        {% include author.html %}
+        {% include footer.html %}
+
+        {% assign author = site.authors | where: "name", post.author | first %}
+
+        {% assign author_urls = '' %}
+        {% if author.github_username %}
+            {% assign author_urls = author_urls | append: '"https://github.com/' | append: author.github_username | append: '",' %}
+        {% endif %}
+        {% if author.facebook_username %}
+            {% assign author_urls = author_urls | append: '"https://www.facebook.com/' | append: author.facebook_username | append: '",' %}
+        {% endif %}
+        {% if author.twitter_username %}
+            {% assign author_urls = author_urls | append: '"https://twitter.com/' | append: author.twitter_username | append: '",' %}
+        {% endif %}
+        {% if author.medium_username %}
+            {% assign author_urls = author_urls | append: '"https://medium.com/@' | append: author.medium_username | append: '",' %}
+        {% endif %}
+        {% if author.instagram_username %}
+            {% assign author_urls = author_urls | append: '"https://www.instagram.com/' | append: author.instagram_username | append: '",' %}
+        {% endif %}
+        {% if author.linkedin_username %}
+            {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: author.linkedin_username | append: '",' %}
+        {% endif %}
+        {% if page.math %}
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+        {% endif %}
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BlogPosting",
+            "name": "{{ page.title }}",
+            "headline": "{{ page.subtitle }}",
+            "description": "{{ page.description }}",
+            "image": "{{ page.image }}",
+            "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+            "articleBody": "{{ content | strip_html | xml_escape | textilize }}",
+            "wordcount": "{{ content | number_of_words }}",
+            "inLanguage": "{{ site.language }}",
+            "dateCreated": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "datePublished": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "dateModified": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "author": {
+                "@type": "Person",
+                "name": "{{ author.display_name }}",
+                {% if author.photo %}
+                "image": "{{ author.photo }}",
+                {% else %}
+                "image": {{ "/assets/img/user.jpg" | prepend: site.baseurl | prepend: site.url }},
+                {% endif %}
+                "jobTitle": "{{ author.position }}",
+                "url": "{{ author.url | prepend: site.baseurl | prepend: site.url }}",
+                "sameAs": [
+                    {{ author_urls | split: "," | join: "," }}
+                ]
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "{{ site.name }}",
+                "url": "{{ site.url }}{{site.baseurl}}/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "{{ site.url }}{{site.baseurl}}/assets/img/blog-image.png",
+                    "width": "600",
+                    "height": "315"
+                }
+            },
+            "mainEntityOfPage": "True",
+            "genre": "{{ page.category }}",
+            "articleSection": "{{ page.category }}",
+            "keywords": [{{ page.tags | join: '","' | append: '"' | prepend: '"' }}]
+        }
+        </script>
+    </body>
+</html>
