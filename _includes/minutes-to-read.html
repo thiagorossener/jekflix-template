@@ -1,4 +1,4 @@
-{% assign words = content | length %}
+{% assign words = content | number_of_words %}
 
 {% if words < 360 %}
   {% assign totalMinutes = 1 %}
