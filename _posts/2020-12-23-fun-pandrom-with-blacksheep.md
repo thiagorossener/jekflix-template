@@ -18,12 +18,11 @@ paginate: true
   
 
 > BlackSheep 's வனம் செய விரும்பு..!🌱🌴  
-> BlackSheep Forest - ன் 1,10,000 மரங்களில் முதல் 5000 மரங்கள் நடும் விழா..!  
+> BlackSheep Forest-ன் 1,10,000 மரங்களில் முதல் 5000 மரங்கள் நடும் விழா..!  
 > Date : 20.12.2020  
 > Time : 3.30 PM  
-> Venue : SIPCOT, Oragadam[#blacksheepsvanamseyyavirumbu](https://twitter.com/hashtag/blacksheepsvanamseyyavirumbu?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/RfmShUdq31](https://t.co/RfmShUdq31)
-> 
-> — Black Sheep (@BlackSheepTamil) [December 16, 2020](https://twitter.com/BlackSheepTamil/status/1339223508908273672?ref_src=twsrc%5Etfw)
+> Venue : SIPCOT, Oragadam[#blacksheepsvanamseyyavirumbu]
+> https://twitter.com/BlackSheepTamil/status/1339223508908273672
 
   
 ஏன் ப்ளாக்ஷீப்(Black sheep) மேல் சந்தேகம் வருகிறது என்றால் **Beeshopee** இணையதள சர்ச்சையை அவர்கள் கையாண்ட விதமே காரணம், அரசாங்கம் 2 லட்சம் மரத்தை ஜனவரி 2021குள் நட முடிவு செய்துள்ளது. அதுவும் 2.63 லட்சம் மரக்கன்றுகளை நட 10.36 கோடி செலவாகிறது என்றும் குறிப்பிட்டுள்ளது. ப்ளாக்ஷீப் தனது ட்விட்டர் தளத்தில் 1,10,000 மரம் நட உள்ளதாகவும் அதில் முதல் 5000 மரம் 21-12-2020 அன்று நட உள்ளதாகவும் கூறினர்.  
@@ -44,10 +43,7 @@ paginate: true
 > [
 > 
 > View this post on Instagram
-> 
-> ](https://www.instagram.com/p/CHFpRmRhEJ1/?utm_source=ig_embed&utm_campaign=loading)
-> 
-> [A post shared by Bs Value (@bsvalue)](https://www.instagram.com/p/CHFpRmRhEJ1/?utm_source=ig_embed&utm_campaign=loading)
+> https://www.instagram.com/p/CHFpRmRhEJ1/
 
   
   
