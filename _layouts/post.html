@@ -24,7 +24,6 @@
                 {% if page.image and paginator.activated == nil %}
                     <img src="{{ page.image }}" alt="Featured image" class="post-cover">
                 {% endif %}
-                {% include share.html %}
 
                 {% include pagination-post.html progressBar=true %}
 
@@ -33,6 +32,8 @@
                 {{ content }}
 
                 {% include pagination-post.html %}
+                {% include share.html %}
+
             </article>
 
             {% if site.two_columns_layout %}
