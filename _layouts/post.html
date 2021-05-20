@@ -4,6 +4,7 @@
     <body class="has-push-menu">
         {% include minutes-to-read.html %}
         {% include svg-icons.html %}
+        {% include header.html %}
 
         <section class="post {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
             <article role="article" class="post-content">
@@ -65,9 +66,7 @@
             {% include recommendation.html %}
         {% endif %}
 
-        <!-- Show modal if the post is the last one -->
-        {% if paginator.is_last and site.show_modal_on_finish_post %}
-        {% endif %}
+    
 
         <!-- Show modal before user leaves the page -->
         {% if site.show_modal_on_exit %}
