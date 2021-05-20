@@ -18,12 +18,3 @@ author: roobank1
 paginate: true
 ---
 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<a class="twitter-timeline" href="https://twitter.com/gravitynullblog/lists/tamil" 
-data-chrome="noheader" data-chrome="transparent" data-chrome="noscrollbar" data-dnt="false" data-tweet-limit="" target="_self" >
-<div class="shadow">
-<img src="https://cdn.glitch.com/e68e9bfc-04e8-4acb-91fc-4381e1c60480%2Fplane-loader-slower.gif" width="99%">
-</div>    
-</a>
-</div>
