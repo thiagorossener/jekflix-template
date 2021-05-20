@@ -1,6 +1,6 @@
 # Site Settings
-name: GravityNull Blog
-title: GravityNull Blog
+name: GravityNull 
+title: GravityNull 
 description: We do Cartoons & Fun :D
 tags:
   - graviyunull
@@ -14,10 +14,12 @@ menu:
     url: /
   - title: About
     url: /about
+  - title: News
+    url: /news
+  - title: Cartoons
+    url: /cartoons
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
 email: gravitynull@yandex.com
 # See: https://disqus.com/
 disqus_username: gravitynull
