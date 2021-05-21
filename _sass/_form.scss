@@ -40,20 +40,19 @@
   }
 
   button[type="submit"] {
-    display: block;
     padding: rem(14px) rem(39px) rem(14px) rem(39px);
     color: #ffffff;
-    background: $themeColor;
+    background: $primaryDark;
     font-size: rem(18px);
     width: 100%;
-    border: 1px solid darken($themeColor, 30%);
+    border: 1px solid darken($primaryDark, 30%);
     border-width: 1px 1px 3px;
     margin-top: rem(50px);
     margin-bottom: rem(10px);
     cursor: pointer;
     transition: all 0.3s;
     outline: none;
-    z-index: 100000;
+    z-index: 10;
 
     &:hover {
       background: darken($themeColor, 20%);
