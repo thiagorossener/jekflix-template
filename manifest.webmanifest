@@ -7,7 +7,7 @@
   "theme_color": "black",
   "background_color": "white",
   "display": "standalone",
-  "start_url": "/index.html",
+  "start_url": "/",
   "description" : "Tamil flash news updates",
   "prompt_message": "Tamil flash news updates",
   "related_applications" : "",
@@ -36,7 +36,6 @@
   "theme_color": "black",
   "start_url": "/",  
   "scope": "/app/",
-  "start_url": "/index.html/",
   "display": "standalone",
 }
 }
