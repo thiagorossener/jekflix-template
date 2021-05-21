@@ -431,29 +431,21 @@
 /* Time bar */
 
 .time-bar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: -100%;
-  display: block;
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: rem(10px) rem(20px) rem(5px);
+  height: 38px;
+  padding: rem(30px) 0;
+  border-bottom: 1px solid $themeColor;
+  background-color: #fff;
   transition: bottom 0.5s;
-  background-color: rgba(0, 0, 0, 0.85);
-
-  @include media(">=sm") {
-    padding: rem(16px) rem(20px) rem(9px);
-  }
 
   .bar {
-    display: block;
-    width: 100%;
-    padding: rem(8px) rem(60px);
-    &:after {
-      clear: both;
-      display: block;
-      content: "";
-    }
+    position: relative;
+    flex: 1;
+    height: rem(10px);
+    background-color: $themeColor;
+    opacity: 0.2;
   }
 
   .completed {
