@@ -1,4 +1,5 @@
-(async () => {
+<script>
+    (async () => {
 
     if ("serviceWorker" in navigator) {
 
@@ -116,7 +117,7 @@ else {
 }
 importScripts(swPath);
 
-
+</script>
 
 
 
