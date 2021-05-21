@@ -32,7 +32,6 @@
                 {{ content }}
 
                 {% include pagination-post.html %}
-                {% include share.html %}
 
             </article>
                 
@@ -43,7 +42,7 @@
                     <ul>
                         {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" %}
                         {% assign shuffled_array = next_posts | shuffle %}
-                        {% for post in shuffled_array limit:3 %}
+                        {% for post in shuffled_array limit:5 %}
                             <li>
                                 <a href="{{ post.url | prepend: site.baseurl }}">
                                     {% if post.optimized_image %}
@@ -53,7 +52,7 @@
                                     {% else %}
                                         <img src="/assets/img/off.jpg">
                                     {% endif %}
-                                    <h3>{{ post.title }}</h3>
+                                    <h4>{{ post.title }}</h4>
                                 </a>
                             </li>
                         {% endfor %}
@@ -62,6 +61,8 @@
             {% endif %}
 
         </section>
+        
+        {% include share.html %}
 
          <!-- Add time bar only for pages without pagination -->
         {% if paginator.activated == nil and site.show_time_bar == true %}
