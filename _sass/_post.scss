@@ -493,6 +493,7 @@
   background-color: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: space-between;
+  z-index: 100000;
 
   @include media(">=sm") {
     padding: rem(15px);
@@ -505,6 +506,7 @@
     font-size: rem(16px);
     color: #fff;
     padding-right: rem(20px);
+    z-index: 100000;
 
     @include media(">=sm") {
       font-size: rem(20px);
@@ -524,6 +526,7 @@
       font-size: rem(13px);
       text-decoration: none;
       outline: 0;
+      z-index: 100000;
 
       @include media(">=sm") {
         font-size: rem(15px);
