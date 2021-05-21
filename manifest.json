@@ -1,13 +1,14 @@
 {
-  "dir" : "ltr",
-  "name": "Tamil Flash News & Updates",
-  "short_name": "GravityNull TeaKadai",
+  "name": "GravityNull",
+  "short_name": "gravitynull.in",
+  "description": "Cartoons & Flash News",
+  "start_url": "https://www.gravitynull.in/"
+
   "theme_color": "black",
   "background_color": "white",
   "display": "standalone",
   "start_url": "/",
-  "description" : "Tamil flash news updates",
-  "prompt_message": "Tamil flash news updates",
+  "prompt_message": "Cartoons & Flash News",
   "related_applications" : "",
   "prefer_related_applications" : "false",
   "generated" : "true",
