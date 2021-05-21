@@ -24,7 +24,6 @@
                     <img src="{{ page.image }}" alt="Featured image" class="post-cover">
                 {% endif %}
                 
-                {% include recommendation.html %}
 
                 {% include toc.html %}
                 
@@ -68,7 +67,6 @@
 
         <!-- Add time bar only for pages without pagination -->
         {% if paginator.activated == nil and site.show_time_bar == true %}
-        {% include time-bar.html %}
         {% include recommendation.html %}
         {% endif %}
         
