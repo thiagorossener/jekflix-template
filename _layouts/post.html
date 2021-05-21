@@ -64,9 +64,9 @@
         
         {% include share.html %}
 
-         <!-- Add time bar only for pages without pagination -->
+        <!-- Add time bar only for pages without pagination -->
         {% if paginator.activated == nil and site.show_time_bar == true %}
-        {% include time-bar.html %}
+        <!--{% include time-bar.html %}-->
         {% include recommendation.html %}
         {% endif %}
 
