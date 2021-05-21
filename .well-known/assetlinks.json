@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "in.gravitynull.teakadai",
+    "sha256_cert_fingerprints": [
+      "60:5B:B8:95:6D:22:08:56:E0:62:C5:A8:D7:C4:E1:E5:B1:15:C7:52:99:93:42:28:96:BB:4A:99:32:B7:83:53"
+    ]
+  }
+}]
