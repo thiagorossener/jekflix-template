@@ -53,6 +53,7 @@
     cursor: pointer;
     transition: all 0.3s;
     outline: none;
+    z-index: 100000;
 
     &:hover {
       background: darken($themeColor, 20%);
