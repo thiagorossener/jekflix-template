@@ -54,7 +54,7 @@ sent_message_url: "/contact/message-sent/"
 
 
 # Build settings
-markdown: gravitynull
+markdown: kramdown
 highlighter: blog
 permalink: /:title/
 collections:
