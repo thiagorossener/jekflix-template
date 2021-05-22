@@ -14,7 +14,9 @@ tags:
 author: roobank1
 ---
 
- அறிவியலுக்குப் புறம்பாகவும், அலோபதி மருத்துவத்துக்கு எதிராகவும் பேசி, மக்களைத் தவறாக வழிநடத்தி, அறிவியல்ரீதியான மருந்துகளை அவமதிக்கும் யோகா குரு பாபா ராம்தேவைத் தொற்றுநோய் தடுப்புச் சட்டத்தில் கைது செய்ய வேண்டும் என்று மத்திய சுகாதாரத்துறை அமைச்சகத்துக்கு இந்திய மருத்துவக் கூட்டமைப்பு (ஐஎம்ஏ) வலியுறுத்தியுள்ளது.அறிவியலுக்குப் புறம்பாகவும், அலோபதி மருத்துவத்துக்கு எதிராகவும் பேசி, மக்களைத் தவறாக வழிநடத்தி, அறிவியல்ரீதியான மருந்துகளை அவமதிக்கும் யோகா குரு பாபா ராம்தேவைத் தொற்றுநோய் தடுப்புச் சட்டத்தில் கைது செய்ய வேண்டும் என்று மத்திய சுகாதாரத்துறை அமைச்சகத்துக்கு இந்திய மருத்துவக் கூட்டமைப்பு (ஐஎம்ஏ) வலியுறுத்தியுள்ளது.
+ புதுடெல்லியில் நேற்று(21-05-2021) நிகழ்ச்சி ஒன்றில் பங்கேற்ற பதஞ்சலி நிறுவனத்தின் ராம்தேவ் *"அலோபதி முட்டாள்தனமான மற்றும் தோல்வியடைந்த சிகிச்சை முறை. அலோபதி சிகிச்சை முறையால் லட்சக்கணக்கான மக்கள் உயிரிழந்துள்ளனர்... இது சிகிச்சை அளிக்கப்படாதது அல்லது ஆக்சிஜன் கிடைக்காததால் உயிரிழந்தவர்களை விட அதிகம்."* என்று கூறினார்.
+ 
+ அறிவியலுக்குப் புறம்பாகவும், அலோபதி மருத்துவத்துக்கு எதிராகவும் பேசி, மக்களைத் தவறாக வழிநடத்தி, அறிவியல்ரீதியான மருந்துகளை அவமதிக்கும் யோகா குரு பாபா ராம்தேவைத் தொற்றுநோய் தடுப்புச் சட்டத்தில் கைது செய்ய வேண்டும் என்று மத்திய சுகாதாரத்துறை அமைச்சகத்துக்கு இந்திய மருத்துவக் கூட்டமைப்பு (ஐஎம்ஏ) வலியுறுத்தியுள்ளது.
 
 <blockquote class="twitter-tweet"><p lang="ta" dir="ltr">அறிவியலுக்குப் புறம்பாகப் பேசும் பாபா ராம்தேவைத் தொற்றுநோய் தடுப்புச் சட்டத்தில் கைது செய்யுங்கள்: மத்திய அரசுக்கு ஐஎம்ஏ வலியுறுத்தல் <a href="https://t.co/8jeDIFnFhu">https://t.co/8jeDIFnFhu</a> <a href="https://twitter.com/hashtag/BabaRamdev?src=hash&amp;ref_src=twsrc%5Etfw">#BabaRamdev</a> <a href="https://twitter.com/hashtag/CoronaSecondWave?src=hash&amp;ref_src=twsrc%5Etfw">#CoronaSecondWave</a></p>&mdash; Tamil The Hindu (@TamilTheHindu) <a href="https://twitter.com/TamilTheHindu/status/1396075806443536397?ref_src=twsrc%5Etfw">May 22, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -34,4 +36,10 @@ author: roobank1
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/IMA?src=hash&amp;ref_src=twsrc%5Etfw">#IMA</a> issues press release over a video on social media where Yoga Guru Ramdev allegedly speaks against <a href="https://twitter.com/hashtag/Allopathy?src=hash&amp;ref_src=twsrc%5Etfw">#Allopathy</a>. IMA demands Health Minister to &quot;either accept accusation and dissolve modern medical facility or prosecute and book him under the Epidemic Diseases Act.&quot; <br><br>(ANI) <a href="https://t.co/fhQOCqeKGl">pic.twitter.com/fhQOCqeKGl</a></p>&mdash; NDTV (@ndtv) <a href="https://twitter.com/ndtv/status/1396028593503825923?ref_src=twsrc%5Etfw">May 22, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <iframe width="749" height="419" src="https://www.youtube.com/embed/5NQU5URaomw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+------------
+<a href="https://news.google.com/stories/CAAqOQgKIjNDQklTSURvSmMzUnZjbmt0TXpZd1NoTUtFUWkxeWR2cWtvQU1FZmxmakhxUU92aEJLQUFQAQ?oc=3&ceid=IN:en " target="_blank">**Source & Full Coverage Link**</a>
+
+
+
 
