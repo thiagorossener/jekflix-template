@@ -14,25 +14,21 @@ Flash News on the go
 
 Using this app you can find the all over Tamil flash news happening in and around **Tamilnadu**  
 
-* * *
 
 Powered by Twitter API
 ----------------------
 
 GravityNull fetches the flash news from the trusted and official thirdpary's **Twitter tweets**, with the help of a curated List API.  
 
-* * *
 
 Curated search results
 ----------------------
 
 To enhance the search results accuracy we integrated the **Google's Custom Search** Engine on our web app.  
 
-* * *
 
 Simply Secured
 --------------
 
 Our site connection is secured with encrypted ‘HTTPS’ requests using TLS v1.3 for that we are using CloudFlare Content Delivery Network.  
 
-* * *
