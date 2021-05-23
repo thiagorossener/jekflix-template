@@ -59,7 +59,7 @@
                     </ul>
                 </aside>
             {% endif %}
-        {% include comments.html %}
+        
         </section>
         
         {% include share.html %}
@@ -68,6 +68,7 @@
         {% if paginator.activated == nil and site.show_time_bar == true %}
         {% include time-bar.html %}
         {% include recommendation.html %}
+        {% include comments.html %}
         {% endif %}
 
         <!-- Show modal if the post is the last one -->
