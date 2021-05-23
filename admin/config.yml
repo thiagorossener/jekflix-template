@@ -1,13 +1,10 @@
 backend:
   name: git-gateway
   repo: gravitynull/blog
-  branch: master
   api_root: https://gitlab.com/api/v4
   site_domain: www.gravitynull.in
   base_url: https://api.netlify.com
   auth_endpoint: oauth/authorize
-  cms_label_prefix:	netlify-cms/
-  site_url: https://www.gravitynull.com
 publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
 collections:
