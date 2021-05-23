@@ -83,7 +83,7 @@
 
   h1.post-title {
     line-height: 1.6;
-    font-size: rem(26px);
+    font-size: rem(28px);
     margin: rem(5px) auto rem(10px);
     padding-top: 0;
   }
@@ -348,7 +348,17 @@
   h2 {
     font-size: rem(22px);
     font-weight: bold;
-    line-height: 2;
+    line-height: 1.6;
+    border-bottom: 1px solid $lightGray;
+    padding: rem(10px) 0;
+    @include media(">=sm") {
+      padding: rem(48px) 0 rem(20px);
+    }
+    
+    h4 {
+    font-size: rem(20px);
+    font-weight: bold;
+    line-height: 1.6;
     border-bottom: 1px solid $lightGray;
     padding: rem(10px) 0;
     @include media(">=sm") {
