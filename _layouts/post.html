@@ -59,7 +59,7 @@
                     </ul>
                 </aside>
             {% endif %}
-
+        {% include comments.html %}
         </section>
         
         {% include share.html %}
@@ -87,7 +87,7 @@
         {% endif %}
         {% include subscription.html %}
         {% include author.html %}
-        {% include comments.html %}
+        
         {% include footer.html %}
 
         {% assign author = site.authors | where: "name", post.author | first %}
