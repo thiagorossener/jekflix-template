@@ -344,17 +344,6 @@
     flex-basis: 30%;
     padding: 0 rem(10px);
   }
-
-  h2 {
-    font-size: rem(18px);
-    font-weight: bold;
-    line-height: 1.5;
-    border-bottom: 1px solid $lightGray;
-    padding: rem(10px) 0;
-    @include media(">=sm") {
-      padding: rem(48px) 0 rem(20px);
-    }
-  }
     
     h4 {
     font-size: rem(18px);
@@ -363,7 +352,7 @@
     border-bottom: 1px solid $lightGray;
     padding: rem(10px) 0;
     @include media(">=sm") {
-      padding: rem(48px) 0 rem(20px);
+      padding: rem(36px) 0 rem(15px);
     }
   }
 
@@ -375,7 +364,7 @@
     li {
       img {
         display: block;
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
         transition: all 0.2s ease-in-out;
       }
