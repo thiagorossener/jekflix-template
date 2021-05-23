@@ -346,9 +346,9 @@
   }
 
   h2 {
-    font-size: rem(22px);
+    font-size: rem(18px);
     font-weight: bold;
-    line-height: 1.6;
+    line-height: 1.5;
     border-bottom: 1px solid $lightGray;
     padding: rem(10px) 0;
     @include media(">=sm") {
@@ -357,9 +357,9 @@
   }
     
     h4 {
-    font-size: rem(20px);
+    font-size: rem(18px);
     font-weight: bold;
-    line-height: 1.6;
+    line-height: 1.5;
     border-bottom: 1px solid $lightGray;
     padding: rem(10px) 0;
     @include media(">=sm") {
@@ -415,11 +415,11 @@
     flex: 1;
     height: rem(10px);
     background-color: $themeColor;
-    opacity: 0.2;
+    opacity: 0;
   }
 
   .completed {
-    opacity: 1;
+    opacity: 0;
 
     &:last-child {
       border-right: 1px solid #fff;
@@ -457,15 +457,15 @@
     position: relative;
     flex: 1;
     height: rem(10px);
-    background-color: $themeColor;
-    opacity: 0.2;
+    background-color: white;
+    opacity: 0;
   }
 
   .completed {
     float: left;
     display: block;
     height: rem(5px);
-    background-color: $themeColor;
+    background-color: white;
   }
 
   .remaining {
@@ -479,15 +479,15 @@
   .time-remaining {
     @include mainFont(400);
     font-size: rem(18px);
-    color: #fff;
+    color: white;
   }
 
   .time-completed {
-    float: left;
+    float: center;
   }
 
   .time-remaining {
-    float: right;
+    float: center;
   }
 }
 
