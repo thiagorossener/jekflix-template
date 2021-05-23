@@ -32,12 +32,12 @@
                 {{ content }}
 
                 {% include pagination-post.html %}
-
+                {% include comments.html %}
             </article>
                 
 
             {% if site.two_columns_layout %}
-            {% include comments.html %}
+            
                 <aside class="see-also">
                     <h2>{{ site.translations.text.see_also | default: "See also" }}</h2>
                     <ul>
