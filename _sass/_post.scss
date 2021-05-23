@@ -338,11 +338,11 @@
 /* See also */
 
 .see-also {
-  padding: 0 rem(20px);
+  padding: 0 rem(10px);
 
   @include media(">=sm") {
     flex-basis: 30%;
-    padding: 0 rem(10px);
+    padding: 0 rem(5px);
   }
     
     h4 {
@@ -352,7 +352,7 @@
     border-bottom: 1px solid $lightGray;
     padding: rem(10px) 0;
     @include media(">=sm") {
-      padding: rem(36px) 0 rem(15px);
+      padding: rem(12px) 0 rem(5px);
     }
   }
 
@@ -364,7 +364,7 @@
     li {
       img {
         display: block;
-        max-width: 90%;
+        max-width: 99%;
         height: auto;
         transition: all 0.2s ease-in-out;
       }
