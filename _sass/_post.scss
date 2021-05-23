@@ -82,7 +82,7 @@
   }
 
   h1.post-title {
-    line-height: 1.2;
+    line-height: 1.5;
     margin: rem(5px) auto rem(10px);
     padding-top: 0;
   }
@@ -345,8 +345,9 @@
   }
 
   h2 {
-    font-size: rem(24px);
+    font-size: rem(22px);
     font-weight: bold;
+    line-height: 1.6;
     border-bottom: 1px solid $lightGray;
     padding: rem(10px) 0;
     @include media(">=sm") {
