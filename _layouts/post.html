@@ -37,6 +37,7 @@
                 
 
             {% if site.two_columns_layout %}
+            {% include comments.html %}
                 <aside class="see-also">
                     <h2>{{ site.translations.text.see_also | default: "See also" }}</h2>
                     <ul>
@@ -68,7 +69,7 @@
         {% if paginator.activated == nil and site.show_time_bar == true %}
         {% include time-bar.html %}
         {% include recommendation.html %}
-        {% include comments.html %}
+        
         {% endif %}
 
         <!-- Show modal if the post is the last one -->
