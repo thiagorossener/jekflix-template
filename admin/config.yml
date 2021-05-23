@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: gravitynull/blog # your GitHub username and repository name, separated by a slash
   branch: master
 publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
