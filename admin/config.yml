@@ -1,7 +1,9 @@
 backend:
-  name: github
-  repo: gravitynull/blog # your GitHub username and repository name, separated by a slash
+  name: git-gateway
+  repo: gravitynull/blog
   branch: master
+  site_domain: www.gravitynull.in
+  base_url: https://api.netlify.com
 publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
 collections:
