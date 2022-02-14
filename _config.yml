@@ -17,8 +17,8 @@ menu:
     url: /about
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
+  #- title: Feed
+    #url: /feed.xml
 email: moe71389@gmail.com
 # See: https://disqus.com/
 #disqus_username: disqus_username
@@ -29,11 +29,11 @@ email: moe71389@gmail.com
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: Mr.R!9HT
+github_username: Mr-R19HT
 #facebook_username: facebook_username
 twitter_username: Mr_R19HT
 #instagram_username: instagram_username
-linkedin_username: Ahmed Ayman
+linkedin_username: https://www.linkedin.com/in/ahmed-ayman-8m7a99/
 #medium_username: medium_username
 
 
