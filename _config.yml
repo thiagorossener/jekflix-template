@@ -21,10 +21,10 @@ menu:
     #url: /feed.xml
 email: moe71389@gmail.com
 # See: https://disqus.com/
-#disqus_username: disqus_username
+disqus_username: disqus_esKQctN0tI
 # Contact Form Setting
 # See: https://formspree.io/
-#formspree_form_id: formspree_form_id
+formspree_form_id: https://formspree.io/f/mbjwodpz
 
 
 # Social Media Settings
