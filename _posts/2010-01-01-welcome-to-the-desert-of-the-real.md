@@ -7,7 +7,7 @@ description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fvideo%2Fclip-1011600746-system-hacking-progress-warning-message-hacked-alert&psig=AOvVaw14gZiGkklPzUkauADhxC9O&ust=1645545227951000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPD-4fuTkfYCFQAAAAAdAAAAABAm
 optimized_image: >-
   https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
 category: blog
