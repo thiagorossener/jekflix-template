@@ -22,13 +22,6 @@ layout: main
             <div class="pixels"></div>
             <div class="gradient"></div>
             <div class="content">
-                <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
-                    {% if site.date_format == nil %}
-                        {{ featured.date | date: "%m.%d.%Y" }}
-                    {% else %}
-                        {{ featured.date | date: site.date_format }}
-                    {% endif %}
-                </time>
                 <h1 class="title">{{ featured.title }}</h1>
                 <p class="description">{{ featured.subtitle }}</p>
                 <div class="buttons">
@@ -72,9 +65,6 @@ layout: main
                         {% include read-icon.html %}
                     </a>
                     <div class="box-info">
-                        <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
-                            {% include date.html date=post.date %}
-                        </time>
                         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
                             <h2 class="post-title">
                                 {{ post.title }}

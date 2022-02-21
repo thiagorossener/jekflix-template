@@ -1,16 +1,16 @@
 ---
 date: 2018-11-22 12:26:40
 layout: post
-title: Why books should be your priority?
+title: Créer une application
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822138/theme9_v273a9.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme9_v273a9.jpg
-category: life
+category: 
 tags:
-  - books
-  - read
-author: thiagorossener
+  - application
+  - création
+author: 
 paginate: true
 ---
 
@@ -92,7 +92,15 @@ Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliqua
 
 ![placeholder](https://placehold.it/800x400 "Large example image")
 ![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
+![test img](/assets/img/off.jpg "Text to show on mouseover")
+
+ou en html si on veut pouvoir modifier la taille de l'image
+<img src="/assets/img/off.jpg" alt="text to show on mouseover" width="200"/>
+
+Pour prendre toute la largeur
+<img src="/assets/img/off.jpg" alt="text to show on mouseover" width="100%"/>
+
+
 
 ## Tables
 

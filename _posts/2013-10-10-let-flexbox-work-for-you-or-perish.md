@@ -1,16 +1,17 @@
 ---
 date: 2017-08-14 22:55:45
 layout: post
-title: Let flexbox work for you or perish
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+title: My Wireframe
+subtitle: Ma page de ref
+description: Ma page de ref pour le markdwon
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme2_ylcxxz.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme2_ylcxxz.jpg
 category: css
 tags:
   - css
   - frontend
-author: thiagorossener
+  - markdown
+author: 
 ---
 
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
@@ -18,6 +19,8 @@ Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, na
 > Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
 Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+
+<!--page-->
 
 ## Inline HTML elements
 
@@ -31,6 +34,8 @@ HTML defines a long list of available inline tags, a complete list of which can 
 - Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
 Most of these elements are styled by browsers with few modifications on our part.
+
+<!--page-->
 
 # Heading 1
 
@@ -57,6 +62,8 @@ adder(2, 6);
 // > 8
 ```
 
+<!--page-->
+
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
 ## Lists
@@ -73,6 +80,8 @@ Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a p
 2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
+<!--page-->
+
 Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
 Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
@@ -83,7 +92,15 @@ Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliqua
 
 ![placeholder](https://placehold.it/800x400 "Large example image")
 ![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
+![test img](/assets/img/off.jpg "Text to show on mouseover")
+
+ou en html si on veut pouvoir modifier la taille de l'image
+<img src="/assets/img/off.jpg" alt="text to show on mouseover" width="200"/>
+
+Pour prendre toute la largeur
+<img src="/assets/img/off.jpg" alt="text to show on mouseover" width="100%"/>
+
+
 
 ## Tables
 
@@ -123,12 +140,9 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
   </tbody>
 </table>
 
+<!--page-->
+
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-
-
-
-
 
 
 

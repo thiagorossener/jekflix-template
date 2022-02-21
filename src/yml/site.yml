@@ -1,7 +1,6 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Jarvis
+title: Jarvis | Documentation
+description:
 tags:
   - blog
   - template
@@ -16,8 +15,6 @@ menu:
     url: /about
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
 email: youremail@test.com
 # See: https://disqus.com/
 disqus_username: disqus_username
