@@ -7,9 +7,9 @@ description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
 image: >-
-  /assets/img/how to start in cybersec/sys hacking.jpg
+  /assets/img/how to start in cybersec/right2.png
 optimized_image: >-
-  /assets/img/how to start in cybersec/sys hacking.jpg
+  /assets/img/how to start in cybersec/right2.png
 category: blog
 tags:
   - welcome
