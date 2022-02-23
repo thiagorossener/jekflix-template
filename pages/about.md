@@ -9,4 +9,4 @@ permalink: /about/
 
 # About
 
-I'm Mr.R!9HT, A Cyber Security Engineer, Interested in Red Teaming, Digital Forensics, adored programming & scripting. I made this blog for publishing a blog posts and writups about hacking.
+I'm Mr.R!9HT, A Cyber Security Engineer, Interested in Red Teaming, Digital Forensics, adored programming & scripting. I made this blog for publishing a blog posts and writups about hacking and another things in Computer Engineering.
