@@ -19,7 +19,9 @@ tags:
 # Intro of Cyber Security
 
 Cyber security is a method of safeguarding networks and devices from external threats. Cyber Security professionals are generally hired by businesses to secure secret information, preserve staff productivity, and boost customer confidence in products and services.
+
 The industry standard of confidentiality, integrity, and availability, or CIA, governs the field of cyber security. Privacy implies that data may only be viewed by allowed parties; integrity implies that information can only be added, edited, or removed by authorised users; and availability implies that systems, services, and data must be available on-demand within agreed-upon limitations.
+
 The use of authentication mechanisms is the most important aspect of cyber security. A username, for example, identifies an account that a user wishes to access, whereas a password is a mechanism that verifies the user is who he claims to be.
 
 ![image](/assets/img/how to start in cybersec/cia.png)
@@ -44,4 +46,4 @@ Yes, there are multiple sources, for example:
 
 # How can you follow this field?
 
-You Should follow any page or group special for security such as: [Facebook](https://www.facebook.com/groups/pentesting4arabs). 
+You Should follow any page or group special for security such as: [pentesting4arabs](https://www.facebook.com/groups/pentesting4arabs). 
