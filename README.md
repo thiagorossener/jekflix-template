@@ -1,37 +1,20 @@
-# Jekflix Template
-![Cover Image](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)
+# Aperture Science Dual Portal Device
 
 See the [demo here](https://www.rossener.com/jekflix-template).
 
 ## What is it?
 
-A template for Jekyll inspired by Netflix panel for who loves movies and series and would like to have a blog with this cool appearance ;)
+The Aperture Science Handheld Portal Device, originally marketed in the 1950s as an Aperture Science Portable Quantum Tunneling Device, also commonly known as a Portal Gun or by its acronym, "ASHPD", is an experimental tool used to create two portals through which objects can pass.
 
-![Screenshot](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1505357238/jekflix-screenshot_qikqkl.jpg)
+Used in the Enrichment Center's testing tracks, it is a Test Subject's primary tool to complete each test, as well as being a mandatory travel aide outside of testing areas.
 
-## Features
+## Overview
 
-- Gulp
-- Stylus
-- Live Search
-- Minutes to Read
-- Reading Progress Bar
+The ASHPD is a hand-held device which has the ability to manufacture two linked portals. No matter the distance between them, any object which passes through one portal will emerge from the other and vice versa instantaneously. The portals can be placed on any surface which is made out of manufactured or refined moon rock and large enough to accommodate them. Though considering that fact that portals can be placed on what seems to be standard concrete, and that the device was used in the 1950s by Aperture before the discovery of the moon rocks’s capabilities, it is likely that moon rock is not required for the creation of portals but instead just very effective. Moving objects, or certain types of surfaces, will prevent the formation of a portal (The only exception to this is in the neurotoxin generator in Portal 2). Material Emancipation Grills will block any attempt to shoot portals through them, as well as reset any active portals should the ASHPD pass through it.
  
- ![Progress Bar](http://res.cloudinary.com/dm7h7e8xj/image/upload/v1505357769/jekflix-progress-bar_he7gqf.jpg)
-- "New Post" tag
-- Load images on demand
-- Emojis 😎
-- Push Menu
-- SVG icons
-- Shell Script to create drafts and posts
-- Tags page
-- About page
-- Contact page
-- Feed RSS
-- Sitemap.xml
-- Info Customization
-- Disqus
-- Google Analytics
+The ASHPD is held with a hand behind the weapon, holding the handle/trigger, while the other hand supports the barrel. A light in the small hole on the top of the ASHPD and its glowing glass tube both have the color of the last portal shot. It has two triggers, one for each of its two portals.
+
+When the ASHPD is fired, a burst of colored energy is emitted from the barrel, corresponding to the colored portal it is intended to create. Upon striking the targeted surface, a portal is formed, surrounded by a colored ring. If the surface cannot accommodate a portal for whatever reason, the shot will dissipate in a shower of colored particles. If one portal is shot into its opposite, the portal will be formed next to the first one, assuming the surface has enough room for it to form; otherwise, it will dissipate as normal. The device can only create two portals at a time. If a third is fired, the other of its type will be automatically closed and a new link will be formed.
 
 ## Setup
 
@@ -146,16 +129,3 @@ introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do e
 
 File a [GitHub Issue](https://github.com/thiagorossener/jekflix-template/issues/new) please.
 
-## Donation
-
-Did you like my work? Buy me a beer :)
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=YT3BC53XLMJ96&lc=GB&item_name=Thiago%20Rossener%20Nogueira&item_number=DON1212&no_note=0&cn=Adicionar%20instru%c3%a7%c3%b5es%20especiais%20para%20o%20vendedor%3a&no_shipping=2&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
-
-## Author
-
-[Thiago Rossener](https://www.rossener.com/) based on [Cards Jekyll Template](https://github.com/willianjusten/cards-jekyll-template).
-
-## License
-
-*Jekflix Template* is available under the MIT license. See the LICENSE file for more info.
