@@ -26,7 +26,7 @@ When the ASHPD is fired, a burst of colored energy is emitted from the barrel, c
 1. Read the documentation below for further customization pointers and documentation
 1. Remember to compile your assets files with Gulp
 
-## Running local
+## Running locally
 
 In order to compile the assets and run Jekyll on local you need to follow those steps:
 
