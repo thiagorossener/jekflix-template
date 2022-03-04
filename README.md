@@ -1,4 +1,4 @@
-# Aperture Science Handheld Portl Device
+# Aperture Science Handheld Dual Portal Device
 
 See the [demo here](https://www.rossener.com/jekflix-template).
 
