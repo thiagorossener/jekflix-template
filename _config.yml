@@ -1,14 +1,14 @@
 # Site Settings
 name: Dayone
 title: Dayone blog
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
+description: This is the personal blog based on Jekflix. Jekflix is a template for Jekyll inspired by Netflix and made by
   Thiago Rossener.
 tags:
   - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - AI
+  - computer science
+  - Essay
+  - 칼럼
 show_hero: true
 menu:
   - title: Home
@@ -19,21 +19,21 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: dayone.tech.official@gmail.com
 # See: https://disqus.com/
-disqus_username: disqus_username
+disqus_username: dayonetechofficial
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
-
+formspree_form_id: xwkyqzvw
+paginate: 12
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
+github_username: dayone-ai
 facebook_username: facebook_username
 twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
+instagram_username: dwdsuh
+linkedin_username: daewon-suh-029182179
 medium_username: medium_username
 
 
@@ -41,13 +41,13 @@ medium_username: medium_username
 show_time_bar: true
 show_modal_on_exit: false
 show_modal_on_finish_post: true
-two_columns_layout: true
+two_columns_layout: false
 
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+google_analytics: "G-42YBBGDT33"
 language: "en"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
