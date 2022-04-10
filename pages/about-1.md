@@ -4,10 +4,10 @@ menu: false
 date: '2020-02-27 01:53:59'
 title: About
 permalink: /about/
-description: Some description.
+description: All About Jeff Camacho.
 ---
 
-<img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Thiago Rossener" width="200">
+<img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Jeff Camacho" width="200">
 
 # About
 
