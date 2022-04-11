@@ -1,5 +1,5 @@
 ---
-date: 2022-10-09 12:26:40
+date: 2022-1-09 12:26:40
 layout: post
 title: The quick brown fox jumps over a lazy dog
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
