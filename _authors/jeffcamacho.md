@@ -9,7 +9,7 @@ github_username: jeff-mos-def
 # facebook_username: thiagorossener
 twitter_username: jeff_mos_def
 instagram_username: jeff_mos_def
-linkedin_username: jeffrey.camacho
+linkedin_username: jeff-camacho
 # medium_username: thiagorossener
 ---
 
