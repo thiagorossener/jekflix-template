@@ -5,13 +5,15 @@ description: Some description.
 permalink: /about/
 ---
 
-<img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Thiago Rossener" width="200">
+<img class="img-rounded" src="/assets/img/uploads/new_profile_dayone.jpeg" alt="Dayone Suh" width="200">
 
-# About
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+# Daewon Suh
+
+email: [dwdsuh@gmail.com](mailto:dwdsuh@gmail.com)
+<br />
+resume: [notion](https://ballistic-echium-ecb.notion.site/Daewon-Suh-aae438633c984b8da46b534a683b8c58)
+
+Hello! I am a listener/writer/AI engineer/dreamer/surfer/film-maker.
+I open this blog to share knowledge, meet people in the cosmos, impress others and express myself.
+Hope you enjoy essays, tutorials, videos and every other byproducts of my intellectual excercises.
