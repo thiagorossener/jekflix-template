@@ -9,16 +9,18 @@ tags:
   - computer science
   - Essay
   - 칼럼
-show_hero: true
+show_hero: True
 menu:
   - title: Home
     url: /
+  - title: Tags
+    url: /tags
   - title: About
     url: /about
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
+  # - title: Feed
+  #   url: /feed.xml
 email: dayone.tech.official@gmail.com
 # See: https://disqus.com/
 disqus_username: dayonetechofficial
@@ -38,7 +40,7 @@ medium_username: medium_username
 
 
 # Posts Settings
-show_time_bar: true
+show_time_bar: false
 show_modal_on_exit: false
 show_modal_on_finish_post: true
 two_columns_layout: false

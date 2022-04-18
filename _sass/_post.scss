@@ -66,7 +66,7 @@
   ul,
   ol,
   iframe {
-    @include center(rem(800px));
+    @include center(rem(1400px));
     @include mainFont(400);
     font-size: rem(17px);
     line-height: rem(30px);
@@ -77,7 +77,7 @@
     @include media(">=sm") {
       font-size: rem(20px);
       line-height: rem(40px);
-      margin: rem(29px) auto 0;
+      margin: rem(0px) auto 0;
     }
   }
 
@@ -104,8 +104,8 @@
     margin-bottom: rem(20px);
 
     @include media(">=sm") {
-      margin-top: rem(29px);
-      margin-bottom: rem(29px);
+      margin-top: rem(5px);
+      margin-bottom: rem(5px);
     }
   }
 
@@ -153,7 +153,7 @@
   }
 
   li {
-    padding: rem(10px) 0;
+    padding: rem(3px) 0;
 
     ul {
       margin-bottom: 0;
@@ -187,11 +187,11 @@
   h6 {
     @include mainFont(700);
     margin-top: 0;
-    padding-top: rem(50px);
+    padding-top: rem(5px);
 
     @include media(">=sm") {
       margin-top: 0;
-      padding-top: rem(60px);
+      padding-top: rem(10px);
     }
   }
   h1 {
@@ -256,9 +256,9 @@
   }
 
   hr {
-    @include center(rem(760px));
+    @include center(rem(1400px));
     border: 1px solid $lightGray;
-    margin: 50px auto;
+    margin: 5px auto;
   }
 
   pre {
@@ -622,7 +622,7 @@
     @include center(rem(800px));
     @include mainFont(400);
     font-size: rem(18px);
-    margin: 0 auto rem(29px);
+    margin: 0 auto rem(5px);
     margin-top: rem(30px);
     letter-spacing: 0.025rem;
     line-height: rem(40px);
