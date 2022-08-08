@@ -17,9 +17,9 @@ tags:
 
 I've solved some web challenges in this post, so there are three challenges so select any challenge you want
 
-1) [Drunken Developer](#drunken-developer)
-2) [Konan](#konan)
-3) [Evil Volunteer](#evil-volunteer)
+1. [Drunken Developer](#drunken-developer)
+2. [Konan](#konan)
+3. [Evil Volunteer](#evil-volunteer)
 
 
 
