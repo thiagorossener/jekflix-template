@@ -23,7 +23,7 @@ I've solved some web challenges in this post, so there are three challenges so s
 
 
 
-# Challenge Title: Drunken Developer 
+# Drunken Developer 
 
 ## Level: Warm up
 
@@ -73,7 +73,50 @@ Which makes it easier to try to make an email similar to that so that any messag
 ![image](/assets/img/ASCWG2022/developer/flag.png)
 
 
+# Konan 
 
+## Level: Easy
+
+## Point: 300
+
+## Description
+change yourself
+
+Flag must start with ASCWG❴...answer❵
+
+[Link](http://34.68.152.81:60003/)
+
+## Solution
+
+1) I saw the website and tried to enter with the highest privildge.
+
+![image](/assets/img/ASCWG2022/OTP/login.png)
+
+![image](/assets/img/ASCWG2022/OTP/phase1.png)
+
+I intercept request by burp.
+
+2) Once forward the request, I go to otp page.
+
+OTP means One Time Password: it’s a temporary, secure PIN-code sent to you via SMS or e-mail that is valid only for one session. Smart-ID uses OTPs during registration and account renewal to confirm your contact information.
+
+![image](/assets/img/ASCWG2022/OTP/otpcode.png)
+
+3) Intercept otp page request and forward it to see response. 
+
+![image](/assets/img/ASCWG2022/OTP/phase2.png)
+
+![image](/assets/img/ASCWG2022/OTP/intercept response.png)
+
+Do intercept response.
+
+4) Change response and forward it. 
+
+![image](/assets/img/ASCWG2022/OTP/change response.png)
+
+5) Bingooo, I got the flag.
+
+![image](/assets/img/ASCWG2022/OTP/flag.png)
 
 
 
