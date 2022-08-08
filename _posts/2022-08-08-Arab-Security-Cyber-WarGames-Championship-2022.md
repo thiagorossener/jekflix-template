@@ -1,5 +1,5 @@
 ---
-date: 2022-08-08 03:13:20
+date: 2022-08-08 03:15:50
 layout: post
 title: Arab Security Cyber WarGames - Championship 2022
 
