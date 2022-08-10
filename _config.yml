@@ -1,7 +1,8 @@
 # Site Settings
 name: ElyabanyBlog
-title: ElyabanyBlog
-description: Information security - CTF writups - code reivew blog 
+title: elyabanyBlog 
+#description: Jekflix is a template for Jekyll inspired by Netflix and made by
+  #Thiago Rossener.
 tags:
   - blog
   - template
@@ -16,24 +17,24 @@ menu:
     url: /about
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
-email: youremail@test.com
+  #- title: Feed
+    #url: /feed.xml
+email: moamjadahmed@gmail.com
 # See: https://disqus.com/
-disqus_username: disqus_username
+disqus_username: disqus_esKQctN0tI
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
+formspree_form_id: f/mbjwodpz
 
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: elyabany
+#facebook_username: facebook_username
+twitter_username: moamgad20
+#instagram_username: instagram_username
+linkedin_username: moamjadahmed
+#medium_username: medium_username
 
 
 # Posts Settings
@@ -44,8 +45,8 @@ two_columns_layout: true
 
 
 # Advanced Settings
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://elyabany.github.io/blog/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
 categories_folder: category
@@ -104,4 +105,4 @@ exclude: [
 ]
 
 # Theme
-version: v3.1.1
+#version: v3.1.1
