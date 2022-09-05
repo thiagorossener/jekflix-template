@@ -37,5 +37,8 @@
     "lodash": "^4.17.21",
     "lodash.merge": "^4.6.2",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "netlify-cms-app": "^2.15.72"
   }
 }

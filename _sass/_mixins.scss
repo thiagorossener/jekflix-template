@@ -1,5 +1,6 @@
+
 @mixin mainFont($weight: 700) {
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Titillium Web", "AppleSDGothicNeo", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: $weight;
   font-style: normal;
 }

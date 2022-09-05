@@ -87,6 +87,13 @@
     padding-top: 0;
   }
 
+  h2.post-title {
+    color: darken($lightGray, 30%);
+    line-height: 1.2;
+    margin: rem(5px) auto rem(10px);
+    padding-top: 0;
+  }
+
   p.post-subtitle {
     color: darken($lightGray, 30%);
     font-size: rem(17px);
@@ -649,7 +656,7 @@
       }
 
       &:hover {
-        color: $accentDark;
+        color: $accentLight;
         background-color: $primaryDark;
       }
     }

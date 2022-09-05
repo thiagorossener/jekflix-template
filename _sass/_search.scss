@@ -28,7 +28,7 @@
     @include mainFont(300);
     font-size: rem(20px);
     color: $primaryDark;
-    background-color: $accentDark;
+    background-color: $lightGray;
     border: 0;
     border-radius: rem(20px);
     padding: rem(5px) rem(25px);
@@ -85,12 +85,12 @@
     }
 
     a {
-      color: $accentDark;
+      color: $accentLight;
       text-decoration: none;
       display: block;
       padding: rem(15px) 0;
       width: 100%;
-      border-bottom: 1px solid darken($accentDark, 80%);
+      border-bottom: 1px solid darken($accentLight, 80%);
       transition: all 0.3s;
       line-height: rem(25px);
 
@@ -111,7 +111,7 @@
     width: rem(26px);
     height: rem(26px);
     padding: rem(5px);
-    fill: $accentDark;
+    fill: $accentLight;
     background-color: $themeColor;
     border-radius: 13px;
     margin: rem(7px);
@@ -131,7 +131,7 @@
     width: 100%;
     height: 100%;
     min-height: 100%;
-    background-color: $primaryDark;
+    background-color: $accentLight;
     content: "";
     z-index: 18;
   }

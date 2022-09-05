@@ -284,7 +284,7 @@ collections:
             widget: "color"
             default: "#141414"
           - label: "Accent Dark Color"
-            name: "accentDark"
+            name: "accentLight"
             default: "#ffffff"
             widget: "color"
           - label: "Light Gray Color"

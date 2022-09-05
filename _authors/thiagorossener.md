@@ -8,7 +8,7 @@ bio: Just a developer.
 github_username: thiagorossener
 facebook_username: thiagorossener
 twitter_username: thiagorossener
-instagram_username: thiagorossener
+instagram_username: opq.ooo
 linkedin_username: thiagorossener
 medium_username: thiagorossener
 ---

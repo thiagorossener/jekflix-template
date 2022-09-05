@@ -71,12 +71,12 @@
     .box-body {
       time,
       p {
-        color: $accentDark;
+        color: $primaryDark;
       }
 
       .cover {
         .new-post-tag {
-          background-color: #000;
+          background-color: #fff;
         }
 
         .read-icon {
@@ -101,7 +101,7 @@
     padding: 0 rem(15px);
 
     a {
-      color: $accentDark;
+      color: $primaryDark;
     }
   }
 
@@ -124,7 +124,7 @@
       margin: rem(10px) 0;
       font-size: rem(24px);
       @include mainFont(800);
-      color: $accentDark;
+      color: $primaryDark;
       line-height: rem(30px);
     }
 
@@ -138,9 +138,9 @@
     .tags a {
       height: rem(30px);
       line-height: rem(26px);
-      color: $accentDark;
+      color: $primaryDark;
       padding: 0 rem(10px);
-      border: 1px solid $accentDark;
+      border: 1px solid $primaryDark;
       border-radius: 15px;
       display: inline-block;
       margin: 0 rem(10px) rem(10px) 0;
@@ -148,8 +148,8 @@
 
       &:hover {
         color: $primaryDark;
-        background: $accentDark;
-        border-color: $accentDark;
+        background: $accentLight;
+        border-color: $primaryDark;
       }
     }
 
@@ -175,7 +175,7 @@
         text-transform: uppercase;
         display: inline-block;
         background: $themeColor;
-        color: #fff;
+        color: $primaryDark;
         font-size: rem(13px);
         font-weight: 700;
         line-height: rem(24px);
@@ -188,7 +188,7 @@
 
       .read-icon {
         opacity: 0;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(255, 255, 255, 0.7);
         display: flex;
         align-items: center;
         justify-content: center;

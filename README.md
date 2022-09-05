@@ -94,7 +94,7 @@ Create the file `/assets/css/styles.scss` and add:
 
 $themeColor: #ff0a16;
 $primaryDark: #141414;
-$accentDark: #ffffff;
+$accentLight: #ffffff;
 $lightGray: #f2f2f2;
 $texts: #333333;
 

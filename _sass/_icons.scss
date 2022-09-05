@@ -6,12 +6,12 @@
     padding: rem(15px);
     margin: rem(2px);
     border-radius: 50%;
-    border: rem(2px) solid $accentDark;
+    border: rem(2px) solid $accentLight;
     line-height: 0;
     transition: all 0.7s;
 
     .icon {
-      fill: $accentDark;
+      fill: $accentLight;
       @include size(18, 18);
 
       @include media(">=sm") {
@@ -20,7 +20,7 @@
     }
 
     &:hover {
-      background: $accentDark;
+      background: $accentLight;
 
       .icon {
         fill: $texts;
@@ -39,7 +39,7 @@
   .icon {
     @include align(both);
     @include size(100, 100);
-    fill: $accentDark;
+    fill: $accentLight;
     animation: pulse 1.3s infinite;
   }
 }

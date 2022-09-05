@@ -1,6 +1,6 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
+name: Opaque 
+title: opq | 감각적인 라이프스타일을 위해 최신의 리빙정보를 찾아보세요!
 description: Jekflix is a template for Jekyll inspired by Netflix and made by
   Thiago Rossener.
 tags:
@@ -19,12 +19,12 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: hola@opaque.ooo
 # See: https://disqus.com/
 disqus_username: disqus_username
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
+formspree_form_id: rin@opaque.ooo
 
 
 # Social Media Settings
@@ -32,7 +32,7 @@ formspree_form_id: formspree_form_id
 github_username: github_username
 facebook_username: facebook_username
 twitter_username: twitter_username
-instagram_username: instagram_username
+instagram_username: opq.ooo
 linkedin_username: linkedin_username
 medium_username: medium_username
 
@@ -61,8 +61,8 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
-show_get_theme_btn: true
-use_logo: false
+show_get_theme_btn: false
+use_logo: true
 
 # Content paginator
 paginate_content:

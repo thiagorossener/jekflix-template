@@ -10,8 +10,8 @@
 
 footer {
   @include center(rem(800px));
-  border-top: 1px solid darken($accentDark, 10%);
-  background: $accentDark;
+  border-top: 1px solid darken($accentLight, 10%);
+  background: $accentLight;
   padding: rem(20px) rem(25px);
   margin-top: rem(50px);
   margin-bottom: rem(120px);
@@ -92,7 +92,7 @@ footer {
     border-top: 1px solid lighten($primaryDark, 10%);
     
     p {
-      color: $accentDark;
+      color: $accentLight;
     }
   }
 }
