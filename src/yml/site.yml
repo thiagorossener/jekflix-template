@@ -1,7 +1,6 @@
 name: Goflix
-title: Goflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+title: Goflix | 오억이 깃블로그
+description: 뚝딱뚝딱 tool을 만들어요. 
 tags:
   - blog
   - template
@@ -18,7 +17,7 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: yunjigo92@gmail.com
 # See: https://disqus.com/
 disqus_username: disqus_username
 # Contact Form Setting
