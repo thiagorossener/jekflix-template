@@ -108,23 +108,19 @@ permalink: /lotto/
 </div>
 <div id="capture_area"> 캡쳐할 영역 </div>
 
-<script>
+<script type="text/javascript">
   var nums = [1,2,3,4,5,6];
   function aaa(){
-  //test 진행중
   for(var i=0; i<6; i++){
     var idx = Math.floor(Math.random() * nums.length);
     console.log(idx);
   }
 }
-
-  // 헤더에 스크립트 추가
   var script = document.createElement('script');
   script.id = 'script';
   script.src = 'https://html2canvas.hertzen.com/dist/html2canvas.min.js';
   document.querySelector("head").appendChild(script);
 
-  //이미지 다운로드
   window.addEventListener('DOMContentLoaded', function(){
     $(".btn_download").click(function(e){
       html2canvas(document.getElementById("capture_area")).then(function(canvas) {
