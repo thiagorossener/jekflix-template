@@ -12,7 +12,7 @@ tags:
 permalink: /lotto/
 ---
 <style>
-.ball_645 {
+  .ball_645 {
     display: inline-block;
     border-radius: 100%;
     text-align: center;
@@ -20,116 +20,158 @@ permalink: /lotto/
     color: #fff;
     font-weight: 500;
     /* text-shadow: 0px 0px 2px rgba(0, 0, 0, 1); */
-}
-.ball_645.lrg {
-    width: 60px;
-    height: 60px;
-    line-height: 56px;
+  }
+
+  .ball_645.lrg {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
     font-size: 28px;
-}
-.ball_645.ball1 {
+  }
+
+  .ball_645.ball1 {
     background: #fbc400;
     text-shadow: 0px 0px 3px rgba(73, 57, 0, .8);
-}
-.ball_645.ball2 {
+  }
+
+  .ball_645.ball2 {
     background: #69c8f2;
     text-shadow: 0px 0px 3px rgba(0, 49, 70, .8);
-}
-.ball_645.ball3 {
+  }
+
+  .ball_645.ball3 {
     background: #ff7272;
     text-shadow: 0px 0px 3px rgba(64, 0, 0, .8);
-}
-.ball_645.ball4 {
+  }
+
+  .ball_645.ball4 {
     background: #aaa;
     text-shadow: 0px 0px 3px rgba(61, 61, 61, .8);
-}
-.ball_645.ball5 {
+  }
+
+  .ball_645.ball5 {
     background: #b0d840;
     text-shadow: 0px 0px 3px rgba(41, 56, 0, .8);
-}
-.lotto_contents{
-  text-align: center;
-}
-.lotto_contents div span ~ span {
-    margin-left: 20px;
-}
+  }
 
-.button {
-  background-color:#4b9fcf;
-  border: none;
-  color: white;
-  border-radius: 8px;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
+  .lotto_contents {
+    text-align: center;
+  }
 
-.button:hover {
-  background-color: #007bc3;
-  color: white;
-}
-.lotto_button {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-}
-.lotto_button div ~ div {
+  .button {
+    background-color: #4b9fcf;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #007bc3;
+    color: white;
+  }
+
+  .lotto_button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .lotto_button div~div {
     margin-left: 50px;
-}
-.lotto_image{
-  cursor: pointer;
-  width: 80px;
-}
+  }
+
+  .lotto_image {
+    cursor: pointer;
+    width: 80px;
+  }
+  .lotto_p {
+    margin-top: 12px !important;
+  }
+  .lotto_span{
+    margin-right: 5px !important;
+  }
 </style>
 <div class="lotto_contents">
-  <div>
+  <div id="capture_area">
     <p>
-      <span class="ball_645 lrg ball1">1</span>
-      <span class="ball_645 lrg ball2">1</span>
-      <span class="ball_645 lrg ball3">1</span>
-      <span class="ball_645 lrg ball4">1</span>
-      <span class="ball_645 lrg ball5">1</span>
-      <span class="ball_645 lrg ball5">1</span>
+      <span class="ball_645 lrg ball1">로</span>
+      <span class="ball_645 lrg ball2">또</span>
+      <span class="ball_645 lrg ball3">번</span>
+      <span class="ball_645 lrg ball4">호</span>
+      <span class="ball_645 lrg ball5">생</span>
+      <span class="ball_645 lrg ball5">성</span>
     </p>
   </div>
   <div class="lotto_button">
     <div>
-      <img class="lotto_image" src="/assets/img/yunji/download.png" alt="사진으로 저장하기">
+      <img class="lotto_image btn_download" src="/assets/img/yunji/download.png" alt="사진으로 저장하기">
     </div>
     <div>
-      <img class="lotto_image" src="/assets/img/yunji/lotto.png" onclick="aaa()"/>
+      <img class="lotto_image" src="/assets/img/yunji/lotto.png" onclick="getLotto()" />
     </div>
   </div>
 </div>
-<div id="capture_area"> 캡쳐할 영역 </div>
 
 <script type="text/javascript">
-  var nums = [1,2,3,4,5,6];
-  function aaa(){
-  for(var i=0; i<6; i++){
-    var idx = Math.floor(Math.random() * nums.length);
-    console.log(idx);
+  const nums = [];
+  for (let i = 1; i <= 45; i++) {
+    nums[i - 1] = i;
   }
-}
+  function getLotto() {
+    const numsSet = new Set();
+    while (numsSet.size < 6) {
+      var idx = Math.floor(Math.random() * 45) + 1;
+      numsSet.add(idx);
+    }
+    const sortedNums = Array.from(numsSet).sort((a, b) => a - b);
+    const p = document.createElement('p');
+    p.className = 'lotto_p';
+    for (var i = 0; i < 6; i++) {
+      var span = document.createElement('span');
+      let lottoNum = sortedNums[i];
+      switch (true) {
+        case (lottoNum <= 10):
+          span.classList = 'ball_645 lrg ball1 lotto_span';
+          break;
+        case (lottoNum <= 20):
+          span.classList = 'ball_645 lrg ball2 lotto_span';
+          break;
+        case (lottoNum <= 30):
+          span.classList = 'ball_645 lrg ball3 lotto_span';
+          break;
+        case (lottoNum <= 40):
+          span.classList = 'ball_645 lrg ball4 lotto_span';
+          break;
+        case (lottoNum <= 45):
+          span.classList = 'ball_645 lrg ball5 lotto_span';
+          break;
+      }
+      span.textContent = lottoNum;
+      p.append(span);
+    }
+    document.getElementById('capture_area').appendChild(p);
+  }
   var script = document.createElement('script');
   script.id = 'script';
   script.src = 'https://html2canvas.hertzen.com/dist/html2canvas.min.js';
   document.querySelector("head").appendChild(script);
 
-  window.addEventListener('DOMContentLoaded', function(){
-    $(".btn_download").click(function(e){
-      html2canvas(document.getElementById("capture_area")).then(function(canvas) {
+  window.addEventListener('DOMContentLoaded', function () {
+    $(".btn_download").click(function (e) {
+      html2canvas(document.getElementById("capture_area")).then(function (canvas) {
         var el = document.createElement("a");
-        el.href = canvas.toDataURL("image/jpeg");
-        el.download = '이미지.jpg';
+        el.href = canvas.toDataURL("image/png");
+        el.download = '오억이네_Lotto.png';
         el.click();
       })
     })
   })
 </script>
-
