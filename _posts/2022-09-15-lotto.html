@@ -1,11 +1,11 @@
 ---
-date: 2010-09-10 12:26:40
+date: 2022-09-17 
 layout: page
-title: 윤지윤지윤지
-subtitle: 로또 번호 생성기
+title: 로또 번호 추출기
+subtitle: 로또 번호 자동 생성, 로또 추천 번호
 description: Lotto!! 1등 당첨 번호 만들기
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559825145/theme16_o0seet.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559825145/theme16_o0seet.jpg
+image: https://play-lh.googleusercontent.com/eUVpXzvy-5cGRnp025XcAnXN7HS2QFftJBcDW7EdAoH4OPD50sq2LaI0bVffDFyduQ
+optimized_image: https://play-lh.googleusercontent.com/eUVpXzvy-5cGRnp025XcAnXN7HS2QFftJBcDW7EdAoH4OPD50sq2LaI0bVffDFyduQ
 category: life
 tags:
 - life
@@ -92,15 +92,17 @@ permalink: /lotto/
     cursor: pointer;
     width: 80px;
   }
+
   .lotto_p {
     margin-top: 12px !important;
   }
-  .lotto_span{
+
+  .lotto_span {
     margin-right: 5px !important;
   }
 </style>
 <div class="lotto_contents">
-  <div id="capture_area">
+  <div>
     <p>
       <span class="ball_645 lrg ball1">로</span>
       <span class="ball_645 lrg ball2">또</span>
@@ -110,6 +112,7 @@ permalink: /lotto/
       <span class="ball_645 lrg ball5">성</span>
     </p>
   </div>
+  <div id="lotto_area"></div>
   <div class="lotto_button">
     <div>
       <img class="lotto_image btn_download" src="/assets/img/yunji/download.png" alt="사진으로 저장하기">
@@ -117,15 +120,37 @@ permalink: /lotto/
     <div>
       <img class="lotto_image" src="/assets/img/yunji/lotto.png" onclick="getLotto()" />
     </div>
+    <div>
+      <img class="lotto_image" src="https://www.flaticon.com/free-icons/refresh" onclick="clearLotto()" />
+    </div>
   </div>
+</div>
+<div style="display:none;">
+    // html2canvas(document.getElementById("lotto_area")).then(function (canvas) {
+    //   var el = document.createElement("a");
+    //   el.href = canvas.toDataURL("image/png");
+    //   el.download = '오억이네_Lotto.png';
+    //   el.click();
+    // })
 </div>
 
 <script type="text/javascript">
+  var script = document.createElement('script');
+  script.id = 'script';
+  script.src = 'https://html2canvas.hertzen.com/dist/html2canvas.min.js';
+  document.querySelector("head").appendChild(script);
   const nums = [];
   for (let i = 1; i <= 45; i++) {
     nums[i - 1] = i;
   }
   function getLotto() {
+    const lotto_area = document.getElementById('lotto_area');
+
+    if(lotto_area.childElementCount >= 10){
+      alert('10개까지만 생성할 수 있습니다. 리프레시 버튼 클릭 후 진행 부탁드립니다.');
+      return;
+    }
+
     const numsSet = new Set();
     while (numsSet.size < 6) {
       var idx = Math.floor(Math.random() * 45) + 1;
@@ -157,21 +182,20 @@ permalink: /lotto/
       span.textContent = lottoNum;
       p.append(span);
     }
-    document.getElementById('capture_area').appendChild(p);
+    lotto_area.appendChild(p);
   }
-  var script = document.createElement('script');
-  script.id = 'script';
-  script.src = 'https://html2canvas.hertzen.com/dist/html2canvas.min.js';
-  document.querySelector("head").appendChild(script);
+
+  function clearLotto() {
+    let element = document.getElementById("lotto_area");
+    while (element.firstChild) {
+      element.removeChild(element.firstChild);
+    }
+  }
 
   window.addEventListener('DOMContentLoaded', function () {
     $(".btn_download").click(function (e) {
-      html2canvas(document.getElementById("capture_area")).then(function (canvas) {
-        var el = document.createElement("a");
-        el.href = canvas.toDataURL("image/png");
-        el.download = '오억이네_Lotto.png';
-        el.click();
-      })
+      alert('죄송합니다. 기능 구현중입니다.');
+      return false;
     })
   })
 </script>
