@@ -1,17 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5f205b3a-73c2-472c-b052-82b95bdf36b7/deploy-status)](https://app.netlify.com/sites/sleepy-bhabha-00eedf/deploys)
-
-### Hey guys, how are you? 🍽 🇧🇷
-
-As you know, this is a 100% free template, I earn nothing to maintain it. So, I have this idea and hope you can join me for a good cause.
-
-Every donation that I receive from this project from now on (04/11/21), I'll donate to NGOs that work against hunger in Brazil.
-
-If you feel the template is worth it and you could help people in need, here is the link:
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SAKL66RSDGH48&source=url)
-
-Thank you!
-
 # Jekflix Template
 
 ![Jekflix Template Cover Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)
@@ -284,6 +270,10 @@ File a [GitHub issue](https://github.com/thiagorossener/jekflix-template/issues/
 ## Author
 
 [Thiago Rossener](https://rossener.com/)
+
+Do you like my work? Buy me a coffee!
+
+<a href="https://www.buymeacoffee.com/thiagorossener" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ## License
 
