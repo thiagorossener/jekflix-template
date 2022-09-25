@@ -1,18 +1,21 @@
-let gulp         = require('gulp'),
-    concat       = require('gulp-concat'),
-    imagemin     = require('gulp-imagemin'),
-    include      = require('gulp-include'),
-    plumber      = require('gulp-plumber'),
-    rename       = require('gulp-rename'),
-    sourcemaps   = require('gulp-sourcemaps'),
-    uglify       = require('gulp-uglify'),
-    yaml         = require('gulp-yaml'),
-    browserSync  = require('browser-sync'),
-    cp           = require('child_process'),
-    del          = require('del'),
-    fs           = require('fs'),
-    jsonSass     = require('json-sass'),
-    source       = require('vinyl-source-stream');
+"use strict";
+
+import gulp from "gulp";
+import concat from "gulp-concat";
+import imagemin from "gulp-imagemin";
+import include from "gulp-include";
+import plumber from "gulp-plumber";
+import rename from "gulp-rename";
+import sourcemaps from "gulp-sourcemaps";
+import uglify from "gulp-uglify";
+import yaml from "gulp-yaml";
+import browserSync from "browser-sync";
+import cp from "child_process";
+import del from "del";
+import fs from "fs";
+import jsonSass from "json-sass";
+import source from "vinyl-source-stream";
+
 
 /**
  * Notify
@@ -203,7 +206,7 @@ function watch() {
  * - Compile the Jekyll site
  * - Launch BrowserSync & watch files
  */
-exports.default = gulp.series(gulp.parallel(js, theme, images), config, jekyll, gulp.parallel(server, watch));
+const run = gulp.series(gulp.parallel(js, theme, images), config, jekyll, gulp.parallel(server, watch));
 
 /**
  * Build Task
@@ -214,4 +217,6 @@ exports.default = gulp.series(gulp.parallel(js, theme, images), config, jekyll, 
  * - Build the config file
  * - Compile the Jekyll site
  */
-exports.build = gulp.series(gulp.parallel(js, theme, images), config, jekyll);
+const build = gulp.series(gulp.parallel(js, theme, images), config, jekyll);
+
+export { run as default, build };
