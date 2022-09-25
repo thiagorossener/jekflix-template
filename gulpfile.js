@@ -11,7 +11,7 @@ import uglify from "gulp-uglify";
 import yaml from "gulp-yaml";
 import browserSync from "browser-sync";
 import cp from "child_process";
-import del from "del";
+import { deleteAsync } from "del";
 import fs from "fs";
 import jsonSass from "json-sass";
 import source from "vinyl-source-stream";
@@ -112,8 +112,8 @@ function jsonTheme() {
     .pipe(gulp.dest('./'));
 }
 
-function cleanTheme() {
-  return del(['src/tmp']);
+async function cleanTheme() {
+  return await deleteAsync(['src/tmp']);
 }
 
 const theme = gulp.series(yamlTheme, jsonTheme, cleanTheme);
