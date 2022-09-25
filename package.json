@@ -21,7 +21,7 @@
     "url": "https://github.com/thiagorossener/jekflix-template/issues"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "child_process": "^1.0.2",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
