@@ -53,7 +53,7 @@ $ gulp
 
 ## Customization
 
-*Jekflix Template* allows you to personalize your site with several settings. See the [docs](settings) for more details.
+*Jekflix Template* allows you to personalize your site with several settings. See the [docs](settings.md) for more details.
 
 For advanced theme customization, check the directory `_sass` for style files.
 

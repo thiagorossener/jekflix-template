@@ -12,29 +12,29 @@ A theme for Jekyll inspired by Netflix panel for who loves movies and series and
 
 ## Features
 
-- [Live Search](docs/features#live-search)
-- [Estimated Reading Time](docs/features#estimated-reading-time)
-- [Reading Progress Bar](docs/features#reading-progress-bar) *(optional)*
-- ["New Post" tag](docs/features#new-post-tag)
-- [Load images on demand](docs/features#load-images-on-demand)
-- [Push Menu](docs/features#push-menu)
-- [SVG icons](docs/features#svg-icons)
-- [Shell script to create posts](docs/features#shell-script-to-create-posts)
-- [Tags page](docs/features#tags-page)
-- [About page](docs/features#about-page)
-- [Contact page](docs/features#contact-page)
-- [404 error page](docs/features#404-error-page)
-- [Feed RSS](docs/features#feed-rss)
-- [Disqus](docs/features#disqus) *(optional)*
-- [Featured post](docs/features#featured-post) *(optional)*
-- [Home page pagination](docs/features#home-page-pagination) *(optional)*
-- [Posts sidebar](docs/features#posts-sidebar) *(optional)*
-- [Paginated posts](docs/features#paginated-posts) *(optional)*
-- ["Before you go" modal](docs/features#before-you-go-modal) *(optional)*
-- [Post recommendation](docs/features#post-recommendation)
-- [Netlify CMS ready](docs/features#netlify-cms-ready)
-- [Translations](docs/setup#translations) **new!**
-- [Math Expressions](docs/features#math-expressions) *(optional)* **new!**
+- [Live Search](docs/features.md#live-search)
+- [Estimated Reading Time](docs/features.md#estimated-reading-time)
+- [Reading Progress Bar](docs/features.md#reading-progress-bar) *(optional)*
+- ["New Post" tag](docs/features.md#new-post-tag)
+- [Load images on demand](docs/features.md#load-images-on-demand)
+- [Push Menu](docs/features.md#push-menu)
+- [SVG icons](docs/features.md#svg-icons)
+- [Shell script to create posts](docs/features.md#shell-script-to-create-posts)
+- [Tags page](docs/features.md#tags-page)
+- [About page](docs/features.md#about-page)
+- [Contact page](docs/features.md#contact-page)
+- [404 error page](docs/features.md#404-error-page)
+- [Feed RSS](docs/features.md#feed-rss)
+- [Disqus](docs/features.md#disqus) *(optional)*
+- [Featured post](docs/features.md#featured-post) *(optional)*
+- [Home page pagination](docs/features.md#home-page-pagination) *(optional)*
+- [Posts sidebar](docs/features.md#posts-sidebar) *(optional)*
+- [Paginated posts](docs/features.md#paginated-posts) *(optional)*
+- ["Before you go" modal](docs/features.md#before-you-go-modal) *(optional)*
+- [Post recommendation](docs/features.md#post-recommendation)
+- [Netlify CMS ready](docs/features.md#netlify-cms-ready)
+- [Translations](docs/setup.md#translations) **new!**
+- [Math Expressions](docs/features.md#math-expressions) *(optional)* **new!**
 
 ## SEO
 
@@ -91,7 +91,7 @@ Modify the variables above to change your theme colors.
 
 ### Site configuration
 
-Below are some properties you can change in your project `_config.yml`, check the [documentation](docs/settings) for more details.
+Below are some properties you can change in your project `_config.yml`, check the [documentation](docs/settings.md) for more details.
 
 ```
 # Site Settings
@@ -183,13 +183,13 @@ plugins:
 
 In the case you're cloning this repo, follow those instructions:
 
-- [Environment](docs/setup#environment)
-- [Installing template](docs/setup#installing-template)
-- [Running local](docs/setup#running-local)
+- [Environment](docs/setup.md#environment)
+- [Installing template](docs/setup.md#installing-template)
+- [Running local](docs/setup.md#running-local)
 
 ### Customization
 
-See the [settings documentation](docs/settings) to customize layout, titles, social media and more.
+See the [settings documentation](docs/settings.md) to customize layout, titles, social media and more.
 
 ### Theme
 
@@ -203,9 +203,9 @@ To see how your website is going to look like when you deploy it, run `bundle ex
 
 ## Posts
 
-Use the [Front Matter properties](docs/post#front-matter-properties) to create posts.
+Use the [Front Matter properties](docs/post.md#front-matter-properties) to create posts.
 
-> **Note:** In the case you're cloning this repo, you can use the available [script](docs/post#creating-a-post) to generate posts automatically.
+> **Note:** In the case you're cloning this repo, you can use the available [script](docs/post.md#creating-a-post) to generate posts automatically.
 
 ## Release notes
 
@@ -242,17 +242,17 @@ Use the [Front Matter properties](docs/post#front-matter-properties) to create p
 - Optimized to support disabled JS
 
 ### v2.0.0
-- Added optional [sidebar](docs/features#posts-sidebar)
-- Added optional [Featured post](docs/features#featured-post)
-- Added optional ["Before you go" modal](docs/features#before-you-go-modal)
-- Added optional [post pagination](docs/features#paginated-posts)
-- Added [post recommendation](docs/features#post-recommendation)
+- Added optional [sidebar](docs/features.md#posts-sidebar)
+- Added optional [Featured post](docs/features.md#featured-post)
+- Added optional ["Before you go" modal](docs/features.md#before-you-go-modal)
+- Added optional [post pagination](docs/features.md#paginated-posts)
+- Added [post recommendation](docs/features.md#post-recommendation)
 - Added meta keywords to improve SEO
 - Added JSON-LD to improve SEO
-- Changed pagination to be [optional](docs/features#home-page-pagination)
-- Improved [Tags page](docs/features#tags-page)
-- Cleaned up and improved [Front Matter properties](docs/post#front-matter-properties)
-- Set up [Netlify CMS](docs/features#netlify-cms-ready)
+- Changed pagination to be [optional](docs/features.md#home-page-pagination)
+- Improved [Tags page](docs/features.md#tags-page)
+- Cleaned up and improved [Front Matter properties](docs/post.md#front-matter-properties)
+- Set up [Netlify CMS](docs/features.md#netlify-cms-ready)
 - Improved customization settings
 - Minor design updates
 

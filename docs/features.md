@@ -23,7 +23,7 @@ _Jekflix_ comes with features to help you create/edit/share content and provide 
 - ["Before you go" modal](features#before-you-go-modal) *(optional)*
 - [Post recommendation](features#post-recommendation)
 - [Netlify CMS ready](features#netlify-cms-ready)
-- [Translations](setup#translations)
+- [Translations](setup.md#translations)
 - [Math Expressions](features#math-expressions) *(optional)*
 
 ## Live Search
@@ -46,7 +46,7 @@ It also shows a reading progress bar based on the reading time and the scroll po
 
 ![Reading Progress Bar Screenshot](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1566425470/progress-bar-screenshot_gem7xb.jpg)
 
-You can show/hide the time bar, see the [docs](settings#show_time_bar).
+You can show/hide the time bar, see the [docs](settings.md#show_time_bar).
 
 ## "New Post" tag
 
@@ -126,7 +126,7 @@ Check it out a sample [here](https://jekflix.rossener.com/feed.xml).
 
 Jekflix Template implements the Disqus plugin, allowing visitors to comment in posts.
 
-See the [docs](settings#disqus_username) to configure it.
+See the [docs](settings.md#disqus_username) to configure it.
 
 ## Featured post
 
@@ -134,7 +134,7 @@ See the [docs](settings#disqus_username) to configure it.
 
 In this 2.0 version, a hero lockup got added to the home page, like Netflix does with movies.
 
-To turn on/off this feature, see the [docs](settings#show_hero).
+To turn on/off this feature, see the [docs](settings.md#show_hero).
 
 ![Page with hero screenshot](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1566477681/page-with-hero-screenshot_ixyjzp.jpg)
 
@@ -144,7 +144,7 @@ To turn on/off this feature, see the [docs](settings#show_hero).
 
 There are two different options to show the posts in the home page, the first one is loading new posts when scrolling down and the second one is adding pagination.
 
-To add pagination, see the [docs](settings#paginate).
+To add pagination, see the [docs](settings.md#paginate).
 
 ## Posts sidebar
 
@@ -152,7 +152,7 @@ To add pagination, see the [docs](settings#paginate).
 
 As many people has asked for, Jekflix Template 2.0 adds an optional sidebar to posts.
 
-To show/hide the sidebar, see the [docs](settings#two_columns_layout).
+To show/hide the sidebar, see the [docs](settings.md#two_columns_layout).
 
 ![Post with two columns screenshot](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1566476793/two-columns-screenshot_phumrl.jpg)
 
@@ -162,7 +162,7 @@ To show/hide the sidebar, see the [docs](settings#two_columns_layout).
 
 You can also boost your advertising views by paginating posts.
 
-To break your posts into different pages, see the [docs](Post#paginate).
+To break your posts into different pages, see the [docs](post.md#paginate).
 
 ![Paginated Page Screenshot](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1566430021/paginated-page-screenshot_zx4xjn.jpg)
 
@@ -172,7 +172,7 @@ To break your posts into different pages, see the [docs](Post#paginate).
 
 To keep visitors interested in your content, you can show them some posts recommendations before they leave the page or/and they reach the post end.
 
-See the [docs](settings#show_modal_on_exit) for more information.
+See the [docs](settings.md#show_modal_on_exit) for more information.
 
 ![Modal screenshot](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1566478245/before-you-go-screenshot_prrplk.jpg)
 
@@ -203,7 +203,7 @@ The newest addition to the *Jekflix Template 2.0.0* is the Netlify CMS integrati
 
 With Netlify CMS you will be able to create/edit posts using an editor, access a workflow panel and change every aspect of your blog with some clicks.
 
-To use the Netlify CMS, you need to go through some steps first. See the [docs](Netlify-CMS) for more info.
+To use the Netlify CMS, you need to go through some steps first. See the [docs](netlify-cms.md) for more info.
 
 Here are some screenshots:
 
