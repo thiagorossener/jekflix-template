@@ -2,29 +2,29 @@
 
 _Jekflix_ comes with features to help you create/edit/share content and provide a nice experience for your visitors.
 
-- [Live Search](features#live-search)
-- [Estimated Reading Time](features#estimated-reading-time)
-- [Reading Progress Bar](features#reading-progress-bar) *(optional)*
-- ["New Post" tag](features#new-post-tag)
-- [Load images on demand](features#load-images-on-demand)
-- [Push Menu](features#push-menu)
-- [SVG icons](features#svg-icons)
-- [Shell script to create posts](features#shell-script-to-create-posts)
-- [Tags page](features#tags-page)
-- [About page](features#about-page)
-- [Contact page](features#contact-page)
-- [404 error page](features#404-error-page)
-- [Feed RSS](features#feed-rss)
-- [Disqus](features#disqus) *(optional)*
-- [Featured post](features#featured-post) *(optional)*
-- [Home page pagination](features#home-page-pagination) *(optional)*
-- [Posts sidebar](features#posts-sidebar) *(optional)*
-- [Paginated posts](features#paginated-posts) *(optional)*
-- ["Before you go" modal](features#before-you-go-modal) *(optional)*
-- [Post recommendation](features#post-recommendation)
-- [Netlify CMS ready](features#netlify-cms-ready)
+- [Live Search](features.md#live-search)
+- [Estimated Reading Time](features.md#estimated-reading-time)
+- [Reading Progress Bar](features.md#reading-progress-bar) *(optional)*
+- ["New Post" tag](features.md#new-post-tag)
+- [Load images on demand](features.md#load-images-on-demand)
+- [Push Menu](features.md#push-menu)
+- [SVG icons](features.md#svg-icons)
+- [Shell script to create posts](features.md#shell-script-to-create-posts)
+- [Tags page](features.md#tags-page)
+- [About page](features.md#about-page)
+- [Contact page](features.md#contact-page)
+- [404 error page](features.md#404-error-page)
+- [Feed RSS](features.md#feed-rss)
+- [Disqus](features.md#disqus) *(optional)*
+- [Featured post](features.md#featured-post) *(optional)*
+- [Home page pagination](features.md#home-page-pagination) *(optional)*
+- [Posts sidebar](features.md#posts-sidebar) *(optional)*
+- [Paginated posts](features.md#paginated-posts) *(optional)*
+- ["Before you go" modal](features.md#before-you-go-modal) *(optional)*
+- [Post recommendation](features.md#post-recommendation)
+- [Netlify CMS ready](features.md#netlify-cms-ready)
 - [Translations](setup.md#translations)
-- [Math Expressions](features#math-expressions) *(optional)*
+- [Math Expressions](features.md#math-expressions) *(optional)*
 
 ## Live Search
 
