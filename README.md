@@ -12,29 +12,29 @@ A theme for Jekyll inspired by Netflix panel for who loves movies and series and
 
 ## Features
 
-- [Live Search](https://github.com/thiagorossener/jekflix-template/wiki/Features#live-search)
-- [Estimated Reading Time](https://github.com/thiagorossener/jekflix-template/wiki/Features#estimated-reading-time)
-- [Reading Progress Bar](https://github.com/thiagorossener/jekflix-template/wiki/Features#reading-progress-bar) *(optional)*
-- ["New Post" tag](https://github.com/thiagorossener/jekflix-template/wiki/Features#new-post-tag)
-- [Load images on demand](https://github.com/thiagorossener/jekflix-template/wiki/Features#load-images-on-demand)
-- [Push Menu](https://github.com/thiagorossener/jekflix-template/wiki/Features#push-menu)
-- [SVG icons](https://github.com/thiagorossener/jekflix-template/wiki/Features#svg-icons)
-- [Shell script to create posts](https://github.com/thiagorossener/jekflix-template/wiki/Features#shell-script-to-create-posts)
-- [Tags page](https://github.com/thiagorossener/jekflix-template/wiki/Features#tags-page)
-- [About page](https://github.com/thiagorossener/jekflix-template/wiki/Features#about-page)
-- [Contact page](https://github.com/thiagorossener/jekflix-template/wiki/Features#contact-page)
-- [404 error page](https://github.com/thiagorossener/jekflix-template/wiki/Features#404-error-page)
-- [Feed RSS](https://github.com/thiagorossener/jekflix-template/wiki/Features#feed-rss)
-- [Disqus](https://github.com/thiagorossener/jekflix-template/wiki/Features#disqus) *(optional)*
-- [Featured post](https://github.com/thiagorossener/jekflix-template/wiki/Features#featured-post) *(optional)*
-- [Home page pagination](https://github.com/thiagorossener/jekflix-template/wiki/Features#home-page-pagination) *(optional)*
-- [Posts sidebar](https://github.com/thiagorossener/jekflix-template/wiki/Features#posts-sidebar) *(optional)*
-- [Paginated posts](https://github.com/thiagorossener/jekflix-template/wiki/Features#paginated-posts) *(optional)*
-- ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/Features#before-you-go-modal) *(optional)*
-- [Post recommendation](https://github.com/thiagorossener/jekflix-template/wiki/Features#post-recommendation)
-- [Netlify CMS ready](https://github.com/thiagorossener/jekflix-template/wiki/Features#netlify-cms-ready)
-- [Translations](https://github.com/thiagorossener/jekflix-template/wiki/setup#translations) **new!**
-- [Math Expressions](https://github.com/thiagorossener/jekflix-template/wiki/Features#math-expressions) *(optional)* **new!**
+- [Live Search](docs/features#live-search)
+- [Estimated Reading Time](docs/features#estimated-reading-time)
+- [Reading Progress Bar](docs/features#reading-progress-bar) *(optional)*
+- ["New Post" tag](docs/features#new-post-tag)
+- [Load images on demand](docs/features#load-images-on-demand)
+- [Push Menu](docs/features#push-menu)
+- [SVG icons](docs/features#svg-icons)
+- [Shell script to create posts](docs/features#shell-script-to-create-posts)
+- [Tags page](docs/features#tags-page)
+- [About page](docs/features#about-page)
+- [Contact page](docs/features#contact-page)
+- [404 error page](docs/features#404-error-page)
+- [Feed RSS](docs/features#feed-rss)
+- [Disqus](docs/features#disqus) *(optional)*
+- [Featured post](docs/features#featured-post) *(optional)*
+- [Home page pagination](docs/features#home-page-pagination) *(optional)*
+- [Posts sidebar](docs/features#posts-sidebar) *(optional)*
+- [Paginated posts](docs/features#paginated-posts) *(optional)*
+- ["Before you go" modal](docs/features#before-you-go-modal) *(optional)*
+- [Post recommendation](docs/features#post-recommendation)
+- [Netlify CMS ready](docs/features#netlify-cms-ready)
+- [Translations](docs/setup#translations) **new!**
+- [Math Expressions](docs/features#math-expressions) *(optional)* **new!**
 
 ## SEO
 
@@ -91,7 +91,7 @@ Modify the variables above to change your theme colors.
 
 ### Site configuration
 
-Below are some properties you can change in your project `_config.yml`, check the [documentation](https://github.com/thiagorossener/jekflix-template/wiki/settings) for more details.
+Below are some properties you can change in your project `_config.yml`, check the [documentation](docs/settings) for more details.
 
 ```
 # Site Settings
@@ -183,13 +183,13 @@ plugins:
 
 In the case you're cloning this repo, follow those instructions:
 
-- [Environment](https://github.com/thiagorossener/jekflix-template/wiki/setup#environment)
-- [Installing template](https://github.com/thiagorossener/jekflix-template/wiki/setup#installing-template)
-- [Running local](https://github.com/thiagorossener/jekflix-template/wiki/setup#running-local)
+- [Environment](docs/setup#environment)
+- [Installing template](docs/setup#installing-template)
+- [Running local](docs/setup#running-local)
 
 ### Customization
 
-See the [settings documentation](https://github.com/thiagorossener/jekflix-template/wiki/settings) to customize layout, titles, social media and more.
+See the [settings documentation](docs/settings) to customize layout, titles, social media and more.
 
 ### Theme
 
@@ -203,9 +203,9 @@ To see how your website is going to look like when you deploy it, run `bundle ex
 
 ## Posts
 
-Use the [Front Matter properties](https://github.com/thiagorossener/jekflix-template/wiki/post#front-matter-properties) to create posts.
+Use the [Front Matter properties](docs/post#front-matter-properties) to create posts.
 
-> **Note:** In the case you're cloning this repo, you can use the available [script](https://github.com/thiagorossener/jekflix-template/wiki/post#creating-a-post) to generate posts automatically.
+> **Note:** In the case you're cloning this repo, you can use the available [script](docs/post#creating-a-post) to generate posts automatically.
 
 ## Release notes
 
@@ -242,17 +242,17 @@ Use the [Front Matter properties](https://github.com/thiagorossener/jekflix-temp
 - Optimized to support disabled JS
 
 ### v2.0.0
-- Added optional [sidebar](https://github.com/thiagorossener/jekflix-template/wiki/Features#posts-sidebar)
-- Added optional [Featured post](https://github.com/thiagorossener/jekflix-template/wiki/features#featured-post)
-- Added optional ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/features#before-you-go-modal)
-- Added optional [post pagination](https://github.com/thiagorossener/jekflix-template/wiki/features#paginated-posts)
-- Added [post recommendation](https://github.com/thiagorossener/jekflix-template/wiki/features#post-recommendation)
+- Added optional [sidebar](docs/features#posts-sidebar)
+- Added optional [Featured post](docs/features#featured-post)
+- Added optional ["Before you go" modal](docs/features#before-you-go-modal)
+- Added optional [post pagination](docs/features#paginated-posts)
+- Added [post recommendation](docs/features#post-recommendation)
 - Added meta keywords to improve SEO
 - Added JSON-LD to improve SEO
-- Changed pagination to be [optional](https://github.com/thiagorossener/jekflix-template/wiki/features#home-page-pagination)
-- Improved [Tags page](https://github.com/thiagorossener/jekflix-template/wiki/features#tags-page)
-- Cleaned up and improved [Front Matter properties](https://github.com/thiagorossener/jekflix-template/wiki/post#front-matter-properties)
-- Set up [Netlify CMS](https://github.com/thiagorossener/jekflix-template/wiki/features#netlify-cms-ready)
+- Changed pagination to be [optional](docs/features#home-page-pagination)
+- Improved [Tags page](docs/features#tags-page)
+- Cleaned up and improved [Front Matter properties](docs/post#front-matter-properties)
+- Set up [Netlify CMS](docs/features#netlify-cms-ready)
 - Improved customization settings
 - Minor design updates
 
