@@ -203,7 +203,7 @@ The newest addition to the *Jekflix Template 2.0.0* is the Netlify CMS integrati
 
 With Netlify CMS you will be able to create/edit posts using an editor, access a workflow panel and change every aspect of your blog with some clicks.
 
-To use the Netlify CMS, you need to go through some steps first. See the [docs](netlify-cms.md) for more info.
+To use the Netlify CMS, you need to go through some steps first. See the [docs](netlify-cms.md#netlify-cms) for more info.
 
 Here are some screenshots:
 

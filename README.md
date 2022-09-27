@@ -91,7 +91,7 @@ Modify the variables above to change your theme colors.
 
 ### Site configuration
 
-Below are some properties you can change in your project `_config.yml`, check the [documentation](docs/settings.md) for more details.
+Below are some properties you can change in your project `_config.yml`, check the [documentation](docs/settings.md#settings) for more details.
 
 ```
 # Site Settings
@@ -189,7 +189,7 @@ In the case you're cloning this repo, follow those instructions:
 
 ### Customization
 
-See the [settings documentation](docs/settings.md) to customize layout, titles, social media and more.
+See the [settings documentation](docs/settings.md#settings) to customize layout, titles, social media and more.
 
 ### Theme
 
