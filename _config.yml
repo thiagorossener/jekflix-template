@@ -1,6 +1,6 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
+name: Dev-jin
+title: Dev-jin | A blog for Hyeonjin kim
 description: Jekflix is a template for Jekyll inspired by Netflix and made by
   Thiago Rossener.
 tags:
@@ -19,9 +19,9 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: ilhj1228@gmail.com
 # See: https://disqus.com/
-disqus_username: disqus_username
+disqus_username: dev-jin97
 # Contact Form Setting
 # See: https://formspree.io/
 formspree_form_id: formspree_form_id
@@ -29,7 +29,7 @@ formspree_form_id: formspree_form_id
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
+github_username: dev-jin97
 facebook_username: facebook_username
 twitter_username: twitter_username
 instagram_username: instagram_username
