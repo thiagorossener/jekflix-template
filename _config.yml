@@ -25,6 +25,13 @@ disqus_username: dev-jin97
 # Contact Form Setting
 # See: https://formspree.io/
 formspree_form_id: dev-jin97
+repository: "dev-jin97/dev-jin97.github.io"
+
+comments:
+  provider  : "utterances"
+  utterances:
+    theme: "github-dark-orange"
+    issue_term: "pathname"
 
 
 # Social Media Settings
