@@ -8,6 +8,6 @@ image:
 optimized_image:
 category:
 tags:
-author:
+author: 
 paginate: false
 ---
