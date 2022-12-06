@@ -1,11 +1,11 @@
 ---
 layout: author
 photo: /assets/img/uploads/profile.png
-name: mranderson
-display_name: Mr. Anderson
+name: Hyeon Jin Kim
+display_name: Dev-jin97
 position: The One
-bio: Bulletproof hacker passionate about leather clothes.
-github_username: github_username
+bio: Data Engineer
+github_username: https://github.com/dev-jin97
 facebook_username: facebook_username
 twitter_username: twitter_username
 instagram_username: instagram_username
