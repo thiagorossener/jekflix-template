@@ -9,11 +9,7 @@ permalink: /about/
 
 <img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Thiago Rossener" width="200">
 
-# About
+# About Me
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+2021년 개발 공부에 관심이 생겨 다니던 회사를 그만두고 대구 IT학원에서 java공부, 웹 개발도 좋지만 데이터 분야 공부도 좋다는 것을  
+깨닫고 무작정 지금의 회사로 지원, 그리고 합격(🙄...??????). 2살 연상 여자친구와 행복하게 사는 중입니다.
