@@ -4,8 +4,8 @@ layout: post
 title: 데이터 엔지니어란?
 subtitle: 시시각각 쌓이는 데이터, 그리고 기업이 바라보는 데이터의 중요성
 description: 데이터 직무 3개 중 하나, 데이터 엔지니어를 알아보자.
-image: https://res.cloudinary.com/dat8benl2/image/upload/c_scale,h_399,w_760/v1670299904/post/dataengineerexerciseball-1_s8l2gu.gif
-optimized_image: https://res.cloudinary.com/dat8benl2/image/upload/c_scale,h_399,w_760/v1670299904/post/dataengineerexerciseball-1_s8l2gu.gif
+image: https://res.cloudinary.com/dachcbps7/image/upload/c_scale,h_399,w_760/v1670314253/6b511bab919332c0d4b83bd1e49ff236_bmnin4.gif
+optimized_image: https://res.cloudinary.com/dachcbps7/image/upload/c_scale,h_399,w_760/v1670314253/6b511bab919332c0d4b83bd1e49ff236_bmnin4.gif
 category: work
 tags: 
  - 직무
