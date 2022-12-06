@@ -86,7 +86,7 @@ layout: main
                         <div class="tags">
                             {% for tag in post.tags %}
                                 {% if tag != "" %}
-                                    <a href="{{ site.baseurl}}/tags/#{{tag | slugify }}">#{{ tag }}</a>
+                                    <a href="{{ site.baseurl}}/tags#{{tag | slugify }}">#{{ tag }}</a>
                                 {% endif %}
                             {% endfor %}
                         </div>
