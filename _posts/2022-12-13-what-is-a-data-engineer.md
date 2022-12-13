@@ -1,5 +1,5 @@
 ---
-date: 2022-12-06 03:58:43
+date: 2022-12-13 05:40:14
 layout: post
 title: 데이터 엔지니어란?
 subtitle: 시시각각 쌓이는 데이터, 그리고 기업이 바라보는 데이터의 중요성
@@ -7,9 +7,9 @@ description: 데이터 직무 3개 중 하나, 데이터 엔지니어를 알아�
 image: https://res.cloudinary.com/dachcbps7/image/upload/c_scale,h_399,w_760/v1670314253/6b511bab919332c0d4b83bd1e49ff236_bmnin4.gif
 optimized_image: https://res.cloudinary.com/dachcbps7/image/upload/c_scale,h_399,w_760/v1670314253/6b511bab919332c0d4b83bd1e49ff236_bmnin4.gif
 category: work
-tags: 
- - 직무
- - Data Engineer  
+tags:
+- 직무
+- Data Engineer  
 author: hjk
 paginate: false
 ---
@@ -41,7 +41,7 @@ paginate: false
 
 <img alt="c9124a08e8cc0.jpg" height="300" src="https://res.cloudinary.com/dat8benl2/image/upload/v1670301805/post/c9124a08e8cc0_sccqdo.jpg" width="400"/>
 
-위의 내용과 같이 우리는 데이터 엔지니어에 대해서 알아보도록 하겠습니다. 지금 글을 쓰고 있는 저 또한 데이터 엔지니어라는 직무를 임하고 있지만 현실적으로 아직 저의 역량이 부족하다는 것을 자각하고 더욱 공부하려 노력하고 있습니다. 
+위의 내용과 같이 우리는 데이터 엔지니어에 대해서 알아보도록 하겠습니다. 지금 글을 쓰고 있는 저 또한 데이터 엔지니어라는 직무를 임하고 있지만 현실적으로 아직 저의 역량이 부족하다는 것을 자각하고 더욱 공부하려 노력하고 있습니다.
 
 ### 데이터 엔지니어의 역할
 
@@ -59,7 +59,7 @@ ETL, 파이프라인이라는 단어는 개발자들이라면 많이 접했던 �
 
 <img alt="IMG_88FEB593B4BF-1.jpeg" height="300" src="https://res.cloudinary.com/dat8benl2/image/upload/v1670301813/post/IMG_88FEB593B4BF-1_fgo00u.jpg" width="500"/>
 
-데이터가 여러 개의 소스에서 흩뿌려져 있다고 생각해봅시다. 여기서 데이터 엔지니어에게 변환된 데이터를 요청한다고하면 데이터 엔지니어는 소스 내의 데이터들을 가져와 단일 소스에 데이터를 적재시키는 과정을 진행합니다. 이러한 과정을 ETL(추출, 변환, 적재)라고 합니다. 
+데이터가 여러 개의 소스에서 흩뿌려져 있다고 생각해봅시다. 여기서 데이터 엔지니어에게 변환된 데이터를 요청한다고하면 데이터 엔지니어는 소스 내의 데이터들을 가져와 단일 소스에 데이터를 적재시키는 과정을 진행합니다. 이러한 과정을 ETL(추출, 변환, 적재)라고 합니다.
 정리하자면, 데이터 과학자나 분석가가 요청한 데이터를 위해 원시데이터를 **추출(Extract)**하여 요청 사항에 맞게 데이터를 **변환(Transform)**시켜 단일 소스에 균일하게 **적재(Load)**하는 과정을 말합니다. 이 때 적재하는 과정에서 어떻게 하면 메모리를 덜 사용할까, 더 빠르고 정확하게 적재할까에 대한 고민을 하고 그 결과로 적재하는 과정을 설계하고 구축하는 것을 파이프라인이라고 합니다.
 
 ETL에 대한 개념을 잘 설명한 [블로그](https://itholic.github.io/etl/) 글을 공유하니 참고해주시기 바랍니다.(진짜 설명이 잘되어 있습니다..😍)
@@ -79,7 +79,7 @@ ETL에 대한 개념을 잘 설명한 [블로그](https://itholic.github.io/etl/
 반면에 일부 데이터 엔지니어는 대규모 기업에서 데이터 파이프라인을 개발하거나 데이터 웨어하우스를 관리하는 일을 담당합니다. 다양한 문제를 직면했을 때 이를 자동화하는 방법을 고민하고 프로세스를 개발하는 일을 하게 됩니다.
 
 <img alt="https://emeritus.org/blog/data-engineering-mit-xpro/" height="1000" src="https://res.cloudinary.com/dat8benl2/image/upload/v1670301801/post/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-11-22_%EC%98%A4%ED%9B%84_1.50.00_gmuwqe.png" width="600"/>  
-  
+
 사진출처. [https://emeritus.org/blog/data-engineering-mit-xpro/](https://emeritus.org/blog/data-engineering-mit-xpro/)
 
 데이터 엔지니어로서 공부를 하게 된다면 도움이 되는 로드맵 느낌의 글입니다. 저 또한 성장하기 위해서 하나씩 해결해나가는 중이지만 아직 멀었다는 생각이 듭니다.
@@ -94,6 +94,7 @@ ETL에 대한 개념을 잘 설명한 [블로그](https://itholic.github.io/etl/
 감사합니다😄
 
 ---
+
 
 ### 참고
 
