@@ -1,24 +1,25 @@
 # Site Settings
-name: Zxyng
-title: Zxyng | AI.DOL SOCIAL PRODUCING PLATFORM
-description: Zxyng is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+name: zxyng
+title: zxyng | A blog theme for zxyng
+description: zxyng is a social producing project for AI.Dol.
 tags:
   - blog
   - template
-  - jekyll
+  - zxyng
   - theme
   - netlify
 show_hero: true
 menu:
   - title: Home
     url: /
-  - title: About
+  - title: Product
     url: /about
+#  - title: Team
+    url: /feed.xml
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
-email: youremail@test.com
+ 
+email: zxyng.ai@gmail.com
 # See: https://disqus.com/
 disqus_username: disqus_username
 # Contact Form Setting
@@ -29,11 +30,11 @@ formspree_form_id: formspree_form_id
 # Social Media Settings
 # Remove the item if you don't need it
 github_username: github_username
-facebook_username: facebook_username
+#facebook_username: facebook_username
 twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+#instagram_username: instagram_username
+#linkedin_username: linkedin_username
+#medium_username: medium_username
 
 
 # Posts Settings
@@ -104,4 +105,4 @@ exclude: [
 ]
 
 # Theme
-version: v3.1.2
+version: v0.1.2
