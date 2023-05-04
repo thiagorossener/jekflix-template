@@ -7,7 +7,7 @@ description: Revolutionizing the production system through collective intelligen
 permalink: /product/
 ---
 
-<img src="/assets/img/zxyng_aidol.png" alt="aidol" width="1600" height="900">
+<img src="/assets/img/zxyng_aidol.png" alt="aidol" width="1600">
 
 # Product
 
