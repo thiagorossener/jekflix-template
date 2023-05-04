@@ -1,7 +1,7 @@
 # Site Settings
 name: zxyng
-title: zxyng | A blog theme for zxyng
-description: zxyng is a social producing project for AI.Dol.
+title: zxyng | The Future of the Idol Industry
+description: Revolutionizing the production system through collective intelligence.
 tags:
   - blog
   - template
@@ -13,11 +13,11 @@ menu:
   - title: Home
     url: /
   - title: Product
-    url: /about
-#  - title: Team
-    url: /feed.xml
+    url: /product
   - title: Contact
     url: /contact
+    #  - title: Feed
+    #    url: /feed.xml
  
 email: zxyng.ai@gmail.com
 # See: https://disqus.com/
