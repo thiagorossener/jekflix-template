@@ -4,9 +4,9 @@ layout: post
 title: "Interstellar : quand le cœur rencontre la raison"
 subtitle:
 description: "Écouter passionnément son cœur ou se fier prudemment à sa raison ? Découvrez comment la solution proposée par Interstellar a façonné ma conception du cinéma..."
-image: https://res.cloudinary.com/dj6o6enl9/image/upload/v1684853554/bg-5.jpg
-optimized_image: https://res.cloudinary.com/dj6o6enl9/image/upload/c_scale,w_380/v1684853554/bg-5.jpg
-category: cinéma
+image: https://res.cloudinary.com/dj6o6enl9/image/upload/v1684853554/bg-5.png
+optimized_image: https://res.cloudinary.com/dj6o6enl9/image/upload/c_scale,w_480/v1684853554/bg-5.png
+category: cinema
 tags:
   - chatGPT
   - IA

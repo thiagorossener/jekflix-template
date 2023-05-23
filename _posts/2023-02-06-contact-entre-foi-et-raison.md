@@ -5,13 +5,11 @@ title:  "Contact: à la recherche de la vérité entre foi et science"
 subtitle: 
 description: "Alors que le film fête son 26e anniversaire, les thèmes de la découverte, de la foi et de la quête de sens qu'il aborde continuent de trouver un écho auprès du public aujourd'hui..."
 image: https://res.cloudinary.com/dj6o6enl9/image/upload/v1684853554/bg-2.jpg
-optimized_image: https://res.cloudinary.com/dj6o6enl9/image/upload/c_scale,w_380/v1684853554/bg-2.jpg
-category: cinéma
+optimized_image: https://res.cloudinary.com/dj6o6enl9/image/upload/c_scale,w_480/v1684853554/bg-2.jpg
+category: cinema
 tags:
   - religion
-  - contact
   - science-fiction
-  - alien
 author: charveey
 paginate: false
 ---

@@ -4,9 +4,9 @@ layout: post
 title:  "Le déclin de la Planète des Singes"
 subtitle: 
 description: "Retour sur le succès de cette franchise emblématique de la fin des années 60 qui a lentement sombré dans l'oubli..."
-image: https://res.cloudinary.com/dj6o6enl9/image/upload/v1684853554/bg.jpg
-optimized_image: https://res.cloudinary.com/dj6o6enl9/image/upload/c_scale,w_380/v1684853554/bg.jpg
-category: cinéma
+image: https://res.cloudinary.com/dj6o6enl9/image/upload/v1684853554/bg.png
+optimized_image: https://res.cloudinary.com/dj6o6enl9/image/upload/c_scale,w_480/v1684853554/bg.png
+category: cinema
 tags:
   - science-fiction
 author: charveey
