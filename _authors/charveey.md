@@ -1,6 +1,6 @@
 ---
 layout: author
-photo: /assets/img/uploads/profile.png
+photo: /assets/img/uploads/charveey.jpg
 name: charveey
 display_name: Ange Kevin Amlaman
 position: Majestic de Koumassi

@@ -1,6 +1,6 @@
 ---
 layout: author
-photo: /assets/img/uploads/profile.png
+photo: /assets/img/uploads/holee.jpg
 name: holee
 display_name: Olivier Bablé
 position: Me-mania
