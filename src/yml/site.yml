@@ -1,26 +1,25 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Plume Quantique
+title: Plume Quantique | Blog consacré à la science-fiction
+description: >- # this means to ignore newlines until "baseurl:"
+  Bienvenue dans mon esprit, où se mèlent science-fiction, cinéma, littérature avec passion.
 tags:
   - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - science-fiction
+  - cinema
+  - critique
 show_hero: true
 menu:
-  - title: Home
+  - title: Accueil
     url: /
-  - title: About
+  - title: A Propos de moi
     url: /about
-  - title: Contact
+  - title: Me contacter
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: amlamanangekevin@gmail.com
 # See: https://disqus.com/
 disqus_username: disqus_username
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
+formspree_form_id: mqknkwel
