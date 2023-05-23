@@ -32,12 +32,12 @@ body {
     }
 
     svg {
-      width: rem(180px);
-      height: rem(45px);
+      width: rem(170px);
+      height: rem(40px);
       transition: all .4s;
   
       @include media(">=sm") {
-        width: rem(107px);
+        width: rem(207px);
       }
     }
   }
