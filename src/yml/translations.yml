@@ -1,0 +1,16 @@
+texts:
+  share: Partager
+  comments: Commentaires
+button:
+  read_now: Lire
+  share_on_twitter: "Partager sur Twitter "
+  share_on_facebook: "Partager sur Facebook "
+pagination:
+  next_page: "Page suivante "
+  next_post: Publication suivante
+  of: sur
+recommendation:
+  back_btn: "Retourner vers le haut "
+contact:
+  errors:
+    locale: fr
