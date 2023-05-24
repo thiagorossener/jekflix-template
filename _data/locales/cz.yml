@@ -1,0 +1,44 @@
+# Strings for dates
+# language Czech
+abbreviated_weekday:
+  - ne
+  - po
+  - út
+  - st
+  - čt
+  - pá
+  - so
+full_weekday:
+  - neděle
+  - pondělí
+  - úterý
+  - středa
+  - čtvrtek
+  - pátek
+  - sobota
+abbreviated_month:
+  - led
+  - úno
+  - bře
+  - dub
+  - kvě
+  - čvn
+  - čvc
+  - srp
+  - zář
+  - říj
+  - lis
+  - pro
+full_month:
+  - ledna
+  - února
+  - března
+  - dubna
+  - května
+  - června
+  - července
+  - srpna
+  - září
+  - října
+  - listopadu
+  - prosince

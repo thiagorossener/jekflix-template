@@ -1,0 +1,44 @@
+# Strings for dates
+# language German
+abbreviated_weekday:
+  - So
+  - Mo
+  - Di
+  - Mi
+  - Do
+  - Fr
+  - Sa
+full_weekday:
+  - Sonntag
+  - Montag
+  - Dienstag
+  - Mittwoch
+  - Donnerstag
+  - Freitag
+  - Samstag
+abbreviated_month:
+  - Jan
+  - Feb
+  - Mär
+  - Apr
+  - Mai
+  - Jun
+  - Jul
+  - Aug
+  - Sep
+  - Okt
+  - Nov
+  - Dez
+full_month:
+  - Januar
+  - Februar
+  - März
+  - April
+  - Mai
+  - Juni
+  - Juli
+  - August
+  - September
+  - Oktober
+  - November
+  - Dezember

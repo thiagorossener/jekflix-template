@@ -15,15 +15,28 @@
 {%- capture comment_element_id -%}welcomments__comment-{{ comment.id }}{%- endcapture -%}
 {%- capture comment_element_class -%}welcomments__comment{{nesting_level_class}}{{ author_highlight }}{%- endcapture -%}
 
-{%- capture formatted_date -%}{{ comment.date | date: '%B %d, %Y' }}{%- endcapture -%}
+{%- capture formatted_date -%}{{ comment.date | date: '%d %B %Y' }}{%- endcapture -%}
 {%- capture date_xml_schema -%}{{ comment.date | date_to_xmlschema }}{%- endcapture -%}
 {%- capture comment_message -%}{{ comment.message | markdownify }}{%- endcapture -%}
 
 {% if comment.author.avatar_url %}
   {% capture author_avatar_url %}{{ comment.author.avatar_url }}{% endcapture %}
 {% else %}
-  {% capture author_avatar_url %}https://eu.ui-avatars.com/api/?background=random&name={{ comment.author.name }}{% endcapture %}
+  {% assign author_found = false %}
+  {% for author in site.authors %}
+    {% if author.display_name == comment.author.name and comment.author.website == 'https://plumequantique.ci' %}
+      {% capture author_avatar_url %}{{ '/assets/img/certicon.svg' | prepend: site.baseurl }}{% endcapture %}
+      {% capture certification_icon %}{{ '/assets/img/certicon.svg' | prepend: site.baseurl }}{% endcapture %}
+      {% assign author_found = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% unless author_found %}
+    {% capture author_avatar_url %}https://eu.ui-avatars.com/api/?background=random&name={{ comment.author.name }}{% endcapture %}
+  {% endunless %}
 {% endif %}
+
+
 
 {%- include welcomments/template.html
   id                = comment.id
@@ -36,6 +49,7 @@
   author_website    = comment.author.website
   author_avatar_url = author_avatar_url
   message           = comment_message
+  icon              = certification_icon
   api_url           = include.api_url
   website_id        = include.website_id -%}
 

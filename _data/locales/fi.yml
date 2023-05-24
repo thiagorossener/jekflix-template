@@ -1,0 +1,44 @@
+# Strings for dates
+# language Finnish
+abbreviated_weekday:
+  - Su
+  - Ma
+  - Ti
+  - Ke
+  - To
+  - Pe
+  - La
+full_weekday:
+  - Sunnuntai
+  - Maanantai
+  - Tiistai
+  - Keskiviikko
+  - Torstai
+  - Perjantai
+  - Lauantai
+abbreviated_month:
+  - Tammi
+  - Helmi
+  - Maalis
+  - Huhti
+  - Touko
+  - Kesä
+  - Heinä
+  - Elo
+  - Syys
+  - Loka
+  - Marras
+  - Joulu
+full_month:
+  - Tammikuu
+  - Helmikuu
+  - Maaliskuu
+  - Huhtikuu
+  - Toukokuu
+  - Kesäkuu
+  - Heinäkuu
+  - Elokuu
+  - Syyskuu
+  - Lokakuu
+  - Marraskuu
+  - Joulukuu

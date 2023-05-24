@@ -4,23 +4,23 @@
   <input type="hidden" name="permalink" id="permalink" value="{{ site.url }}{{ page.url }}"/>
   <input type="hidden" name="page-slug" id="page-slug" value="{{ page.slug }}"/>
   <div class="welcomments__form-group">
-    <textarea rows="10" name="message" id="message" required spellcheck="true" placeholder="Type here..."></textarea>
-    <p class="welcomments__markdown-notice"><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">GitHub-flavored Markdown</a> & a sane subset of HTML is supported.</p>
+    <textarea rows="10" name="message" id="message" required spellcheck="true" placeholder="Laisser un commentaire..."></textarea>
+    <p class="welcomments__markdown-notice"><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">La syntaxe markdown Github </a> ainsi que la plupart des balises HTML sont supportées.</p>
   </div>
   <div class="welcomments__form-group">
-    <label for="author-name">Name</label>
-    <input type="text" id="author-name" name="author-name" required spellcheck="false" placeholder="Your name"/>
+    <label for="author-name">Nom</label>
+    <input type="text" id="author-name" name="author-name" required spellcheck="false" placeholder="Veuillez entrer votre nom"/>
   </div>
   <div class="welcomments__form-group welcomments__flex">
     <div class="welcomments__column-left">
-      <label for="author-url">Website <span class="welcomments__optional-notice">(optional)</span></label>
+      <label for="author-url">Site web <span class="welcomments__optional-notice">(facultatif)</span></label>
       <input type="url" id="author-url" name="author-url" placeholder="https://example.com"/>
     </div>
     <div class="welcomments__column-right">
-      <label for="author-email">Email <span class="welcomments__optional-notice">(optional)</span></label>
+      <label for="author-email">Adresse mail <span class="welcomments__optional-notice">(facultatif)</span></label>
       <input type="email" id="author-email" name="author-email" placeholder="johndoe@example.com"/>
     </div>
   </div>
-  <p class="welcomments__email-notice">Fill in your email address if you want to get notified when someone replies to your comment. Your email address is safely stored with strong 256-bit AES encryption. You can unsubscribe from notification emails any time by following a link on the bottom of a reply notification email.</p>
-  <button type="submit" class="welcomments__submit-button" id="welcomments__submit-button">Send comment</button>
+  <p class="welcomments__email-notice">Renseignez votre adresse électronique si vous souhaitez être averti lorsque quelqu'un répond à votre commentaire. Votre adresse ne sera pas rendue publique et est stockée en toute sécurité grâce à un chiffrement AES 256 bits. Vous pouvez vous désabonner à tout moment en suivant le lien situé à la fin du mail de notification.</p>
+  <button type="submit" class="welcomments__submit-button" id="welcomments__submit-button">Envoyer le commentaire</button>
 </form>
