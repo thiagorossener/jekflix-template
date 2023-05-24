@@ -1,57 +1,100 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Plume Quantique
+title: Plume Quantique | Blog consacré à la science-fiction
+description: >- # this means to ignore newlines until "baseurl:"
+  Bienvenue dans mon esprit, où se mèlent science-fiction, cinéma, littérature avec passion.
 tags:
   - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - science-fiction
+  - cinema
+  - critique
 show_hero: true
 menu:
-  - title: Home
+  - title: Accueil
     url: /
-  - title: About
+  - title: A Propos
     url: /about
-  - title: Contact
+  - title: Me contacter
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: amlamanangekevin@gmail.com
 # See: https://disqus.com/
-disqus_username: disqus_username
+disqus_username:
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
-
+formspree_form_id: mqknkwel
+paginate: 8
+# Localization
+date_format: "%d %B %Y"
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
-
+twitter_username:
+facebook_username:  
+instagram_username:  
+medium_username: 
 
 # Posts Settings
 show_time_bar: true
 show_modal_on_exit: false
 show_modal_on_finish_post: true
-two_columns_layout: true
+two_columns_layout: false
 
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
-language: "en"
+url: "https://poetic-buttercream-0d3e15.netlify.app" # the base hostname & protocol for your site
+google_analytics: "UA-XXXXXX-X"
+language: "fr"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
 
+
+# Localization
+translations:
+  text:
+    new_post: "Article récent"
+    see_also: "Voir aussi"
+    search: "Recherche"
+    author: "Auteur"
+    share: "Partager"
+    comments: "Commentaires"
+  button:
+    read_now: "Lire l’article"
+    share_on_twitter: "Partager sur Twitter"
+    share_on_facebook: "Partager sur Facebook"
+  pagination:
+    page: "Page"
+    of: "sur"
+    next_page: "Page suivante"
+    next_post: "Article suivant"
+  recommendation:
+    text: "Que diriez-vous de vous plonger dans un nouvel article ?"
+    back_btn: "Retourner en haut de la page"
+  error_404:
+    title: "Woops ! Page introuvable :("
+    message: "Il semblerait que la page que vous recherchez est hors ligne ou a été
+    déplacée ailleurs."
+    image_alt: "404 - Page not found"
+  contact:
+    title: "Nous contacter"
+    subject: "Nouveau message !"
+    submit_btn: "Envoyer"
+    placeholders:
+      name: "Nom"
+      email: "Adresse e-mail"
+      message: "Message"
+    errors:
+      locale: "fr"
+      empty_name: "Veuillez entrer votre nom"
+      empty_email: "Veuillez entrer une adresse e-mail"
+      invalid_email: "Veuillez entrer une adresse e-mail valide"
+      empty_message: "Le message ne peut pas être vide"
+    after_send:
+      title: "Message envoyé !"
+      message: "Nous vous remercions de nous avoir contactés et nous vous répondrons
+      dès que possible."
 
 # Build settings
 markdown: kramdown
@@ -61,8 +104,8 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
-show_get_theme_btn: true
-use_logo: false
+show_get_theme_btn: false
+use_logo: true
 
 # Content paginator
 paginate_content:
