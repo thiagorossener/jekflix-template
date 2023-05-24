@@ -19,7 +19,7 @@ applause-button {
 
 .clap-count {
     @extend h2;
-    color: $primary;
+    color: $themeColor;
     display: none;
   
     svg {
@@ -33,6 +33,6 @@ applause-button {
     }
   
     .outline {
-      fill: $primary;
+      fill: $themeColor;
     }
   }
