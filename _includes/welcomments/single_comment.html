@@ -25,7 +25,7 @@
   {% assign author_found = false %}
   {% for author in site.authors %}
     {% if author.display_name == comment.author.name and comment.author.website == 'https://plumequantique.ci' %}
-      {% capture author_avatar_url %}{{ '/assets/img/certicon.svg' | prepend: site.baseurl }}{% endcapture %}
+      {% capture author_avatar_url %}{{ author.photo | prepend: site.baseurl }}{% endcapture %}
       {% capture certification_icon %}{{ '/assets/img/certicon.svg' | prepend: site.baseurl }}{% endcapture %}
       {% assign author_found = true %}
       {% break %}

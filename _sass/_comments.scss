@@ -7,3 +7,7 @@
 .welcomments__submit-button {
     background-color: $themeColor !important;
 }
+.welcomments__author-avatar-img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
