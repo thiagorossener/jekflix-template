@@ -1,16 +1,43 @@
 texts:
   share: Partager
   comments: Commentaires
+  seel_also: Voir aussi
+  new_post: Article récent
+  search: Recherche
 button:
-  read_now: Lire
-  share_on_twitter: "Partager sur Twitter "
-  share_on_facebook: "Partager sur Facebook "
+  read_now: Lire l’article
+  share_on_twitter: Partager sur Twitter
+  share_on_facebook: Partager sur Facebook
 pagination:
-  next_page: "Page suivante "
+  next_page: Page suivante
   next_post: Publication suivante
   of: sur
+  page: Page
 recommendation:
-  back_btn: "Retourner vers le haut "
+  back_btn: Retourner vers le haut
+  text: Que diriez-vous de vous plonger dans un nouvel article ?
+error_404:
+  title: Woops ! Page introuvable.
+  message: Il semblerait que la page que vous recherchez est hors ligne ou a été
+    déplacée ailleurs.
+  image_alt: 404 not found
 contact:
   errors:
     locale: fr
+    empty_email: Veuillez entrer une adresse e-mail
+    empty_name: Veuillez entrer votre nom
+    empty_message: Le message ne peut pas être vide
+    invalid_email: Veuillez entrer une adresse e-mail valide
+  title: Si vous avez des questions, des commentaires ou des suggestions, veuillez
+    remplir le formulaire ci-dessous. Nous vous répondrons dans les plus brefs
+    délais.
+  submit_btn: ENVOYER
+  placeholders:
+    message: Message
+    email: Adresse e-mail
+    name: Nom
+  after_send:
+    title: Message envoyé !
+    message: Nous vous remercions de nous avoir contactés et nous vous répondrons
+      dès que possible.
+  subject: Nouveau message !
