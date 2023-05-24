@@ -26,3 +26,4 @@ formspree_form_id: mqknkwel
 paginate: 8
 # Localization
 date_format: "%d %B %Y"
+language: "fr"

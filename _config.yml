@@ -27,6 +27,7 @@ formspree_form_id: mqknkwel
 paginate: 8
 # Localization
 date_format: "%d %B %Y"
+language: "fr"
 
 # Social Media Settings
 # Remove the item if you don't need it
@@ -46,7 +47,6 @@ two_columns_layout: false
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://poetic-buttercream-0d3e15.netlify.app" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXX-X"
-language: "fr"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
 

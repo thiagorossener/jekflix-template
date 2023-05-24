@@ -26,7 +26,7 @@ layout: main
                     {% if site.date_format == nil %}
                         {{ featured.date | date: "%m.%d.%Y" }}
                     {% else %}
-                        {{ featured.date | date: site.date_format }}
+                        {% include date.html date=featured.date %}
                     {% endif %}
                 </time>
                 <h1 class="title">{{ featured.title }}</h1>
