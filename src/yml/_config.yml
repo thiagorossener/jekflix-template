@@ -11,6 +11,9 @@
 # Advanced Settings
 #=include advanced.yml
 
+# Localization
+#=include translations.yml
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
