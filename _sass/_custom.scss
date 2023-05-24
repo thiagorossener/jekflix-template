@@ -1,0 +1,38 @@
+// certification icon 
+
+#certification_icon {
+    width: 15px;
+    height: auto;
+    display: inline;
+}
+// applause-button
+
+applause-button {
+    width: 60px;
+    height: 60px;
+    margin: 5% auto 0 auto;
+  
+    .count-container {
+      color: inherit;
+    }
+}
+
+.clap-count {
+    @extend h2;
+    color: $primary;
+    display: none;
+  
+    svg {
+      height: 1em;
+      vertical-align: middle;
+      width: 1em;
+    }
+  
+    .flat {
+      fill: white;
+    }
+  
+    .outline {
+      fill: $primary;
+    }
+  }
