@@ -1,5 +1,5 @@
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://poetic-buttercream-0d3e15.netlify.app" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXX-X"
 language: "fr"
 categories_folder: category

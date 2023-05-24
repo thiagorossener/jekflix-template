@@ -1,0 +1,57 @@
+{%- assign nesting_level = include.nesting_level -%}
+{%- assign all_comments  = include.all_comments -%}
+{%- assign comment       = include.comment -%}
+
+{%- assign nesting_level_class = "" -%}
+{%- if nesting_level > 0 -%}
+  {% capture nesting_level_class %} welcomments__nesting-level-{{ nesting_level }}{% endcapture %}
+{%- endif -%}
+
+{%- assign author_highlight = "" -%}
+{%- if comment.author.role == "owner" -%}
+  {% capture author_highlight %} welcomments__comment-role-owner{% endcapture %}
+{%- endif -%}
+
+{%- capture comment_element_id -%}welcomments__comment-{{ comment.id }}{%- endcapture -%}
+{%- capture comment_element_class -%}welcomments__comment{{nesting_level_class}}{{ author_highlight }}{%- endcapture -%}
+
+{%- capture formatted_date -%}{{ comment.date | date: '%B %d, %Y' }}{%- endcapture -%}
+{%- capture date_xml_schema -%}{{ comment.date | date_to_xmlschema }}{%- endcapture -%}
+{%- capture comment_message -%}{{ comment.message | markdownify }}{%- endcapture -%}
+
+{% if comment.author.avatar_url %}
+  {% capture author_avatar_url %}{{ comment.author.avatar_url }}{% endcapture %}
+{% else %}
+  {% capture author_avatar_url %}https://eu.ui-avatars.com/api/?background=random&name={{ comment.author.name }}{% endcapture %}
+{% endif %}
+
+{%- include welcomments/template.html
+  id                = comment.id
+  element_id        = comment_element_id
+  element_classname = comment_element_class
+  nesting_level     = nesting_level
+  formatted_date    = formatted_date
+  date_xml_schema   = date_xml_schema
+  author_name       = comment.author.name
+  author_website    = comment.author.website
+  author_avatar_url = author_avatar_url
+  message           = comment_message
+  api_url           = include.api_url
+  website_id        = include.website_id -%}
+
+{%- assign parent_id = comment.id -%}
+{%- assign replies   = all_comments | where_exp: "c", "c.replying_to == parent_id" -%}
+
+{%- if replies.size > 0 -%}
+  {%- assign nesting_level  = nesting_level | plus:1 -%}
+  {%- assign sorted_replies = replies | sort: 'id' -%}
+  {%- for reply in sorted_replies -%}
+  {%- include
+    welcomments/single_comment.html
+    nesting_level        = nesting_level
+    all_comments         = all_comments
+    comment              = reply
+    api_url              = include.api_url
+    website_id           = include.website_id -%}
+  {%- endfor -%}
+{%- endif -%}
