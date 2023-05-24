@@ -1,0 +1,43 @@
+{%- assign id                 = include.id -%}
+{%- assign element_id         = include.element_id -%}
+{%- assign element_classname  = include.element_classname -%}
+{%- assign nesting_level      = include.nesting_level -%}
+{%- assign formatted_date     = include.formatted_date -%}
+{%- assign date_xml_schema    = include.date_xml_schema -%}
+{%- assign author_name        = include.author_name -%}
+{%- assign author_website     = include.author_website -%}
+{%- assign avatar_url         = include.author_avatar_url -%}
+{%- assign message            = include.message -%}
+
+<article
+  id="{{ element_id }}"
+  class="{{ element_classname }}"
+  data-comment-id="{{ id }}"
+  data-author-name="{{ author_name }}"
+  data-nesting-level="{{ nesting_level }}"
+  itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+  <div class="welcomments__comment-header">
+    <div class="welcomments__author-avatar">
+      <img class="welcomments__author-avatar-img" src="{{ avatar_url }}" alt="{{ author_name }}"/>
+    </div>
+    <div class="welcomments__author-information">
+      <div class="welcomments__author-name-and-time">
+        <h3 class="welcomments__author-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">{{ author_name }}</span>
+        </h3>
+        <p class="welcomments__comment-time">
+          <a href="#welcomments__comment-{{ id }}" itemprop="url">
+            <time datetime="{{ date_xml_schema }}" itemprop="datePublished">
+              {{- formatted_date -}}
+            </time>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div itemprop="text" class="welcomments__comment-message">{{ message }}</div>
+  <a class="welcomments__comment-reply-link"
+     href="{{ include.api_url }}/websites/{{ include.website_id }}/comments/{{ id }}/reply">
+    Reply to {{ author_name }}
+  </a>
+</article>

@@ -1,0 +1,109 @@
+{%- if include.api_url -%}
+  {%- assign api_url = include.api_url -%}
+{%- else -%}
+  {%- assign api_url = "https://welcomments.io/api" -%}
+{%- endif -%}
+
+{%- if include.website_id == "YOUR-WEBSITE-ID-HERE" -%}
+  <div style="color: #ff0000;">
+    <h1>Website id not configured!</h1>
+    <p>Please replace <code>YOUR-WEBSITE-ID-HERE</code> with the website id from Welcomments console.</p>
+  </div>
+{%- endif -%}
+
+<div id="welcomments__container" class="welcomments__container">
+  {%- assign article_url = page.slug -%}
+
+  {%- if article_url != "" -%}
+    {%- assign all_comments = site.data.welcomments[article_url] -%}
+  {%- else -%}
+    {%- assign all_comments = site.data.welcomments["___root___"] -%}
+  {%- endif -%}
+
+  {%- if all_comments.size > 0 -%}
+    <h3 id="welcomments__comment-count-title" class="welcomments__comments-title">{{ all_comments.size }} comment{%- if all_comments.size > 1 -%}s{%- endif -%}</h3>
+  {%- else -%}
+    <h3 id="welcomments__comment-count-title" class="welcomments__comments-title">No comments yet!</h3>
+  {%- endif -%}
+
+  <section id="welcomments__comment-container" class="welcomments__comment-container">
+    {%- if all_comments.size > 0 -%}
+      {%- assign parent_comments = all_comments | where_exp: "c", "c.replying_to == nil" | sort: 'id' -%}
+
+      {%- for comment_map in parent_comments -%}
+        {%- assign comment = comment_map -%}
+        {%- include welcomments/single_comment.html
+          nesting_level        = 0
+          all_comments         = all_comments
+          comment              = comment
+          api_url              = api_url
+          website_id           = include.website_id -%}
+      {%- endfor -%}
+    {%- endif -%}
+  </section>
+
+  {%- include welcomments/comment_form.html
+    api_url    = api_url
+    website_id = include.website_id -%}
+</div>
+
+<!--
+  Contains some basic comment section styling, so that you can get started quickly
+  without having to come up with your own CSS if you don't want to.
+                                                                               -->
+<link rel="stylesheet" href="https://cdn.welcomments.io/welcomments.css" />
+
+<!--
+  Includes the optional Welcomments Javascript file. It enhances the user experience
+  by sending the comment form fields without the user having to leave your site.
+
+  It also saves the comment to the local storage while your site is being rebuilt so
+  that your users don't get confused and resubmit the same comment multiple times. If
+  there are comments that other users posted that haven't been rebuilt as a part of your
+  site yet, this script also "fills in" them from the Welcomments Pending Comments API.
+
+  It's gzipped and weighs just about 2.1kB. If you want, you can just delete this line
+  and your comment form works just fine but is a bit less interactive! :-)
+                                                                               -->
+<script defer id="welcomments__script" src="https://cdn.welcomments.io/welcomments.js" type="text/javascript"></script>
+<script type="text/javascript">
+  welcomments = {
+    apiUrl: "{{ api_url }}",
+
+    // Updates the "x comments" title when there are comments that are dynamically loaded.
+    // By default, the result of this function becomes the innerText of an element with the
+    // id "welcomments__comment-count-title". It's okay if that element doesn't exist.
+    commentCountTitleFactory: function (commentCount) {
+      if (commentCount === 0) {
+        return "No comments yet!";
+      }
+
+      return commentCount === 1 ? "One comment" : `${commentCount} comments`;
+    },
+
+    // Builds comments dynamically when they are not part of the static HTML of the rest of
+    // your Jekyll website yet. Should return the desired HTML as a string. By default, appends
+    // the resulting HTML as a child element into the correct position in an element with the
+    // id "welcomments__comment-container".
+    placeholderCommentFactory: function (comment) {
+      var year = new Intl.DateTimeFormat("en", {year: "numeric"}).format(comment.date);
+      var month = new Intl.DateTimeFormat("en", {month: "long"}).format(comment.date);
+      var day = new Intl.DateTimeFormat("en", {day: "2-digit"}).format(comment.date);
+      var avatarUrl =  comment.author.avatar_url ||
+        `https://eu.ui-avatars.com/api/?background=random&name=${comment.author.name}`
+
+      return `{%- include welcomments/template.html
+        id                = "${comment.id}"
+        element_id        = "welcomments__comment-${comment.id}"
+        element_classname = "welcomments__comment"
+        nesting_level     = "0"
+        formatted_date    = "${month} ${day}, ${year}"
+        author_name       = "${comment.author.name}"
+        author_website    = "${comment.author.website}"
+        author_avatar_url = "${avatarUrl}"
+        message           = "${comment.message}"
+        api_url           = api_url
+        website_id        = include.website_id -%}`;
+    },
+  };
+</script>
