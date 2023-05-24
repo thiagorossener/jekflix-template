@@ -17,7 +17,7 @@ translations:
     next_post: "Article suivant"
   recommendation:
     text: "Que diriez-vous de vous plonger dans un nouvel article ?"
-    back_btn: "Revenir en haut"
+    back_btn: "Retourner en haut de la page"
   error_404:
     title: "Woops ! Page introuvable :("
     message: "Il semblerait que la page que vous recherchez est hors ligne ou a été
