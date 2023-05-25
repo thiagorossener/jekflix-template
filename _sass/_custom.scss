@@ -36,3 +36,35 @@ applause-button {
       fill: $themeColor;
     }
   }
+// Welcomments likes styling
+#like-button-container {
+  width: 6rem;
+  height: 3rem;
+
+  .subtitle {
+    color: rgb(75,85,99);
+  text-align: center;
+  font-size: .75rem;
+  font-weight: 500;  
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  line-height: 1.5;
+  }
+}
+
+#welcomments__like-button {
+  color: rgb(17,24,39);
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+  user-select: none;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+@media screen and (min-width: 832px) {
+  #like-button-container {
+    position: fixed;
+    right: calc(911px + ((100% - 948px)/2));
+    top: 450px;
+    transform: translate(50%, 0%);
+  }
+}

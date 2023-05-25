@@ -11,3 +11,16 @@
     object-fit: cover;
     aspect-ratio: 1/1;
 }
+#comments-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.7149;
+}
+@media screen and (min-width: 832px) {
+    .welcomments__container {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 75%;
+    }
+}
