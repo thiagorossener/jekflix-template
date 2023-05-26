@@ -28,7 +28,9 @@
             {{ author_name }} 
           </span>
           {% if icon %}
-            <img id="certification_icon" src="{{ icon }}"/>
+            <div class="verification-icon">
+              <svg><use xlink:href="#icon-verified"></use></svg>
+            </div>
           {% endif %}
         </h3>
         <p class="welcomments__comment-time">
