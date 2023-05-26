@@ -1,8 +1,8 @@
-version: 2 
- updates: 
+version: 2
+ updates:
  - package-ecosystem: "bundler"
-   directory: "/" 
-   schedule: 
+   directory: "/"
+   schedule:
      interval: "daily"
      time: "22:30"
  - package-ecosystem: "npm"
