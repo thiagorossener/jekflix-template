@@ -27,7 +27,7 @@
       <h3 id="welcomments__comment-count-title" class="welcomments__comments-title">N'hésitez pas à commenter</h3>
     {%- endif -%}
     <div id="like-button-container">
-      <div id="welcomments__like-button" data-count="671">+0</div>
+      <div id="welcomments__like-button" data-count="1">+1</div>
         <p class="subtitle">likes</p>
     </div>
   </div>
@@ -97,6 +97,8 @@
       var year = new Intl.DateTimeFormat("fr", {year: "numeric"}).format(comment.date);
       var month = new Intl.DateTimeFormat("fr", {month: "long"}).format(comment.date);
       var day = new Intl.DateTimeFormat("fr", {day: "2-digit"}).format(comment.date);
+      var avatarUrl =  comment.author.avatar_url ||
+        `https://eu.ui-avatars.com/api/?background=random&name=${comment.author.name}`
 
       return `{%- include welcomments/template.html
         id                = "${comment.id}"
