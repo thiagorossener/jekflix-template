@@ -33,6 +33,7 @@
   {% endfor %}
   {% unless author_found %}
     {% capture author_avatar_url %}https://eu.ui-avatars.com/api/?background=random&name={{ comment.author.name }}{% endcapture %}
+    {% capture certification_icon %}{% endcapture %}
   {% endunless %}
 {% endif %}
 
