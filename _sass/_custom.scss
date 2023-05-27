@@ -33,7 +33,12 @@
   #like-button-container {
     position: fixed;
     right: calc(911px + ((100% - 948px)/2));
-    top: 450px;
+    top: 150px;
     transform: translate(50%, 0%);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  #like-button-container.visible {
+      opacity: 1; /* Visible state */
   }
 }
