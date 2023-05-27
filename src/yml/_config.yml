@@ -21,27 +21,21 @@ permalink: /:title/
 collections:
   authors:
     output: true
-paginate_path: "/page/:num/"
 show_get_theme_btn: false
 use_logo: true
 
-# Content paginator
-paginate_content:
+############################################################
+# Site configuration for the Jekyll 3 Pagination Gem
+# The values here represent the defaults if nothing is set
+pagination:
   enabled: true
   debug: false
-  collections:
-    - posts
-  auto: false
-  separator: "--page-break--"
-  permalink: "/:num/"
-  seo_canonical: true
-  properties:
-    part:
-      is_generated: true
-    last:
-      is_generated: true
-    single:
-      is_generated: true
+  collection: 'posts'
+  per_page: 8
+  permalink: '/page/:num/'
+  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts, 
+  # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
+  locale: 'fr_FR' 
 
 # SASS
 sass:
@@ -49,8 +43,7 @@ sass:
 
 # Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-paginate-content
+  - jekyll-paginate-v2
 
 # Exclude my node related stuff
 exclude: [
