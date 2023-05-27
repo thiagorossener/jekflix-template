@@ -12,11 +12,11 @@
 
   .subtitle {
     color: rgb(75,85,99);
-  text-align: center;
-  font-size: .75rem;
-  font-weight: 500;  
-  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-  line-height: 1.5;
+    text-align: center;
+    font-size: .75rem;
+    font-weight: 500;  
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    line-height: 1.5;
   }
 }
 
@@ -33,12 +33,18 @@
   #like-button-container {
     position: fixed;
     right: calc(911px + ((100% - 948px)/2));
-    top: 150px;
-    transform: translate(50%, 0%);
+    top: 350px;
     opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition */
+    transform: translateY(-10px); /* Initially slightly shifted up */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for both opacity and transform */
   }
   #like-button-container.visible {
-      opacity: 1; /* Visible state */
+    opacity: 1; /* Visible state */
+    transform: translateY(0); /* Reset transform for visible state */
+  }
+  #like-button-container.fixed {
+    position: inherit;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
