@@ -5,37 +5,6 @@
     height: auto;
     display: inline;
 }
-// applause-button
-
-applause-button {
-    width: 60px;
-    height: 60px;
-    margin: 5% auto 0 auto;
-  
-    .count-container {
-      color: inherit;
-    }
-}
-
-.clap-count {
-    @extend h2;
-    color: $themeColor;
-    display: none;
-  
-    svg {
-      height: 1em;
-      vertical-align: middle;
-      width: 1em;
-    }
-  
-    .flat {
-      fill: white;
-    }
-  
-    .outline {
-      fill: $themeColor;
-    }
-  }
 // Welcomments likes styling
 #like-button-container {
   width: 6rem;
