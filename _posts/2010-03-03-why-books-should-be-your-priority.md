@@ -1,8 +1,8 @@
 ---
-date: 2018-11-22 12:26:40
+date: 2022-12-22 12:26:40
 layout: post
-title: Why books should be your priority?
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+title: Data Analytics
+subtitle: How I told stories with numbers
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822138/theme9_v273a9.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme9_v273a9.jpg
@@ -14,11 +14,16 @@ author: mranderson
 paginate: true
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+This project was conducted in Python using data from EvilGeniuses and the different social media platforms. I analyzed the dataset in order to explore efficiency in engagement rate across different social media platforms. 
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+The above is the plotted mean engagement rate by hour of day. Based on the analysis, the prime hour that produces the highest mean engagement rate by hour of day is at 8am which makes a lot of sense as that is the time in which most working adults and students wake up and tend to scroll on their phone. The second rise in the graph is at 1pm, which corresponds to lunch time. The final rise is at 7pm, and this is when most working professioinals get back home from work, which explains a higher engagement rate. 
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+The above graph is the plot grouped by day of week and hour to find the average engagement rate. It appears that Friday at 3am has the highest engagement rate. However, the time in which showcase the highest engagement rate by hour and day of the week did not make a lot of sense. After taking a deeper analysis on the data, I found that there is only 1 single data point in the hour on Friday with a high engagement rate. With the lack of sample in the combination for Friday, the graph proves to be an inaccurate representative.
+
+Among other findings with the dataset, I defined a posting strategy for EvilGeniuses and their social channels. Based on my disvoceries, I also recommended social channels focus posting mixed media as it retains the most engagement rate. I would also suggest Tuesdays and Thursdays to be the prime days of posting as it has the highest mean engagement rate by day of week. 
+
+For more details on the data analysis in the findings and to learn more about this project
+
 
 <!--page-->
 

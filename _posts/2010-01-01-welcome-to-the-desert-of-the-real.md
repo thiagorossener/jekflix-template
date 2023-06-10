@@ -1,15 +1,14 @@
 ---
-date: 2019-05-16T23:48:05.000Z
+date: 2023-03-16T23:48:05.000Z
 layout: post
-title: Welcome to the desert of the real
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+title: Rachael Lim
+subtitle: 'Welcome to my page! Check out my projects below.'
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
+   Hello! My name is Rachael Lim. I am currently pursuing a Statistics and Data Science Bachelor's degree with a minor in Digital Humanities at University of California, Los Angeles. I chose to pursue this major because I enjoy problem solving, data analysis, and creating impactful results. Therefore, by utilizing data, it allows me to make data-driven decisions to enhance the efficiency for others. I will be graduating in June of 2024 and I am open to roles in Data Analyst and Data Sciencist.
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Kuala_Lumpur_Skyline_at_dusk_1.jpg/640px-Kuala_Lumpur_Skyline_at_dusk_1.jpg
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Kuala_Lumpur_Skyline_at_dusk_1.jpg/640px-Kuala_Lumpur_Skyline_at_dusk_1.jpg
 category: blog
 tags:
   - welcome
@@ -17,7 +16,11 @@ tags:
 author: mranderson
 paginate: true
 ---
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+Hello! My name is Rachael Lim. I am currently pursuing a Statistics and Data Science Bachelor's degree with a minor in Digital Humanities at University of California, Los Angeles. I chose to pursue this major because I enjoy problem solving, data analysis, and creating impactful results. Therefore, by utilizing data, it allows me to make data-driven decisions to enhance the efficiency for others. I will be graduating in June of 2024 and I am open to roles in Data Analyst and Data Sciencist. 
+
+I am inspired by new innovations that change the way we live, and I am driven to apply my skills and knowledge in this field to make a positive impact on others. 
+
+A little about my background is that I was born and raised in Kuala Lumpur, Malaysia and moved to the States for high school to further my education. The picture provided above and on the home page is actually the city I grew up in! Outside of school work, cheerleading and track and Field were my passions in high school. I also enjoy food hunting, watching crime documentaries, and cooking.
 
 > Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
