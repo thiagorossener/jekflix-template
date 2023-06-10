@@ -14,7 +14,7 @@ paginate: true
 ## Analyzing efficiency in engagement rates
 
 This project was conducted in Python using data from EvilGeniuses of the different social media platforms. I analyzed the dataset in order to explore efficiency in engagement rate across different social media platforms. 
-![placeholder](https://paste.pics/OGLTF "Large example image")
+![placeholder](image-1.png) "Large example image")
 
 The above is the plotted mean engagement rate by hour of day. Based on the analysis, the prime hour that produces the highest mean engagement rate by hour of day is at 8am which makes a lot of sense as that is the time in which most working adults and students wake up and tend to scroll on their phone. The second rise in the graph is at 1pm, which corresponds to lunch time. The final rise is at 7pm, and this is when most working professioinals get back home from work, which explains a higher engagement rate. 
 
