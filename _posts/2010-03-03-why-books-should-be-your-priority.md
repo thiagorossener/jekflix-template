@@ -31,7 +31,7 @@ Next, this graph is the plot grouped by day of week and hour to find the average
 
 Among other findings with the dataset, I defined a posting strategy for EvilGeniuses and their social channels. Based on my disvoceries, I recommended social channels focus posting mixed media type as it retains the most engagement rate. I would also suggest Tuesdays and Thursdays to be the prime days of posting as it has the highest mean engagement rate by day of week, with the best time to post at 8 in the morning. 
 
-For more details such as the likelihood of achieving 15% engagement rate, which media type performs the best, and to learn more about this project, <a href="https://github.com/RachaelLim01/EvilGeniuses.git">check out my Github here </a> 
+For more details such as the likelihood of achieving 15% engagement rate, which media type performs the best, and to learn more about this project, <a href="https://github.com/RachaelLim01/EvilGeniuses.git">check out my Github here! </a> 
 
 
 <!--page-->
