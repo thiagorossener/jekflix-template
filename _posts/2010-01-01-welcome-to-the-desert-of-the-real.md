@@ -22,3 +22,5 @@ I am inspired by new innovations that change the way we live, and I am driven to
 
 A little about my background is that I was born and raised in Kuala Lumpur, Malaysia and moved to the States for high school to further my education. The picture provided above and on the home page is actually the city I grew up in! Outside of school work, cheerleading and track and field were my passions in high school. I also enjoy food hunting, watching crime documentaries, and cooking.
 
+<img class="img-rounded" src="/assets/img/pic.jpg" alt="Mein Lee" width="250">
+
