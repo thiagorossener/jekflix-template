@@ -19,11 +19,11 @@ From this graph above, the model proves to be fairly strong because the value de
 
 ![Barplot](/assets/img/2im2.png "Barplot")
 
-I was also able to analyze college teams with players that outperformed expectations in the NBA by grouping the data by college and calculate teh averag value over replacement. 
+I also analyzed college teams with players that outperformed expectations in the NBA by grouping the data by college and calculate the average value over replacement. 
 
 ![Barplot](/assets/img/2im3.png "Barplot")
 
-Lastly, I analyze the data by gaining insights to productivity score by team with the above graph as the result of the findings. 
+Lastly, I analyze the data by gaining insights into productivity score by team with the above graph as the result of the findings. 
 
 In this project, I have also analyzed the relationship between a team's first round pick in one year with their first-roun pick slot in the subsequent year and the players in the NBA teams. To learn more about details on this project, <a href="https://github.com/RachaelLim01/NBA-teams.git">check out my Github here! </a> 
 
