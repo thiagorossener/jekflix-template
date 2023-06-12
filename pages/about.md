@@ -11,9 +11,4 @@ permalink: /about/
 
 # About
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I am a passionate Data Analyst with experience in programming in R and Python, and skills and knowledge in data and statistical analysis. For the past year, I have developed my skill in Data Analysis by taking online Python courses as well as relevant courses in school that can better my abilities in conducting data analysis. I am also part of the Data Science club in school that conducts research and build predictive models in R or Python in various fields ranging from financial to journal articles. I am always eager to learn and will put my best foot forward to anything that I do. 
