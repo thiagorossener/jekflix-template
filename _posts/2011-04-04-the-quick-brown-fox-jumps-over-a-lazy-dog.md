@@ -23,7 +23,7 @@ We also wanted to narrow down our topic.
 
 The graph above provides insights into the temporal distribution of woodblock artwork in the museum collection. The fact that the year 1850 has the most count of woodblock artwork suggests that this was a particularly prolific period for woodblock artists, and reflects historical and cultural factors that led to increased production during this time. Similarly, the high count of woodblock artwork from 1895 may reflect the popularity of woodblock prints during the late 19th century, when Japan was undergoing rapid modernization and cultural exchange with the West.
 
-The website contains research on the history of Japanede woodblock art, its tradition, western influence, and consumerism. Check out the <a href="https://cmoa.humspace.ucla.edu/">website </a> for more information and data visualizations that my team and I created to support our reserach question! 
+The website contains research on the history of Japanese woodblock art, its tradition, western influence, and consumerism. Check out the <a href="https://cmoa.humspace.ucla.edu/">website </a> for more information and data visualizations that my team and I created to support our reserach question! 
 
 
 
