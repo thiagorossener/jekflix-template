@@ -33,7 +33,7 @@ Au départ, leur relation semble unilatérale : Joi sert principalement de sout
 
 > "*Je veux être réelle pour toi*"
 
-Cette impression est renforcée lorsque Joi demande à K de transférer la seule copie son programme sur un appareil de projection portable pour éviter que les informations contenues dans sa mémoire ne soit utilisés pour nuire à ce dernier. Cette action met en évidence les limites que Joi est prête à franchir pour rendre son compagnon heureux, allant jusqu'à mettre sa propre existence en danger. Cette évolution de leur relation crée un sentiment de conséquences et de danger, nous convainquant ainsi de l'authenticité de leurs sentiments. En conséquence, Joi devient un personnage indépendant capable de prendre des décisions par elle-même, rendant par la même occasion leur relation plus égalitaire.
+Cette impression est renforcée lorsque Joi demande à K de transférer la seule copie son programme sur un appareil de projection portable pour éviter que les informations contenues dans sa mémoire ne soit utilisées pour nuire à ce dernier. Cette action met en évidence les limites que Joi est prête à franchir pour rendre son compagnon heureux, allant jusqu'à mettre sa propre existence en danger. Cette évolution de leur relation crée un sentiment de conséquences et de danger, nous convainquant ainsi de l'authenticité de leurs sentiments. En conséquence, Joi devient un personnage indépendant capable de prendre des décisions par elle-même, rendant par la même occasion leur relation plus égalitaire.
 
 La relation entre Theodore et Samantha dans ***Her*** est tout aussi complexe, bien que d'une manière différente. Alors que K et Joi sont liés par des liens physiques, Theodore et Samantha sont liés par une connexion émotionnelle profonde.
 
