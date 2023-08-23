@@ -7,7 +7,7 @@
 
     if (post && timeBar) {
         var lastScrollTop = 0;
-        var maxScrollTop = post.scrollHeight;
+        var maxScrollTop = post.scrollHeight / (90 * 100);
 
         var completed = timeBar.querySelector('.completed');
         var remaining = timeBar.querySelector('.remaining');
