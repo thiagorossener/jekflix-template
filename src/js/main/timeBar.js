@@ -25,7 +25,7 @@
 
             if (scrollTop <= maxScrollTop) {
                 var realPercentage = scrollTop / maxScrollTop;
-                var Percentage = Math.max(0, realPercentage - 0.1); // Subtract 0.1 (10%) and ensure it doesn't go below 0
+                var percentage = Math.max(0, realPercentage - 0.1); // Subtract 0.1 (10%) and ensure it doesn't go below 0
 
                 var completedVal = (percentage * 100).toFixed(2);
                 var remainingVal = 100 - parseFloat(completedVal);
