@@ -440,6 +440,7 @@
   padding: rem(10px) rem(20px) rem(5px);
   transition: bottom 0.5s;
   background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1;
 
   @include media(">=sm") {
     padding: rem(16px) rem(20px) rem(9px);
@@ -501,6 +502,7 @@
   background-color: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 
   @include media(">=sm") {
     padding: rem(15px);
