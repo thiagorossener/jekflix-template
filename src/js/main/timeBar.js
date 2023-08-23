@@ -7,7 +7,7 @@
 
     if (post && timeBar) {
         var lastScrollTop = 0;
-        var maxScrollTop = (90 * 100) / post.scrollHeight;
+        var maxScrollTop = post.scrollHeight;
 
         var completed = timeBar.querySelector('.completed');
         var remaining = timeBar.querySelector('.remaining');
@@ -24,7 +24,8 @@
             }
 
             if (scrollTop <= maxScrollTop) {
-                var percentage = scrollTop / maxScrollTop;
+                var realPercentage = scrollTop / maxScrollTop;
+                var Percentage = Math.max(0, realPercentage - 0.1); // Subtract 0.1 (10%) and ensure it doesn't go below 0
 
                 var completedVal = (percentage * 100).toFixed(2);
                 var remainingVal = 100 - parseFloat(completedVal);
