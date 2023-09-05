@@ -1,6 +1,10 @@
 // Get the welcomments__like-button element
 var likeButton = document.getElementById("like-button-container");
 
+// Check if we're on a post page
+var post = document.querySelector('.post-content');
+var timeBar = document.querySelector('.time-bar');
+
 // Calculate the middle position of the page
 var middlePosition = window.innerHeight / 2;
 // Define the percentage threshold for fixed positioning
@@ -25,5 +29,7 @@ function handleScroll() {
   }
 }
 
-// Add scroll event listener
-window.addEventListener("scroll", handleScroll);
+// Add scroll event listener if the conditions are met
+if (post && timeBar) {
+  window.addEventListener("scroll", handleScroll);
+};
