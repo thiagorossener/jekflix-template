@@ -2,10 +2,13 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
 },
+// Use 'postCreateCommand' to run commands after the container is created.
+// "postCreateCommand": "npm install && bundle install && bundle exec jekyll build"
 "customizations": {
 	"vscode": {
 		"extensions": [
-			"sissel.shopify-liquid"
+			"sissel.shopify-liquid",
+			"wakatime.vscode-wakatime"
 		]
 	}
 }
