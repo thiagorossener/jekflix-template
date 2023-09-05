@@ -32,8 +32,11 @@ language: "fr"
 # Remove the item if you don't need it
 twitter_username:
 facebook_username:  
-instagram_username:  
+instagram_username: le7eptiemeoeil
 medium_username: 
+threads_username: le7eptiemeoeil
+letterboxd_username:
+serializd_username:
 
 # Posts Settings
 show_time_bar: true

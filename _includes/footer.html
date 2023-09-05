@@ -30,6 +30,21 @@
           <svg><use xlink:href="#icon-linkedin"></use></svg>
         </a>
       {% endif %}
+      {% if site.threads_username %}
+        <a href="https://www.threads.net/@{{ site.threads_username }}" title="Threads">
+          <svg><use xlink:href="#icon-threads"></use></svg>
+        </a>
+      {% endif %}
+      {% if site.letterboxd_username %}
+        <a href="https://letterboxd.com/{{ site.letterboxd_username }}" title="Letterboxd">
+          <svg><use xlink:href="#icon-letterboxd"></use></svg>
+        </a>
+      {% endif %}
+      {% if site.serializd_username %}
+        <a href="https://www.serializd.com/user/{{ site.serializd_username }}" title="Serializd">
+          <svg><use xlink:href="#icon-serializd"></use></svg>
+        </a>
+      {% endif %}
     </p>
 
     {% include links.html %}
@@ -54,6 +69,15 @@
 {% endif %}
 {% if site.linkedin_username %}
     {% assign social_urls = social_urls | append: '"https://www.linkedin.com/in/' | append: site.linkedin_username | append: '",' %}
+{% endif %}
+{% if site.threads_username %}
+    {% assign social_urls = social_urls | append: '"https://www.threads.net/@' | append: site.threads_username | append: '",' %}
+{% endif %}
+{% if site.letterboxd_username %}
+    {% assign social_urls = social_urls | append: '"https://www.letterboxd.com/' | append: site.letterboxd_username | append: '",' %}
+{% endif %}
+{% if site.serializd_username %}
+    {% assign social_urls = social_urls | append: '"https://www.serializd.com/user/' | append: site.serializd_username | append: '",' %}
 {% endif %}
 
 <script type="application/ld+json">

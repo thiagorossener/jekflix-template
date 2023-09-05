@@ -103,6 +103,15 @@
         {% if author.linkedin_username %}
             {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: author.linkedin_username | append: '",' %}
         {% endif %}
+        {% if author.threads_username %}
+            {% assign author_urls = author_urls | append: '"https://www.threads.net/@' | append: author.threads_username | append: '",' %}
+        {% endif %}
+        {% if author.letterboxd_username %}
+            {% assign author_urls = author_urls | append: '"https://www.letterboxd.com/' | append: author.letterboxd_username | append: '",' %}
+        {% endif %}
+        {% if author.serializd_username %}
+            {% assign author_urls = author_urls | append: '"https://www.serializd.com/user/' | append: author.serializd_username | append: '",' %}
+        {% endif %}
         {% if page.math %}
         <script>
             MathJax = {

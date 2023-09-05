@@ -120,6 +120,15 @@ layout: main
 {% if site.linkedin_username %}
     {% assign social_urls = social_urls | append: '"https://www.linkedin.com/in/' | append: site.linkedin_username | append: '",' %}
 {% endif %}
+{% if site.threads_username %}
+    {% assign social_urls = social_urls | append: '"https://www.threads.net/@' | append: site.threads_username | append: '",' %}
+{% endif %}
+{% if site.letterboxd_username %}
+    {% assign social_urls = social_urls | append: '"https://www.letterboxd.com/' | append: site.letterboxd_username | append: '",' %}
+{% endif %}
+{% if site.serializd_username %}
+    {% assign social_urls = social_urls | append: '"https://www.serializd.com/user/' | append: site.serializd_username | append: '",' %}
+{% endif %}
 
 <script type="application/ld+json">
 {

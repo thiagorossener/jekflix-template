@@ -48,6 +48,15 @@ layout: page
 {% if page.linkedin_username %}
     {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: page.linkedin_username | append: '",' %}
 {% endif %}
+{% if page.threads_username %}
+    {% assign author_urls = author_urls | append: '"https://www.threads.net/@' | append: page.threads_username | append: '",' %}
+{% endif %}
+{% if page.letterboxd_username %}
+    {% assign author_urls = author_urls | append: '"https://www.letterboxd.com/' | append: page.letterboxd_username | append: '",' %}
+{% endif %}
+{% if page.serializd_username %}
+    {% assign author_urls = author_urls | append: '"https://www.serializd.com/user/' | append: page.serializd_username | append: '",' %}
+{% endif %}
 
 <script type="application/ld+json">
 {
