@@ -13,7 +13,7 @@ menu:
     url: /
   - title: A Propos
     url: /about
-  - title: Me contacter
+  - title: Nous contacter
     url: /contact
   - title: Feed
     url: /feed.xml
