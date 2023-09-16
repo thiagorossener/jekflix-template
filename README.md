@@ -1,17 +1,21 @@
-# Jekflix Template
+# Le 7eptième Oeil
 
-![Jekflix Template Cover Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)
+![Le 7eptième Oeil]()
+<img src="https://t4.ftcdn.net/jpg/02/46/61/23/360_F_246612318_X3MPKe6vf5NcES1A8GmUqbciaejw3W5R.jpg" alt="drawing" width="200"/>
 
-See the [demo here](https://jekflix.rossener.com/).
+See the [demo here](https://poetic-buttercream-0d3e15.netlify.app/).
 
 ## What is it?
 
-A theme for Jekyll inspired by Netflix panel for who loves movies and series and would like to have a blog with this cool appearance.
+A website dedicated to everything about movies: reviews, deep-dives, reccommendations... | Powered by Jekyll
+The website is based of the [Jekflix Theme](https://github.com/thiagorossener/jekflix-template) by Thiago Rossener
 
 ![Jekflix Screenshot Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1566390829/jekflix-screenshot-2_zfiog2.jpg)
 
-## Features
+## Documentation
 
+- [Jekyll Basics](docs/jekyll-basics.md#_config.yml)
+- [Codebase Cheatsheet](docs/codebase.md#codebase-cheatsheet)
 - [Live Search](docs/features.md#live-search)
 - [Estimated Reading Time](docs/features.md#estimated-reading-time)
 - [Reading Progress Bar](docs/features.md#reading-progress-bar) *(optional)*
@@ -25,7 +29,7 @@ A theme for Jekyll inspired by Netflix panel for who loves movies and series and
 - [Contact page](docs/features.md#contact-page)
 - [404 error page](docs/features.md#404-error-page)
 - [Feed RSS](docs/features.md#feed-rss)
-- [Disqus](docs/features.md#disqus) *(optional)*
+- [Comments](docs/features.md#comments) *(optional)*
 - [Featured post](docs/features.md#featured-post) *(optional)*
 - [Home page pagination](docs/features.md#home-page-pagination) *(optional)*
 - [Posts sidebar](docs/features.md#posts-sidebar) *(optional)*
@@ -207,18 +211,6 @@ Use the [Front Matter properties](docs/post.md#front-matter-properties) to creat
 
 > **Note:** In the case you're cloning this repo, you can use the available [script](docs/post.md#creating-a-post) to generate posts automatically.
 
-## Questions?
-
-File a [GitHub issue](https://github.com/thiagorossener/jekflix-template/issues/new) please.
-
-## Author
-
-[Thiago Rossener](https://rossener.com/)
-
-Do you like my work? Buy me a coffee!
-
-<a href="https://www.buymeacoffee.com/thiagorossener" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
 ## License
 
-*Jekflix Template* is available under the MIT license. See the [LICENSE](https://github.com/thiagorossener/jekflix-template/blob/master/LICENSE) file for more info.
+This source code is available under the MIT license. See the [LICENSE](https://github.com/charveey/plume-quantique/blob/master/LICENSE) file for more info.

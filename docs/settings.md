@@ -219,11 +219,44 @@ Set the Medium username for the website.
 medium_username: medium_username
 ```
 
+#### `threads_username`
+
+Type: *string*
+
+Set the Threads by Instagram username for the website.
+
+```yaml
+# social.yml
+threads_username: threads_username
+```
+
+#### `letterboxd_username`
+
+Type: *string*
+
+Set the Letterboxd username for the website.
+
+```yaml
+# social.yml
+threads_username: letterboxd_username
+```
+
+#### `serializd_username`
+
+Type: *string*
+
+Set the Serializd username for the website.
+
+```yaml
+# social.yml
+threads_username: serializd_username
+```
+
 ## Theme
 
-The theme settings are in [`src/yml/theme.yml`](https://github.com/thiagorossener/jekflix-template/blob/master/src/yml/theme.yml). You just need to change this file and run `gulp build`.
+The theme settings are in [`src/yml/theme.yml`](https://github.com/charveey/plume-quantique/blob/master/src/yml/theme.yml). You just need to change this file and run `gulp build`.
 
-> **IMPORTANT:** Only when cloning the repo. If you're using the `gem`, follow [these instructions](https://github.com/thiagorossener/jekflix-template#theme-colors).
+> **IMPORTANT:** Only when cloning the repo. If you're using the `gem`, follow [these instructions](https://github.com/charveey/plume-quantique#theme-colors).
 
 ### GitHub pages
 
@@ -367,7 +400,7 @@ two_columns_layout: false
 
 ## Advanced
 
-The advanced settings can be found in [`src/yml/advanced.yml`](https://github.com/thiagorossener/jekflix-template/blob/master/src/yml/advanced.yml).
+The advanced settings can be found in [`src/yml/advanced.yml`](https://github.com/charveey/plume-quantique/blob/master/src/yml/advanced.yml).
 
 > **IMPORTANT:** Only when cloning the repo. If you're using the `gem`, modify those properties in your `_config.yml`.
 
@@ -401,7 +434,7 @@ Set your Google Analytics [tracking ID](https://www.youtube.com/watch?v=Mtzl4tkV
 
 ```yaml
 # advanced.yml
-google_analytics: "UA-XXXXXXXX-X"
+google_analytics: "G-XXXXXXXXXX"
 ```
 
 #### `language`
