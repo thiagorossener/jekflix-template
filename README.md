@@ -1,13 +1,13 @@
 # Le 7eptième Oeil
 
-![Le 7eptième Oeil]()
-<img src="https://t4.ftcdn.net/jpg/02/46/61/23/360_F_246612318_X3MPKe6vf5NcES1A8GmUqbciaejw3W5R.jpg" alt="drawing" width="200"/>
+![Le 7eptième Oeil](https://t4.ftcdn.net/jpg/02/46/61/23/360_F_246612318_X3MPKe6vf5NcES1A8GmUqbciaejw3W5R.jpg)
 
 See the [demo here](https://poetic-buttercream-0d3e15.netlify.app/).
 
 ## What is it?
 
-A website dedicated to everything about movies: reviews, deep-dives, reccommendations... | Powered by Jekyll
+A website dedicated to everything about movies: reviews, deep-dives, recommendations... | Powered by Jekyll
+
 The website is based of the [Jekflix Theme](https://github.com/thiagorossener/jekflix-template) by Thiago Rossener
 
 ![Jekflix Screenshot Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1566390829/jekflix-screenshot-2_zfiog2.jpg)
@@ -129,6 +129,9 @@ twitter_username: twitter_username
 instagram_username: instagram_username
 linkedin_username: linkedin_username
 medium_username: medium_username
+threads_username: threads_username
+letterboxd_username: letterboxd_username
+serializd_username: serializd_username
 
 # Posts Settings
 show_time_bar: true
@@ -139,7 +142,7 @@ two_columns_layout: true
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+google_analytics: "G-XXXXXXXXXX"
 language: "en"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
