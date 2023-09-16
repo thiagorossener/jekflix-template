@@ -1,10 +1,9 @@
-name: Plume Quantique
-title: Plume Quantique | Blog consacré à la science-fiction
+name: Le 7eptième Œil
+title: Le 7eptième Œil | L'œil qui voit tout le Cinéma
 description: >- # this means to ignore newlines until "baseurl:"
-  Bienvenue dans mon esprit, où se mèlent science-fiction, cinéma, littérature avec passion.
+  L'œil qui voit tout le Cinéma
 tags:
   - blog
-  - science-fiction
   - cinema
   - critique
 show_hero: true
@@ -17,9 +16,8 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: amlamanangekevin@gmail.com
-# See: https://disqus.com/
-disqus_username:
+email: le7eptiemeoeil@gmail.com
+
 # Contact Form Setting
 # See: https://formspree.io/
 formspree_form_id: mqknkwel
