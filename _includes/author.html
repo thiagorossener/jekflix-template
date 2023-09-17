@@ -44,7 +44,7 @@
           </a>
         {% endif %}
         {% if author.threads_username %}
-        <a href="https://www.threads.net/@{{ authorthreads_username }}" title="Threads">
+        <a href="https://www.threads.net/@{{ author.threads_username }}" title="Threads">
           <svg><use xlink:href="#icon-threads"></use></svg>
         </a>
       {% endif %}
@@ -93,7 +93,10 @@
       {% assign author_urls = author_urls | append: '"https://www.letterboxd.com/' | append: author.letterboxd_username | append: '",' %}
   {% endif %}
   {% if author.serializd_username %}
-      {% assign author_urls = author_urls | append: '"https://www.serializd.com/user/' | append: author.instagram_username | append: '",' %}
+      {% assign author_urls = author_urls | append: '"https://www.serializd.com/user/' | append: author.serializd_username | append: '",' %}
+  {% endif %}
+  {% if author.myanimelist_username %}
+      {% assign author_urls = author_urls | append: '"https://www.myanimelist.net/profile/' | append: author.myanimelist_username | append: '",' %}
   {% endif %}
 
   <script type="application/ld+json">
