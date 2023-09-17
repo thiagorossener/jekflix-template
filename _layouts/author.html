@@ -57,6 +57,9 @@ layout: page
 {% if page.serializd_username %}
     {% assign author_urls = author_urls | append: '"https://www.serializd.com/user/' | append: page.serializd_username | append: '",' %}
 {% endif %}
+{% if page.myanimelist_username %}
+    {% assign author_urls = author_urls | append: '"https:/https://myanimelist.net/profile/' | append: page.myanimelist_username | append: '",' %}
+{% endif %}
 
 <script type="application/ld+json">
 {
