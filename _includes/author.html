@@ -44,18 +44,23 @@
           </a>
         {% endif %}
         {% if author.threads_username %}
-        <a href="https://www.threads.net/@{{ site.threads_username }}" title="Threads">
+        <a href="https://www.threads.net/@{{ authorthreads_username }}" title="Threads">
           <svg><use xlink:href="#icon-threads"></use></svg>
         </a>
       {% endif %}
       {% if author.letterboxd_username %}
-        <a href="https://letterboxd.com/{{ site.letterboxd_username }}" title="Letterboxd">
+        <a href="https://letterboxd.com/{{ author.letterboxd_username }}" title="Letterboxd">
           <svg><use xlink:href="#icon-letterboxd"></use></svg>
         </a>
       {% endif %}
       {% if author.serializd_username %}
-        <a href="https://www.serializd.com/user/{{ site.serializd_username }}" title="Serializd">
+        <a href="https://www.serializd.com/user/{{ author.serializd_username }}" title="Serializd">
           <svg><use xlink:href="#icon-serializd"></use></svg>
+        </a>
+      {% endif %}
+      {% if author.myanimelist_username %}
+        <a href="https://myanimelist.net/profile/{{ author.myanimelist_username }}" title="MyAnimeList">
+          <svg><use xlink:href="#icon-myanimelist"></use></svg>
         </a>
       {% endif %}
       </p>

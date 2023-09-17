@@ -112,6 +112,9 @@
         {% if author.serializd_username %}
             {% assign author_urls = author_urls | append: '"https://www.serializd.com/user/' | append: author.serializd_username | append: '",' %}
         {% endif %}
+        {% if author.myanimelist_username %}
+            {% assign author_urls = author_urls | append: '"https://myanimelist.net/profile/' | append: author.myanimelist_username | append: '",' %}
+        {% endif %}
         {% if page.math %}
         <script>
             MathJax = {
