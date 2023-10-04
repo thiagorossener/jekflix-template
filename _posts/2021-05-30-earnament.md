@@ -2,13 +2,13 @@
 date: 2021-05-30 13:19:29
 layout: post
 title: Using Machine Learning to increase revenue at my small business
-subtitle: I launched my small business during Covid-19 lockdown and collected data to predict consumer behavior
-description: I launched my small business during Covid-19 lockdown and collected data to predict consumer behavior
+subtitle: I launched my small business this summer and collected data to predict consumer behavior
+description: I launched my small business this summer and collected data to predict consumer behavior
 image: /assets/img/uploads/smallbiz.jpeg
 optimized_image: /assets/img/uploads/smallbiz.jpeg
 category: datascience
 tags:
-author: meinlee
+author: Rachael Lim
 paginate: false
 ---
 
@@ -17,11 +17,7 @@ paginate: false
 
 ![Screen Shot 2022-05-05 at 12 07 51 AM](https://user-images.githubusercontent.com/73072620/166876724-8cd7fe59-c9d7-4f00-8f96-f529e72fccc7.png)
 
-<a href="https://earnament.wixsite.com/earnament">Visit my website here!</a>
-
-My small business was born amidst the height of the Covid-19 pandemic. 
-
-I couldn't land an internship that summer, but I picked up jewelry-making as a hobby and decided to make the most out of the situation. I couldn't be an intern, so I became a small business owner -- working on everything from creating social media content, running marketing campaigns, and of course -- analyzing data and predicting consumer behavior.
+My small business was born a little before this summer.  I couldn't land an internship, therefore, I decided to pick up jewelry-making as a hobby and decided to make the most out of the situation. I couldn't be an intern, so I became a small business owner -- working on everything from creating social media content, running marketing campaigns, and of course -- analyzing data and predicting consumer behavior.
 
 <b>Data Science skills used:</b>Data collection, Data Cleaning, EDA, Regression Modeling, Label Encoding, Feature Selection, Hypothesis Testing
 
