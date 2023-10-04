@@ -1,5 +1,5 @@
 ---
-date: 2021-05-30 13:19:29
+date: 2023-08-30 13:19:29
 layout: post
 title: Using Machine Learning to increase revenue at my small business
 subtitle: I launched my small business this summer and collected data to predict consumer behavior
