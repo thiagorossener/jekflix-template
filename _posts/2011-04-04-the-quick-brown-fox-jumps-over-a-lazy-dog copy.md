@@ -4,7 +4,7 @@ layout: post
 title: Data Science
 subtitle: Analyzing stock performance 
 description: I extracted financial data like historical share price and quarterly revenue reportings from various sources using Python libraries and webscraping on popular stocks
-image: https://g.foolcdn.com/editorial/images/718807/growth-stock-chart.jpg
+image: /assets/img/growth-stock-chart.jpg
 optimized_image: https://g.foolcdn.com/editorial/images/718807/growth-stock-cahrt.jpg
 category: DATASCIENCE
 tags:
