@@ -2,8 +2,8 @@
 date: 2021-05-30 13:19:29
 layout: post
 title: Using Machine Learning to increase revenue at my small business
-subtitle: I launched my small business during Covid-19 lockdown and collected data to predict consumer behavior
-description: I launched my small business during Covid-19 lockdown and collected data to predict consumer behavior
+subtitle: I launched my small business and collected data to predict consumer behavior
+description: I launched my small business and collected data to predict consumer behavior
 image: /assets/img/uploads/smallbiz.jpeg
 optimized_image: /assets/img/uploads/smallbiz.jpeg
 category: datascience
