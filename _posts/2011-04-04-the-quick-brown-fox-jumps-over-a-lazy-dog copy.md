@@ -5,7 +5,7 @@ title: Data Science
 subtitle: 
 description: Analyzing stock performance 
 image: /assets/img/growth-stock-chart.jpg
-optimized_image: https://g.foolcdn.com/editorial/images/718807/growth-stock-cahrt.jpg
+optimized_image: /assets/img/growth-stock-chart.jpg
 category: DATASCIENCE
 tags:
   - Tesla
