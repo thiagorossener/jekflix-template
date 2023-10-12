@@ -1,5 +1,5 @@
 ---
-date: 2023-04-20 12:26:40
+date: 2022-12-20 12:26:40
 layout: post
 title: Data Science
 subtitle: Analyzing stock performance 
