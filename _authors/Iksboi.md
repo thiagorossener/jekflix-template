@@ -1,7 +1,7 @@
 ---
 layout: author
 name: Iksboi
-photo: assets/img/uploads/iksboi.png
+photo: /assets/img/uploads/iksboi.png
 display_name: Ibrahim Koïta
 position: Majestic Sofitel Ivoire
 bio: Je suis un esprit imprégné d'obscurité, de burlesque et d'un amour profond pour le médiéval. Mon âme vibre au diapason de l'émotionnellement intense, trouvant refuge dans des œuvres comme le captivant Bloodborne, les aventures du sorceleur de Riv, les mots insondables de Kafka et l'impact viscéral de Hara-Kiri(1962). Mon dessein ? Vous partager ma fascination pour les univers complexes et labyrinthique, où le mystère et la profondeur se conjuguent en une symphonie envoûtante qui frôle la folie.
