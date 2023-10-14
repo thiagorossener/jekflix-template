@@ -1,3 +1,25 @@
 {
-    "liquid.format.enable": false
+// Enables formatting of all .html files
+"[html]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": true
+  },
+  "liquid.engine": "jekyll",
+  "liquid.config.baseDir": ".",
+  "liquid.config.method": "workspace",
+  // Liquid Completion Settings
+  //
+  // These settings will enable/disable completions from showing.
+  //
+  "liquid.hover.tags": true,
+  "liquid.hover.filters": true,
+  "liquid.hover.objects": true,
+  // Liquid Validations
+  //
+  // This setting will enable/disable validations in {% schema %} JSON
+  //
+  "liquid.hover.schema": true
 }

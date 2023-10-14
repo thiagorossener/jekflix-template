@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "wakatime.vscode-wakatime",
+        "sissel.shopify-liquid",
+		"mrmlnc.vscode-scss",
+		"sibiraj-s.vscode-scss-formatter",
+		"ecmel.vscode-html-css",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"VisualStudioExptTeam.vscodeintellicode-completions"
+    ]
+}

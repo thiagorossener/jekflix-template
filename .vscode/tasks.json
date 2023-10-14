@@ -5,7 +5,25 @@
 			"type": "gulp",
 			"task": "default",
 			"problemMatcher": [],
-			"label": "Live Preview"
+			"label": "Site Live Preview"
+		},
+		{
+			"type": "gulp",
+			"task": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "Build Site",
+		},
+		{
+		"label": "Install runtime dependencies",
+		"type": "shell",
+		"command": "npm install gulp-cli -g && npm install && bundle install",
+		"runOptions": {
+			"runOn": "folderOpen"
+			},
+			"presentation": {
+				"reveal": "silent"
+			  }
 		}
 	]
 }
