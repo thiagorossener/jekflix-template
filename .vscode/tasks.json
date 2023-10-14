@@ -24,6 +24,17 @@
 			"presentation": {
 				"reveal": "silent"
 			  }
+		},
+		{
+		"label": "Install All Recommended Extensions",
+		"type": "shell",
+		"command": "jq -r '.recommendations[]' ./.vscode/extensions.json | xargs -L 1 code --install-extension",
+		"runOptions": {
+			"runOn": "folderOpen"
+			},
+			"presentation": {
+				"reveal": "silent"
+			  }
 		}
 	]
 }
