@@ -18,9 +18,9 @@ paginate: false
 ![Screen Shot 2022-05-05 at 12 07 51 AM](https://user-images.githubusercontent.com/73072620/166876724-8cd7fe59-c9d7-4f00-8f96-f529e72fccc7.png)
 
 
-My small business was born this past summer. 
+My small business was born amidst the height of the Covid-19 pandemic. 
 
-I couldn't land an internship this summer, but I picked up jewelry-making as a hobby and decided to make the most out of the situation. I couldn't be an intern, so I became a small business owner -- working on everything from creating social media content, running marketing campaigns, and of course -- analyzing data and predicting consumer behavior.
+I couldn't land an internship that summer, therefore, I picked up jewelry-making as a hobby and decided to make the most out of the situation. I couldn't be an intern, so I became a small business owner -- working on everything from creating social media content, running marketing campaigns, and of course -- analyzing data and predicting consumer behavior.
 
 <b>Data Science skills used:</b>Data collection, Data Cleaning, EDA, Regression Modeling, Label Encoding, Feature Selection, Hypothesis Testing
 
