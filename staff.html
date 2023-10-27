@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Staff
-description: Meet our team.
+title: Notre Equipe
+description: Découvrez notre équipe.
 permalink: /staff/
 ---
 
-<h1>Staff</h1>
+<h1>Qui sommes-nous ?</h1>
 
 <div class="staff">
   {% for author in site.authors %}
@@ -15,6 +15,7 @@ permalink: /staff/
       </h2>
       {% if author.position %}
         <h3 class="position">{{ author.position }}</h3>
+        <p class="bio">{{ author.bio }}</p>
       {% endif %}
     </div>
   {% endfor %}
