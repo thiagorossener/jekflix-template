@@ -11,10 +11,10 @@ show_hero: true
 menu:
   - title: Accueil
     url: /
-  - title: À Propos
-    url: /about
   - title: Notre équipe
     url: /staff
+  - title: À Propos
+    url: /about
   - title: Nous contacter
     url: /contact
 email: le7eptiemeoeil@gmail.com
@@ -37,7 +37,7 @@ letterboxd_username:
 serializd_username:
 
 # Posts Settings
-show_time_bar: true
+show_time_bar: false
 show_modal_on_exit: false
 show_modal_on_finish_post: true
 two_columns_layout: false

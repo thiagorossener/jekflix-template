@@ -10,12 +10,12 @@ show_hero: true
 menu:
   - title: Accueil
     url: /
-  - title: A Propos
+  - title: Notre équipe
+    url: /staff
+  - title: À Propos
     url: /about
   - title: Nous contacter
     url: /contact
-  - title: Feed
-    url: /feed.xml
 email: le7eptiemeoeil@gmail.com
 
 # Contact Form Setting

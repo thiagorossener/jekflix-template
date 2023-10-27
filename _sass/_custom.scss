@@ -48,3 +48,49 @@
     transform: translateY(0);
   }
 }
+
+// New navbar
+.nav-bar {
+  display: none;
+}
+@media (min-width: 769px) {
+  /* Masquer la barre latérale et l'icône du menu sur les appareils de bureau */
+  .sidebar {
+      display: none; 
+  }
+  .icon-menu {
+    display: none;
+  }
+  .bar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    flex: auto;
+  }
+  .nav-item {
+    flex: auto;
+    text-align: center;
+  }
+  .nav-link {
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: transparent;
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 50px 10px 0px;
+    color: #fff;
+  }
+  .logo {
+    flex: 1;
+  }
+}

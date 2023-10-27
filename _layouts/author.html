@@ -17,7 +17,7 @@ layout: page
 
   <p>{{ page.bio }}</p>
 
-  <h2>Posts</h2>
+  <h2>Publications</h2>
 
   <ul>
     {% assign filtered_posts = site.posts | where: 'author', page.name | where_exp:"post","post.is_generated != true" %}

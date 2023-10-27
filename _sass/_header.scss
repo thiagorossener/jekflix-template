@@ -5,6 +5,7 @@ body {
 
 .bar-header {
   background-color: $primaryDark;
+  display: flex;
   padding: rem(10px) rem(15px);
   position: fixed;
   left: 0;
@@ -17,30 +18,28 @@ body {
   }
 
   .logo {
-    display: inline-block;
-    margin: 0;
+    flex: auto;
     height: rem(32px);
     line-height: rem(32px);
 
     a {
-      display: block;
-      color: $accentDark;
-      text-decoration: none;
-      font-size: rem(32px);
-      position: relative;
-      outline: 0;
+        display: block;
+        color: $accentDark;
+        text-decoration: none;
+        font-size: rem(32px);
+        outline: 0;
     }
 
     svg {
-      width: rem(170px);
-      height: rem(40px);
-      transition: all .4s;
-  
-      @include media(">=sm") {
-        width: rem(207px);
-      }
+        width: rem(170px);
+        height: rem(40px);
+        transition: all .4s;
+        
+        @include media(">=sm") {
+            width: rem(207px);
+        }
     }
-  }
+}
 
   .version {
     color: $accentDark;
