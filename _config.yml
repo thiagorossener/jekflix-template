@@ -62,7 +62,7 @@ translations:
     comments: "Commentaires"
   button:
     read_now: "Lire l’article"
-    share_on_twitter: "Partager sur Twitter"
+    share_on_twitter: "Partager sur X"
     share_on_facebook: "Partager sur Facebook"
   pagination:
     page: "Page"
