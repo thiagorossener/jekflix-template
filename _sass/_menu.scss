@@ -43,6 +43,11 @@ aside.sidebar {
 
   &.open {
     left: 0;
+    #navigation {
+      .nav-bar {
+        display: block;
+      }
+    }
   }
 
   h2 {
