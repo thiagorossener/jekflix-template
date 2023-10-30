@@ -256,50 +256,50 @@ collections:
             widget: "string"
             hint: "Laisser vide pour désactiver la page de contact"
             required: false
-        - label: "Comptes sociaux"
-          name: "social"
-          file: "src/yml/social.yml"
-          fields:
-            - label: "Nom d'utilisateur GitHub"
-              name: "github_username"
-              widget: "string"
-              required: false
-            - label: "Nom d'utilisateur Facebook"
-              name: "facebook_username"
-              widget: "string"
-              required: false
-            - label: "Nom d'utilisateur Twitter"
-              name: "twitter_username"
-              widget: "string"
-              required: false
-            - label: "Nom d'utilisateur Instagram"
-              name: "instagram_username"
-              widget: "string"
-              required: false
-            - label: "Nom d'utilisateur LinkedIn"
-              name: "linkedin_username"
-              widget: "string"
-              required: false
-            - label: "Nom d'utilisateur Medium"
-              name: "medium_username"
-              widget: "string"
-              required: false
-            - label: "Nom d'utilisateur Threads"
-              name: "threads_username"
-              widget: "string"
-              required: false
-            - label: "Nom d'utilisateur Letterboxd"
-              name: "letterboxd_username"
-              widget: "string"
-              required: false
-            - label: "Nom d'utilisateur Serializd"
-              name: "serializd_username"
-              widget: "string"
-              required: false
-            - label: "Nom d'utilisateur MyAnimeList"
-              name: "myanimelist_username"
-              widget: "string"
-              required: false
+      - label: "Comptes sociaux"
+        name: "social"
+        file: "src/yml/social.yml"
+        fields:
+          - label: "Nom d'utilisateur GitHub"
+            name: "github_username"
+            widget: "string"
+            required: false
+          - label: "Nom d'utilisateur Facebook"
+            name: "facebook_username"
+            widget: "string"
+            required: false
+          - label: "Nom d'utilisateur Twitter"
+            name: "twitter_username"
+            widget: "string"
+            required: false
+          - label: "Nom d'utilisateur Instagram"
+            name: "instagram_username"
+            widget: "string"
+            required: false
+          - label: "Nom d'utilisateur LinkedIn"
+            name: "linkedin_username"
+            widget: "string"
+            required: false
+          - label: "Nom d'utilisateur Medium"
+            name: "medium_username"
+            widget: "string"
+            required: false
+          - label: "Nom d'utilisateur Threads"
+            name: "threads_username"
+            widget: "string"
+            required: false
+          - label: "Nom d'utilisateur Letterboxd"
+            name: "letterboxd_username"
+            widget: "string"
+            required: false
+          - label: "Nom d'utilisateur Serializd"
+            name: "serializd_username"
+            widget: "string"
+            required: false
+          - label: "Nom d'utilisateur MyAnimeList"
+            name: "myanimelist_username"
+            widget: "string"
+            required: false
       - label: "Thème"
         name: "theme"
         file: "src/yml/theme.yml"
