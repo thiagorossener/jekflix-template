@@ -208,7 +208,7 @@ collections:
       preview: false
     delete: false
     files:
-      - label: "Site"
+      - label: "Paramètres du site"
         name: "site"
         file: "src/yml/site.yml"
         fields:
