@@ -1,5 +1,5 @@
 ---
-date: 2023-05-14 19:42:13 +0000
+date: 14-05-2014 19:42:13
 layout: post
 title: Quand l'IA devient l'objet de nos affections
 subtitle: Réflexions sur la relation Homme-Machine dans Blade Runner 2049 et Her
