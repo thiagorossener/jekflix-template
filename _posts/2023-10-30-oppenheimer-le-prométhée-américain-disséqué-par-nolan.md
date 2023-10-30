@@ -3,12 +3,9 @@ date: 23-07-2023 11:17:53
 layout: post
 title: "Oppenheimer : le prométhée américain disséqué par Nolan"
 subtitle: Ce vendredi 21 Juillet 2023, l’attendu dernier opus de Christopher
-  Nolan faisait son entrée dans les salles de cinéma du monde. Un biopic de 3h
-  autour du parcours de l’illustre Robert J. Oppenheimer, celui que l’Histoire
-  considère comme le père de la bombe atomique. Porté par un casting prestigieux
-  et talentueux, le film relate une histoire complexe mêlant ego surdimensionné,
-  quête de pouvoir, et tourment moral. Une expérience cinématique irradiante, où
-  la fusion du drame humain et de la menace atomique atteint sa masse critique…
+  Nolan faisait son entrée dans les salles de cinéma du monde. Porté par un
+  casting prestigieux et talentueux, le film relate une histoire complexe mêlant
+  ego surdimensionné, quête de pouvoir, et tourment moral…
 description: Ce vendredi 21 Juillet 2023, l’attendu dernier opus de Christopher
   Nolan faisait son entrée dans les salles de cinéma du monde...
 image: https://res.cloudinary.com/dfqlcc1vj/image/upload/v1698633642/Oppenheimer/oppenheimer-still2-62e2a85a448bb-1_kvu1pt.jpg
