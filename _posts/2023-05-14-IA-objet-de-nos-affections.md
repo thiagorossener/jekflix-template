@@ -6,8 +6,9 @@ subtitle: Réflexions sur la relation Homme-Machine dans Blade Runner 2049 et He
 description: "Notre relation avec l'IA évolue rapidement, et des films de science-fiction comme Her et Blade Runner 2049 nous permettent d'explorer les implications de cette dynamique..."
 image: https://res.cloudinary.com/dj6o6enl9/image/upload/v1684853554/bg-4.jpg
 optimized_image: https://res.cloudinary.com/dj6o6enl9/image/upload/c_scale,w_480/v1684853554/bg-4.jpg
-category: cinema
+category: edito
 tags:
+  - cinema
   - chatGPT
   - IA
   - science-fiction

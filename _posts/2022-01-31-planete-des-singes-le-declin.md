@@ -6,9 +6,10 @@ subtitle:
 description: "Retour sur le succès de cette franchise emblématique de la fin des années 60 qui a lentement sombré dans l'oubli..."
 image: https://res.cloudinary.com/dj6o6enl9/image/upload/v1684853554/bg.png
 optimized_image: https://res.cloudinary.com/dj6o6enl9/image/upload/c_scale,w_480/v1684853554/bg.png
-category: cinema
+category: edito
 tags:
   - science-fiction
+  - cinema
 author: charveey
 paginate: false
 ---
