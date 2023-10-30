@@ -1,6 +1,6 @@
-# Le 7eptième Oeil
+# Le 7eptième Œil
 
-![Le 7eptième Oeil](https://t4.ftcdn.net/jpg/02/46/61/23/360_F_246612318_X3MPKe6vf5NcES1A8GmUqbciaejw3W5R.jpg)
+![Le 7eptième Œil](https://res.cloudinary.com/dfqlcc1vj/image/upload/v1698629964/7emeOeil_hwhj3g.jpg)
 
 See the [demo here](https://poetic-buttercream-0d3e15.netlify.app/).
 
