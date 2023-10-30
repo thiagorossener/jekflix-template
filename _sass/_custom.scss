@@ -1,33 +1,90 @@
+body {
+  background-color: $primaryDark;
+}
+
 // certification icon 
 
 #certification_icon {
     width: 15px;
     height: auto;
     display: inline;
+    fill: $themeColor;
 }
+
+//Comment section styling
+.welcomments__comments-title,
+   .welcomments__author-name,
+   .welcomments__comment-message a,
+    .welcomments__comment-form label {
+        color: $accentDark !important;
+    }
+    .welcomments__comment-time a time,
+    .welcomments__comment-form p {
+        color: #9ca3af !important; // Date & notes color 
+    }
+    .welcomments__comment-message {
+        color: #d1d5db !important;
+    }
+    .welcomments__comment-reply-link {
+      background-color: $themeColor;
+      color: #9ca3af;
+    }
+    .welcomments__comment-form textarea,
+    .welcomments__comment-form input {
+        background-color: lighten($primaryDark, 5%)  !important;
+        border-color: lighten($primaryDark, 5%) !important;
+    }
+    .welcomments__submit-button {
+        background-color: $themeColor !important;
+    }
+    .welcomments__comment {
+        border-color: lighten($primaryDark, 5%) !important;
+    }
+
+    .welcomments__comment-message {
+      p {
+        color: darken($lightGray, 20%)
+      }
+    }
+    .welcomments__container input::-moz-placeholder,
+    .welcomments__container textarea::-moz-placeholder {
+        opacity:1;
+        color:#9ca3af
+      }
+    .welcomments__container input:-ms-input-placeholder,
+    .welcomments__container textarea:-ms-input-placeholder {
+      opacity:1;
+      color:#9ca3af
+    }
+    .welcomments__container input::placeholder,
+    .welcomments__container textarea::placeholder {
+      opacity:1;
+      color:#9ca3af
+    }
+    
+
+
 // Welcomments likes styling
 #like-button-container {
   width: 6rem;
   height: 3rem;
 
   .subtitle {
-    color: rgb(75,85,99);
+    color: $themeColor;
     text-align: center;
     font-size: .75rem;
     font-weight: 500;  
-    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     line-height: 1.5;
   }
 }
 
 #welcomments__like-button {
-  color: rgb(17,24,39);
+  color: $themeColor;
   text-align: center;
   font-weight: 700;
   cursor: pointer;
   font-size: 1rem;
   user-select: none;
-  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 }
 @media screen and (min-width: 832px) {
   #like-button-container {
@@ -94,3 +151,59 @@
     flex: 1;
   }
 }
+
+//Dark - Light mode toggle test
+
+// make the header light when needed
+/* body.light:not(.main-page) {
+  .bar-header {
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.95);
+
+    .icon-search,
+    .icon-menu {
+      fill: $primaryDark;
+    }
+
+    .logo a,
+    .version {
+      color: $primaryDark;
+    }
+    .post {
+      background: $accentDark;
+    }
+    .post-content {
+      p,
+      li {
+        color: $texts;
+      }
+      h1.post-title {
+        color: black
+      }
+      p.post-subtitle {
+        color: darken($lightGray, 30%);
+      }
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: black
+      }
+      blockquote {
+        p {
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+    .share {
+      background: $accentDark;
+      h3 {
+        color: black
+      }
+      icon{
+        fill: $accentDark
+      }
+    }
+  }
+} */

@@ -27,7 +27,7 @@
   font-size: rem(32px);
   margin: 0 0 rem(40px);
   padding: 0 rem(23px);
-  text-transform: lowercase;
+  text-transform: uppercase;
   color: #fff;
 }
 
@@ -76,7 +76,7 @@
 
       .cover {
         .new-post-tag {
-          background-color: #000;
+          background-color: #000000;
         }
 
         .read-icon {
@@ -136,7 +136,8 @@
     }
 
     .tags a {
-      height: rem(30px);
+      font-size: rem(12px);
+      height: rem(28px);
       line-height: rem(26px);
       color: $accentDark;
       padding: 0 rem(10px);
@@ -148,8 +149,8 @@
 
       &:hover {
         color: $primaryDark;
-        background: $accentDark;
-        border-color: $accentDark;
+        background: $themeColor;
+        border-color: $themeColor;
       }
     }
 

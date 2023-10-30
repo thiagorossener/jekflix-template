@@ -1,7 +1,7 @@
 .share {
+  background: $primaryDark;
   @include center(800px);
   text-align: center;
-  border-top: 1px solid $lightGray;
   padding-top: rem(20px);
   margin-top: rem(10px);
 
@@ -25,13 +25,17 @@
 
   .icon {
     transition: all 0.3s;
+    fill: $lightGray
   }
 
   .icon-twitter:hover {
-    fill: #1da1f3;
+    fill: $themeColor;
   }
   
   .icon-facebook:hover {
-    fill: #3b5998;
+    fill: $themeColor;
+  }
+  h3 {
+    color: $lightGray;
   }
 }

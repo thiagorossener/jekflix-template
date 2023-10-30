@@ -1,5 +1,5 @@
 .author {
-  background: $lightGray;
+  background: $primaryDark;
   display: table;
   width: 100%;
   padding: rem(40px) 0;
@@ -65,7 +65,7 @@
     a {
       @include mainFont();
       text-decoration: none;
-      color: black;
+      color: $lightGray;
       font-size: rem(30px);
 
       @include media(">=sm") {
@@ -80,6 +80,7 @@
 
   .desc {
     @include mainFont(300);
+    color: darken($accentDark, 25%);
     margin: rem(10px);
     font-size: rem(16px);
     line-height: rem(25px);
@@ -87,5 +88,6 @@
     @include media(">=sm") {
       font-size: rem(18px);
     }
+    
   }
 }

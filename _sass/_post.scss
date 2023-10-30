@@ -1,6 +1,7 @@
 .post {
   position: relative;
   top: rem(30px);
+  background: $primaryDark;
 
   @include media(">=sm") {
     top: rem(50px);
@@ -82,13 +83,14 @@
   }
 
   h1.post-title {
+    color: $accentDark;
     line-height: 1.2;
     margin: rem(5px) auto rem(10px);
     padding-top: 0;
   }
 
   p.post-subtitle {
-    color: darken($lightGray, 30%);
+    color: lighten($lightGray, 30%);
     font-size: rem(17px);
     margin: rem(10px) auto;
     line-height: 1.6;
@@ -136,7 +138,7 @@
 
   p,
   li {
-    color: $texts;
+    color: darken($lightGray, 20%);
 
     code {
       font-size: rem(15px);
@@ -185,6 +187,7 @@
   h4,
   h5,
   h6 {
+    color: $accentDark;
     @include mainFont(700);
     margin-top: 0;
     padding-top: rem(50px);
@@ -247,7 +250,7 @@
 
     p {
       font-size: rem(17px);
-      color: rgba(0, 0, 0, 0.6);
+      color: $lightGray;
       margin: 0;
       @include media(">=sm") {
         font-size: rem(20px);
