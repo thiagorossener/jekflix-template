@@ -3,6 +3,8 @@ backend:
   branch: master
 publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
+site_url: https://poetic-buttercream-0d3e15.netlify.app/
+logo_url: https://poetic-buttercream-0d3e15.netlify.app/assets/img/certicon.svg
 collections:
   - label: "Rubriques"
     name: "categories"
