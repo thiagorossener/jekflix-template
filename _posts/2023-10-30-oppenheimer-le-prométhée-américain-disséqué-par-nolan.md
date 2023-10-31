@@ -9,7 +9,7 @@ subtitle: Ce vendredi 21 Juillet 2023, l’attendu dernier opus de Christopher
 description: Ce vendredi 21 Juillet 2023, l’attendu dernier opus de Christopher
   Nolan faisait son entrée dans les salles de cinéma du monde...
 image: https://res.cloudinary.com/dfqlcc1vj/image/upload/v1698633642/Oppenheimer/oppenheimer-still2-62e2a85a448bb-1_kvu1pt.jpg
-optimized_image: https://res.cloudinary.com/dfqlcc1vj/image/upload/c_scale,w_480/v1698633642/Oppenheimer/oppenheimer-still2-62e2a85a448bb-1_kvu1pt.jpg
+optimized_image: https://res.cloudinary.com/dfqlcc1vj/image/upload/c_scale,w_600/v1698633642/Oppenheimer/oppenheimer-still2-62e2a85a448bb-1_kvu1pt.jpg
 category: critiques
 tags:
   - cinema

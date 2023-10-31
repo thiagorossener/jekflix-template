@@ -6,7 +6,7 @@ subtitle: null
 description: La nouvelle série de David S. Goyer arrivera-t-elle à faire le pont
   entre les audiences modernes et l'oeuvre de Isaac Asimov ?
 image: https://res.cloudinary.com/dj6o6enl9/image/upload/v1684853554/bg-3.png
-optimized_image: https://res.cloudinary.com/dj6o6enl9/image/upload/c_scale,w_480/v1684853554/bg-3.png
+optimized_image: https://res.cloudinary.com/dj6o6enl9/image/upload/c_scale,w_600/v1684853554/bg-3.png
 category: edito
 tags:
   - asimov
