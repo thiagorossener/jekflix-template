@@ -21,5 +21,9 @@
   //
   // This setting will enable/disable validations in {% schema %} JSON
   //
-  "liquid.hover.schema": true
+  "liquid.hover.schema": true,
+  // Set all HTML to Liquid for the repo
+  "files.associations": {
+    "*.html": "liquid"
+  }
 }
