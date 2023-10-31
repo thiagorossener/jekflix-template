@@ -21,9 +21,13 @@
 	"customizations": {
 	  "vscode": {
             "extensions": [
-                "sissel.shopify-liquid",
-                "wakatime.vscode-wakatime"
-            ]
+				"sissel.shopify-liquid",
+				"wakatime.vscode-wakatime",
+				"sibiraj-s.vscode-scss-formatter",
+				"mrmlnc.vscode-scss",
+				"stylelint.vscode-stylelint",
+				"ecmel.vscode-html-css"
+			]
           }
 	}
 

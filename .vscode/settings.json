@@ -25,5 +25,8 @@
   // Set all HTML to Liquid for the repo
   "files.associations": {
     "*.html": "liquid"
-  }
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }
