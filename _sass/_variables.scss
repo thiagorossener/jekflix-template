@@ -10,7 +10,9 @@ $texts: map-get($theme, texts) !default;
 
 // Breakpoints
 $breakpoints: (
-  sm: 37.5rem
+  sm: 47.5rem,
+  iphone: 400px,
+  tablet: 768px,
 );
 
 // Margins

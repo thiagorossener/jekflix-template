@@ -34,21 +34,29 @@
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    width: 90%;
+    width: 80%;
     height: 100%;
     padding-left: 10%;
 
     @include media(">=sm") {
-      width: 50%;
+      width: 60%;
+    }
+    @include media(">iphone", "<=tablet") {
+      width: 70%;
+    }
+    @include media("<=iphone") {
+      width: 90%;
     }
 
     .date {
       font-size: rem(16px);
-      color: rgba(255, 255, 255, 0.75);
+      //color: rgba(255, 255, 255, 0.75);
+      color: $lightGray;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
 
     .title {
-      font-size: rem(35px);
+      font-size: rem(40px);
       color: #fff;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
       margin: rem(10px) 0;
@@ -56,10 +64,16 @@
       @include media(">=sm") {
         font-size: rem(50px);
       }
+      @include media(">iphone", "<=tablet") {
+        font-size: rem(40px);
+      }
+      @include media("<=iphone") {
+        font-size: rem(35px);
+      }
     }
 
     .description {
-      font-size: rem(20px);
+      font-size: rem(24px);
       color: #fff;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
       margin: 0;
@@ -67,10 +81,22 @@
       @include media(">=sm") {
         font-size: rem(26px);
       }
+      @include media(">iphone", "<=tablet") {
+        font-size: rem(24px);
+      }
+      @include media("<=iphone") {
+        font-size: rem(20px);
+      }
     }
 
     .buttons {
-      margin-top: rem(25px);
+      margin-top: rem(50px);
+      @include media(">iphone", "<=tablet") {
+        margin-top: rem(35px);
+      }
+      @include media("<=iphone") {
+        margin-top: rem(25px);
+      }
     }
 
     .button {
