@@ -15,17 +15,6 @@
 			"label": "Build Site",
 		},
 		{
-		"label": "Install runtime dependencies",
-		"type": "shell",
-		"command": "npm install gulp-cli -g && npm install && bundle install",
-		"runOptions": {
-			"runOn": "folderOpen"
-			},
-			"presentation": {
-				"reveal": "silent"
-			  }
-		},
-		{
 		"label": "Install All Recommended Extensions",
 		"type": "shell",
 		"command": "jq -r '.recommendations[]' ./.vscode/extensions.json | xargs -L 1 code --install-extension",
