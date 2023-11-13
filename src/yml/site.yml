@@ -1,5 +1,5 @@
 name: Howse CC
-title: Howse CC | Security
+title: Howse CC | Security Engineer
 description: 
 tags:
   - blog
@@ -15,8 +15,6 @@ menu:
     url: /about
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
 email: jake@howse.cc
 # See: https://disqus.com/
 disqus_username: disqus_username

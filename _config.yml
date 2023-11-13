@@ -1,6 +1,6 @@
 # Site Settings
 name: Howse CC
-title: Howse CC | Security
+title: Howse CC | Security Engineer
 description: 
 tags:
   - blog
@@ -16,8 +16,6 @@ menu:
     url: /about
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
 email: jake@howse.cc
 # See: https://disqus.com/
 disqus_username: disqus_username
@@ -29,11 +27,8 @@ formspree_form_id: formspree_form_id
 # Social Media Settings
 # Remove the item if you don't need it
 github_username: jakehcc
-facebook_username: facebook_username
-twitter_username: twitter_username
 instagram_username: roadhowse
 linkedin_username: jake-howse
-medium_username: medium_username
 
 
 # Posts Settings
@@ -45,7 +40,7 @@ two_columns_layout: true
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jakehcc.github.io/" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
 categories_folder: category

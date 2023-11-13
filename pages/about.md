@@ -30,4 +30,4 @@ March 2022 — Present
 
 ## Contact
 
-If you are interested in discussing opportunities or connecting please reach out via my contact page.
+If you are interested in discussing opportunities or connecting please reach out via my socials below.
