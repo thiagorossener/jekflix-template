@@ -1,8 +1,7 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Howse CC
+title: Howse CC | Security Analyst
+description: Personal site for Jake Howse
 tags:
   - blog
   - template
@@ -29,11 +28,11 @@ formspree_form_id: formspree_form_id
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
+github_username: jakehcc
 facebook_username: facebook_username
 twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
+instagram_username: roadhowse
+linkedin_username: jake-howse
 medium_username: medium_username
 
 
