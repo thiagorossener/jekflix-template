@@ -11,8 +11,10 @@ show_hero: true
 menu:
   - title: Home
     url: /
-  - title: About
-    url: /about
+  # - title: About
+  #   url: /about
+  - title: Posts
+    url: /posts
   - title: Contact
     url: /contact
 email: jake@howse.cc
@@ -20,4 +22,4 @@ email: jake@howse.cc
 disqus_username: disqus_username
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
+formspree_form_id: mqkvolzr
