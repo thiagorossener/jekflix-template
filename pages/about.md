@@ -15,11 +15,11 @@ Jake is a seasoned IT professional with a wealth of expertise amassed over more 
 
 ## Experience
 
-<strong> 2022 - Present - ClearScore </strong>
+<strong> 2022 - Present -  </strong>
 
 Using a variety of Security monitoring tools to ensure our infrastructure and platforms are safe. Targeting both internal and external stakeholders. Using a mixture of skills to implement patches for CVE's across our Kubernetes estate and Containerised workloads. Using internally managed pen-testing tools to ensure our API's are configured correctly and have appropriate security measures in place. Engaging with external vendors to scope and run external pen-tests.
 
-<strong> 2018 - 2022 - Waterstons Ltd
+<strong> 2018 - 2022 -
 
 During my tenure, I successfully executed a variety of essential tasks, primarily focusing on the migration of on-premise systems to cloud-based platforms, such as Microsoft Office 365, Azure, and AWS. This encompassed a broad spectrum of services, including Exchange, SharePoint, OneDrive, and Teams, as well as Azure WVD/AVD environments. I excelled in planning and overseeing large-scale projects and contributed significantly to high-level solution design. My role also involved engaging in in-depth discussions with clients to grasp their specific business requirements and objectives, subsequently formulating robust solutions to address their needs. I conducted meticulous site audits and harnessed AWS storage for scale-out backup repositories, while expertly managing Kemp load balancers and Windows Server core services. I was instrumental in the seamless implementation and delivery of cloud-based environments on both Microsoft Azure and AWS platforms. My proficiency in automation and scripting using PowerShell and Terraform was pivotal in streamlining these processes and optimizing overall efficiency.
 
