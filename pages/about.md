@@ -1,19 +1,16 @@
 ---
 layout: page
 menu: false
-date: '2020-02-27 01:53:59'
-title: About
-description: Some description.
-permalink: /about/
+date: '2023-05-25 0:00:00'
+title: Product
+description: Revolutionizing the production system through collective intelligence,zxyng.
+permalink: /product/
 ---
 
-<img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Thiago Rossener" width="200">
+<img src="/assets/img/zxyng_aidol.png" alt="aidol" width="1600">
 
-# About
+# Product
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+"Social Producing" is a system for debuting and nurturing idols, using group producer members to evaluate individual activity videos. Zxyng is a platform that serves as a single virtual agency, where the collective intelligence of thousands to tens of thousands of people debuts hundreds to thousands of idols. This approach is more accurate over time than relying on the expertise of just a few individuals. Zxyng pursues transparency and fairness by utilizing blockchain technology. The collective intelligence principle has been proven in various experiments, including one where the average of guesses for the number of marbles in a jar was closest to the actual number. Similarly, in 1907, a contest to guess the weight of a bull produced more accurate results from the collective guesses of a crowd than the estimates of livestock experts.
+
+The evaluation policy for creators and collective producers and the compensation policy for creators and producers are all transparently, quickly and automatically executed by smart contracts.

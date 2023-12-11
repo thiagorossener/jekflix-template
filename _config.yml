@@ -1,25 +1,25 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: zxyng
+title: zxyng | The Future of the Idol Industry
+description: Revolutionizing the production system through collective intelligence.
 tags:
   - blog
   - template
-  - jekyll
+  - zxyng
   - theme
   - netlify
 show_hero: true
 menu:
   - title: Home
     url: /
-  - title: About
-    url: /about
+  - title: Product
+    url: /product
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
-email: youremail@test.com
+    #  - title: Feed
+    #    url: /feed.xml
+ 
+email: zxyng.ai@gmail.com
 # See: https://disqus.com/
 disqus_username: disqus_username
 # Contact Form Setting
@@ -30,11 +30,11 @@ formspree_form_id: formspree_form_id
 # Social Media Settings
 # Remove the item if you don't need it
 github_username: github_username
-facebook_username: facebook_username
+#facebook_username: facebook_username
 twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+#instagram_username: instagram_username
+#linkedin_username: linkedin_username
+#medium_username: medium_username
 
 
 # Posts Settings
@@ -105,4 +105,4 @@ exclude: [
 ]
 
 # Theme
-version: v3.1.2
+version: v0.1.2

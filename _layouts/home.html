@@ -18,30 +18,30 @@ layout: main
     {% if site.show_hero and paginator == nil or paginator.page == 1 %}
         <!-- Hero -->
         {% assign featured = posts.first %}
-        <section class="hero" style="background-image: url({{ featured.image }})">
+        <section class="hero" style="background-image: url( /assets/img/hero1.png )">
             <div class="pixels"></div>
             <div class="gradient"></div>
             <div class="content">
-                <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
-                    {% if site.date_format == nil %}
+                <time datetime="Intro [zxyng] project" class="date">
+<!--                     {% if site.date_format == nil %}
                         {{ featured.date | date: "%m.%d.%Y" }}
                     {% else %}
                         {{ featured.date | date: site.date_format }}
-                    {% endif %}
+                    {% endif %} -->
                 </time>
-                <h1 class="title">{{ featured.title }}</h1>
-                <p class="description">{{ featured.subtitle }}</p>
+                <h1 class="title">{{ "The Future of the Idol Industry: Transforming Through Social Producing" }}</h1>
+                <p class="description">{{ "Revolutionizing the production system through collective intelligence" }}</p>
                 <div class="buttons">
                     <a href="{{ featured.url | prepend: site.baseurl }}" role="button" class="button">
                         <svg><use xlink:href="#icon-read"></use></svg>
-                        <span>{{ site.translations.button.read_now | default: "Read Now" }}</span>
+                        <span>{{ site.translations.button.read_now | default: "More info" }}</span>
                     </a>
                 </div>
             </div>
         </section>
     {% endif %}
     <!-- Posts -->
-    <section id="grid" class="row flex-grid">
+<!--     <section id="grid" class="row flex-grid">
         {% for post in posts offset: offset %}
             <article class="box-item">
                 <span class="category">
@@ -94,7 +94,7 @@ layout: main
                 </div>
             </article>
         {% endfor %}
-    </section>
+    </section> -->
     <!-- Pagination -->
     {% if site.paginate %}
         {% include pagination-home.html %}
