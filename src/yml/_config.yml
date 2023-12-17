@@ -51,6 +51,11 @@ plugins:
 
 # Exclude my node related stuff
 exclude: [
+  'docs/',
+  'vendor/',
+  'LICENSE',
+  'CHANGELOG.md',
+  'jekflix.gemspec',
   'package.json',
   'package-lock.json',
   'src',
