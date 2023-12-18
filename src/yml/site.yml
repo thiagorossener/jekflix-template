@@ -13,8 +13,8 @@ menu:
     url: /
   # - title: About
   #   url: /about
-  - title: Posts
-    url: /posts
+  # - title: Posts
+  #   url: /posts
   - title: Contact
     url: /contact
 email: jake@howse.cc
