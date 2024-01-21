@@ -3,9 +3,9 @@ date: 2022-07-30 08:57:37
 layout: post
 title: "Multilingual Speech Transcription & Translation"
 subtitle: Brief overview of a personal project of mine
-description:
+description: 
 image: /assets/img/uploads/data.png
-optimized_image: /assets/img/uploads/data.png
+optimized_image: /assets/img/openai.jpg
 category: datascience
 tags:
 author:
