@@ -13,7 +13,8 @@ paginate: false
 ---
 
 
-<h2 id="Introduction">
+> ##### Introduction
+
 As a Chinese Malaysian, my education was a linguistic melting pot where English, Chinese, and Malay were all integral parts of my education. Among these languages, Malay, the national language, was the one I struggled with the most. And ever since moving to the States, I became even more less in tune with my Malay language skills. However, I'd still want to be in touch with Malaysian politics. Therefore, this project was created to connect with my country's politics and hopefully make it accessible to others who face similar linguistic hurdles. 
  
 
