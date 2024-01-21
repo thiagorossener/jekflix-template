@@ -15,7 +15,7 @@ paginate: false
 
 > ##### Introduction
 
-As a Chinese Malaysian, my education was a linguistic melting pot where English, Chinese, and Malay were all integral parts of my education. Among these languages, Malay, the national language, was the one I struggled with the most. And ever since moving to the States, I became even more less in tune with my Malay language skills. The project is motivated by the desire to be more in touch with Malaysian politics. As most government parliament meetings are conducted in Malay, a language I'm not fluent in. To bridge this gap, this project allows me to import YouTube videos of these parliament sessions, transcribe the spoken Malay into text, and then translate it into English. 
+As a Chinese Malaysian, my education was a linguistic melting pot where English, Chinese, and Malay were all integral parts of my education. Among these languages, Malay, the national language, was the one I struggled with the most. And ever since moving to the States, I became even more less in tune with my Malay language skills. The project is motivated by the desire to be more in touch with Malaysian politics. As most government parliament meetings are conducted in Malay, a language I'm not fluent in. To bridge this gap, this project allows me to import YouTube videos of these parliament sessions, transcribe the spoken Malay into text, and then translate it into English using Streamlit. 
  
 
 ![Whisper](/assets/img/whisper.jpg "Whisper")
@@ -24,9 +24,11 @@ This project utilizes the Whisper model from Open AI, which is an automatic spee
 
 ![Margins](/assets/img/uploads/margins.png "Margins")
 
-The dots on the plot represent teams from the 2005-2020 NBA seasons, colored based on their conference. A team’s point margin increases along the horizontal axis, whereas a team’s strength of schedule increases along the vertical axis. The placement of most red dots suggest a tougher strength of schedule for Western Conference teams than Eastern Conference teams.
+Whisper AI offers various models from small to large. However, through trial and error, I decided to go with the medium model for its accuracy and decent run time. To put the different models into perspective by transcribing and translating a 2-minute audio file. With the small model, although it ran the fastest, it produced the worst results among other models. With the large model, it took almost 4 minutes to run, but it produced the most accurate translation. With the tradeoff between time and accuracy, the medium model is the best running about 20 secs. Although the translation were slightly off compared to the large model, it was good enough considering it only took 20 seconds.  
 
-There are two labeled teams on this plot -- DAL 2011 and LAL 2019. Compared to other teams, these two teams had a tough schedule due to their opponents’ high point margins. My hypotheses as to why teams from 2019 and 2011 appear at the extremes of this graph was an NBA Lockout that occurred in 2011, and the Covid-19 pandemic that have impacted the 2019-2020 NBA season. Both events caused teams to play fewer games, and a small sample of games fails to standardize team point margins. This produces abnormal values that are plotted at the extremes of this graph.
+This project is also coded to download YouTube videos and save the audio file temporarily for up to 2 minutes to perform audio transcription and translation. As I am running this project with a CPU, 2 minutes was an ideal amount of time to test the performance. I reckon that if this project was run with a GPU, the large model would probably work the best and the model could also allow for longer periods of audio input being transcribed and translated. 
+
+
 
 ![Simulations](/assets/img/uploads/simulations.png "Simulations")
 
@@ -38,18 +40,4 @@ I also recommended machine learning models to help make data-driven decisions wi
 
 To learn more about this project, <a href="https://github.com/mein-lee/NBA_conference_disparity">check out my Github here! </a> Click on the HTML file and download it into your device to view it.
 
-<h2 id="Analyzing Public Baseball Database">Analyzing Public Baseball Database</h2>
 
-Coming Soon!
-
-<h2 id="Establishing Causal Relationship between Government Infrastructure Investments and Unemployment Rates">Establishing Causal Relationship between Government Infrastructure Investments and Unemployment Rates</h2>
-
-Coming Soon!
-
-<h2 id="Sentiment Analysis of AOC, Elon Musk, and Cristiano Ronaldo Tweets">Sentiment Analysis of AOC, Elon Musk, and Cristiano Ronaldo Tweets</h2>
-
-Coming Soon!
-
-<h2 id="More Coming!">More Coming!</h2>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfh1Kx8ftMOR92ijcBb_-K2OAv2XAnQlWChwuBG2vTGkkBeuQ/viewform?usp=sf_link">Sign up for my mailing list for post updates!</a>
