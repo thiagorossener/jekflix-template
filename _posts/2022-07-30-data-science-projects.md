@@ -17,7 +17,7 @@ paginate: false
 
 As a Chinese Malaysian, my education was a linguistic melting pot where English, Chinese, and Malay were all integral parts of my education. Among these languages, Malay, the national language, was the one I struggled with the most. And ever since moving to the States, I became even more less in tune with my Malay language skills. The project is motivated by the desire to be more in touch with Malaysian politics. As most government parliament meetings are conducted in Malay, a language I'm not fluent in. To bridge this gap, this project allows me to import YouTube videos of these parliament sessions, transcribe the spoken Malay into text, and then translate it into English using Streamlit. 
 
-![mp4](/assets/img/ips-82DEA1B7-D4EF-4E37-8B7E-C5CBF00A56B7.mp4 "mp4")
+![gif](/assets/img/ips-82DEA1B7-D4EF-4E37-8B7E-C5CBF00A56B7.gif "gif")
  
 
 
