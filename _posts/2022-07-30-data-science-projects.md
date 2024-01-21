@@ -1,9 +1,9 @@
 ---
 date: 2022-07-30 08:57:37
 layout: post
-title: "Data Science & Analytics Projects"
-subtitle: Brief overview of my Data Science & Analytics Projects.
-description: How I told stories with numbers
+title: "Multilingual Speech Transcription & Translation"
+subtitle: Brief overview of a personal project of mine
+description:
 image: /assets/img/uploads/data.png
 optimized_image: /assets/img/uploads/data.png
 category: datascience
@@ -12,19 +12,10 @@ author:
 paginate: false
 ---
 
-<div id="toc_container">
-<h2 class="toc_title">Table of Contents</h2>
-<ul class="toc_list">
-  <li><a href="#Analyzing Conference Disparity in the NBA">Analyzing Conference Disparity in the NBA</a></li>
-  <li><a href="#Analyzing Public Baseball Database">Analyzing Public Baseball Database</a></li>
-  <li><a href="#Establishing Causal Relationship between Government Infrastructure Investments and Unemployment Rates">Establishing Causal Relationship between Government Infrastructure Investments and Unemployment Rates</a></li>
-  <li><a href="#Sentiment Analysis of AOC, Elon Musk, and Cristiano Ronaldo Tweets">Sentiment Analysis of AOC, Elon Musk, and Cristiano Ronaldo Tweets</a></li>
-  <li><a href="#More Coming!">More Coming!</a></li>
-</ul>
-</div>
 
-<h2 id="Analyzing Conference Disparity in the NBA">Analyzing Conference Disparity in the NBA</h2>
-This project was conducted in R using data from the 2005-06 season to 2020-21. I analyzed wins, losses, points scored, and other game stats to determine if there is a significant conference disparity in the NBA. Below are some visualizations created:
+<h2 id="Introduction">
+As a Chinese Malaysian, my education was a linguistic melting pot where English, Chinese, and Malay were all integral parts of my education. Among these languages, Malay, the national language, was the one I struggled with the most. And ever since moving to the States, I became even more less in tune with my Malay language skills. However, I'd still want to be in touch with Malaysian politics. Therefore, this project was created to connect with my country's politics and hopefully make it accessible to others who face similar linguistic hurdles. 
+ 
 
 ![Boxplots](/assets/img/uploads/boxplot.png "Boxplots")
 
