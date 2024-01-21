@@ -15,12 +15,12 @@ paginate: false
 
 > ##### Introduction
 
-As a Chinese Malaysian, my education was a linguistic melting pot where English, Chinese, and Malay were all integral parts of my education. Among these languages, Malay, the national language, was the one I struggled with the most. And ever since moving to the States, I became even more less in tune with my Malay language skills. However, I'd still want to be in touch with Malaysian politics. Therefore, this project was created to connect with my country's politics and hopefully make it accessible to others who face similar linguistic hurdles. 
+As a Chinese Malaysian, my education was a linguistic melting pot where English, Chinese, and Malay were all integral parts of my education. Among these languages, Malay, the national language, was the one I struggled with the most. And ever since moving to the States, I became even more less in tune with my Malay language skills. The project is motivated by the desire to be more in touch with Malaysian politics. As most government parliament meetings are conducted in Malay, a language I'm not fluent in. To bridge this gap, this project allows me to import YouTube videos of these parliament sessions, transcribe the spoken Malay into text, and then translate it into English. 
  
 
 ![Boxplots](/assets/img/uploads/boxplot.png "Boxplots")
+This project utilizes the Whisper model from Open AI, which is an automatic speech recognition (ASR) system trained on 680,000 hours of multilingual and multitask supervised data collected from the web. The Whisper architecture is a simple end-to-end approach, implemented as an encoder0decoder Transformer. Input audio is split into 30-second chunks, converted into a log-Mel spectrogram, and then passed into an encoder. A decoder is trained to predict the corresponding text caption, intermixed with special tokens that direct the single model to perform tasks such as language identification, multilingual speech transcription, and to-English speech translation. 
 
-Over the past 16 NBA seasons, inter-conference regular season matchups of two eventual playoffs/lottery teams have swung in favor of the Western Conference. In addition, the skill gap between playoff teams from East vs. West has been closer than Western Conference playoff teams vs. Eastern lottery opponents.
 
 ![Margins](/assets/img/uploads/margins.png "Margins")
 
