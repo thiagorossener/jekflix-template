@@ -1,5 +1,5 @@
 ---
-date: 2023-08-01 12:00:00
+date: 2023-05-01 12:00:00
 layout: post
 title: Rice Disease Detector 
 subtitle: 
