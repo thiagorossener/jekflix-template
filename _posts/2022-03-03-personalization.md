@@ -1,9 +1,9 @@
 ---
-date: 2022-08-01 12:00:00
+date: 2023-08-01 12:00:00
 layout: post
-title: This is your sign to personalize your products or services using ML 
-subtitle: I generated personalized discounts for 1 Million retail customers during my summer internship 
-description: I generated personalized discounts for 1 Million retail customers during my summer internship 
+title: Rice Disease Detector 
+subtitle: 
+description: I built a model with a Convolutional Neural Network with transfer learning to detect various rice diseases 
 image: /assets/img/uploads/personalize.jpeg
 optimized_image: /assets/img/uploads/personalize.jpeg
 category: datascience
@@ -12,54 +12,27 @@ author: meinlee
 paginate: false
 ---
 
-<div id="toc_container">
-<h2 class="toc_title">Table of Contents</h2>
-<ul class="toc_list">
-  <li><a href="#Acknowledgements">Acknowledgements</a></li>
-   <li><a href="#Project Inspiration and Research">Project Inspiration and Research</a></li>
-   <li><a href="#Working in Cross-Functional Teams">Working in Cross-Functional Teams</a></li>
-   <li><a href="#Data Cleaning and Feature Engineering">Data Cleaning and Feature Engineering</a></li>
-  <li><a href="#Building and Evaluting the Model">Building and Evaluting the Model</a></li>
-  <li><a href="#A/B Testing">A/B Testing</a></li>
-  <li><a href="#Results and Presentation">Results and Presentation</a></li>
-  <li><a href="#Closing Thoughts">Closing Thoughts</a></li>
-</ul>
-</div>
 
-<h2 id="Acknowledgements">Acknowledgements</h2>
+<h2 id="Project Inspiration">Project Inspiration</h2>
 
-This past summer, I had the pleasure of working as an Analytics intern at a large retail company and meeting over 20 interns from different departments. I did not expect this going into the internship, but I've gained mentorship, industry experiences, and friendships that I will never forget. I'd like to preface this post by thanking everyone I've met over the short span of 3 months, and for giving me one of the best summer experiences yet.
+The picture above is a small town in Malaysia called Sekinchan, which is also my hometown. My grandparents were paddy field farmers and had grown rice crops since the 1950s. Therefore, I built a Convolutional Neural Network utilizing transfer learning to detect various rice diseases such as brown spot, leaf blast, and hispa. 
 
-In this post, I will share the end-to-end process of my internship project: generating personalized discounts, overcoming obstacles, and learning valuable lessons.
+I'm currently developing an app that empowers farmers to diagnose their crops efficiently. By simply taking a photo of their rice plants using the app, farmers can promptly determine if their crops are afflicted with any of these diseases. This not only allows for early detection and treatment but it is also projected to reduce crop waste by 21%. 
 
-<h2 id="Project Inspiration">Project Inspiration and Research</h2>
-
-![Personalization](/assets/img/uploads/personalization.jpg "Personalization")
-
-Giving the right discount to the right people is known to make customers spend more with a store. 
-As companies shift to the ability to promote discounts and promotions through digital marketing such as app notifications and email subscriptions, there is a need to identify the optimum amount for each customer -- a personalized discount that will incentivize them to spend more than usual. 
-
-In fact, 78% of customers expect personalization, and 71% of customers are more likely to repurchase from companies that personalize experiences for their customers. 
-
-Many companies have successfully implemented personalization strategies in their phone apps -- HelloFresh, Starbucks, Target, Puma, etc. The benefits of personalization can be summarized into four areas, represented by the blue arrows: 
-
-![Benefits](/assets/img/uploads/benefits.png "Benefits")
-
-This is the reason why Puma, for example, created email optimization marketing campaigns and ultimately achieved 5x Email-Attributed Revenue in 6 Months. 
  
-<h2 id="Working in Cross-Functional Teams">Working in Cross-Functional Teams </h2>
+<h2 id="Model Training"> Model Training </h2>
 
-Working in cross-functional teams is a highly transferable skill because it demands communication, collaboration, and sometimes even negotiation with people from different professional backgrounds. 
+I began building a CNN model with 5 convolutional layers. The model was trained on images from a Kaggle dataset containing 1600 images belonging to 4 classes. Initially, without transfer learning, both training and validation accuracies stagnated at around 50% with 25 epochs, showing minimal improvement over time. 
 
-Generating personalization discounts is great, but useless if I can’t test it on real customers. This requires the marketing team’s help to push out discount notifications to email subscribers and app users, so I created a detailed project proposal to convince them that the time and energy that they will invest in my project is worth it. The proposal also included a strict timeline, proposed results, and how my project will benefit their existing marketing strategies. 
-
-After many rounds of research and discussion, I finally got the green light to start building the model!
-
-In classes, the start of the project is <i>import pandas as pd</i>. In the industry, the start of a project involves crucial soft skills such as planning, communication, and collaboration.
+However, a significant enhancement was observed when I adopted convolution layers of the InceptionV3 architecture as the base model and added the dense layers in which I trained to recognize the various rice diseases. This approach, employing transfer learning, elevated the training and validation accuracy to approximately 56% with 25 epochs. The good thing with this model is that the training and validation accuracy does not seem to overfit the data as the curves are in sync, as shown in the graphs below. 
 
 <h2 id="Data Cleaning and Feature Engineering">Data Cleaning and Feature Engineering</h2>
 
-The features below were among the 100+ features that were queried and built using SQL for the 1 Million customers that I plan to test on. Some features are basic demographic data that were readily available in the database (e.g. age and education level), and some required more engineering and aggregation of multiple soures of data. For example, the time elapsed between their first and second interaction with a discount. 
+Given these results, I am optimistic that increasing the number of epochs would further refine the model's accuracy, improving its capability to accurately diagnose rice diseases.  
+
+With the model, I mitigated the risk of overfitting by incorporating a dropout layer with a 20% rate in the convolutional stages, which served to regularize the model's output. Additionally, I employed image augmentation techniques through rotations, zoons, and shifts before training to enhance the model's ability to generalize to new, unseen data. Thus, these strategies have proven to collectively contribute to a robust and reliable accuracy. 
+
+In this model, I prevented overfitting the data by adding a drop-out layer of 20% in the convolutional layers to regularize the output as well as augmented the pictures before training so that the model ???
 
 ![Data Inputs](/assets/img/uploads/data_inputs.jpg "Data Inputs")
 
