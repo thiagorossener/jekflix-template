@@ -1,5 +1,5 @@
 ---
-date: 2023-11-30 08:57:37
+date: 2023-08-30 08:57:37
 layout: post
 title: "Multilingual Speech Transcription & Translation"
 subtitle: Brief overview of a personal project of mine
