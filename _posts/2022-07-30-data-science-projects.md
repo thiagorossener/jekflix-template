@@ -32,9 +32,7 @@ This project utilizes the Whisper model from Open AI, which is an automatic spee
 
 The application initiates by downloading audio from a specified YouTube URL, and saving it in MP3 format. This is followed by a conversion process where the downloaded MP3 file is transformed into WAV format, utilizing ffmpeg. This step is necessary as WAV files are uncompressed, meaning they contain raw audio data without any loss of quality. MP3 files, on the other hand, are compressed. The lossy nature of MP3 can lead to a reduction in the clarity and detail of the sound, which can affect the accuracy of speech recognition systems. Next, an essential step of resampling is incorporated. This step adjusts the sample rate of the audio data and interpolates it to align with the new sample rate, a crucial step to ensure compatibility with the Whisper AI model.
 
-Subsequently, the transcribe audio function is invoked. In this phase, the application loads the 'medium' model of Whisper AI and proceeds with the transcription of the audio into English. The outcome of this process is the return of the transcribed text, which represents the core output of the application.
-
-The entire workflow is seamlessly integrated and built using Streamlit. 
+Subsequently, the transcribe audio function is invoked. In this phase, the application loads the 'medium' model of Whisper AI and proceeds with the transcription of the audio into English. The outcome of this process is the return of the transcribed text. The entire workflow is seamlessly integrated and built using Streamlit. 
 
 ![gif](/assets/img/ips-82DEA1B7-D4EF-4E37-8B7E-C5CBF00A56B7.gif "gif")
  
