@@ -9,7 +9,7 @@ optimized_image: /assets/img/openai-whisper.jpg
 category: datascience
 tags:
 author:
-paginate: false
+paginate: 
 ---
 
 
@@ -39,7 +39,7 @@ Subsequently, the transcribe audio function is invoked. In this phase, the appli
 
 > ##### Model Performance Comparison in Whisper AI
 
-Whisper AI offers a range of models for audio transcription and translation, varying in sizes and capabilities. In my project, I conducted a comparative analysis of these models to find the optimal balance between accuracy and speed. Specifically, I tested the small, medium, and large models on a 2-minute audio file. The small mode, while it was the fastest, it performed badly in accuracy. Conversely, the large model excelled in accuracy with a near-perfect translation but it took about 4 minutes to run, which is double the audio's duration. Ultimately, I chose the medium model as it runs significantly faster, completing the task in about 20 seconds. Although its accuracy is slightly inferior to the large model, it still delivers a sufficiently accurate translation. 
+Whisper AI offers a range of models for audio transcription and translation, varying in sizes and capabilities. In my project, I conducted a comparative analysis of these models to find the optimal balance between accuracy and speed. Specifically, I tested the small, medium, and large models on a 2-minute audio file. The small model, while it ran the fastest, performed badly in accuracy. Conversely, the large model excelled in accuracy with a near-perfect translation but it took about 4 minutes to run, which is double the audio's duration. Ultimately, I chose the medium model as it runs significantly faster, completing the task in about 20 seconds. Although its accuracy is slightly inferior to the large model, it still delivers a sufficiently accurate translation. 
 
 
 > ##### Project Enhancements and Future Prospects
