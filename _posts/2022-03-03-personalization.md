@@ -36,7 +36,7 @@ Given these results, I am optimistic that increasing the number of epochs would 
 
 With the model, I mitigated the risk of overfitting by incorporating a dropout layer with a 20% rate in the convolutional stages, which served to regularize the model's output. Additionally, I employed image augmentation techniques such as rotations, zoons, and shifts before training to enhance the model's ability to generalize to new, unseen data. Thus, these strategies have proven to collectively contribute to a robust and reliable accuracy. 
 
-Beyond technical enhancements, the ultimate goal is to deploy this model in a user-friendly mobile application, making it readily accessible to farmers. The vision is to create a tool that not only serves as a technological aid for farmers but also acts as a platform for continuous learning and improvement in the fight against crop diseases. By leveraging the power of community feedback and ongoing research, I aim to create a dynamic, evolving tool that stays at the forefront of agricultural technology and sustainability, 
+Beyond technical enhancements, the ultimate goal is to deploy this model in a user-friendly mobile application, making it readily accessible to farmers. The vision is to create a tool that not only serves as a technological aid for farmers but also acts as a platform for continuous learning and improvement in the fight against crop diseases. By leveraging the power of community feedback and ongoing research, I aim to create a dynamic, evolving tool that stays at the forefront of agricultural technology and sustainability.
 
 
 
