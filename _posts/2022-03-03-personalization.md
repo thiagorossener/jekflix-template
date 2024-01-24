@@ -15,16 +15,19 @@ paginate: false
 
 <h2 id="Project Inspiration">Project Inspiration</h2>
 
-The picture above is a small town in Malaysia called Sekinchan, which is also my hometown. My grandparents were paddy field farmers and had grown rice crops since the 1950s. Therefore, I built a Convolutional Neural Network utilizing transfer learning to detect various rice diseases such as brown spot, leaf blast, and hispa. 
+The picture above is a small town in Malaysia called Sekinchan, which is also my hometown. My grandparents were paddy field farmers and had grown rice crops since the 1950s. Observing the detrimental effects of rice diseases on their crops, I was motivated to develop a solution. This led me to build a Convolutional Neural Network specifically designed to identify and diagnose various rice diseases. 
 
-I'm currently developing an app that empowers farmers to diagnose their crops efficiently. By simply taking a photo of their rice plants using the app, farmers can promptly determine if their crops are afflicted with any of these diseases. This not only allows for early detection and treatment but it is also projected to reduce crop waste by 21%. 
+An app is currently in the works that would empower farmers to diagnose their crops efficiently. By simply taking a photo of their rice plants using the app, farmers can promptly determine if their crops are afflicted with any of these diseases. This not only allows for early detection and treatment but it is also projected to reduce crop waste by 21%. 
 
  
 <h2 id="Model Training"> Model Training </h2>
 
 I began building a CNN model with 5 convolutional layers. The model was trained on images from a Kaggle dataset containing 1600 images belonging to 4 classes. Initially, without transfer learning, both training and validation accuracies stagnated at around 50% with 25 epochs, showing minimal improvement over time. 
 
-However, a significant enhancement was observed when I adopted convolution layers of the InceptionV3 architecture as the base model and added the dense layers in which I trained to recognize the various rice diseases. This approach, employing transfer learning, elevated the training and validation accuracy to approximately 56% with 25 epochs. The good thing with this model is that the training and validation accuracy does not seem to overfit the data as the curves are in sync, as shown in the graphs below. 
+However, when I adopted the convolution layers of the InceptionV3 architecture as the base model and added the dense layers in which I trained to recognize the various rice diseases, I saw a real game-changer. The approach of employing transfer learning elevated the training and validation accuracy to approximately 56% with 25 epochs. The good thing with this model is that the training and validation accuracy does not seem to overfit the data as the curves are in sync, as shown in the graphs below. 
+
+![Data Inputs](/assets/img/uploads/data_inputs.jpg "Data Inputs")
+![Data Inputs](/assets/img/uploads/data_inputs.jpg "Data Inputs")
 
 <h2 id="Data Cleaning and Feature Engineering">Data Cleaning and Feature Engineering</h2>
 
