@@ -3,7 +3,7 @@ date: 2023-05-01 12:00:00
 layout: post
 title: Rice Disease Detector 
 subtitle: 
-description: I built a model with a Convolutional Neural Network with transfer learning to detect various rice diseases 
+description: I built a Convolutional Neural Network model with transfer learning to detect various rice diseases 
 image: /assets/img/paddy field.jpeg
 optimized_image: /assets/img/paddy field.jpeg
 category: datascience
