@@ -4,8 +4,8 @@ layout: post
 title: "Multilingual Speech Transcription & Translation"
 subtitle: Brief overview of a personal project of mine
 description: 
-image: /assets/img/openai.jpg
-optimized_image: /assets/img/openai.jpg
+image: /assets/img/openai-whisper.jpg
+optimized_image: /assets/img/openai-whisper.jpg
 category: datascience
 tags:
 author:
