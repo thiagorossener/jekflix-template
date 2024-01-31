@@ -1,20 +1,22 @@
 ---
-title: "인텔리제이에 스프링부트 Devtools 설치"
-excerpt: "파일에 변경사항이 있을 시 자동 업데이트를 하도록 인텔리제이 설정하기"
-
-categories:
-    - devlog
+date: 2024-01-29
+layout: post
+title: "[스프링부트 시리즈2]인텔리제이에 스프링부트 Devtools 설치"
+subtitle: 파일에 변경사항이 있을 시 자동 업데이트를 하도록 인텔리제이 설정하기
+description: 
+image: 
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-29-springboot/springboot%20title.jpg?raw=true
+optimized_image:    
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-29-springboot/p_springboot%20title.jpg?raw=true
+category: devlog
 tags:
     - devlog
     - intelliJ
     - Springboot
     - devtool
-
-toc: true
-toc_sticky: true
-
-date: 24-01-30
-last_modified_at: 24-01-30
+  
+author: sammy
+paginate: true
 ---
 
 # 인텔리제이에 스트링부트 Devtools 설치하기

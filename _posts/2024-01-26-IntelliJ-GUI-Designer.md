@@ -1,5 +1,5 @@
 ---
-date: 2024-01-22
+date: 2024-01-26
 layout: post
 title: 인텔리제이 GUI 디자이너 튜토리얼
 subtitle: 인텔리제이 내장 기능인 GUI 디자이너를 사용해 기초적인 GUI 앱을 만들어보자

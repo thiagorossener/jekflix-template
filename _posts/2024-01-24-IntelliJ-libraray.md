@@ -1,5 +1,5 @@
 ---
-date: 2024-01-22
+date: 2024-01-24
 layout: post
 title: 인텔리J에 외부 라이브러리 추가하는 법
 subtitle: 인텔리J를 IDE로서 외부 라이브러리를 사용해보자

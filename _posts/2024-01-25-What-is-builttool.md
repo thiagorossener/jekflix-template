@@ -1,5 +1,5 @@
 ---
-date: 2024-01-22
+date: 2024-01-25
 layout: post
 title: 자바 빌드 툴이란 무엇인가
 subtitle: 자바 빌드용 툴에 대해 알아보자

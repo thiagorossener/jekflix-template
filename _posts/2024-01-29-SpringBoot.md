@@ -1,7 +1,7 @@
 ---
-date: 2024-01-22
+date: 2024-01-29
 layout: post
-title: 인텔리J 및 스프링부트(Spring Boot)를 사용한 개발 환경 준비
+title: "[스프링부트 시리즈1]인텔리제이와 스프링부트(Spring Boot)를 사용한 개발 환경 준비"
 subtitle: 인텔리제이와 스프링부트를 사용한 개발환경 준비
 description: 
 image: 
