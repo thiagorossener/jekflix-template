@@ -1,6 +1,6 @@
 ---
-title: "자바 빌드 툴이란 무엇인가"
-excerpt: "자바 빌드용 툴에 대해 알아보자"
+title: ""
+excerpt: ""
 
 categories:
     - devlog
@@ -18,6 +18,24 @@ toc_sticky: true
 
 date: 24-01-25
 last_modified_at: 24-01-25
+---
+---
+date: 2024-01-22
+layout: post
+title: 자바 빌드 툴이란 무엇인가
+subtitle: 자바 빌드용 툴에 대해 알아보자
+description: 
+image: 
+  https://github.com/leesemin89/blog/blob/master/img/VSCode.png?raw=true
+optimized_image:    
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-22-1st/P_VSCode.png?raw=true
+category: devlog
+tags:
+    - devlog
+    - JAVA
+    - Build Tool
+author: sammy
+paginate: true
 ---
 
 # 빌드 툴 Build Tool 이란 무엇일까?
