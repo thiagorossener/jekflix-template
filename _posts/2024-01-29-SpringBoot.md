@@ -5,9 +5,9 @@ title: 인텔리J 및 스프링부트(Spring Boot)를 사용한 개발 환경 �
 subtitle: 인텔리제이와 스프링부트를 사용한 개발환경 준비
 description: 
 image: 
-  https://github.com/leesemin89/blog/blob/master/img/2024-01-26-intelliJ%20GUI/IntelliJ%20title.png?raw=true
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-29-springboot/springboot%20title.jpg?raw=true
 optimized_image:    
-  https://github.com/leesemin89/blog/blob/master/img/2024-01-26-intelliJ%20GUI/p_IntelliJ%20title.png?raw=true
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-29-springboot/p_springboot%20title.jpg?raw=true
 category: devlog
 tags:
     - devlog
