@@ -1,25 +1,4 @@
 ---
-title: ""
-excerpt: ""
-
-categories:
-    - devlog
-tags:
-    - devlog
-    - Maven
-    - Gradle
-    - Ant
-    - Apache
-    - JAVA
-    - Build Tool 
-
-toc: true
-toc_sticky: true
-
-date: 24-01-25
-last_modified_at: 24-01-25
----
----
 date: 2024-01-22
 layout: post
 title: 자바 빌드 툴이란 무엇인가
@@ -32,6 +11,10 @@ optimized_image:
 category: devlog
 tags:
     - devlog
+    - Maven
+    - Gradle
+    - Ant
+    - Apache
     - JAVA
     - Build Tool
 author: sammy
