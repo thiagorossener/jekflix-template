@@ -1,28 +1,11 @@
 ---
-title: ""
-excerpt: ""
-
-categories:
-    - devlog
-tags:
-    - devlog
-    - IntelliJ
-    - GUI
-
-toc: true
-toc_sticky: true
-
-date: 24-01-26
-last_modified_at: 24-01-26
----
----
 date: 2024-01-22
 layout: post
 title: 인텔리제이 GUI 디자이너 튜토리얼
 subtitle: 인텔리제이 내장 기능인 GUI 디자이너를 사용해 기초적인 GUI 앱을 만들어보자
 description: 
 image: 
-  https://github.com/leesemin89/blog/blob/master/img/2024-01-25-buildtool/buildtools%20title.png?raw=true
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-26-intelliJ%20GUI/IntellJ%20title.jpg?raw=true
 optimized_image:    
   https://github.com/leesemin89/blog/blob/master/img/2024-01-25-buildtool/p_buildtools%20title.png?raw=true
 category: devlog
