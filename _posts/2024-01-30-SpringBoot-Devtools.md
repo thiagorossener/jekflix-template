@@ -34,3 +34,15 @@ paginate: true
 - 필요한 모든 파일을 저장 후 인텔리제이를 재시작하면 Spring boot devtools 가 적용되었으니 다시 `http://localhost:8080/hello`를 열고 `HelloController`의 'Hello' 문구를 수정 후 저장, 로컬호스트 페이지를 새로고침 해서 서버 재시작 없이 변경 사항이 적용 되는지 확인하자.
   - ![devtools](https://github.com/leesemin89/blog/blob/master/img/2024-01-29-springboot-devtool/devtool/4.png?raw=true)
   - ![devtools](https://github.com/leesemin89/blog/blob/master/img/2024-01-29-springboot-devtool/devtool/5.png?raw=true)
+  
+## 인텔리제이에 롬복 설치 및 사용 설정하기
+- 전 편(스프링부트 시리즈1)에서 롬복 플러그인을 설치하였습니다.
+- 이제 롬복을 사용하기 전 사용 설정을 해두지 않으면 `@어노테이션`을 불러왔을 때 오류가 발생하니 사용 설정이 필요합니다.
+  1. 아래와 같이 build.gradle.kts 파일의 dependencies 설정에 `implementation("org.projectlombok:lombok:1.18.22")`을 추가합니다.
+  - [dependency]()
+  2. 아래와 같이 Settings > Build, Execution, Deployment > Compiler > Annotation Processors 로 가서 `[x] Enble annotation proccessing`을 체크 하고 OK 버튼을 클릭합니다.
+  - [annotation]()
+  3. 우측 패널에서 그레이들 패널을 열고 모든 그레이들 프로젝트를 리로드 합니다.
+  - [gradle]()
+  4. `com.mysite.sbb` 패키지 아래에 새 클래스 `HelloLombok`을 아래와 같이 작성합니다.
+  - [HelloLombok]()
