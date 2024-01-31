@@ -33,3 +33,4 @@ paginate: true
   - ![reload](https://github.com/leesemin89/blog/blob/master/img/2024-01-29-springboot-devtool/devtool/3.png?raw=true)
 - 필요한 모든 파일을 저장 후 인텔리제이를 재시작하면 Spring boot devtools 가 적용되었으니 다시 `http://localhost:8080/hello`를 열고 `HelloController`의 'Hello' 문구를 수정 후 저장, 로컬호스트 페이지를 새로고침 해서 서버 재시작 없이 변경 사항이 적용 되는지 확인하자.
   - ![devtools](https://github.com/leesemin89/blog/blob/master/img/2024-01-29-springboot-devtool/devtool/4.png?raw=true)
+  - ![devtools](https://github.com/leesemin89/blog/blob/master/img/2024-01-29-springboot-devtool/devtool/5.png?raw=true)
