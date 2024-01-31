@@ -5,9 +5,9 @@ title: 인텔리제이 GUI 디자이너 튜토리얼
 subtitle: 인텔리제이 내장 기능인 GUI 디자이너를 사용해 기초적인 GUI 앱을 만들어보자
 description: 
 image: 
-  https://github.com/leesemin89/blog/blob/master/img/2024-01-26-intelliJ%20GUI/IntellJ%20title.jpg?raw=true
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-26-intelliJ%20GUI/IntelliJ%20title.png?raw=true
 optimized_image:    
-  https://github.com/leesemin89/blog/blob/master/img/2024-01-25-buildtool/p_buildtools%20title.png?raw=true
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-26-intelliJ%20GUI/p_IntelliJ%20title.png?raw=true
 category: devlog
 tags:
     - devlog
