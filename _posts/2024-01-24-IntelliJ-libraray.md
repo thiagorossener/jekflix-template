@@ -1,6 +1,6 @@
 ---
-title: "인텔리J에 외부 라이브러리 추가하는 법"
-excerpt: "인텔리J를 IDE로서 외부 라이브러리를 사용해보자"
+title: ""
+excerpt: ""
 
 categories:
     - devlog
@@ -13,6 +13,24 @@ toc_sticky: true
 
 date: 24-01-24
 last_modified_at: 24-01-24
+---
+---
+date: 2024-01-22
+layout: post
+title: 인텔리J에 외부 라이브러리 추가하는 법
+subtitle: 인텔리J를 IDE로서 외부 라이브러리를 사용해보자
+description: 
+image: 
+  https://static-00.iconduck.com/assets.00/intellij-idea-icon-2048x2048-hsyna1mi.png
+optimized_image:    
+  https://static-00.iconduck.com/assets.00/intellij-idea-icon-2048x2048-hsyna1mi.png
+category: devlog
+tags:
+    - devlog
+    - VSCode
+    - Markdown
+author: sammy
+paginate: true
 ---
 
 # 자바로 SQLight를 쓰려면?
