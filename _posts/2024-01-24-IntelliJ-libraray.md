@@ -1,20 +1,4 @@
 ---
-title: ""
-excerpt: ""
-
-categories:
-    - devlog
-tags:
-    - devlog
-    - IntelliJ    
-
-toc: true
-toc_sticky: true
-
-date: 24-01-24
-last_modified_at: 24-01-24
----
----
 date: 2024-01-22
 layout: post
 title: 인텔리J에 외부 라이브러리 추가하는 법
