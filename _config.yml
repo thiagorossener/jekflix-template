@@ -47,7 +47,8 @@ two_columns_layout: true
 # Advanced Settings
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+google_analytics:
+  measurement_id: "G-48PYR4CR53"
 language: "en"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
