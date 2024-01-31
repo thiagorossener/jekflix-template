@@ -5,9 +5,9 @@ title: 인텔리J에 외부 라이브러리 추가하는 법
 subtitle: 인텔리J를 IDE로서 외부 라이브러리를 사용해보자
 description: 
 image: 
-  https://intellijfree.com/images/uploads/screen.png?1637063924935
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-24-intelliJ/IntelliJ%20title.png?raw=true
 optimized_image:    
-  https://intellijfree.com/images/uploads/screen.png?1637063924935
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-24-intelliJ/p_IntelliJ%20title.png?raw=true
 category: devlog
 tags:
     - devlog
@@ -32,16 +32,16 @@ paginate: true
 # 인텔리J에서 자바 프로젝트에 쓰일 외부 라이브러리 추가하기
 
 ## 1. File -> Project Structure  
-  + ![image1](https://github.com/leesemin89/blog/blob/master/img/IntelliJ.png?raw=true)
+  + ![image1](https://github.com/leesemin89/blog/blob/master/img/2024-01-24-intelliJ/IntelliJ.png?raw=true)
 
 ## 2. Module -> Java Project -> Dependencies
-  + ![image](https://github.com/leesemin89/blog/blob/master/img/IntelliJ2.png?raw=true)
+  + ![image](https://github.com/leesemin89/blog/blob/master/img/2024-01-24-intelliJ/IntelliJ2.png?raw=true)
    
 ## 3. + button -> JARs or 디렉토리    
-   + ![image](https://github.com/leesemin89/blog/blob/master/img/IntelliJ3.png?raw=true)
+   + ![image](https://github.com/leesemin89/blog/blob/master/img/2024-01-24-intelliJ/IntelliJ3.png?raw=true)
      
 ## 4. 추가할 JAR 라이브러리를 디스크에서 선택
-   + ![image](https://github.com/leesemin89/blog/blob/master/img/IntelliJ4.png?raw=true)
+   + ![image](https://github.com/leesemin89/blog/blob/master/img/2024-01-24-intelliJ/IntelliJ4.png?raw=true)
      
 ## 5. 확인 버튼을 눌러 적용
-   + ![image](https://github.com/leesemin89/blog/blob/master/img/IntelliJ5.png?raw=true)
+   + ![image](https://github.com/leesemin89/blog/blob/master/img/2024-01-24-intelliJ/IntelliJ5.png?raw=true)
