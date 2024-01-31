@@ -26,9 +26,9 @@ title: 자바 빌드 툴이란 무엇인가
 subtitle: 자바 빌드용 툴에 대해 알아보자
 description: 
 image: 
-  https://github.com/leesemin89/blog/blob/master/img/VSCode.png?raw=true
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-25-buildtool/buildtools%20title.png?raw=true
 optimized_image:    
-  https://github.com/leesemin89/blog/blob/master/img/2024-01-22-1st/P_VSCode.png?raw=true
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-25-buildtool/p_buildtools%20title.png?raw=true
 category: devlog
 tags:
     - devlog
