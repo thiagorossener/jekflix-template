@@ -21,14 +21,14 @@ title: 인텔리J에 외부 라이브러리 추가하는 법
 subtitle: 인텔리J를 IDE로서 외부 라이브러리를 사용해보자
 description: 
 image: 
-  https://static-00.iconduck.com/assets.00/intellij-idea-icon-2048x2048-hsyna1mi.png
+  https://intellijfree.com/images/uploads/screen.png?1637063924935
 optimized_image:    
-  https://static-00.iconduck.com/assets.00/intellij-idea-icon-2048x2048-hsyna1mi.png
+  https://intellijfree.com/images/uploads/screen.png?1637063924935
 category: devlog
 tags:
     - devlog
-    - VSCode
-    - Markdown
+    - IntelliJ
+    
 author: sammy
 paginate: true
 ---
