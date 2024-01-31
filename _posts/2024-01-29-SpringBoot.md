@@ -1,20 +1,23 @@
 ---
-title: "인텔리J 및 스프링부트(Spring Boot)를 사용한 개발 환경 준비"
-excerpt: "인텔리제이와 스프링부트를 사용한 개발환경 준비"
-
-categories:
-    - devlog
+date: 2024-01-22
+layout: post
+title: 인텔리J 및 스프링부트(Spring Boot)를 사용한 개발 환경 준비
+subtitle: 인텔리제이와 스프링부트를 사용한 개발환경 준비
+description: 
+image: 
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-26-intelliJ%20GUI/IntelliJ%20title.png?raw=true
+optimized_image:    
+  https://github.com/leesemin89/blog/blob/master/img/2024-01-26-intelliJ%20GUI/p_IntelliJ%20title.png?raw=true
+category: devlog
 tags:
     - devlog
     - Springboot
     - intelliJ  
-
-toc: true
-toc_sticky: true
-
-date: 24-01-29
-last_modified_at: 24-01-30
+author: sammy
+paginate: true
 ---
+
+
 # 인텔리제이에 스프링부트 설치하기
 ## 스프링부트 (Spring boot)는 뭔가요?
 - 웹 어플리케이션을 빠르게 만들 수 있도록 도와주는 자바의 웹 프레임워크입니다.
