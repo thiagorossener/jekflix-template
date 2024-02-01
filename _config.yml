@@ -112,3 +112,10 @@ exclude: [
 
 # Theme
 version: v3.1.2
+
+# Basic List
+docs_list_title: ACME Documentation
+docs:
+
+- title: Home
+  url: https://leesemin89.github.io/blog/
