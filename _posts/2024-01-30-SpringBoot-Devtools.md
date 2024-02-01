@@ -46,3 +46,5 @@ paginate: true
   - ![gradle](https://github.com/leesemin89/blog/blob/master/img/2024-01-29-springboot-devtool/lombok/2.gradle.png?raw=true)
   4. `com.mysite.sbb` 패키지 아래에 새 클래스 `HelloLombok`을 아래와 같이 작성합니다.
   - ![HelloLombok](https://github.com/leesemin89/blog/blob/master/img/2024-01-29-springboot-devtool/lombok/4.HelloLombok.png?raw=true)
+  - 롬복을 활용하면 setHello, setLombok, getHello, getLombok 등의 메서드를 별도 작성하지 않아도 됩니다.
+
