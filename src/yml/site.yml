@@ -1,26 +1,29 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: DDO
+title: DDO | Dan Dev Online
+description: Dan Archer's development blog and personal portfolio
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - development
+  - software
+  - architecture
+  - design
+  - coding
+  - programming
+  - danarcheronline
 show_hero: true
 menu:
   - title: Home
     url: /
   - title: About
     url: /about
-  - title: Contact
-    url: /contact
-  - title: Feed
-    url: /feed.xml
-email: youremail@test.com
+  - title: Portfolio
+    url: /portfolio
+  # - title: Contact
+  #   url: /contact
+  # - title: Feed
+  #   url: /feed.xml
+email: danarcheronline@gmail.com
 # See: https://disqus.com/
-disqus_username: disqus_username
+disqus_username: danarcheronline
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
+# formspree_form_id: formspree_form_id

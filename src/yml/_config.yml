@@ -19,7 +19,7 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
-show_get_theme_btn: true
+show_get_theme_btn: false
 use_logo: false
 
 # Content paginator
@@ -50,22 +50,23 @@ plugins:
   - jekyll-paginate-content
 
 # Exclude my node related stuff
-exclude: [
-  'docs/',
-  'vendor/',
-  'LICENSE',
-  'CHANGELOG.md',
-  'jekflix.gemspec',
-  'package.json',
-  'package-lock.json',
-  'src',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
-]
+exclude:
+  [
+    "docs/",
+    "vendor/",
+    "LICENSE",
+    "CHANGELOG.md",
+    "jekflix.gemspec",
+    "package.json",
+    "package-lock.json",
+    "src",
+    "node_modules",
+    "initpost.sh",
+    "Gemfile",
+    "Gemfile.lock",
+    "gulpfile.js",
+    "README.md",
+  ]
 
 # Theme
 version: v3.1.2

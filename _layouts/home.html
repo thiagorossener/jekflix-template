@@ -17,24 +17,24 @@ layout: main
 <main class="home {% if site.show_hero and paginator == nil or paginator.page == 1 %}no-padding{% endif %}" role="main">
     {% if site.show_hero and paginator == nil or paginator.page == 1 %}
         <!-- Hero -->
-        {% assign featured = posts.first %}
-        <section class="hero" style="background-image: url({{ featured.image }})">
+        <!-- {% assign featured = posts.first %} -->
+        <section class="hero" style="background-image: url(https://media.licdn.com/dms/image/D4E12AQFs0r79Ad_lUA/article-cover_image-shrink_720_1280/0/1697998983590?e=1721260800&v=beta&t=lCn15pEzMQpZzzV-rQdWVvp2623v831zLvnaTQ-Z6Oo)">
             <div class="pixels"></div>
             <div class="gradient"></div>
             <div class="content">
-                <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
+                <!-- <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
                     {% if site.date_format == nil %}
                         {{ featured.date | date: "%m.%d.%Y" }}
                     {% else %}
                         {{ featured.date | date: site.date_format }}
                     {% endif %}
-                </time>
-                <h1 class="title">{{ featured.title }}</h1>
-                <p class="description">{{ featured.subtitle }}</p>
+                </time> -->
+                <h1 class="title">Software Development</h1>
+                <p class="description">The closest thing to sorcery</p>
                 <div class="buttons">
-                    <a href="{{ featured.url | prepend: site.baseurl }}" role="button" class="button">
-                        <svg><use xlink:href="#icon-read"></use></svg>
-                        <span>{{ site.translations.button.read_now | default: "Read Now" }}</span>
+                    <a href="#" role="button" class="button">
+                        <!-- <svg><use xlink:href="#icon-read"></use></svg> -->
+                        <span>Checkout my projects</span>
                     </a>
                 </div>
             </div>
@@ -69,7 +69,7 @@ layout: main
                             </noscript>
                         {% endif %}
                         {% include new-post-tag.html date=post.date %}
-                        {% include read-icon.html %}
+                        <!-- {% include read-icon.html %} -->
                     </a>
                     <div class="box-info">
                         <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
