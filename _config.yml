@@ -1,5 +1,5 @@
 # Site Settings
-name: Jekflix
+name: CollinsNyatundo
 title: cnyagaka |  blog
 description: Jekflix is a template for Jekyll inspired by Netflix and made by
   Thiago Rossener.
@@ -29,7 +29,7 @@ formspree_form_id: formspree_form_id
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: https://github.com/CollinsNyatundo
+github_username: CollinsNyatundo
 linkedin_username: collinsnyagaka001
 
 
