@@ -1,5 +1,5 @@
 ---
-date: 2019-05-16 23:48:05
+date: 2024-09-06 02:12:05
 layout: post
 title: Welcome to the desert of the real
 subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
@@ -7,9 +7,9 @@ description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dbaqmf3u3/image/upload/e_gen_restore/v1717888477/cld-sample-2.jpg
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  https://res.cloudinary.com/dbaqmf3u3/image/upload/e_gen_restore/v1717888477/cld-sample-2.jpg
 category: blog
 tags:
   - welcome
