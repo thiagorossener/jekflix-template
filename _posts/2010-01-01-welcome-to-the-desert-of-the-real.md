@@ -9,7 +9,7 @@ description: >-
 image: >-
   https://res.cloudinary.com/dbaqmf3u3/image/upload/e_gen_restore/v1717888477/cld-sample-2.jpg
 optimized_image: >-
-  https://res.cloudinary.com/dbaqmf3u3/image/upload/e_gen_restore/v1717888477/cld-sample-2.jpg
+  https://res.cloudinary.com/dbaqmf3u3/image/upload/c_scale,w_380/e_gen_restore/v1717888477/cld-sample-2.jpg
 category: blog
 tags:
   - welcome
