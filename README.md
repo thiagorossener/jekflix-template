@@ -121,7 +121,7 @@ menu:
 # Remove the item if you don't need it
 github_username: github_username
 facebook_username: facebook_username
-twitter_username: twitter_username
+x_username: x_username
 instagram_username: instagram_username
 linkedin_username: linkedin_username
 medium_username: medium_username

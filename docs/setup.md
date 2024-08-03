@@ -74,7 +74,7 @@ translations:
     comments: "Comments"
   button:
     read_now: "Read Now"
-    share_on_twitter: "Share on Twitter"
+    share_on_x: "Share on X"
     share_on_facebook: "Share on Facebook"
   pagination:
     page: "Page"
