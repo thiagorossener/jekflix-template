@@ -1,8 +1,7 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Priyanshu
+title: Hi stranger...
+description: Welcome to my website. I am Priyanshu, a software engineer and a photographer. 
 tags:
   - blog
   - template
@@ -19,7 +18,7 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: priyanshut21@iitk.ac.in
 # See: https://disqus.com/
 disqus_username: disqus_username
 # Contact Form Setting
