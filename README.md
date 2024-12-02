@@ -34,6 +34,8 @@ In order to compile the assets and run Jekyll on local you need to follow those 
 - Run `npm install`
 - Run `npm install -g gulp gulp-cli`
 - Open `_config.yml` and change to:
+
+
 ```
 baseurl: ""
 url: ""
