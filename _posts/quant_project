@@ -101,18 +101,55 @@ The highest portfolio value achieved in any episode is $196,366.82, highlighting
  
  
 
-> ##### Model Performance Comparison in Whisper AI
+> ##### Explanation of the Final Script
 
-In my project, I compared Whisper AI's small, medium, and large models for audio transcription and translation on a 2-minute file. The small model, while it ran the fastest, performed badly in accuracy. Conversely, the large model excelled in accuracy with a near-perfect translation but it took about 4 minutes to run, which is double the audio's duration. I opted for the medium model, which provided a good balance of speed and accuracy, completing the task in about 20 seconds. Although its accuracy is slightly inferior to the large model, it still delivers a sufficiently accurate translation. 
+In this script, we've developed a simulated environment to manage and test an investment strategy using reinforcement learning (RL). The script encapsulates the concept of assets, portfolios, and a trading environment that interacts with an RL agent to make investment decisions. 
+
+> ##### Key Components
+
+1. Asset Class:
+ - Represents financial instruments such as stocks or bonds. 
+ - Each asset has a symbol, price, and asset_type (e.g. 'equity')
+
+2. Portfolio Class:
+ - Manages a collection of assets.
+ - Tracks the total value and cash within the portfolio. 
+ - Can add and manage positions based on a target asset allocation.
+ - Contains methods to rebalance the portfolio to align with target allocations, adjusting holdings to match desired asset distribution. 
+
+3. Reinforcement Learning Environment (RL Environment):
+ - Interfaces between the market (represented through simulated market data) and the RL agent.
+ - Manages the sequence of trading actions (steps) based on the agent's decisions. 
+ - Calculates rewards as a function of the change in portfolio value, fostering the RL agent's strategy towards maximizing portfolio returns. 
+ - Applies actions to rebalance the portfolio and update asset prices according to the simulated market. 
+
+4. Reinforcement Learning Agent
+ - Decides actions based on the current market state using a policy derived from its learning algorithm.
+ - Updates its policy based on the reward received from actions taken, learning to optimize decisions over time. 
 
 
-> ##### Project Enhancements and Future Prospects
 
-Given that the project currently operates on a CPU, a 2-minute duration was an ideal amount of time to test the performance. However, using a GPU could notably improve performance, especially by enabling the large Whisper AI model to process longer audio with greater transcription and translation accuracy. 
+> ##### Differenced from Previous Scripts
+Unlike previous scripts which might have focused solely on portfolio management or used deterministic rules for trading, this script integrates a learning-based approach to dynamically adjust the portfolio. It simulates a more complex interaction with the market and adjusts its strategy based on learning experiences, theoretically improving its decision-making process over time through RL. 
+
+> ##### Results Interpretation
+
+The output log details the progression of a Reinforcement Learning (RL) agent managing a financial portfolio over multiple steps or decisions, and here's a breakdown and interpretation of the results:
+
+Steps Summary:
+1. Initial Conditions: The portfolio starts with a specific value and state configuration (asset allocations and market prices).
+2. Actions Taken: The RL agent decides to rebalance the portfolio at each step (action = 1) based on the current state.
+3. Portfolio Value Changes: After each action, the portfolio's total value is recalculated. The changes in portfolio value from one step to the next demonstrate the impact of the agent's actions combined with market price fluctuations.
+4. Rewards: Rewards are calculated based on the percentage change in portfolio value. Positive rewards indicate an increase in value, while negative rewards indicate a decrease.
+
+Specific Observations:
+- Step 1: The portfolio value slightly decreases from the initial value to 199,175.23, and the reward is -0.00 (negligible change), suggesting stability or a minor loss after rebalancing.
+- Step 2: The portfolio value increases to 200,345.73, earning a reward of 0.01. This indicates a successful rebalance that capitalized on market conditions to generate a profit.
+- Step 3: The portfolio value decreases again to 199,113.59, with a reward of -0.01, showing a slight loss, potentially due to adverse market movements or less optimal rebalancing.
+
+Final Portfolio Value:
+- The simulation concludes with a portfolio value of 388,599.90, which is significantly higher than the starting value shown in the logs. This implies that over the course of the simulation, the RL agent's actions, combined with market conditions, have substantially increased the portfolio's value.
 
 
-> ##### Future Development: Live Audio Translation Application
-
-Moving forward with this project, I aim to develop a live audio translation application whereby real-time translation can be done as a video is playing on any platform. This application would be particularly useful for translating less commonly spoken languages and unique dialects that are only spoken within small communities. 
 
 
