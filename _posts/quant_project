@@ -1,5 +1,5 @@
 ---
-date: 2023-08-30 08:57:37
+date: 2024-06-30 08:57:37
 layout: post
 title: "Portfolio Optimization"
 subtitle: Brief overview of a personal project of mine
@@ -13,11 +13,48 @@ paginate:
 ---
 
 
-> ##### Introduction
+> ##### Portfolio Management Simulation
 
-Since coming to the States, I have been less exposed to Malay therefore, I began to forget 
-Born as a Chinese Malaysian, I moved to the States for high school and college, and slowly lost touch with Malay, which is the national language.  As I grew up, I became more and more interested in Malaysian politics as I am still very in touch with my home country. However, all government meetings and debates are conducted in Malay, which I no longer understand. So the idea for my project is to use the Whisper AI's model to translate Malay into English. 
+This simulation demonstrates an investment strategy where a portfolio is managed actively to maintain a target allocation across various equities. It uses historical market data to simulate real-world trading conditions and adjusts the portfolio regularly to align with specified asset allocation goals. 
 
+> ##### Key Components:
+1. Asset Class:
+ - Definition: Each asset in the portfolio, such as a stock, is characterized by its symbol, price, and type (e.g, equity or bond). 
+ - Functionality: Assets can update their prices and calculate returns, providing dynamic interaction as market conditions change. 
+
+2. Portfolio:
+ - Initial Setup: Begins with a specified cash amount and a strategy for asset allocation. 
+ - Operations: Includes capabilities to add or remove assets, calculate the total value, and rebalance the holdings to align with the target asset allocation. 
+
+3. Rebalancing Strategy: 
+ - Purpose: Ensures that the portfolio adheres to the desired asset distribution by adjusting the holdings periodically, based on the performance and fluctuations in asset values. 
+
+4. Backtesting Environment:
+ - Simulation: Runs the portfolio against historical data to demonstrate how it would perform over time, adjusting for price changes and rebalancing as needed. 
+ - Metrics: Tracks and logs the portfolio's value over time, allowing for performance assessment and strategy refinement. 
+
+> ##### Process Flow:
+1. Initialization:
+ - Assets are initialized with their respective symbols, initial prices, and types.
+ - A portfolio is created with an initial cash balance and a defined target allocation for asset types. 
+
+2. Simulation Execution:
+ - The simulation iterates over a predefined range of business days, updating asset prices according to historical market data. 
+ - On each simulated day, the portfolio is rebalanced to maintain the target allocation, adjusting asset quantities based on the latest prices and the available cash. 
+ - The portfolio's total value is recalculated after adjustments to reflect the current market valuation of its holdings. 
+
+3. Performance Tracking
+ - The portfolio's value is recorded daily, providing a detailed view of its performance over the simulation period. 
+ - The overall return is calculated at the end of the simulation to assess the effectiveness of the management strategy. 
+
+> ##### Results Interpretation:
+The simulation starts with an initial portfolio value of $10,000 and aims to maintain an allocation solely in equities as per the specified strategy. The portfolio includes a range of equities, each representing different sectors, ensuring diversification within the equity class. 
+
+Over the simulated period of 256 business days starting at the beginning of the year 2023, the portfolio experiences fluctuations in value due to changes in the stock prices that are updated daily based on the historical market data. The portfolio management strategy involves rebalancing to maintain the target allocations, which incurs transaction costs but also helps in risk mitigation by maintaining a balanced asset distribution. 
+
+At the end of the simulation:
+ - Final Portfolio Value: The final recorded value of the portfolio after the last trading day stands at approximately $10,930.60
+ - Total Return: The portfolio achieved a total return of 9.31% over the period. This return results from capital gains from the equities in the portfolio and the effectiveness of the rebalancing strategy in capitalizing on market movements. 
 
 
 > ##### Background of Whisper AI model
