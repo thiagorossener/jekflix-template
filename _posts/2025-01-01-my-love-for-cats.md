@@ -5,7 +5,6 @@ title: My love for cats
 subtitle: From cat mom to volunteering at a cat rescue.
 description: My love for cats in my life from being a cat mom to volunteering at a cat rescue.
 image: ![Mishu](assets/img/1000009346.jpg)
-optimized_image: ![Mishu](assets/img/1000009346.jpg)
 category: volunteering
 tags:
   - volunteering
