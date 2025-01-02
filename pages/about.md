@@ -1,19 +1,14 @@
 ---
 layout: page
 menu: false
-date: '2020-02-27 01:53:59'
+date: '2025-01-01 08:03:59'
 title: About
 description: Some description.
 permalink: /about/
 ---
 
-<img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Thomas A. Anderson" width="200">
+<img class="img-rounded" src="assets/img/IMG_20240722_162835_870.jpg" alt="malyshka" width="200">
 
 # About
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Hi! My name is Tejal, and I'm a data enthusiast. I currently work at P&G as a data analyst and have lots of experience related to data science, engineering and analytics. When I'm not looking at numbers all day, I enjoy playing with my cats, Mishu and Taara, crocheting, reading and hanging out with my friends. Thanks for stopping by! :)
