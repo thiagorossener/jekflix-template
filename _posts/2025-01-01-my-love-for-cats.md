@@ -4,8 +4,8 @@ layout: post
 title: My love for cats
 subtitle: From cat mom to animal shelter volunteering
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme2_ylcxxz.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme2_ylcxxz.jpg
+image: "assets/img/PXL_20241018_150507806.jpg"
+optimized_image: "assets/img/PXL_20241018_150507806.jpg"
 category: personallife
 tags:
   - personallife
