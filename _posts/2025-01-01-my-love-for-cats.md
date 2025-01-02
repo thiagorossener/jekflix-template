@@ -6,10 +6,10 @@ subtitle: From cat mom to animal shelter volunteering
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: "assets/img/PXL_20241018_150507806.jpg"
 optimized_image: "assets/img/PXL_20241018_150507806.jpg"
-category: personallife
+category: volunteering
 tags:
+  - volunteering
   - personallife
-  - volunteer
 author: tejalgup
 ---
 
