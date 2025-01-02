@@ -1,7 +1,7 @@
 # Site Settings
 name: Tejal Gupta
 title: tej! | A data enthusiast's blog
-description: Hi! My name is tejal and this is my blog where I'll talk about data, cats and life! <3
+description: Hi! My name is tejal, and this is my blog where I'll talk about data, cats and life! <3
 tags:
   - blog
   - template
@@ -18,12 +18,9 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: tejalgupta@hotmail.com
 # See: https://disqus.com/
-disqus_username: disqus_username
-# Contact Form Setting
-# See: https://formspree.io/
-formspree_form_id: formspree_form_id
+
 
 
 # Social Media Settings
