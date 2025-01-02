@@ -9,7 +9,7 @@ optimized_image: "assets/img/PXL_20241018_150507806.jpg"
 category: volunteering
 tags:
   - volunteering
-  - personallife
+  - life
 author: tejalgup
 ---
 
