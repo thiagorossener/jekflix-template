@@ -31,22 +31,16 @@ layout: page
 
 {% assign author_urls = '' %}
 {% if page.github_username %}
-    {% assign author_urls = author_urls | append: '"https://github.com/' | append: page.github_username | append: '",' %}
-{% endif %}
-{% if page.facebook_username %}
-    {% assign author_urls = author_urls | append: '"https://www.facebook.com/' | append: page.facebook_username | append: '",' %}
-{% endif %}
-{% if page.twitter_username %}
-    {% assign author_urls = author_urls | append: '"https://twitter.com/' | append: page.twitter_username | append: '",' %}
+    {% assign author_urls = author_urls | append: '"https://github.com/' | append: tejalgup | append: '",' %}
 {% endif %}
 {% if page.medium_username %}
-    {% assign author_urls = author_urls | append: '"https://medium.com/@' | append: page.medium_username | append: '",' %}
+    {% assign author_urls = author_urls | append: '"https://medium.com/@' | append: tejalgupta | append: '",' %}
 {% endif %}
 {% if page.instagram_username %}
-    {% assign author_urls = author_urls | append: '"https://www.instagram.com/' | append: page.instagram_username | append: '",' %}
+    {% assign author_urls = author_urls | append: '"https://www.instagram.com/' | append: tejal.gup | append: '",' %}
 {% endif %}
 {% if page.linkedin_username %}
-    {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: page.linkedin_username | append: '",' %}
+    {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: tejal-gupta | append: '",' %}
 {% endif %}
 
 <script type="application/ld+json">
