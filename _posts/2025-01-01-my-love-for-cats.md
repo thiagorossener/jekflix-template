@@ -2,10 +2,10 @@
 date: 2025-01-01 22:55:45
 layout: post
 title: My love for cats
-subtitle: From cat mom to animal shelter volunteering
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: "assets/img/PXL_20241018_150507806.jpg"
-optimized_image: "assets/img/PXL_20241018_150507806.jpg"
+subtitle: From cat mom to volunteering at a cat rescue.
+description: My love for cats in my life from being a cat mom to volunteering at a cat rescue.
+image: "assets/img/1000009346.jpg"
+optimized_image: "assets/img/1000009346.jpg"
 category: volunteering
 tags:
   - volunteering
@@ -13,129 +13,17 @@ tags:
 author: tejalgup
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+## Taara
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+I've always loved animals since I was young, but growing up, we weren't allowed to have any pets. In 2020, covid struck and like many people, me and my family were sitting home bored. My older sister and I capitalized on at this time and convinced my parents to adopt a kitten. Introducing my first-born, Taara: "assets/img/IMG-20240222-WA0011" We adopted her when she was 8 weeks old from the Beaver county shelter. She was always extremely shy, but with lots of time and love, Taara has become an integral part of my family back in Pittsburgh. 
 
-## Inline HTML elements
+## Mew Cats Rescue
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+After I graduated college, I took a big leap and moved 15 hours away from home. From Pittsburgh, I found myself in Northwest Arkanasas; it was a complete change of pace. As somebody who values community, I knew volunteering at a cat rescue would be the perfect fit for me and fill the cat shaped hole in my heart. Currently, I am foster cat mom and cat babysitter, but as part of 2025, I hope to get more involved by helping write grants to support the non-profit. If interested in learning more about the rescue, please visit here: https://www.mewcatrescue.com/ 
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thomas A. Anderson</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+## Mishu
 
-Most of these elements are styled by browsers with few modifications on our part.
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Living alone in a new city was proving to be a lot more lonely than I thought. But then I met a fuzzy orange baby girl named Oyster. At first, she was extremely scared hiding under my couch. With some coaxing, she's gotten a lot more friendly and out-going. I knew immediately, Oyster now named Mishu, would be a foster fail. I chose the name Mishu as it means sweet in Bengali and is the best way to describe her sweet, innocent nature. Mishu had a hard life before meeting me. Her previous owners had abandoned her, her husband and her kittens. When found, the whole cat family had upper respiratory infections. I would come home from work and Mishu's eye would be crusted shut. She would be blind and hiding scared of what might be out there. With lots of love and care (and medicine!), she has made a full recovery. Her eyes are now wide open and ready to take on the world! Mishu loves to spend her days sleeping, till I come home and then she and I will cuddle, watch TV and nap together. My second-born, Mishu:
+"assets/img/PXL_20241018_150507806"
 
