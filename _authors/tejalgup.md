@@ -1,6 +1,6 @@
 ---
 layout: author
-photo: /assets/img/uploads/profile.png
+photo: assets/img/IMG_20240722_162835_870.jpg
 name: Tejal Gupta
 display_name: tej!
 position: Data Analyst @ P&G
