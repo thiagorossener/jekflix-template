@@ -19,7 +19,7 @@ I've always loved animals since I was young, but growing up, we weren't allowed 
 
 ## Mew Cat Rescue
 
-After I graduated college, I took a big leap and moved 15 hours away from home. From Pittsburgh, I found myself in Northwest Arkanasas; it was a complete change of pace. As somebody who values community, I knew volunteering at a cat rescue would be the perfect fit for me and fill the cat shaped hole in my heart. Currently, I am foster cat mom and cat babysitter, but as part of 2025, I hope to get more involved by helping write grants to support the non-profit. If interested in learning more about the rescue, please visit [Mew Cat Rescue](https://www.mewcatrescue.com/)
+After I graduated college, I took a big leap and moved 15 hours away from home. From Pittsburgh, I found myself in Northwest Arkanasas; it was a complete change of pace. As somebody who values community, I knew volunteering at a cat rescue would be the perfect fit for me and fill the cat shaped hole in my heart. Currently, I am foster cat mom and cat babysitter, but as part of 2025, I hope to get more involved by helping write grants to support the non-profit. If interested in learning more about the rescue, please visit https://www.mewcatrescue.com/
 
 ## Mishu
 
