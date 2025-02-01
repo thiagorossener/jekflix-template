@@ -3,7 +3,7 @@ date: 2022-12-20 12:26:40
 layout: post
 title: Data Science
 subtitle: 
-description: Analyzing stock performance 
+description: Programming and Computational Finance 
 image: /assets/img/growth-stock-chart.jpg
 optimized_image: /assets/img/growth-stock-chart.jpg
 category: DATASCIENCE
@@ -14,9 +14,31 @@ tags:
 author: Rachael
 ---
 
-For this project, I assume I am a Data Scientist working for a new startup investment firm that helps customers invest their money in stocks. 
+<h2 class="toc_title">Introduction</h2>
 
-I extracted financial data like historical share price and quaterly revenue reportings from various sources using Python libraries and webscraping on popular stocks such as Tesla and GameStop. 
+This project delves into the application of advanced programming and computational finance techniques to analyze and predict movements in financial markets. By employing a range of machine learning models and feature engineering techniques, this repository showcases the predictive power of historical market data on the S&P 500 index. The features engineered include various technical indicators like the Relative Strength Index (RSI), Exponential Weighted Moving Averages (EWM) Crossovers, Exponential Weighted Volatility, and Simple Moving Averages (SMA), providing a deep dive into predictive modeling strategies. 
+
+<h3 class="toc_title">Technologies Used</h3>
+- Programming Languages: Python
+- Libraries and Tools: Pandas, Numpy, Scikit-Learn, Matplotlib, Seaborn, Tensorflow
+- Financial Analysis Tools: Arima, LSTM, XGBoost, Gradient Boosting, K-Nearest Neighbors (KNN), Mean Reversion, Moving Average Convergence Divergence (MACD)
+
+<h3 class="toc_title">Feature Engineering Used</h3>
+- Relative Strength Index (RSI): Calculated periods of 10, 30, 60, and 200 to gauge the momentum. 
+- Exponential Weighted Moving (EWM) Crossovers: Includes combinations like 10/30, 10/60, and 30/60 to identify potential buy or sell signals. 
+- Exponential Weighted Volatility: Measured for 10/30, 10/60, and 30/60 periods to assess market risk.
+- Simple Moving Average (SMA): Periods of 21, 63, and 252 help smooth out price data and identify trends.
+
+<h2 class="toc_title">Predictive Modeling</h2>
+The project includes several models to predict the direction of the SPY500 based on its returns:
+
+- Direction Determination: The target variable 'Direction' is derived from the returns (log difference of adjusted close prices shifted by -5 days). A positive return sets the direction to 1 (up), and a negative return sets it to 0 (down).
+- Modeling Strategies:
+  - Ensemble Model: Combines XGBoost, Gradient Boosting, and KNN to predict market trends.
+  - LSTM Model: Utilizes Long Short-Term Memory networks to model sequences in stock price movements for more   accurate forecasts.
+  - Mean Reversion Strategy: Tests if the price will revert to its average, indicating potential trading opportunities.
+  - MACD Strategy: Utilizes the Moving Average Convergence Divergence to signal buying and selling points based on the crossover of moving averages.
+ 
 
 ![Graph](/assets/img/4.1.png "Graph")
 
