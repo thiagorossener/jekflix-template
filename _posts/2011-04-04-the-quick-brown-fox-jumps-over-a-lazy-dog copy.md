@@ -11,7 +11,7 @@ tags:
   - Stock
   - Finance
 author: Rachael
----
+
 
 <h2 class="toc_title">Introduction</h2>
 
@@ -21,7 +21,7 @@ This project delves into the application of advanced programming and computation
 <ul>
   <li><strong>Programming Languages:</strong> Python</li>
   <li><strong>Libraries and Tools:</strong> Pandas, Numpy, Scikit-Learn, Matplotlib, Seaborn, Tensorflow</li>
-  <li><strong>Financial Analysis Tools:</strong> Arima, LSTM, XGBoost, Gradient Boosting, K-Nearest Neighbors (KNN), Mean Reversion, Moving Average Convergence Divergence (MACD)</li>
+  <li><strong>Financial Analysis Tools:</strong> Arima, LSTM, XGBoost, Gradient Boosting, K-Nearest Neighbors (KNN), Mean Reversion</li>
 </ul>
 
 <h3 class="toc_title">Feature Engineering Used</h3>
