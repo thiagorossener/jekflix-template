@@ -41,22 +41,16 @@ The project includes several models to predict the direction of the SPY500 based
 <h2 class="toc_title">Modeling Strategies</h2>
 
 <h3 class="toc_title">Ensemble Model</h3>
-This strategy combines the strengths of three machine learning algorithms—XGBoost, Gradient Boosting, and K-Nearest Neighbors (KNN). I utilize 70% of the data for training and applied K-Fold Cross Validation to ensure the models generalize well on unseen data. XGBoost, Gradient Boosting, KNN achieved a mean accuracy of 0.6026, 0.6017, and 0.6197 respectively. 
-
-I aggregate the predictions from each model to form an 'ensembled' score for each instance. If the cumulative score from all models exceeds 1, we predict the market direction as 1 (positive trend), otherwise, it is 0 (negative trend).
-
-I multiply the ensemble predictions by the daily returns to calcuate the strategy's performance. By applying the exponential function to the cumulative sum of the returns adjusted by our model's prediction, I derive the growth of a hypothetical investment over time under each strategy. 
-
+<p>This strategy combines the strengths of three machine learning algorithms—XGBoost, Gradient Boosting, and K-Nearest Neighbors (KNN). I utilize 70% of the data for training and applied K-Fold Cross Validation to ensure the models generalize well on unseen data. XGBoost, Gradient Boosting, KNN achieved a mean accuracy of 0.6026, 0.6017, and 0.6197 respectively.</p>
+<p>I aggregate the predictions from each model to form an 'ensembled' score for each instance. If the cumulative score from all models exceeds 1, we predict the market direction as 1 (positive trend), otherwise, it is 0 (negative trend).</p>
+<p>I multiply the ensemble predictions by the daily returns to calculate the strategy's performance. By applying the exponential function to the cumulative sum of the returns adjusted by our model's prediction, I derive the growth of a hypothetical investment over time under each strategy.</p>
 
 <h3 class="toc_title">LSTM Model</h3>
-
-With the next strategy, I utilize a Long Short-Term Memory (LSTM) neural network to predict stock returns using a walk-forward validation approach with a sequence length of 2 days. The network consists of 2 layers with 100 and 50 neurons respectively. The LSTM model then outputs a forecast of daily returns, which we use to determine trading positions. The positions are then multiplied with the predicted returns which they are cumulatively summed and exponentiated to calculate strategy returns. 
-
+<p>With the next strategy, I utilize a Long Short-Term Memory (LSTM) neural network to predict stock returns using a walk-forward validation approach with a sequence length of 2 days. The network consists of 2 layers with 100 and 50 neurons respectively. The LSTM model then outputs a forecast of daily returns, which we use to determine trading positions. The positions are then multiplied with the predicted returns which they are cumulatively summed and exponentiated to calculate strategy returns.</p>
 
 <h3 class="toc_title">Mean Reversion</h3>
-Lastly, we examine the results for a Mean Reversion strategy. This strategy is based on the premise that prices and returns eventually move back towards the average. This model leverages Simple Moving Averages (SMA) to identify potential buy or sell opportunities when prices deviate significantly from their historical averages. 
-
-I use the SMA_21 and SMA_63 as short-term and medium-term moving averages, respectively, to gauge market trends and potential mean-reverting points. If SMA_21 is less than SMA_63, it suggests a potential upward mean reversion (signal set to 1), otherwise a downward reversion (signal set to -1). We then compute the strategy returns by multiplying the positions and the generated signals. To examine the overall strategy performance over time, I calculate the cumulative returns of this strategy by applying the exponential function to the cumulative sum of the strategy's daily returns. 
+<p>Lastly, we examine the results for a Mean Reversion strategy. This strategy is based on the premise that prices and returns eventually move back towards the average. This model leverages Simple Moving Averages (SMA) to identify potential buy or sell opportunities when prices deviate significantly from their historical averages.</p>
+<p>I use the SMA_21 and SMA_63 as short-term and medium-term moving averages, respectively, to gauge market trends and potential mean-reverting points. If SMA_21 is less than SMA_63, it suggests a potential upward mean reversion (signal set to 1), otherwise a downward reversion (signal set to -1). We then compute the strategy returns by multiplying the positions and the generated signals. To examine the overall strategy performance over time, I calculate the cumulative returns of this strategy by applying the exponential function to the cumulative sum of the strategy's daily returns.</p>
 
 <h2 class="toc_title">Results</h2>
 <p>The best-performing strategy is the ensemble model. By multiplying the last value of the ensembled model's cumulative returns, it resulted in a portfolio value of $2,762,969 from an initial investment of $500,000.</p>
