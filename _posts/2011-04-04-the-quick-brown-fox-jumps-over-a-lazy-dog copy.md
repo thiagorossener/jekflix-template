@@ -6,11 +6,10 @@ subtitle:
 description: Programming and Computational Finance 
 image: /assets/img/growth-stock-chart.jpg
 optimized_image: /assets/img/growth-stock-chart.jpg
-category: DATASCIENCE
+category: Computational Finance
 tags:
-  - Tesla
-  - GameStop
   - Stock
+  - Finance
 author: Rachael
 ---
 
@@ -39,9 +38,9 @@ The project includes several models to predict the direction of the SPY500 based
 <ul>
   <li><strong>Direction Determination:</strong> The target variable 'Direction' is derived from the returns (log difference of adjusted close prices shifted by -5 days). A positive return sets the direction to 1 (up), and a negative return sets it to 0 (down).</li>
 
-<h3 class="toc_title">Modeling Stratigies</h3>
+<h2 class="toc_title">Modeling Strategies</h2>
 
-<h4 class="toc_title">Ensemble Model</h4>
+<h3 class="toc_title">Ensemble Model</h3>
 This strategy combines the strengths of three machine learning algorithms—XGBoost, Gradient Boosting, and K-Nearest Neighbors (KNN). I utilize 70% of the data for training and applied K-Fold Cross Validation to ensure the models generalize well on unseen data. XGBoost, Gradient Boosting, KNN achieved a mean accuracy of 0.6026, 0.6017, and 0.6197 respectively. 
 
 I aggregate the predictions from each model to form an 'ensembled' score for each instance. If the cumulative score from all models exceeds 1, we predict the market direction as 1 (positive trend), otherwise, it is 0 (negative trend).
@@ -49,35 +48,40 @@ I aggregate the predictions from each model to form an 'ensembled' score for eac
 I multiply the ensemble predictions by the daily returns to calcuate the strategy's performance. By applying the exponential function to the cumulative sum of the returns adjusted by our model's prediction, I derive the growth of a hypothetical investment over time under each strategy. 
 
 
-<h4 class="toc_title">LSTM Model</h4>
+<h3 class="toc_title">LSTM Model</h3>
 
 With the next strategy, I utilize a Long Short-Term Memory (LSTM) neural network to predict stock returns using a walk-forward validation approach with a sequence length of 2 days. The network consists of 2 layers with 100 and 50 neurons respectively. The LSTM model then outputs a forecast of daily returns, which we use to determine trading positions. The positions are then multiplied with the predicted returns which they are cumulatively summed and exponentiated to calculate strategy returns. 
 
 
-<h4 class="toc_title">Mean Reversion</h4>
+<h3 class="toc_title">Mean Reversion</h3>
 Lastly, we examine the results for a Mean Reversion strategy. This strategy is based on the premise that prices and returns eventually move back towards the average. This model leverages Simple Moving Averages (SMA) to identify potential buy or sell opportunities when prices deviate significantly from their historical averages. 
 
 I use the SMA_21 and SMA_63 as short-term and medium-term moving averages, respectively, to gauge market trends and potential mean-reverting points. If SMA_21 is less than SMA_63, it suggests a potential upward mean reversion (signal set to 1), otherwise a downward reversion (signal set to -1). We then compute the strategy returns by multiplying the positions and the generated signals. To examine the overall strategy performance over time, I calculate the cumulative returns of this strategy by applying the exponential function to the cumulative sum of the strategy's daily returns. 
 
 <h2 class="toc_title">Results</h2>
+<p>The best-performing strategy is the ensemble model. By multiplying the last value of the ensembled model's cumulative returns, it resulted in a portfolio value of $2,762,969 from an initial investment of $500,000.</p>
+<ul>
+    <li>Maximum Drawdown: 13.84%</li>
+    <li>Longest Drawdown Period: 463 days</li>
+    <li>Sharpe Ratio: 3.92</li>
+    <li>Compound Annual Growth Rate: 37.60%</li>
+</ul>
 
-The best-performing strategy is the ensemble model. By multiplying the last value of the ensembled model's cumulative returns, it resulted in a portfolio value of $2,762,969 from an initial investment of $500,000. 
-- Maximum Drawdown: 13.84%
-- Longest Drawdown Period: 463 days
-- Sharpe Ratio: 3.92
-- Compound Annual Growth Rate: 37.60%
+<p>The second-best model was the LSTM model. The strategy resulted in a final value of $994,000.</p>
+<ul>
+    <li>Maximum Drawdown: 29.68%</li>
+    <li>Longest Drawdown period: 392 days</li>
+    <li>Sharpe Ratio: 1.54</li>
+    <li>Compound Annual Growth Rate: 13.69%</li>
+</ul>
 
-The second-best model was the LSTM model. The strategy resulted in a final value of $994,000.
-- Maximum Drawdown: 29.68%
-- Longest Drawdown period: 392 days
-- Sharpe Ratio: 1.54
-- Compound Annual Growth Rate: 13.69%
-
-The third-best model was the Mean Reversion strategy. The mean reversion strategy concluded with a portfolio value of $539,734.
-- Maximum Drawdown: 47.64%
-- Longest Drawdown period: 659 days
-- Sharpe Ratio: 0.057
-- Compound Annual Growth Rate: 1.44%
+<p>The third-best model was the Mean Reversion strategy. The mean reversion strategy concluded with a portfolio value of $539,734.</p>
+<ul>
+    <li>Maximum Drawdown: 47.64%</li>
+    <li>Longest Drawdown period: 659 days</li>
+    <li>Sharpe Ratio: 0.057</li>
+    <li>Compound Annual Growth Rate: 1.44%</li>
+</ul>
 
 
   
