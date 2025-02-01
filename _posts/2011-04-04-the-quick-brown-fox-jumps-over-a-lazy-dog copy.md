@@ -1,9 +1,9 @@
 ---
-date: 2022-12-20 12:26:40
+date: 2023-12-20 12:26:40
 layout: post
-title: Data Science
+title: Programming and Computational Finance 
 subtitle: 
-description: Programming and Computational Finance 
+description: How I optimize investment strategies with machine learning
 image: /assets/img/growth-stock-chart.jpg
 optimized_image: /assets/img/growth-stock-chart.jpg
 category: Computational Finance
