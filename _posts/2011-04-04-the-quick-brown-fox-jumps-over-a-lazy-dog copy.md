@@ -33,13 +33,12 @@ This project delves into the application of advanced programming and computation
 </ul>
 
 <h2 class="toc_title">Predictive Modeling</h2>
-The project includes several models to predict the direction of the SPY500 based on its returns:
-
+<p>The project includes several models to predict the direction of the SPY500 based on its returns:</p>
 <ul>
   <li><strong>Direction Determination:</strong> The target variable 'Direction' is derived from the returns (log difference of adjusted close prices shifted by -5 days). A positive return sets the direction to 1 (up), and a negative return sets it to 0 (down).</li>
+</ul>
 
 <h2 class="toc_title">Modeling Strategies</h2>
-
 <h3 class="toc_title">Ensemble Model</h3>
 <p>This strategy combines the strengths of three machine learning algorithms—XGBoost, Gradient Boosting, and K-Nearest Neighbors (KNN). I utilize 70% of the data for training and applied K-Fold Cross Validation to ensure the models generalize well on unseen data. XGBoost, Gradient Boosting, KNN achieved a mean accuracy of 0.6026, 0.6017, and 0.6197 respectively.</p>
 <p>I aggregate the predictions from each model to form an 'ensembled' score for each instance. If the cumulative score from all models exceeds 1, we predict the market direction as 1 (positive trend), otherwise, it is 0 (negative trend).</p>
