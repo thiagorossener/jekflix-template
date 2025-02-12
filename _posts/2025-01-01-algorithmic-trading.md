@@ -4,8 +4,8 @@ layout: post
 title: BTC Algorithmic Trading 
 subtitle: 
 description: 
-image: /assets/img/growth-stock-chart.jpg
-optimized_image: /assets/img/growth-stock-chart.jpg
+image: /assets/img/bitcoin.jpeg
+optimized_image: /assets/img/bitcoin.jpeg
 category: Market Microstructure and Algorithmic Trading
 tags:
   - Stock
