@@ -30,7 +30,7 @@ author: Rachael
 <ul>
     <li><strong>Differential Analysis:</strong> Identified the differenced call and put options between in-the-money (ITM) and out-of-the-money (OTM) positions, enhancing the focus on more relevant market behaviors.</li>
     <li><strong>Mid-Price Calculation:</strong> Calculated the mid-price for each option by averaging the best bid and the best offer. This step ensures more accurate and stable pricing input for subsequent volatility calculations.</li>
-    <li><strong>Rate Interpolation:</strong> Employed interpolation methods on zero rates to derive a smooth curve, facilitating more precise calculations of forward rates applicable over the options' lifespans.</li>
+    <li><strong>Rate Interpolation:</strong> Employed interpolation methods on zero rates to derive a smooth curve.</li>
     <li><strong>Forward Price Computation:</strong> Determined forward prices using interpolated rates, essential for understanding the expected future prices of the underlying securities without the inclusion of carry costs such as dividends and storage.</li>
     <li><strong>Implied Volatility Estimation:</strong> Calculated the implied volatility exclusively for out-of-the-money (OTM) options to focus on options that are more sensitive to market movements, providing deeper insights into market expectations and sentiment.</li>
 </ul>
