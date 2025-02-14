@@ -95,29 +95,47 @@ Bachelier Price: 37.7144
 
 This section focuses on simulating hedging errors in a Black-Scholes environment. The script evaluates the effectiveness of dynamic hedging by simulating the path of stock prices using Brownian motion and assessing the hedging performance over time.
 
-Assume the following parameters: S0 = $100, σ = 0.2, r = 5%, T = 1/12 year and K = $100. By applying the Black Scholes model to simulate the stock price over a one-month period, we explore how a short ATM call option position can be dynamically hedged using the different frequencies of adjusting the position in underlying stock and bond. 
+Assume the following parameters: S0 = $100, σ = 0.2, r = 5%, T = 1/12 year and K = $100. By applying the Black Scholes model to simulate the stock price over one month, we explore how a short ATM call option position can be dynamically hedged using the different frequencies of adjusting the position in underlying stock and bond. 
 
+<h3 class="toc_title">Hedging Frequency</h3>
 Assume there are 21 trading days over 1 month and we hedge N times during the life of the call options which expires in a month.
 - N = 21 (hedge once every day)
 - N = 84 (hedge 4 times every day)
 
+By calculating the delta of the option and bond position, we measure the effectiveness of the hedging strategy by calculating the cumulative error between the hedged portfolio's value and the actual option payoff over time. This helps to identify any deviations from the ideal hedged position. We then run multiple simulations to generate a broad set of data on hedging errors across different scenarios to provide insights into the average performance and variability of the hedging strategy. We also calculate the Greeks—Delta, Gamma, Theta, and Vega—to analyze how sensitive the option's value is to changes in underlying factors such as stock price, volatility, and time decay.
+
+
+<img width="393" alt="Screenshot 2025-02-14 at 9 37 15 AM" src="https://github.com/user-attachments/assets/bc334db6-f2b1-4db6-9af7-a264f906521d" />
+
+From the result, we can see that with N=21 hedges during the life of the call options, the mean(hedging error) is slightly negative. However, the magnitude being very small indicates a relatively effective hedging strategy. However, with N=84, the hedging strategy is nearly perfect on average, which means a more effective hedging strategy. 
+
+The lower standard deviation for N=84 also suggests that the hedging strategy becomes more stable and consistent. 
+
+<img width="1140" alt="Screenshot 2025-02-14 at 9 42 08 AM" src="https://github.com/user-attachments/assets/fd220721-25c3-4ab8-88e9-e24028084fd8" />
 
 
 
+<h3 class="toc_title">Section 4i: Interpret Greek Surfaces</h3>
 
 
+<img width="347" alt="Screenshot 2025-02-14 at 9 43 29 AM" src="https://github.com/user-attachments/assets/99f49126-6bf1-4562-84c9-57f724fb0ec5" />
 
 
+Delta measures the sensitivity of the option's price to a change in the price of the underlying asset. As you can see in the delta surface, the delta generally increases as the stock price approaches the strike price from below and tends to flatten out at 1.0 as the option goes deeper in the money (stock price > strike price). The higher delta values near 1 indicate the option's price will move almost one-for-one with the stock price, which is typical for deep-in-the-money calls. 
 
 
+<img width="356" alt="Screenshot 2025-02-14 at 9 46 27 AM" src="https://github.com/user-attachments/assets/9e612f91-7bd0-4db0-921f-f9b647a79159" />
+
+Gamma measures the rate of change in delta with respect to changes in the underlying asset's price. This is the second derivative of the option price relative to the stock price. As you can see from the Gamma Surface graph, Gamma peaks as the options near the money (where the stock price is close to the strike price) and tends to be higher as the option approaches expiration. This is depicted by the spike seen in the graph. The spike in Gamma around the at-the-money (ATM) option as expiration approaches suggests heightened sensitivity; small changes in the stock price can lead to large changes in Delta. 
 
 
+<img width="363" alt="Screenshot 2025-02-14 at 9 48 47 AM" src="https://github.com/user-attachments/assets/77db4132-966a-4ca4-992d-14c87329c0d2" />
 
+Theta measures the sensitivity of the option's price to the passage of time, also known as the "time decay" of the option. It generally has a negative value, indicating that the value of an option decreases as time progresses. As you can see from the Theta Surface Graph, there is a steep decline, especially as the option approaches expiration, which is typical since Theta decay tends to accelerate as the option nears its expiry date. 
 
+<img width="347" alt="Screenshot 2025-02-14 at 9 51 02 AM" src="https://github.com/user-attachments/assets/077b1fe3-df78-4ccc-817d-c5232e761bfe" />
 
-
-
-
+Vega measures the sensitivity of the option's price to changes in the volatility of the underlying asset. It indicates the amount an option's price changes in response to a 1% change in the volatility of the underlying asset. As you can see from the Vega Surface graph, vega tends to be higher for options that are near the money and decreases as the option moves deeper into or out of the money. It also decreases as the option approaches expiration. The graph shows that Vega is particularly sensitive around at-the-money options, with sensitivity tapering off as the options move away from this point or as time to expiration decreases.
 
 
 
