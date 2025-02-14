@@ -57,30 +57,38 @@ Key Importance:
 - The volatility smile, which shows higher volatilities for deep-in-the-money (ITM) and out-of-the-money (OTM) options compared to at-the-money (ATM) options, is well represented by the SABR model. This is crucial because capturing the curvature of the smile is essential for accurate option pricing, particularly for exotic options which may depend heavily on the shape of the implied volatility curve. 
 
 
-<h2 class="toc_title">Static Calibration for Exotic Options</h2>
+<h2 class="toc_title">Section 3: Static Calibration for Exotic Option Pricing</h2>
+This section focuses on employing a static replication approach to price exotic options. Static replication involves constructing a portfolio of standard options (calls and puts) to replicate the payoff of an exotic option. Unlike dynamic methods such as the Black-Scholes and Bachelier models, static replication does not directly depend on a volatility parameter (like the calibrated sigma) for its pricing mechanism.
 
-With a set expiry, time to maturity, and rates, along with the calibration volatility from the SABR model, we use these parameters to feed into derivative pricing models such as Black Scholes and Bachelier. 
+<h3>Script Functionality and Methodology</h3>
+<p>The script for static replication is structured to price an exotic option by aggregating contributions from different standard options available in the market. Here's a breakdown of the process:</p>
+<ul>
+    <li><strong>Filtering Market Data:</strong> The script selects options that expire on the same date as the exotic option to ensure consistency in the pricing period.</li>
+    <li><strong>Calculating Time to Maturity:</strong> Determines how much time is left until the options expire, which is crucial for accurately assessing their value.</li>
+    <li><strong>Interpolating Zero Rates:</strong> It uses a zero rate curve to interpolate the risk-free interest rates, providing a discount factor for the pricing model.</li>
+    <li><strong>Pricing via Static Replication:</strong> Each strike from the market data contributes to the final price of the exotic option. This involves calculating the incremental prices of calls and puts at each strike and summing them to get the total price. The unique aspect here is the integration of the payoff's second derivative, which helps approximate the curvature of the payoff landscape more accurately.</li>
+</ul>
 
-Black Scholes
-- The analytical price is 38.5955
-- Monte Carlo: 37.7064 ± 0.0024 (95% CI)
-- p-value = 0
-- Implications: The large difference and the low p-value in the Black-Scholes model suggest that there may be some model misfit or that the assumptions of the Black-Scholes model might not hold for this particular exotic payoff. The significant statistical difference indicates that the calibrated model may not be adequately capturing the dynamics needed to accurately price this exotic option.
+<h3>Why Not Use Calibrated Sigma?</h3>
+<p>Unlike Black-Scholes or Bachelier models, static replication does not compute prices based on theoretical forward volatilities or any other stochastic model parameters. Instead, it uses actual market prices of standard options to construct the payoff. This method is particularly useful when the market provides a rich set of option prices across various strikes, offering a more direct and possibly more accurate market reflection than model-based approaches that depend heavily on assumptions like constant volatility (sigma).</p>
 
-Bachelier
-- Analytical Price: 37.7144
-- Monte Carlo: 37.7040 ± 0.0024 (95% CI)
-- P-value: 0.4552
-- Implication: The small difference and high p-value in the Bachelier model suggest that this model fits the pricing data well. The results indicate that the Bachelier model, which assumes a normal distribution of the underlying asset rather than a log-normal distribution, maybe more accurate for this specific exotic option's payoff.
+<h3>Benefits of Static Calibration</h3>
+<p>Static replication provides several benefits, including:</p>
+<ul>
+    <li><strong>Market-based Pricing:</strong> It leverages real market data, which can lead to more accurate pricing of exotic options especially in volatile or illiquid markets.</li>
+    <li><strong>Reduction of Model Risk:</strong> By not relying on specific model parameters, it avoids the pitfalls of assumptions that might not hold true across different market conditions.</li>
+    <li><strong>Transparency and Simplicity:</strong> The approach is straightforward and transparent, using observable market prices without the need for complex modeling.</li>
+</ul> 
 
-Static Replication Price (using market data)
-Payoff - 36.8650
+<h3>Resultsh3>
+Static Replication Price: 36.8650
+Black-Scholes Price: 38.5955
+Bachelier Price: 37.7144
 
 
-<h2 class="toc_title">Arbitrage Opportunities</h2>
-I use the butterfly test to check for potential arbitrage opportunities. This strategy involves buying and selling options at 3 different strike prices, aiming to profit from minimal price movement in the underlying asset. 
-
-The script calculates a negative butterfly value which indicates a potential arbitrage opportunity. With a hypothetical value of 100 contract, the profit comes out to be approximately $30,000. 
+<h3>Arbitrage Opportunity Detection</h3>
+<p> By employing a strategic butterfly spread test, my project delves into the nuanced realms of options trading. This test scrutinizes sets of three consecutive puts to uncover pricing inefficiencies that can be exploited for profit, bolstering our understanding of market dynamics and the potential for arbitrage.</p>
+<p>The results from this segment of the script highlighted potential arbitrage opportunities that could yield significant returns. For instance, executing trades on identified spreads with a calculated negative butterfly value can lead to substantial profits, as demonstrated by a hypothetical scenario where trading 100 contracts could potentially result in a profit of approximately $30,000.</p>
 
 <h2 class="toc_title">Dynamic Replication</h2>
 
