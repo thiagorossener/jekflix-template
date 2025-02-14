@@ -90,7 +90,18 @@ Bachelier Price: 37.7144
 <p> By employing a strategic butterfly spread test, my project delves into the nuanced realms of options trading. This test scrutinizes sets of three consecutive puts to uncover pricing inefficiencies that can be exploited for profit, bolstering our understanding of market dynamics and the potential for arbitrage.</p>
 <p>The results from this segment of the script highlighted potential arbitrage opportunities that could yield significant returns. For instance, executing trades on identified spreads with a calculated negative butterfly value can lead to substantial profits, as demonstrated by a hypothetical scenario where trading 100 contracts could potentially result in a profit of approximately $30,000.</p>
 
-<h2 class="toc_title">Dynamic Replication</h2>
+
+<h2 class="toc_title">Section 4: Dynamic Replication</h2>
+
+This section focuses on simulating hedging errors in a Black-Scholes environment. The script evaluates the effectiveness of dynamic hedging by simulating the path of stock prices using Brownian motion and assessing the hedging performance over time.
+
+Assume the following parameters: S0 = $100, σ = 0.2, r = 5%, T = 1/12 year and K = $100. By applying the Black Scholes model to simulate the stock price over a one-month period, we explore how a short ATM call option position can be dynamically hedged using the different frequencies of adjusting the position in underlying stock and bond. 
+
+Assume there are 21 trading days over 1 month and we hedge N times during the life of the call options which expires in a month.
+- N = 21 (hedge once every day)
+- N = 84 (hedge 4 times every day)
+
+
 
 
 
