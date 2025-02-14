@@ -4,7 +4,7 @@ layout: post
 title: Advanced Options Valuation
 subtitle: 
 description: 
-image:/assets/img/exoticoptions.webp
+image: /assets/img/exoticoptions.webp
 optimized_image: /assets/img/exoticoptions.webp
 category: 
 tags:
