@@ -13,15 +13,43 @@ tags:
 author: Rachael
 ---
 <h2 class="toc_title">Analytical Option Formulas Used</h2>
-- Black Scholes
-- Bachelier
-- Implied Volatility
-- Interpolation Function  
-  - This function calculates the at-the-money (ATM) implied volatility based on the volatilities of out-of-the-money (OTM) call and put options. It uses a weighted average where the weights are determined by the distance of the underlying asset's price from the strike prices of the put and call options. The function adjusts the put's volatility by the proportional difference between the call's and put's volatilities, performing a linear interpolation based on where the underlying asset's price is situated relative to the two strike prices. 
-- Static Replication
-  - Static replication involves using a portfolio of simpler financial instruments, such as standard options, whose combined value replicates the payoff of more complex or exotic derivatives. It is a valuation method that does not rely on dynamic trading strategies but rather on creating a replicating portfolio at a single point in time using available market instruments.
+<ul>
+    <li><strong>Black-Scholes Formula</strong>
+        <p>\[
+        C(S, t) = N(d_1)S - N(d_2)Ke^{-r(T-t)}
+        \]</p>
+        <p>Where:</p>
+        <ul>
+            <li>\( d_1 = \frac{\ln(\frac{S}{K}) + (r + \frac{\sigma^2}{2})(T-t)}{\sigma\sqrt{T-t}} \)</li>
+            <li>\( d_2 = d_1 - \sigma\sqrt{T-t} \)</li>
+            <li>\( N \) is the cumulative distribution function of the standard normal distribution.</li>
+        </ul>
+    </li>
+    <li><strong>Bachelier Model</strong>
+        <p>Unlike the Black-Scholes model, the Bachelier model assumes that the underlying asset prices follow a normal distribution rather than a log-normal distribution:</p>
+        <p>\[
+        C(S, t) = (S-K)N(d) + \sigma\sqrt{T-t}n(d)
+        \]</p>
+        <p>Where \( d = \frac{S-K}{\sigma\sqrt{T-t}} \) and \( n \) is the standard normal probability density function.</p>
+    </li>
+    <li><strong>Implied Volatility</strong>
+        <p>Implied volatility is derived from the market price of a European call or put option and represents the volatility implied by the market price, assuming the Black-Scholes model holds:</p>
+        <p>\[
+        \sigma_{imp} = \sqrt{\frac{2\pi}{T}}\frac{C}{S}
+        \]</p>
+    </li>
+    <li><strong>Interpolation Function</strong>
+        <p>This function calculates the at-the-money (ATM) implied volatility based on the volatilities of out-of-the-money (OTM) call and put options. It uses a weighted average where the weights are determined by the distance of the underlying asset's price from the strike prices of the put and call options:</p>
+        <p>\[
+        \sigma_{ATM} = w_c \sigma_c + (1 - w_c) \sigma_p
+        \]</p>
+        <p>Where \( w_c \) is the weight for the call's volatility \( \sigma_c \), and \( \sigma_p \) is the put's volatility adjusted by the proportional difference.</p>
+    </li>
+    <li><strong>Static Replication</strong>
+        <p>Static replication involves using a portfolio of simpler financial instruments, such as standard options, whose combined value replicates the payoff of more complex or exotic derivatives. This method does not rely on dynamic trading strategies but rather on creating a replicating portfolio at a single point in time using available market instruments.</p>
+    </li>
+</ul>
 
- 
 
 
 <h2 class="toc_title">Section 1: Data Preparation and Initial Calculations</h2>
@@ -58,7 +86,7 @@ Key Importance:
 
 
 <h2 class="toc_title">Section 3: Static Calibration for Exotic Option Pricing</h2>
-This section focuses on employing a static replication approach to price exotic options. Static replication involves constructing a portfolio of standard options (calls and puts) to replicate the payoff of an exotic option. Unlike dynamic methods such as the Black-Scholes and Bachelier models, static replication does not directly depend on a volatility parameter (like the calibrated sigma) for its pricing mechanism.
+This section explores the static replication approach to price exotic options, a method distinct from dynamic models like Black-Scholes or Bachelier. Static replication involves constructing a portfolio of standard options (calls and puts) that mimics the payoff profile of an exotic option. This technique leverages actual market data rather than relying on theoretical parameters such as volatility (sigma).
 
 <h3>Script Functionality and Methodology</h3>
 <p>The script for static replication is structured to price an exotic option by aggregating contributions from different standard options available in the market. Here's a breakdown of the process:</p>
@@ -87,15 +115,15 @@ Bachelier Price: 37.7144
 
 
 <h3>Arbitrage Opportunity Detection</h3>
-<p> By employing a strategic butterfly spread test, my project delves into the nuanced realms of options trading. This test scrutinizes sets of three consecutive puts to uncover pricing inefficiencies that can be exploited for profit, bolstering our understanding of market dynamics and the potential for arbitrage.</p>
+<p> By employing a strategic butterfly spread test, my project delves into the nuanced realms of options trading. </p>
 <p>The results from this segment of the script highlighted potential arbitrage opportunities that could yield significant returns. For instance, executing trades on identified spreads with a calculated negative butterfly value can lead to substantial profits, as demonstrated by a hypothetical scenario where trading 100 contracts could potentially result in a profit of approximately $30,000.</p>
 
 
 <h2 class="toc_title">Section 4: Dynamic Replication</h2>
 
-This section focuses on simulating hedging errors in a Black-Scholes environment. The script evaluates the effectiveness of dynamic hedging by simulating the path of stock prices using Brownian motion and assessing the hedging performance over time.
+<p>This section focuses on simulating hedging errors in a Black-Scholes environment. The script evaluates the effectiveness of dynamic hedging by simulating the path of stock prices using Brownian motion and assessing the hedging performance over time.</p>
 
-Assume the following parameters: S0 = $100, σ = 0.2, r = 5%, T = 1/12 year and K = $100. By applying the Black Scholes model to simulate the stock price over one month, we explore how a short ATM call option position can be dynamically hedged using the different frequencies of adjusting the position in underlying stock and bond. 
+<p>Assume the following parameters: S0 = $100, σ = 0.2, r = 5%, T = 1/12 year and K = $100. By applying the Black Scholes model to simulate the stock price over one month, we explore how a short ATM call option position can be dynamically hedged using the different frequencies of adjusting the position in underlying stock and bond.</p>
 
 <h3 class="toc_title">Hedging Frequency</h3>
 Assume there are 21 trading days over 1 month and we hedge N times during the life of the call options which expires in a month.
