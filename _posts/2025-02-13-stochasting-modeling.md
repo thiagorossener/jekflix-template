@@ -12,46 +12,56 @@ tags:
   - Finance
 author: Rachael
 ---
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<h2 class="toc_title">Analytical Option Formulas Used</h2>
-<ul>
-    <li><strong>Black-Scholes Formula</strong>
-        <p>\[
-        C(S, t) = N(d_1)S - N(d_2)Ke^{-r(T-t)}
-        \]</p>
-        <p>Where:</p>
-        <ul>
-            <li>\( d_1 = \frac{\ln(\frac{S}{K}) + (r + \frac{\sigma^2}{2})(T-t)}{\sigma\sqrt{T-t}} \)</li>
-            <li>\( d_2 = d_1 - \sigma\sqrt{T-t} \)</li>
-            <li>\( N \) is the cumulative distribution function of the standard normal distribution.</li>
-        </ul>
-    </li>
-    <li><strong>Bachelier Model</strong>
-        <p>Unlike the Black-Scholes model, the Bachelier model assumes that the underlying asset prices follow a normal distribution rather than a log-normal distribution:</p>
-        <p>\[
-        C(S, t) = (S-K)N(d) + \sigma\sqrt{T-t}n(d)
-        \]</p>
-        <p>Where \( d = \frac{S-K}{\sigma\sqrt{T-t}} \) and \( n \) is the standard normal probability density function.</p>
-    </li>
-    <li><strong>Implied Volatility</strong>
-        <p>Implied volatility is derived from the market price of a European call or put option and represents the volatility implied by the market price, assuming the Black-Scholes model holds:</p>
-        <p>\[
-        \sigma_{imp} = \sqrt{\frac{2\pi}{T}}\frac{C}{S}
-        \]</p>
-    </li>
-    <li><strong>Interpolation Function</strong>
-        <p>This function calculates the at-the-money (ATM) implied volatility based on the volatilities of out-of-the-money (OTM) call and put options. It uses a weighted average where the weights are determined by the distance of the underlying asset's price from the strike prices of the put and call options:</p>
-        <p>\[
-        \sigma_{ATM} = w_c \sigma_c + (1 - w_c) \sigma_p
-        \]</p>
-        <p>Where \( w_c \) is the weight for the call's volatility \( \sigma_c \), and \( \sigma_p \) is the put's volatility adjusted by the proportional difference.</p>
-    </li>
-    <li><strong>Static Replication</strong>
-        <p>Static replication involves using a portfolio of simpler financial instruments, such as standard options, whose combined value replicates the payoff of more complex or exotic derivatives. This method does not rely on dynamic trading strategies but rather on creating a replicating portfolio at a single point in time using available market instruments.</p>
-    </li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Option Formulas</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <h1>Analytical Option Formulas Used</h1>
+
+    <h2>Black-Scholes Formula</h2>
+    <p>$$ C(S, t) = N(d_1)S - N(d_2)Ke^{-r(T-t)} $$</p>
+    <p>Where:</p>
+    <ul>
+        <li>$$ d_1 = \frac{\ln(\frac{S}{K}) + (r + \frac{\sigma^2}{2})(T-t)}{\sigma\sqrt{T-t}} $$</li>
+        <li>$$ d_2 = d_1 - \sigma\sqrt{T-t} $$</li>
+        <li>$$ N $$ is the cumulative distribution function of the standard normal distribution.</li>
+    </ul>
+
+    <h2>Bachelier Model</h2>
+    <p>Unlike the Black-Scholes model, the Bachelier model assumes that the underlying asset prices follow a normal distribution rather than a log-normal distribution:</p>
+    <p>$$ C(S, t) = (S-K)N(d) + \sigma\sqrt{T-t}n(d) $$</p>
+    <p>Where $$ d = \frac{S-K}{\sigma\sqrt{T-t}} $$ and $$ n $$ is the standard normal probability density function.</p>
+
+    <h2>Implied Volatility</h2>
+    <p>Implied volatility is derived from the market price of a European call or put option and represents the volatility implied by the market price, assuming the Black-Scholes model holds:</p>
+    <p>$$ \sigma_{imp} = \sqrt{\frac{2\pi}{T}}\frac{C}{S} $$</p>
+
+    <h2>Interpolation Function</h2>
+    <p>This function calculates the at-the-money (ATM) implied volatility based on the volatilities of out-of-the-money (OTM) call and put options. It uses a weighted average where the weights are determined by the distance of the underlying asset's price from the strike prices of the put and call options:</p>
+    <p>$$ \sigma_{ATM} = w_c \sigma_c + (1 - w_c) \sigma_p $$</p>
+    <p>Where $$ w_c $$ is the weight for the call's volatility $$ \sigma_c $$, and $$ \sigma_p $$ is the put's volatility adjusted by the proportional difference.</p>
+</body>
+</html>
+
 
 
 
