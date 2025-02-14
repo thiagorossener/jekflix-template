@@ -12,46 +12,37 @@ tags:
   - Finance
 author: Rachael
 ---
-<h2 class="toc_title">Analytical Option Formula</h2>
-- Black Scholes
-- input formula
-- Bachelier 
-- input formula
-- Implied Volatility
-- Interpolation function: This function is designed to calculate the at-the-money (ATM) implied volatility based on the volatility of out-of-the-money(OTM) call and put options. It computes a weighted proportion based on the distance of the underlying asset's price from the put strike price relative to the total interval between the call and put strike prices. This ratio helps to determine how much weight should be given to the call's volatility versus the put's volatility. It then adjusts the put's volatility by the proportional difference between the call's and put's volatilities. This step essentially performs a linear interpolation between the 2 volatilities, based on where the underlying asset's price lies relative to the 2 strike prices. 
+<h2 class="toc_title">Analytical Option Formulas Used</h2>
+<h3>Black Scholes</h3>
+<h3>Bachelier</h3>
+<h3>Implied Volatility</h3>
+<h3>Interpolation Function</h3>
+<p><strong>Functionality:</strong> This function calculates the at-the-money (ATM) implied volatility based on the volatilities of out-of-the-money (OTM) call and put options. It uses a weighted average where the weights are determined by the distance of the underlying asset's price from the strike prices of the put and call options. The function adjusts the put's volatility by the proportional difference between the call's and put's volatilities, performing a linear interpolation based on where the underlying asset's price is situated relative to the two strike prices.</p>
+<h3>Static Replication</h3>
+<p><strong>Approach:</strong> Static replication involves using a portfolio of simpler financial instruments, such as standard options, whose combined value replicates the payoff of more complex or exotic derivatives. It is a valuation method that does not rely on dynamic trading strategies but rather on creating a replicating portfolio at a single point in time using available market instruments.</p>
  
 
 
-<h2 class="toc_title">First Step</h2>
-I first uploaded options data from spx and spy containing data such as data, expiry date, cp_flag, strike price, best bid, best offer, and exercise style. I also included zero yield curve rates from 2020-12-01. 
+<h2 class="toc_title">Section 1: Data Preparation and Initial Calculations</h2>
+<p>This project harnesses options data from SPX (S&P 500 index options) and SPY (SPDR S&P 500 ETF Trust options), along with yield rates from the zero curve, to perform various analyses and calculations. The initial stage of this project involves preparing and calculating key metrics that set the foundation for more complex analysis in later stages. Here are the detailed steps undertaken:</p>
 
-With the rates data, I interpolate the zero yield curve rates. With this function, it can then be used to find interpolated y-values (rates) for new x-values that are not explicitly present in the original data. 
-
-I then differentiate the calls between ITM and OTM. 
-ITM:
-  - Call: strike price  < current price
-  - Put: strike price > current price
-
-OTM:
-  - Call: strike price > current price
-  - Put: strike price < current price
-
-Calculate mid-price by adding the best bid and best offer price and dividing it by 2. 
-
-Calculate days from expiry for each SPX and SPY column. 
-
-Calculate rates by interpolating using zero rates from 20201201. 
-
-Calculate forward price at expiry: spx_underlying * np.power(np.e, ((df_spx["r"]) * (df_spx["T"]))) 
-
-Calculate implied volatility for OTM only. 
+<ul>
+    <li><strong>Differential Analysis:</strong> Identified the differenced call and put options between in-the-money (ITM) and out-of-the-money (OTM) positions, enhancing the focus on more relevant market behaviors.</li>
+    <li><strong>Mid-Price Calculation:</strong> Calculated the mid-price for each option by averaging the best bid and the best offer. This step ensures more accurate and stable pricing input for subsequent volatility calculations.</li>
+    <li><strong>Rate Interpolation:</strong> Employed interpolation methods on zero rates to derive a smooth curve, facilitating more precise calculations of forward rates applicable over the options' lifespans.</li>
+    <li><strong>Forward Price Computation:</strong> Determined forward prices using interpolated rates, essential for understanding the expected future prices of the underlying securities without the inclusion of carry costs such as dividends and storage.</li>
+    <li><strong>Implied Volatility Estimation:</strong> Calculated the implied volatility exclusively for out-of-the-money (OTM) options to focus on options that are more sensitive to market movements, providing deeper insights into market expectations and sentiment.</li>
+</ul>
 
 
-<h2 class="toc_title">SABR Model Calibration</h2>
+<h2 class="toc_title">Section 2: SABR Model Calibration</h2>
+This section of the project focuses on calibrating the Stochastic Alpha, Beta, Rho (SABR) model. It is particularly useful in the pricing of derivatives, as it accounts for the dynamic volatility smile -- a common phenomenon where implied volatility differs for options with different strikes or maturities. 
 
-We calibrate the SABR Model Parameters by designing it to find the optimal parameters α, ρ, and 𝜈 of the SABR model that minimize the squared differences between the model-implied volatilities and observed market volatilities for a given set of strikes. 
-
-The SABR function calculates the implied volatility given the forward price, strike price, time to maturity, and the SABR model parameters. 
+Script Functionality:
+- Implied Volatility Calculation: The script begins by defining a function to calculate implied volatilities from market prices of options. This is essential for calibrating the SABR model as it requires a benchmark against market data.
+- SABR Model Function: This defines the SABR model's formula to calculate implied volatility given parameters alpha, beta, rho, and nu, along with forward price F and strike price K.
+- Calibration Process: Utilizes the least_squares method to fit the SABR model parameters to observed market data by minimizing the difference between the modeled and observed implied volatilities. This fitting process adjusts alpha, rho, and nu to closely align the model with market behaviors.
+  
 
 
 <h2 class="toc_title">Static Calibration for Exotic Options</h2>
