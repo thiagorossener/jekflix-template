@@ -1,12 +1,12 @@
 ---
 date: 2023-12-20 12:26:40
 layout: post
-title: Programming and Computational Finance 
+title: Advanced Options Valuation
 subtitle: 
-description: How I optimize investment strategies with machine learning
-image: /assets/img/growth-stock-chart.jpg
-optimized_image: /assets/img/growth-stock-chart.jpg
-category: Computational Finance
+description: 
+image:/assets/img/exoticoptions.webp
+optimized_image: /assets/img/exoticoptions.webp
+category: 
 tags:
   - Stock
   - Finance
