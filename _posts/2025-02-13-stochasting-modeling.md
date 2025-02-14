@@ -13,13 +13,14 @@ tags:
 author: Rachael
 ---
 <h2 class="toc_title">Analytical Option Formulas Used</h2>
-<h3>Black Scholes</h3>
-<h3>Bachelier</h3>
-<h3>Implied Volatility</h3>
-<h3>Interpolation Function</h3>
-<p><strong>Functionality:</strong> This function calculates the at-the-money (ATM) implied volatility based on the volatilities of out-of-the-money (OTM) call and put options. It uses a weighted average where the weights are determined by the distance of the underlying asset's price from the strike prices of the put and call options. The function adjusts the put's volatility by the proportional difference between the call's and put's volatilities, performing a linear interpolation based on where the underlying asset's price is situated relative to the two strike prices.</p>
-<h3>Static Replication</h3>
-<p><strong>Approach:</strong> Static replication involves using a portfolio of simpler financial instruments, such as standard options, whose combined value replicates the payoff of more complex or exotic derivatives. It is a valuation method that does not rely on dynamic trading strategies but rather on creating a replicating portfolio at a single point in time using available market instruments.</p>
+- Black Scholes
+- Bachelier
+- Implied Volatility
+- Interpolation Function  
+  - This function calculates the at-the-money (ATM) implied volatility based on the volatilities of out-of-the-money (OTM) call and put options. It uses a weighted average where the weights are determined by the distance of the underlying asset's price from the strike prices of the put and call options. The function adjusts the put's volatility by the proportional difference between the call's and put's volatilities, performing a linear interpolation based on where the underlying asset's price is situated relative to the two strike prices. 
+- Static Replication
+  - Static replication involves using a portfolio of simpler financial instruments, such as standard options, whose combined value replicates the payoff of more complex or exotic derivatives. It is a valuation method that does not rely on dynamic trading strategies but rather on creating a replicating portfolio at a single point in time using available market instruments.
+
  
 
 
