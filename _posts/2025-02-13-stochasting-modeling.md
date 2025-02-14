@@ -100,6 +100,7 @@ This section explores the static replication approach to price exotic options, a
 </ul> 
 
 <h3>Resultsh3>
+
 Static Replication Price: 36.8650
 Black-Scholes Price: 38.5955
 Bachelier Price: 37.7144
@@ -107,8 +108,12 @@ Bachelier Price: 37.7144
 
 <h3>Arbitrage Opportunity Detection</h3>
 <p> By employing a strategic butterfly spread test, my project delves into the nuanced realms of options trading. </p>
-<p>The results from this segment of the script highlighted potential arbitrage opportunities that could yield significant returns. For instance, executing trades on identified spreads with a calculated negative butterfly value can lead to substantial profits, as demonstrated by a hypothetical scenario where trading 100 contracts could potentially result in a profit of approximately $30,000.</p>
 
+<img width="380" alt="Screenshot 2025-02-14 at 10 20 15 AM" src="https://github.com/user-attachments/assets/1abd022f-1951-493a-89c2-55db92117980" />
+
+<p>From the result, a negative butterfly value suggests that buying the wings (K1 and K3) and selling tice the body (K2) of the butterfly fields a net debit from the position. This scenario points to an overpriced middle strike relative to the strikes on either side, thus revealing a mispricing in the market.</p>
+
+<p>Setting up 1000 butterfly spreads across the different strike prices and conditions listed provides an approximate $30,000 in profit.</p>
 
 <h2 class="toc_title">Section 4: Dynamic Replication</h2>
 
