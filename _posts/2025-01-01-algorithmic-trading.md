@@ -8,8 +8,8 @@ image: /assets/img/bitcoin.jpeg
 optimized_image: /assets/img/bitcoin.jpeg
 category: Real-Time Crypto Trading Model
 tags:
-  - Stock
-  - Finance
+  - BTC
+  - Algorithmic Trading
 author: Rachael
 ---
 
