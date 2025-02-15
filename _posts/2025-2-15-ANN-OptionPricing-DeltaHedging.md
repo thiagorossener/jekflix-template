@@ -6,7 +6,7 @@ subtitle: Applied Quantitative Research Methods
 description: Applied Quantitative Research Methods
 image: /assets/img/ANN.jpeg
 optimized_image: /assets/img/ANN.jpeg
-category: 
+category: Deep Learning in Finance
 tags:
   - Deep Learning
   - Option Pricing
