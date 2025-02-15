@@ -4,177 +4,157 @@ layout: post
 title: Application of Artificial Neural Network in Option Pricing and Delta Hedging
 subtitle: Applied Quantitative Research Methods
 description: How Artificial Neural Network model compare to the Black-Scholes model in Option Pricing and Delta Hedging
-image: /assets/img/exoticoptions.webp
-optimized_image: /assets/img/exoticoptions.webp
+image: /assets/img/ANN.jpeg
+optimized_image: /assets/img/ANN.jpeg
 category: 
 tags:
   - Stock
   - Finance
+  - Deep Learning
+  - Option Pricing
+  - Delta Hedging
+  - Non-parametric model
+  - Black Scholes
 author: Rachael
 ---
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-<h2>Black-Scholes Formula</h2>
-<p>The Black-Scholes formula provides a theoretical estimate of the price of European-style options:</p>
-<p>\[ C(S, t) = N(d_1)S - N(d_2)Ke^{-r(T-t)} \]</p>
-<p>Where:</p>
-<ul>
-    <li>\( d_1 = \frac{\ln(\frac{S}{K}) + (r + \frac{\sigma^2}{2})(T-t)}{\sigma\sqrt{T-t}} \)</li>
-    <li>\( d_2 = d_1 - \sigma\sqrt{T-t} \)</li>
-    <li>\( N \) is the cumulative distribution function of the standard normal distribution.</li>
-</ul>
-
-<h2>Bachelier Model</h2>
-<p>Unlike the Black-Scholes model, the Bachelier model assumes that the underlying asset prices follow a normal distribution rather than a log-normal distribution:</p>
-<p>\[ C(S, t) = (S-K)N(d) + \sigma\sqrt{T-t}n(d) \]</p>
-<p>Where \( d = \frac{S-K}{\sigma\sqrt{T-t}} \) and \( n \) is the standard normal probability density function.</p>
-
-<h2>Implied Volatility</h2>
-<p>Implied volatility is derived from the market price of a European call or put option and represents the volatility implied by the market price, assuming the Black-Scholes model holds:</p>
-<p>\[ \sigma_{imp} = \sqrt{\frac{2\pi}{T}}\frac{C}{S} \]</p>
-
-<h2>Interpolation Function</h2>
-<p>This function calculates the at-the-money (ATM) implied volatility based on the volatilities of out-of-the-money (OTM) call and put options. It uses a weighted average where the weights are determined by the distance of the underlying asset's price from the strike prices of the put and call options:</p>
-<p>\[ \sigma_{ATM} = w_c \sigma_c + (1 - w_c) \sigma_p \]</p>
-<p>Where \( w_c \) is the weight for the call's volatility \( \sigma_c \), and \( \sigma_p \) is the put's volatility adjusted by the proportional difference.</p>
- 
+This project is to explore the performance of non-parametric models such as artifical neural networks (ANN) and how it compares to the pricing performance to the parametric model such as the Black-Scholes (BS) prcing formula. In this project, we perform both the option pricing and delta hedging strategy to the European Volatility Index call options from January 2021 to December 2021. 
 
 
+<h2>Option Pricing Method/h2>
+
+<h2>Data Preparation/h2>
+I incorporated daily options, forward prices, and interest rates. 
+The 3-month U.S. Treasury Bill was extracted from the Federal Reserve Economic Data (FRED) and mappted to the option's traded month. The sole purpose of the 3-month U.S. Treasury Bill was to calculate the present value of the underlying price (VIX). 
+
+<h2>Model Build Up/h2>
+
+Features: 
+- Stock/Strike (S/X): The daily trading's underlying price (VIX) was reserved calculated using the monthly interest rate from FRED to find the present value of the underlying price (VIX). 
+- Time to Expiration(T-t): This was calculated using the maturity date and the current trading date to find the day count difference, and the converted to per unit of 1 year (252 trading days).
+
+Predictor:
+- Market option price/strike price: This normalization simplifies the model’s task by scaling option prices relative to their strike price, which helps in handling options of varying scales and valuations uniformly.
 
 
-<h2 class="toc_title">Section 1: Data Preparation and Initial Calculations</h2>
-<p>This project harnesses options data from SPX (S&P 500 index options) and SPY (SPDR S&P 500 ETF Trust options), along with yield rates from the zero curve, to perform various analyses and calculations. The initial stage of this project involves preparing and calculating key metrics that set the foundation for more complex analysis in later stages. Here are the detailed steps undertaken:</p>
-
-<ul>
-    <li><strong>Differential Analysis:</strong> Identified the differenced call and put options between in-the-money (ITM) and out-of-the-money (OTM) positions, enhancing the focus on more relevant market behaviors.</li>
-    <li><strong>Mid-Price Calculation:</strong> Calculated the mid-price for each option by averaging the best bid and the best offer. This step ensures more accurate and stable pricing input for subsequent volatility calculations.</li>
-    <li><strong>Rate Interpolation:</strong> Employed interpolation methods on zero rates to derive a smooth curve.</li>
-    <li><strong>Forward Price Computation:</strong> Determined forward prices using interpolated rates, essential for understanding the expected future prices of the underlying securities without the inclusion of carry costs such as dividends and storage.</li>
-    <li><strong>Implied Volatility Estimation:</strong> Calculated the implied volatility exclusively for out-of-the-money (OTM) options to focus on options that are more sensitive to market movements.</li>
-</ul>
+<h2>ANN Model Architecture Up/h2>
+The architecture begins with an input layer configured dynamically to handle any size of financial data. It features a hidden layer with 4 neurons using a sigmoid activation function to capture complex nonlinear relationships within the data. The output layer, also utilizing a sigmoid function, ensures final predictions are bounded between 0 and 1. 
 
 
-<h2 class="toc_title">Section 2: SABR Model Calibration</h2>
-This section of the project focuses on calibrating the Stochastic Alpha, Beta, Rho (SABR) model. It is particularly useful in the pricing of derivatives, as it accounts for the dynamic volatility smile -- a common phenomenon where implied volatility differs for options with different strikes or maturities. 
+<h2>Results/h2>
+With the trained model, we predict options such as all samples, in the money, out the money, at the money, short maturity, medium maturity, and long maturity. 
 
-<p>The calibration process involves adjusting the SABR model parameters to align the model's implied volatility with market observed volatilities. This alignment is crucial for ensuring that the model reflects true market dynamics and provides accurate pricing and risk assessments for financial instruments.</p>
+![Screenshot 2025-02-15 at 2 53 25 PM](https://github.com/user-attachments/assets/6c368272-f972-4689-8dd9-4aaa729ae335)
 
-<h3>Script Functionality Breakdown</h3>
-<ul>
-    <li><strong>sabrcalibration Function:</strong> This function is at the heart of the calibration process. It computes the total squared error between volatilities estimated by the SABR model and the actual market volatilities for a range of strikes. The goal is to minimize this error to achieve the best parameter fit.</li>
-    <li><strong>impliedVolatility Function:</strong> This utility function computes the implied volatility for a given option by reversing the Black-Scholes formulas for calls and puts. It ensures that the model's input volatility matches the market scenarios as closely as possible.</li>
-    <li><strong>SABR Function:</strong> It calculates the implied volatility using the SABR model's stochastic differential equations. This function takes into account the effects of alpha (volatility of volatility), beta (elasticity parameter), rho (correlation coefficient), and nu (volatility of the volatility factor), offering a detailed and dynamic volatility surface.</li>
-    <li><strong>calculate_sabr_params Function:</strong> This function orchestrates the entire calibration by iterating over market data, applying the SABR model, and adjusting parameters to minimize discrepancies. It outputs calibrated parameters for each examined expiry.</li>
-</ul>
+The table presents the performance comparison on the test dataset, between the pricing prediction of the BS model vs the Market, and the pricing prediction of the ANN vs the Market. across different moneyness and time-to-maturity. 
 
-<h3>Rationale for Initial Parameter Guesses</h3>
-<p>Initial guesses for the parameters are critical in calibrating the SABR model efficiently and accurately. Here's how and why these initial values are chosen:</p>
+As you can see, the difference between the performance measures of BS and ANN is generally small, showing a similar performance. In fact, from the results table, the ANN model performs relatively better for ATM, OTM, and Long Maturity cases. 
 
-<ul>
-    <li><strong>Beta (β) = 0.7:</strong> The beta parameter in the SABR model controls the elasticity of the volatility to the underlying asset price movements. A β of 0.7 is often chosen based on empirical evidence suggesting it provides a balance between proportional and logarithmic behavior of stock prices, reflecting how mid-cap stocks might behave.</li>
-    <li><strong>Alpha (α) Guess:</strong> Alpha, representing the volatility of volatility, is initially guessed as the mean observed market volatility. This choice is rationalized by using the average volatility as a baseline, providing a middle ground from which adjustments can be made during the optimization process to fit the market data better.</li>
-    <li><strong>Nu (ν) Guess:</strong> Nu, the volatility of the volatility factor, is initially set to one-fifth of the standard deviation of the observed market volatilities. This scaling down helps in starting the calibration from a conservative point, preventing overestimation of market turbulence.</li>
-    <li><strong>Rho (ρ) Guess = 0.2:</strong> Rho, indicating the correlation between the asset price and its volatility, is initially guessed as 0.2, reflecting a mild positive correlation which is common in many markets but still conservative enough to allow for significant adjustments based on specific market characteristics.</li>
-</ul>
+![Screenshot 2025-02-15 at 2 58 21 PM](https://github.com/user-attachments/assets/78acf443-bf84-4ba3-86d7-1624aac60584)
 
+Figure 1 and 2 above shows the graphical representation of the entire test dataset results where the predicted price is plotted as a function of the actual price. 
 
-![Screenshot 2025-02-13 at 9 38 25 PM](https://github.com/user-attachments/assets/26bc7c3c-a052-465a-8ca9-cc995abde8de)
+Typically for the best results is a diagonal linear line, where the actual price equals the predicted price as unit increases. The variance of the prediction price of the BS model is relatively larger than that of the ANN models. However, while the ANN predicts well from unit 0 to 1, the predicted price converges to 1 after unit 1. 
 
-The graphs above showcase the implied volatility smile for different expiry. As you can see, the market volatility for each expiry closely aligns with the SABR model volatility. 
-Key Importance:
-- This close alignment between the 2 volatilities indicates that the SABR model is effectively capturing the characteristics of the market's implied volatility across various strike prices. It proves that the SABR model parameters are well-calibrated to match the actual market behavior.
-- The volatility smile, which shows higher volatilities for deep-in-the-money (ITM) and out-of-the-money (OTM) options compared to at-the-money (ATM) options, is well represented by the SABR model. This is crucial because capturing the curvature of the smile is essential for accurate option pricing, particularly for exotic options which may depend heavily on the shape of the implied volatility curve. 
+![Screenshot 2025-02-15 at 3 01 21 PM](https://github.com/user-attachments/assets/1444b7e2-eba2-4217-a336-9c57b0adeb7c)
 
+We further investigate the dataset and observe that in Figure 3, the market option price/strike price (C/X) distribution in the dataset, the majority of the observations have C/X <1. 
 
-<h2 class="toc_title">Section 3: Static Calibration for Exotic Option Pricing</h2>
-This section explores the static replication approach to price exotic options, a method distinct from dynamic models like Black-Scholes or Bachelier. Static replication involves constructing a portfolio of standard options (calls and puts) that mimics the payoff profile of an exotic option. This technique leverages actual market data rather than relying on theoretical parameters such as volatility (sigma).
+Therefore, since the ANN is a data-driven model, the model would learn the features associated with the most common type of data in the dataset. And it can be argued that the mispricing is due to data limitations. 
 
-<h3>Script Functionality and Methodology</h3>
-<p>The script for static replication is structured to price an exotic option by aggregating contributions from different standard options available in the market. Here's a breakdown of the process:</p>
-<ul>
-    <li><strong>Filtering Market Data:</strong> The script selects options that expire on the same date as the exotic option to ensure consistency in the pricing period.</li>
-    <li><strong>Calculating Time to Maturity:</strong> Determines how much time is left until the options expire, which is crucial for accurately assessing their value.</li>
-    <li><strong>Interpolating Zero Rates:</strong> It uses a zero rate curve to interpolate the risk-free interest rates, providing a discount factor for the pricing model.</li>
-    <li><strong>Pricing via Static Replication:</strong> Each strike from the market data contributes to the final price of the exotic option. This involves calculating the incremental prices of calls and puts at each strike and summing them to get the total price. The unique aspect here is the integration of the payoff's second derivative, which helps approximate the curvature of the payoff landscape more accurately.</li>
-</ul>
+![Screenshot 2025-02-15 at 3 03 37 PM](https://github.com/user-attachments/assets/05f76006-db4d-4a86-8488-0b2f77adf7fa)
 
-<h3>Why Not Use Calibrated Sigma?</h3>
-<p>Unlike Black-Scholes or Bachelier models, static replication does not compute prices based on theoretical forward volatilities or any other stochastic model parameters. Instead, it uses actual market prices of standard options to construct the payoff. This method is particularly useful when the market provides a rich set of option prices across various strikes, offering a more direct and possibly more accurate market reflection than model-based approaches that depend heavily on assumptions like constant volatility (sigma).</p>
+Furthermore, we investigate the pricing performance by moneyness and maturity. Figure 4 above shows the pricing error as a function of moneyness. The red horizontal line divides the ITM options (above) from the OTM options (below).
+For the BS model, the dispersion on the left side of the mean is bigger in magnitude compared to the ANN model. Hence, **the options tend to be more underpriced by the BS model than the ANN model**. 
+  - This means that the residuals (differences between observed and model-predicted prices) are more negatively skewed in prediction errors. This means that there are more instances where the model's predictions exceed the actual prices than the instances where the predictions are below the actual prices. This indicates that the BS model frequently predicts higher values than the actual market prices of the options -- hence, options appear to be underpriced by the model.
 
-<h3>Benefits of Static Calibration</h3>
-<p>Static replication provides several benefits, including:</p>
-<ul>
-    <li><strong>Market-based Pricing:</strong> It leverages real market data, which can lead to more accurate pricing of exotic options especially in volatile or illiquid markets.</li>
-    <li><strong>Reduction of Model Risk:</strong> By not relying on specific model parameters, it avoids the pitfalls of assumptions that might not hold true across different market conditions.</li>
-    <li><strong>Transparency and Simplicity:</strong> The approach is straightforward and transparent, using observable market prices without the need for complex modeling.</li>
-</ul> 
+    
+![Screenshot 2025-02-15 at 3 11 12 PM](https://github.com/user-attachments/assets/3cdde6f4-d6c3-4a3f-bb58-7f0a92852044)
+Figure 5 above shows the model's pricing errors as a function of time-to-maturity. As you can see, the ANN pricing error is dented at 0, whereas the BS pricing error has a larger variance. 
+- Long Maturity = T > 1/12
+- Short Maturity = T < 1/12
+- Medium Maturity = 1/12 < T < 1/12
 
-<h3>Results</h3>
-
-<p><strong>Static Replication Price:</strong> 36.8650</p>
-<p><strong>Black-Scholes Price:</strong> 38.5955</p>
-<p><strong>Bachelier Price:</strong> 37.7144</p>
+For long maturity options, the ANN model outperforms the BS model as the dispersion of the BS of the left side of the mean is bigger in magnitude. In short maturity cases, the mispricing of the 2 models is similar.
 
 
-<h3>Arbitrage Opportunity Detection</h3>
-<p> By employing a strategic butterfly spread test, my project delves into the nuanced realms of options trading. </p>
+<h2 class="toc_title">Delta Hedging Method</h2>
+To replicate the option through delta hedging, we follow the method used by Hutchinson et al (1994). The main idea of the strategy is to set up a replicating portfolio _Vt_ that offsets the risk of an option position:
+  
+_Vt = Vt(S) + Vt(B) + Vt(C) 
+_
+where _Vt(S)_ is the value of the underlying asset position, _Vt(B)_ is the value of a bond position used to finance the position in the underlying asset, and _Vt(C)_ is the value of the option position held in the portfolio at time t. 
 
-<img width="380" alt="Screenshot 2025-02-14 at 10 20 15 AM" src="https://github.com/user-attachments/assets/1abd022f-1951-493a-89c2-55db92117980" />
+The portfolio composition at time t=0 is assumed to be: 
 
-<p>From the result, a negative butterfly value suggests that buying the wings (K1 and K3) and selling tice the body (K2) of the butterfly fields a net debit from the position. This scenario points to an overpriced middle strike relative to the strikes on either side, thus revealing a mispricing in the market.</p>
+<ol>
+    <li><math><mi>V</mi><sub><mn>0</mn></sub><mi>(C)</mi> = -<mi>C</mi><sub><mi>BSM</mi>, <mn>0</mn></sub></math></li>
+    <li><math><mi>V</mi><sub><mn>0</mn></sub><mi>(S)</mi> = <mi>S</mi><sub><mn>0</mn></sub> <mi>&Delta;</mi><sub><mi>NN</mi>, <mn>0</mn></sub></math></li>
+    <li><math><mi>V</mi><sub><mn>0</mn></sub><mi>(B)</mi> = -(<mi>V</mi><sub><mn>0</mn></sub><mi>(S)</mi> + <mi>V</mi><sub><mn>0</mn></sub><mi>(C)</mi>)</math></li>
+    <li><math><mi>&Delta;</mi><sub><mi>NN</mi>, <mn>0</mn></sub> = <mfrac><mrow><mo>&part;</mo><mi>C</mi><sub><mi>NN</mi>, <mn>0</mn></sub></mrow><mrow><mo>&part;</mo><mi>S</mi><sub><mn>0</mn></sub></mrow></mfrac></math></li>
+</ol>
 
-<p>Setting up 1000 butterfly spreads across the different strike prices and conditions listed provides an approximate $30,000 in profit.</p>
-
-<h2 class="toc_title">Section 4: Dynamic Replication</h2>
-
-<p>This section focuses on simulating hedging errors in a Black-Scholes environment. The script evaluates the effectiveness of dynamic hedging by simulating the path of stock prices using Brownian motion and assessing the hedging performance over time.</p>
-
-<p>Assume the following parameters: S0 = $100, σ = 0.2, r = 5%, T = 1/12 year and K = $100. By applying the Black Scholes model to simulate the stock price over one month, we explore how a short ATM call option position can be dynamically hedged using the different frequencies of adjusting the position in underlying stock and bond.</p>
-
-<h3 class="toc_title">Hedging Frequency</h3>
-<p>Assume there are 21 trading days over 1 month and we hedge <em>N</em> times during the life of the call options which expire in a month:</p>
-<ul>
-    <li><strong>N = 21:</strong> Hedge once every day</li>
-    <li><strong>N = 84:</strong> Hedge four times every day</li>
-</ul>
-
-
-<p>By calculating the delta of the option and bond position, we measure the effectiveness of the hedging strategy by calculating the cumulative error between the hedged portfolio's value and the actual option payoff over time. This helps to identify any deviations from the ideal hedged position. We then run multiple simulations to generate a broad set of data on hedging errors across different scenarios to provide insights into the average performance and variability of the hedging strategy. We also calculate the Greeks—Delta, Gamma, Theta, and Vega—to analyze how sensitive the option's value is to changes in underlying factors such as stock price, volatility, and time decay.</p>
-
-
-<img width="393" alt="Screenshot 2025-02-14 at 9 37 15 AM" src="https://github.com/user-attachments/assets/bc334db6-f2b1-4db6-9af7-a264f906521d" />
-
-<p>From the result, we can see that with N=21 hedges during the life of the call options, the mean(hedging error) is slightly negative. However, the magnitude being very small indicates a relatively effective hedging strategy. However, with N=84, the hedging strategy is nearly perfect on average, which means a more effective hedging strategy. </p>
-
-<p>The lower standard deviation for N=84 also suggests that the hedging strategy becomes more stable and consistent.</p>
-
-<img width="1140" alt="Screenshot 2025-02-14 at 9 42 08 AM" src="https://github.com/user-attachments/assets/fd220721-25c3-4ab8-88e9-e24028084fd8" />
+Equation 1: It represents the initial value of a call option (C) at time -, where C(BSM) is the Black Scholes price of the call option.
+Equation 2: It represents the initial value of the stock position and the delta of the neural network model at time 0. 
+Equation 3: This represents the initial value of the bond position needed to offset the positions in the stock and call option, ensuring the initial investment is delta-neutral. 
+Equation 4: This shows how to calculate the delta for the neural network model, which is the rate of change of the neural network's options price with respect to changes in the stock price. 
 
 
 
-<h3 class="toc_title">Section 4i: Interpret Greek Surfaces</h3>
+<h3 class="toc_title">Delta Hedging Strategy</h3>
+The strategy consists of shorting 1 call option, longing for the underlying asset for a change in number of shares at price S0, and shorting for a bond to finance the rest of the long position in the underlying asset that is not financed with the sale of the call option. 
+
+The initial value of the replicating portfolio is 0 since the long position is financed entirely with riskless borrowing and the sale of the call option. 
+
+<p><math><mi>V</mi><sub><mn>0</mn></sub> = <mi>V</mi><sub><mn>0</mn></sub><mi>(S)</mi> + <mi>V</mi><sub><mn>0</mn></sub><mi>(C)</mi> + <mi>V</mi><sub><mn>0</mn></sub><mi>(B)</mi> = <mn>0</mn></math></p>
 
 
-<img width="347" alt="Screenshot 2025-02-14 at 9 43 29 AM" src="https://github.com/user-attachments/assets/99f49126-6bf1-4562-84c9-57f724fb0ec5" />
+Between the initialization of V at time t=0 and the expiration at T, at all time T-t, the spot and bond positions are rebalanced daily so that:
+
+<p><math><mi>V</mi><mi>t</mi><mi>(S)</mi> = <mi>S</mi><mi>t</mi><mi>&Delta;</mi><sub><mi>NN</mi>, <mi>t</mi></sub> where <mi>&Delta;</mi><sub><mi>NN</mi>, <mi>t</mi></sub> = <mfrac><mrow><mo>&part;</mo><mi>C</mi><sub><mi>NN</mi>, <mi>t</mi></sub></mrow><mrow><mo>&part;</mo><mi>S</mi><sub><mi>t</mi></sub></mrow></mfrac></math></p>
+
+<p><math><mi>V</mi><mi>t</mi><mi>(B)</mi> = <mi>e</mi><sup><mi>r</mi><mi>T</mi><mi>v</mi><sub><mi>t</mi></sub></sup><mi>V</mi><sub><mi>t</mi>-<mi>r</mi></sub><mi>(B)</mi> - <mi>S</mi><mi>t</mi>(<mi>&Delta;</mi><sub><mi>NN</mi>, <mi>t</mi></sub> - <mi>&Delta;</mi><sub><mi>NN</mi>, <mi>t</mi>-<mi>r</mi></sub>) where t is defined to be 1 day in this paper</math></p>
+
+To calculate the delta of the neural network for the call option, after training using the ANN, we could derive the optimal weights on the input features and hence in principle, be able to derive the partial derivative of the ANN predicted price with respect to the features. 
+
+I used bootstrap to resample observations from the dataset, options with the same options ID are grouped and the new resampled prices are constructed in time order as the next step path. Through the extraction of build-in keras's gradient, the V(T) is further calculated to observe the V(T) in the long run, and it would be comparable to the V(T) of Black Scholes. 
 
 
-<p>Delta measures the sensitivity of the option's price to a change in the price of the underlying asset. As you can see in the delta surface, the delta generally increases as the stock price approaches the strike price from below and tends to flatten out at 1.0 as the option goes deeper in the money (stock price > strike price). The higher delta values near 1 indicate the option's price will move almost one-for-one with the stock price, which is typical for deep-in-the-money calls. </p>
+<h3 class="toc_title">Delta Hedging Performance Measures</h3>
+
+1. Tracking Error: This error is calculated at the expiration date and is defined as the sum of the values of the spot, bond, and call option components in the replicating portfolio. 
+2. Present Value of Expected Absolute Tracking Error: It is calculated by discounting the expected absolute value of the tracking error using the risk-free rate over the period until expiration. 
+3. Prediction Error: This error measures the uncertainty or variability of the tracking error and is calculated by discounting the sum of the expected squared value of the tracking error and its variance, using the risk-free rate over the period until expiration.
+
+   
+<h3 class="toc_title">Delta Hedging Results/h3>
+The hedging performance obtained from the bootstrapping consists of a comparison between the delta-hedge analysis for the BS model and the ANN model. This comparison is developed on the test set considering only the options contracts that have over 10 days of observations in the test set. 
 
 
-<img width="356" alt="Screenshot 2025-02-14 at 9 46 27 AM" src="https://github.com/user-attachments/assets/9e612f91-7bd0-4db0-921f-f9b647a79159" />
+![Screenshot 2025-02-15 at 3 46 26 PM](https://github.com/user-attachments/assets/7c2ffcc4-478d-45e7-a3a4-453e0665a432)
 
-<p>Gamma measures the rate of change in delta with respect to changes in the underlying asset's price. This is the second derivative of the option price relative to the stock price. As you can see from the Gamma Surface graph, Gamma peaks as the options near the money (where the stock price is close to the strike price) and tends to be higher as the option approaches expiration. This is depicted by the spike seen in the graph. The spike in Gamma around the at-the-money (ATM) option as expiration approaches suggests heightened sensitivity; small changes in the stock price can lead to large changes in Delta. </p>
+![Screenshot 2025-02-15 at 3 47 01 PM](https://github.com/user-attachments/assets/76ab41a7-55ff-4ee2-bcad-798ef85430ee)
+
+Based on the error comparison shown in the above table, the ANN model and the BS formula have similar performance. 
+
+![Screenshot 2025-02-15 at 3 47 38 PM](https://github.com/user-attachments/assets/fe992e4e-db08-48e3-856a-a6a4a17bac7a)
+
+A two-tailed paired t-test is performed to test the null vs alternative hypothesis. 
+Null: There is no significant difference in the expected errors of the ANN and BS models, implying that both models perform equally well. 
+Alternative: There is a significant difference in the expected errors of the ANN and BS models, suggesting that one model outperformed the other.
+
+Based on the findings from the statistical test shown, as the p-value is greater than the significance level, we conclude that there is not enough statistical evidence to reject the null hypothesis. Hence, there is no significant difference in the performance of the ANN and BS models and similar hedging performance is obtained.  
 
 
-<img width="363" alt="Screenshot 2025-02-14 at 9 48 47 AM" src="https://github.com/user-attachments/assets/77db4132-966a-4ca4-992d-14c87329c0d2" />
 
-<p>Theta measures the sensitivity of the option's price to the passage of time, also known as the "time decay" of the option. It generally has a negative value, indicating that the value of an option decreases as time progresses. As you can see from the Theta Surface Graph, there is a steep decline, especially as the option approaches expiration, which is typical since Theta decay tends to accelerate as the option nears its expiry date. </p>
 
-<img width="347" alt="Screenshot 2025-02-14 at 9 51 02 AM" src="https://github.com/user-attachments/assets/077b1fe3-df78-4ccc-817d-c5232e761bfe" />
 
-<p>Vega measures the sensitivity of the option's price to changes in the volatility of the underlying asset. It indicates the amount an option's price changes in response to a 1% change in the volatility of the underlying asset. As you can see from the Vega Surface graph, vega tends to be higher for options that are near the money and decreases as the option moves deeper into or out of the money. It also decreases as the option approaches expiration. The graph shows that Vega is particularly sensitive around at-the-money options, with sensitivity tapering off as the options move away from this point or as time to expiration decreases.</p> 
+
+
+
+
+
+
 
 
 
