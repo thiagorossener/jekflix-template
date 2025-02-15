@@ -143,7 +143,9 @@ Based on the error comparison shown in the above table, the ANN model and the BS
 
 
 A two-tailed paired t-test is performed to test the null vs alternative hypothesis. 
+
 Null: There is no significant difference in the expected errors of the ANN and BS models, implying that both models perform equally well. 
+
 Alternative: There is a significant difference in the expected errors of the ANN and BS models, suggesting that one model outperformed the other.
 
 Based on the findings from the statistical test shown, as the p-value is greater than the significance level, we conclude that there is not enough statistical evidence to reject the null hypothesis. Hence, there is no significant difference in the performance of the ANN and BS models and similar hedging performance is obtained.  
