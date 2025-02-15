@@ -8,8 +8,11 @@ image: /assets/img/exoticoptions.webp
 optimized_image: /assets/img/exoticoptions.webp
 category: 
 tags:
-  - Stock
-  - Finance
+  - SABR Model
+  - Black Scholes
+  - Exotic Option
+  - Parameters Calibration
+
 author: Rachael
 ---
 
