@@ -148,7 +148,7 @@ Null: There is no significant difference in the expected errors of the ANN and B
 
 Alternative: There is a significant difference in the expected errors of the ANN and BS models, suggesting that one model outperformed the other.
 
-Based on the findings from the statistical test shown, as the p-value is greater than the significance level, we conclude that there is not enough statistical evidence to reject the null hypothesis. Hence, there is no significant difference in the performance of the ANN and BS models and similar hedging performance is obtained.  
+Based on the findings from the statistical test shown, as the p-value is greater than the significance level, we conclude that there is not enough statistical evidence to reject the null hypothesis. Hence, **there is no significant difference in the performance of the ANN and BS models and similar hedging performance is obtained.** 
 
 
 
