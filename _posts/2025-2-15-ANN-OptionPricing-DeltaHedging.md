@@ -21,13 +21,14 @@ author: Rachael
 This project is to explore the performance of non-parametric models such as artifical neural networks (ANN) and how it compares to the pricing performance to the parametric model such as the Black-Scholes (BS) prcing formula. In this project, we perform both the option pricing and delta hedging strategy to the European Volatility Index call options from January 2021 to December 2021. 
 
 
-<h2>Option Pricing Method/h2>
+<h2 class="toc_title">Option Pricing Method</h2>
 
-<h2>Data Preparation/h2>
+<h3 class="toc_title">Data Preparation</h3>
+
 I incorporated daily options, forward prices, and interest rates. 
 The 3-month U.S. Treasury Bill was extracted from the Federal Reserve Economic Data (FRED) and mappted to the option's traded month. The sole purpose of the 3-month U.S. Treasury Bill was to calculate the present value of the underlying price (VIX). 
 
-<h2>Model Build Up/h2>
+<h3 class="toc_title">Model Build Up</h3>
 
 Features: 
 - Stock/Strike (S/X): The daily trading's underlying price (VIX) was reserved calculated using the monthly interest rate from FRED to find the present value of the underlying price (VIX). 
@@ -36,12 +37,12 @@ Features:
 Predictor:
 - Market option price/strike price: This normalization simplifies the model’s task by scaling option prices relative to their strike price, which helps in handling options of varying scales and valuations uniformly.
 
+<h3 class="toc_title">ANN Model Architecture</h3>
 
-<h2>ANN Model Architecture Up/h2>
 The architecture begins with an input layer configured dynamically to handle any size of financial data. It features a hidden layer with 4 neurons using a sigmoid activation function to capture complex nonlinear relationships within the data. The output layer, also utilizing a sigmoid function, ensures final predictions are bounded between 0 and 1. 
 
+<h3 class="toc_title">Results</h3>
 
-<h2>Results/h2>
 With the trained model, we predict options such as all samples, in the money, out the money, at the money, short maturity, medium maturity, and long maturity. 
 
 ![Screenshot 2025-02-15 at 2 53 25 PM](https://github.com/user-attachments/assets/6c368272-f972-4689-8dd9-4aaa729ae335)
