@@ -6,7 +6,7 @@ subtitle:
 description: 
 image: /assets/img/exoticoptions.webp
 optimized_image: /assets/img/exoticoptions.webp
-category: 
+category: Stochasic Modeling in Finance
 tags:
   - SABR Model
   - Black Scholes
