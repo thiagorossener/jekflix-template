@@ -14,45 +14,43 @@ tags:
   - Black Scholes
 author: Rachael
 ---
-
-This project is to explore the performance of non-parametric models such as artifical neural networks (ANN) and how it compares to the pricing performance to the parametric model such as the Black-Scholes (BS) prcing formula. In this project, we perform both the option pricing and delta hedging strategy to the European Volatility Index call options from January 2021 to December 2021. 
+This project examines the efficiency of non-parametric models, specifically artificial neural networks (ANNs), compared to the parametric Black-Scholes (BS) pricing formula in option pricing and delta hedging strategies. This project focuses on European Volatility Index call options over the period from January 2021 to December 2021, assessing both models in terms of pricing accuracy and hedging effectiveness. 
 
 
 <h2 class="toc_title">Option Pricing Method</h2>
 
 <h3 class="toc_title">Data Preparation</h3>
 
-I incorporated daily options, forward prices, and interest rates. 
-The 3-month U.S. Treasury Bill was extracted from the Federal Reserve Economic Data (FRED) and mappted to the option's traded month. The sole purpose of the 3-month U.S. Treasury Bill was to calculate the present value of the underlying price (VIX). 
+The analysis includes daily options, forward prices, and interest rates. Data for the 3-month U.S. Treasury Bill which was retrieved from the Federal Reserve Economic Data (FRED), is used to calculate the present value of the underlying price (VIX) based on the option's trading month. 
 
 <h3 class="toc_title">Model Build Up</h3>
 
 Features: 
-- Stock/Strike (S/X): The daily trading's underlying price (VIX) was reserved calculated using the monthly interest rate from FRED to find the present value of the underlying price (VIX). 
-- Time to Expiration(T-t): This was calculated using the maturity date and the current trading date to find the day count difference, and the converted to per unit of 1 year (252 trading days).
+- Stock/Strike (S/X): The VIX's daily trading price was discounted using the monthly interest rate from FRED to determine its present value. 
+- Time to Expiration(T-t): The days between the current trading date and the maturity date were counted and normalized to a year scale (252 trading days). 
 
 Predictor:
-- Market option price/strike price: This normalization simplifies the model’s task by scaling option prices relative to their strike price, which helps in handling options of varying scales and valuations uniformly.
+- Market option price/strike price ratio: This normalization scales the option prices relative to their strike prices, facilitating a uniform analysis across different scales and valuations. 
 
 <h3 class="toc_title">ANN Model Architecture</h3>
 
-The architecture begins with an input layer configured dynamically to handle any size of financial data. It features a hidden layer with 4 neurons using a sigmoid activation function to capture complex nonlinear relationships within the data. The output layer, also utilizing a sigmoid function, ensures final predictions are bounded between 0 and 1. 
+The architecture begins with an input layer configured dynamically to handle any size of financial data. It features a hidden layer with 4 neurons using a sigmoid activation function to model nonlinearities and an output layer with sigmoid activation to ensure predictions stay within the range of 0 to 1. 
 
 <h3 class="toc_title">Results</h3>
 
-With the trained model, we predict options such as all samples, in the money, out the money, at the money, short maturity, medium maturity, and long maturity. 
+The trained model predicts prices for various option types including all samples, in-the-money, out-of-the-money, at-the-money, and across different maturities: short, medium, and long. 
 
 ![Screenshot 2025-02-15 at 2 53 25 PM](https://github.com/user-attachments/assets/6c368272-f972-4689-8dd9-4aaa729ae335)
 
-The table presents the performance comparison on the test dataset, between the pricing prediction of the BS model vs the Market, and the pricing prediction of the ANN vs the Market. across different moneyness and time-to-maturity. 
+The table above displays a performance comparison of the BS and ANN models against market prices on the test dataset, detailing variations by option moneyness and time-to-maturity. 
 
-As you can see, the difference between the performance measures of BS and ANN is generally small, showing a similar performance. In fact, from the results table, the ANN model performs relatively better for ATM, OTM, and Long Maturity cases. 
+As you can see, **the difference between the performance measures of BS and ANN is generally small, showing a similar performance**. In fact, from the results table, **the ANN model performs relatively better for ATM, OTM, and Long Maturity cases.**
 
 ![Screenshot 2025-02-15 at 2 58 21 PM](https://github.com/user-attachments/assets/78acf443-bf84-4ba3-86d7-1624aac60584)
 
 Figure 1 and 2 above shows the graphical representation of the entire test dataset results where the predicted price is plotted as a function of the actual price. 
 
-Typically for the best results is a diagonal linear line, where the actual price equals the predicted price as unit increases. The variance of the prediction price of the BS model is relatively larger than that of the ANN models. However, while the ANN predicts well from unit 0 to 1, the predicted price converges to 1 after unit 1. 
+Typically for the best results is a diagonal linear line, where the actual price equals the predicted price as the unit increases. The variance of the prediction price of the BS model is relatively larger than that of the ANN models. However, while the ANN predicts well from unit 0 to 1, the predicted price converges to 1 after unit 1. 
 
 ![Screenshot 2025-02-15 at 3 01 21 PM](https://github.com/user-attachments/assets/1444b7e2-eba2-4217-a336-9c57b0adeb7c)
 
@@ -63,8 +61,8 @@ Therefore, since the ANN is a data-driven model, the model would learn the featu
 ![Screenshot 2025-02-15 at 3 03 37 PM](https://github.com/user-attachments/assets/05f76006-db4d-4a86-8488-0b2f77adf7fa)
 
 Furthermore, we investigate the pricing performance by moneyness and maturity. Figure 4 above shows the pricing error as a function of moneyness. The red horizontal line divides the ITM options (above) from the OTM options (below).
-For the BS model, the dispersion on the left side of the mean is bigger in magnitude compared to the ANN model. Hence, **the options tend to be more underpriced by the BS model than the ANN model**. 
-  - This means that the residuals (differences between observed and model-predicted prices) are more negatively skewed in prediction errors. This means that there are more instances where the model's predictions exceed the actual prices than the instances where the predictions are below the actual prices. This indicates that the BS model frequently predicts higher values than the actual market prices of the options -- hence, options appear to be underpriced by the model.
+**For the BS model, the dispersion on the left side of the mean is bigger in magnitude compared to the ANN model. Hence, **the options tend to be more underpriced by the BS model than the ANN model****. 
+  - This means that the residuals (differences between observed and model-predicted prices) in the BS model are more negatively skewed in prediction errors. This means that there are more instances where the model's predictions exceed the actual prices than the instances where the predictions are below the actual prices. This indicates that the BS model frequently predicts higher values than the actual market prices of the options -- hence, options appear to be underpriced by the model.
 
     
 ![Screenshot 2025-02-15 at 3 11 12 PM](https://github.com/user-attachments/assets/3cdde6f4-d6c3-4a3f-bb58-7f0a92852044)
@@ -82,6 +80,7 @@ To replicate the option through delta hedging, we follow the method used by Hutc
   
 _Vt = Vt(S) + Vt(B) + Vt(C) 
 _
+
 where _Vt(S)_ is the value of the underlying asset position, _Vt(B)_ is the value of a bond position used to finance the position in the underlying asset, and _Vt(C)_ is the value of the option position held in the portfolio at time t. 
 
 The portfolio composition at time t=0 is assumed to be: 
@@ -94,15 +93,18 @@ The portfolio composition at time t=0 is assumed to be:
 </ol>
 
 Equation 1: It represents the initial value of a call option (C) at time -, where C(BSM) is the Black Scholes price of the call option.
+
 Equation 2: It represents the initial value of the stock position and the delta of the neural network model at time 0. 
+
 Equation 3: This represents the initial value of the bond position needed to offset the positions in the stock and call option, ensuring the initial investment is delta-neutral. 
+
 Equation 4: This shows how to calculate the delta for the neural network model, which is the rate of change of the neural network's options price with respect to changes in the stock price. 
 
 
 
 <h3 class="toc_title">Delta Hedging Strategy</h3>
 
-The strategy consists of shorting 1 call option, longing for the underlying asset for a change in number of shares at price S0, and shorting for a bond to finance the rest of the long position in the underlying asset that is not financed with the sale of the call option. 
+The strategy consists of shorting 1 call option, longing for the underlying asset for a change in the number of shares at price S0, and shorting for a bond to finance the rest of the long position in the underlying asset that is not financed with the sale of the call option. 
 
 The initial value of the replicating portfolio is 0 since the long position is financed entirely with riskless borrowing and the sale of the call option. 
 
@@ -117,7 +119,7 @@ Between the initialization of V at time t=0 and the expiration at T, at all time
 
 To calculate the delta of the neural network for the call option, after training using the ANN, we could derive the optimal weights on the input features and hence in principle, be able to derive the partial derivative of the ANN predicted price with respect to the features. 
 
-I used bootstrap to resample observations from the dataset, options with the same options ID are grouped and the new resampled prices are constructed in time order as the next step path. Through the extraction of build-in keras's gradient, the V(T) is further calculated to observe the V(T) in the long run, and it would be comparable to the V(T) of Black Scholes. 
+Using a bootstrap method, we resample the observations grouped by option ID, constructing resampled prices in chronological order. Through the extraction of built-in keras's gradient, the _V(T)_ is further calculated to observe the V(T) in the long run, and it would be comparable to the _V(T)_ of Black Scholes. 
 
 
 <h3 class="toc_title">Delta Hedging Performance Measures</h3>
@@ -126,8 +128,7 @@ I used bootstrap to resample observations from the dataset, options with the sam
 2. Present Value of Expected Absolute Tracking Error: It is calculated by discounting the expected absolute value of the tracking error using the risk-free rate over the period until expiration. 
 3. Prediction Error: This error measures the uncertainty or variability of the tracking error and is calculated by discounting the sum of the expected squared value of the tracking error and its variance, using the risk-free rate over the period until expiration.
 
-   
-<h3 class="toc_title">Delta Hedging Results/h3>
+<h3 class="toc_title">Delta Hedging Results</h3>
   
 The hedging performance obtained from the bootstrapping consists of a comparison between the delta-hedge analysis for the BS model and the ANN model. This comparison is developed on the test set considering only the options contracts that have over 10 days of observations in the test set. 
 
