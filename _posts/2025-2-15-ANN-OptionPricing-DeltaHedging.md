@@ -3,17 +3,14 @@ date: 2023-12-20 12:26:40
 layout: post
 title: Application of Artificial Neural Network in Option Pricing and Delta Hedging
 subtitle: Applied Quantitative Research Methods
-description: How Artificial Neural Network model compare to the Black-Scholes model in Option Pricing and Delta Hedging
+description: Applied Quantitative Research Methods
 image: /assets/img/ANN.jpeg
 optimized_image: /assets/img/ANN.jpeg
 category: 
 tags:
-  - Stock
-  - Finance
   - Deep Learning
   - Option Pricing
   - Delta Hedging
-  - Non-parametric model
   - Black Scholes
 author: Rachael
 ---
@@ -80,6 +77,7 @@ For long maturity options, the ANN model outperforms the BS model as the dispers
 
 
 <h2 class="toc_title">Delta Hedging Method</h2>
+
 To replicate the option through delta hedging, we follow the method used by Hutchinson et al (1994). The main idea of the strategy is to set up a replicating portfolio _Vt_ that offsets the risk of an option position:
   
 _Vt = Vt(S) + Vt(B) + Vt(C) 
@@ -103,6 +101,7 @@ Equation 4: This shows how to calculate the delta for the neural network model, 
 
 
 <h3 class="toc_title">Delta Hedging Strategy</h3>
+
 The strategy consists of shorting 1 call option, longing for the underlying asset for a change in number of shares at price S0, and shorting for a bond to finance the rest of the long position in the underlying asset that is not financed with the sale of the call option. 
 
 The initial value of the replicating portfolio is 0 since the long position is financed entirely with riskless borrowing and the sale of the call option. 
@@ -129,6 +128,7 @@ I used bootstrap to resample observations from the dataset, options with the sam
 
    
 <h3 class="toc_title">Delta Hedging Results/h3>
+  
 The hedging performance obtained from the bootstrapping consists of a comparison between the delta-hedge analysis for the BS model and the ANN model. This comparison is developed on the test set considering only the options contracts that have over 10 days of observations in the test set. 
 
 
@@ -139,6 +139,7 @@ The hedging performance obtained from the bootstrapping consists of a comparison
 Based on the error comparison shown in the above table, the ANN model and the BS formula have similar performance. 
 
 ![Screenshot 2025-02-15 at 3 47 38 PM](https://github.com/user-attachments/assets/fe992e4e-db08-48e3-856a-a6a4a17bac7a)
+
 
 A two-tailed paired t-test is performed to test the null vs alternative hypothesis. 
 Null: There is no significant difference in the expected errors of the ANN and BS models, implying that both models perform equally well. 
