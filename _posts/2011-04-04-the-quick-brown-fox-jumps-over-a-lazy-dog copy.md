@@ -4,12 +4,13 @@ layout: post
 title: Programming and Computational Finance 
 subtitle: 
 description: How I optimize investment strategies with machine learning
-image: /assets/img/growth-stock-chart.jpg
-optimized_image: /assets/img/growth-stock-chart.jpg
+image: /assets/img/optimize.webp
+optimized_image: /assets/img/optimize.webp
 category: Computational Finance
 tags:
   - Stock
   - Finance
+  - Machine Learning
 author: Rachael
 ---
 
