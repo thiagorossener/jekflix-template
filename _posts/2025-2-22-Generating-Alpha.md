@@ -84,6 +84,16 @@ In this context, we have used different source of data provided from Sharadar an
       <td>Exclude delisted stocks</td>
       <td>No</td>
     </tr>
+    <tr>
+      <td>Dollar Volume Universe</td>
+      <td>
+        Liquid stocks selection using:<br>
+        - Market Cap = Close * Volume <br>
+        - Filtered by: Top Liquid (800) <br>
+        - Smoothed over: 120 Days (Moving Avg)
+      </td>
+      <td>Selected</td>
+    </tr>
     
     <!-- Trading Volume and Liquidity -->
     <tr>
