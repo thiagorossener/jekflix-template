@@ -89,7 +89,99 @@ In this context, we have used different source of data provided from Sharadar an
 
 - quantile portions: 10 - the number of quantiles we want to analyze and work with
 
-- quantile to analyse: 1, 10 - the quantiles selected for the final analyze and portfolio as we use it to select extreme quantiles to get the best results. Focusing on these extremes allows the strategy to capture the most significant deviations from the norm, which often represent the clearest trading signals. This approach helps in effectively leveraging the predictive power of the model by concentrating on areas where the potential for alpha is greatest, thereby optimizing the portfolio's performance potential. 
+- quantile to analyse: 1, 10 - the quantiles selected for the final analyze and portfolio as we use it to select extreme quantiles to get the best results. Focusing on these extremes allows the strategy to capture the most significant deviations from the norm, which often represent the clearest trading signals. This approach helps in effectively leveraging the predictive power of the model by concentrating on areas where the potential for alpha is greatest, thereby optimizing the portfolio's performance potential.
+
+<h3 class="toc_title">1. Parameters Overview</h3>
+<table class="parameter-table">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Time Series Data</td>
+      <td>SF1/SHARADAR</td>
+      <td>Historical fundamental data</td>
+      <td>4 years</td>
+    </tr>
+    <tr>
+      <td>SEP/DAILY/SHARADAR, IFT/NSA</td>
+      <td>End-of-Day (EOD) pricing and sentiment data</td>
+      <td>3 years</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Universe Selection</td>
+      <td>Market Cap</td>
+      <td>Stock selection by size</td>
+      <td>Mega, Large, Mid</td>
+    </tr>
+    <tr>
+      <td>Exchange</td>
+      <td>Stock listing exchange</td>
+      <td>NYSE, NASDAQ, BATS</td>
+    </tr>
+    <tr>
+      <td>Currency</td>
+      <td>Denominated currency</td>
+      <td>USD</td>
+    </tr>
+    <tr>
+      <td>Delisted</td>
+      <td>Exclude delisted stocks</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Trading Volume and Liquidity</td>
+      <td>Filteration Number</td>
+      <td>Number of liquid securities</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <td>Smoothing Universe Period</td>
+      <td>Moving average window to smooth trading volume</td>
+      <td>120 days</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Factor Analysis</td>
+      <td>Combined Periods</td>
+      <td>Forward return time frames</td>
+      <td>(5, 10, 20)</td>
+    </tr>
+    <tr>
+      <td>Rebalance Period</td>
+      <td>Frequency of portfolio rebalancing</td>
+      <td>10 days</td>
+    </tr>
+    <tr>
+      <td>Quantiles</td>
+      <td>Quantile Portions</td>
+      <td>Number of quantiles for analysis</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Quantiles</td>
+      <td>Quantile to Analyze</td>
+      <td>Focus on extremes for alpha generation</td>
+      <td>1, 10</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3 class="toc_title">1. Parameters Overview</h3>
+<ul>
+  <li><strong>Time Series Data:</strong> SF1 (4 years), SEP/DAILY/SHARADAR, IFT/NSA (3 years)</li>
+  <li><strong>Universe Selection:</strong> Market Cap (Mega, Large, Mid), Exchange (NYSE, NASDAQ, BATS), Currency (USD), Delisted (No)</li>
+  <li><strong>Trading Volume and Liquidity:</strong> Filteration Number (800), Smoothing Period (120 days)</li>
+  <li><strong>Factor Analysis:</strong> Combined Periods (5, 10, 20), Rebalance Period (10 days)</li>
+  <li><strong>Quantiles:</strong> Portions (10), To Analyze (1, 10)</li>
+</ul>
+
+
 
 
 <h3 class="toc_title">Results</h3>
