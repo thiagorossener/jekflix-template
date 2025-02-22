@@ -45,12 +45,14 @@ In this context, we have used different source of data provided from Sharadar an
 - SEP/DAILY/SHARADAR, IFT/NSA (3 years)
 
 <h4 class="toc_title">1-2: Universe Parameters</h4>
+
 - Market Capitalization: Mega, Large, Mid
 - Exchange: NYSe, NASDAQ, BATS
 - Currency: USD
 - Delisted: No
 
 <h4 class="toc_title">1-3: Trading Volume and Liquidity</h4>
+
 - Filteration Number: 800
 - Smoothing Universe Period (120 days): Applies a moving average to trading volume data to smooth out short-term fluctuations
 
@@ -69,6 +71,7 @@ In this context, we have used different source of data provided from Sharadar an
 - channels_in = {'chan_60d':60, 'chan_100d':100}
 
 <h4 class="toc_title">1-5: Factor Analysis Parameters</h4>
+
 - combined_periods = (5,10,20): sets the time frames for which the model will calculate forward returns
 - rebalance_period = 10: defines the frequency at which the investment portfolio is rebalanced to align with the lastest model outputs. 
 - factor_exposures = 10
@@ -83,7 +86,9 @@ In this context, we have used different source of data provided from Sharadar an
 - weights_min = -0.1
 
 <h4 class="toc_title">1-7: Quantiles Parameters</h4>
+
 - quantile portions: 10 - the number of quantiles we want to analyze and work with
+
 - quantile to analyse: 1, 10 - the quantiles selected for the final analyze and portfolio as we use it to select extreme quantiles to get the best results. Focusing on these extremes allows the strategy to capture the most significant deviations from the norm, which often represent the clearest trading signals. This approach helps in effectively leveraging the predictive power of the model by concentrating on areas where the potential for alpha is greatest, thereby optimizing the portfolio's performance potential. 
 
 
