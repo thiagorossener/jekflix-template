@@ -284,10 +284,10 @@ Now we have processed and regrouped factor data, we are ready to analyze the fac
 
 
 
-<h3 class="toc_title">4 - 1: Cumulated factor return</h3>
-<h3 class="toc_title">4 - 2: Quantile analysis</h3>
-<h3 class="toc_title">4 - 3: Factor rank autocorrelation</h3>
-<h3 class="toc_title">4 - 4: Sharpe ratio</h3>
+<h4 class="toc_title">4 - 1: Cumulated factor return</h4>
+<h4 class="toc_title">4 - 2: Quantile analysis</h4>
+<h4 class="toc_title">4 - 3: Factor rank autocorrelation</h4>
+<h4 class="toc_title">4 - 4: Sharpe ratio</h4>
 
 
 
