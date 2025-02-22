@@ -1,12 +1,12 @@
 ---
 date: 2023-12-20 12:26:40
 layout: post
-title: Alpha Generation
-subtitle: Quantitative Edge: Building Alpha-Generating Trading Systems
-description: Quantitative Edge: Building Alpha-Generating Trading Systems
+title: "Alpha Generation: Quantitative Edge - Building Alpha-Generating Trading Systems"
+subtitle: "Quantitative Edge: Building Alpha-Generating Trading Systems"
+description: "Quantitative Edge: Building Alpha-Generating Trading Systems"
 image: /assets/img/alpha.png
 optimized_image: /assets/img/alpha.png
-category: Deep Learning in Finance
+category: 
 tags:
   - Factor Analysis
   - Backtesting
@@ -14,6 +14,7 @@ tags:
   - Portfolio Optimization
 author: Rachael
 ---
+
 
 This project examines the efficiency of non-parametric models, specifically artificial neural networks (ANNs), compared to the parametric Black-Scholes (BS) pricing formula in option pricing and delta hedging strategies. This project focuses on European Volatility Index call options over the period from January 2021 to December 2021, assessing both models in terms of pricing accuracy and hedging effectiveness. 
 
