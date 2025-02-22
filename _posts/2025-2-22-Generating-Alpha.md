@@ -271,6 +271,107 @@ In this context, we have used different source of data provided from Sharadar an
 </table>
 
 
+<h3 class="toc_title">1. Parameters Overview</h3>
+<table class="parameter-table compact-table">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Details</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Time Series Data -->
+    <tr>
+      <td rowspan="2">Time Series Data</td>
+      <td>SF1/SHARADAR: Historical Fundamentals</td>
+      <td>4 years</td>
+    </tr>
+    <tr>
+      <td>SEP/DAILY/SHARADAR, IFT/NSA: EOD & Sentiment</td>
+      <td>3 years</td>
+    </tr>
+
+    <!-- Universe Selection -->
+    <tr>
+      <td rowspan="4">Universe Selection</td>
+      <td>Market Cap: Mega, Large, Mid</td>
+      <td>Selected</td>
+    </tr>
+    <tr>
+      <td>Exchange: NYSE, NASDAQ, BATS</td>
+      <td>Selected</td>
+    </tr>
+    <tr>
+      <td>Currency: USD</td>
+      <td>Included</td>
+    </tr>
+    <tr>
+      <td>Delisted: Excluded</td>
+      <td>No</td>
+    </tr>
+
+    <!-- Trading Volume & Liquidity -->
+    <tr>
+      <td rowspan="2">Trading Volume & Liquidity</td>
+      <td>Filteration Number: Top Liquid</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <td>Smoothing Period: Moving Avg.</td>
+      <td>120 days</td>
+    </tr>
+
+    <!-- Pipeline Parameters -->
+    <tr>
+      <td rowspan="2">Pipeline Parameters</td>
+      <td>Smoothing Value</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Indicators: NCF, Momentum, SMA, Daily, Overnight Sentiment, Direction, Sentiment, Volatility, CAPM, Channels</td>
+      <td>Various</td>
+    </tr>
+
+    <!-- Factor Analysis -->
+    <tr>
+      <td rowspan="2">Factor Analysis</td>
+      <td>Combined Periods: Forward Returns</td>
+      <td>(5, 10, 20)</td>
+    </tr>
+    <tr>
+      <td>Rebalance Period: Portfolio Update</td>
+      <td>10 days</td>
+    </tr>
+
+    <!-- Optimizer Parameters -->
+    <tr>
+      <td rowspan="3">Optimizer</td>
+      <td>Risk Cap | Lambda Reg.</td>
+      <td>0.07 | 0.5</td>
+    </tr>
+    <tr>
+      <td>Factor Limits (Max | Min)</td>
+      <td>10 | -10</td>
+    </tr>
+    <tr>
+      <td>Weights (Max | Min)</td>
+      <td>0.2 | -0.1</td>
+    </tr>
+
+    <!-- Quantiles -->
+    <tr>
+      <td rowspan="2">Quantiles</td>
+      <td>Portions: Quantiles for Analysis</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Analyze: Extreme Quantiles</td>
+      <td>1, 10</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
