@@ -1,12 +1,12 @@
 ---
 date: 2023-12-20 12:26:40
 layout: post
-title: "Alpha Generation: Quantitative Edge - Building Alpha-Generating Trading Systems"
+title: "Alpha Generation"
 subtitle: "Quantitative Edge: Building Alpha-Generating Trading Systems"
 description: "Quantitative Edge: Building Alpha-Generating Trading Systems"
 image: /assets/img/alpha.png
 optimized_image: /assets/img/alpha.png
-category: 
+category: Quantitative Tradind
 tags:
   - Factor Analysis
   - Backtesting
