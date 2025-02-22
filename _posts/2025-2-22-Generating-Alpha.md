@@ -6,7 +6,7 @@ subtitle: "Quantitative Edge: Building Alpha-Generating Trading Systems"
 description: "Quantitative Edge: Building Alpha-Generating Trading Systems"
 image: /assets/img/alpha.png
 optimized_image: /assets/img/alpha.png
-category: Quantitative Tradind
+category: Quantitative Trading
 tags:
   - Factor Analysis
   - Backtesting
