@@ -15,28 +15,77 @@ tags:
 author: Rachael
 ---
 
+In this project, I dove into a deep exploration of quantitative trading strategies with a primary focus on alpha generation. The core of the project was to contrust a robust trading system that leverages advanced statistical models and machine learning techniques to uncover and exploit predictive signals in financial markets. This involved defininig a liquid universe of stocks, performinig intrincate factor analysis, and employing optimization algorithms to refine the trading strategies. 
 
-This project examines the efficiency of non-parametric models, specifically artificial neural networks (ANNs), compared to the parametric Black-Scholes (BS) pricing formula in option pricing and delta hedging strategies. This project focuses on European Volatility Index call options over the period from January 2021 to December 2021, assessing both models in terms of pricing accuracy and hedging effectiveness. 
+The project workflow is comprised of these distinct stages:
+1. Parameters
+2. Universe definition
+3. Sector definition
+4. Alpha factors
+5. Factor analysis
+6. Factors combination
+7. Risk analysis for equal weights
+8. Integraing factor data to the optimizer
+9. Optimized alpha vector analysis
+10. Prediction portfolio
 
+In this context, we have used different source of data provided from Sharadar and IFT as described below:
+- Sharadar Equity Prices (SHARADAR/SEP): Updated daily EOD price data for more than 14,000 US public companies.
+- Indicator Descriptions (SHARADAR/INDICATORS): Description of indicators listed in SF1 table for more than 14,000 US public companies.
+- Tickers and Metadata (SHARADAR/TICKERS): Information and metadata for more than 14,000 US public companies.
+- Core US Fundamentals (SHARADAR/SF1): 150 essential fundamental indicators and financial ratios, for more than 14,000 US public companies.
+- Daily Metrics (SHARADAR/DAILY): 5 essential metrics indicators and financial ratios daily updated, for more than 14,000 US public companies.
+- Sentiment Analysis and News Analytics (IFT/NSA): News, blogs, social media and proprietary sources for thousands of stocks. 
 
-<h2 class="toc_title">Option Pricing Method</h2>
+<h2 class="toc_title">1 - Parameters</h2>
 
-<h3 class="toc_title">Data Preparation</h3>
+<h4 class="toc_title">1-1: Time Series Data Parameters</h4>
 
-The analysis includes daily options, forward prices, and interest rates. Data for the 3-month U.S. Treasury Bill which was retrieved from the Federal Reserve Economic Data (FRED), is used to calculate the present value of the underlying price (VIX) based on the option's trading month. 
+- SF1/SHARADAR (4 years)
+- SEP/DAILY/SHARADAR, IFT/NSA (3 years)
 
-<h3 class="toc_title">Model Build Up</h3>
+<h4 class="toc_title">1-2: Universe Parameters</h4>
+- Market Capitalization: Mega, Large, Mid
+- Exchange: NYSe, NASDAQ, BATS
+- Currency: USD
+- Delisted: No
 
-Features: 
-- Stock/Strike (S/X): The VIX's daily trading price was discounted using the monthly interest rate from FRED to determine its present value. 
-- Time to Expiration(T-t): The days between the current trading date and the maturity date were counted and normalized to a year scale (252 trading days). 
+<h4 class="toc_title">1-3: Trading Volume and Liquidity</h4>
+- Filteration Number: 800
+- Smoothing Universe Period (120 days): Applies a moving average to trading volume data to smooth out short-term fluctuations
 
-Predictor:
-- Market option price/strike price ratio: This normalization scales the option prices relative to their strike prices, facilitating a uniform analysis across different scales and valuations. 
+<h4 class="toc_title">1-4: Pipeline Parameters</h4>
 
-<h3 class="toc_title">ANN Model Architecture</h3>
+- smoothed_value = 5: used to remove noise created by factor variation
+- fundamental_in = ['ncf']
+- momentum_in = {'momentum_252d':252}
+- sma_in = {'sma200':200}
+- daily_in = {'marketcap':120, 'evebitda':100, 'ps':100, 'pe':100, 'pb':100}
+- over_in = {'overnight_sentiment_60d':60}
+- direction_in = {'direction_100d':100}
+- sent_in = {'sentiment_10d':10,'sentiment_60d':60}
+- vol_in = {'volatility_5d':5,'volatility_20d':20}
+- capm_in = {'capm_60d':60,'capm_20d':20,'capm_10d':10,'capm_5d':5}
+- channels_in = {'chan_60d':60, 'chan_100d':100}
 
-The architecture begins with an input layer configured dynamically to handle any size of financial data. It features a hidden layer with 4 neurons using a sigmoid activation function to model nonlinearities and an output layer with sigmoid activation to ensure predictions stay within the range of 0 to 1. 
+<h4 class="toc_title">1-5: Factor Analysis Parameters</h4>
+- combined_periods = (5,10,20): sets the time frames for which the model will calculate forward returns
+- rebalance_period = 10: defines the frequency at which the investment portfolio is rebalanced to align with the lastest model outputs. 
+- factor_exposures = 10
+
+<h4 class="toc_title">1-6: Optimizer Parameters</h4>
+
+- risk_cap = 0.07
+- lambda_reg = 0.5
+- factor_max = 10
+- factor_min = -10 
+- weights_max = 0.2
+- weights_min = -0.1
+
+<h4 class="toc_title">1-7: Quantiles Parameters</h4>
+- quantile portions: 10 - the number of quantiles we want to analyze and work with
+- quantile to analyse: 1, 10 - the quantiles selected for the final analyze and portfolio as we use it to select extreme quantiles to get the best results. Focusing on these extremes allows the strategy to capture the most significant deviations from the norm, which often represent the clearest trading signals. This approach helps in effectively leveraging the predictive power of the model by concentrating on areas where the potential for alpha is greatest, thereby optimizing the portfolio's performance potential. 
+
 
 <h3 class="toc_title">Results</h3>
 
