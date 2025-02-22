@@ -88,11 +88,11 @@ In this context, we have used different source of data provided from Sharadar an
       <td>Dollar Volume Universe</td>
       <td>Selects liquid stocks</td>
       <td>
-        Market Cap = Close * Volume <br>
-        Filtered by: Top Liquid (800) <br>
-        Smoothed over: 120 Days
+        Selected
       </td>
-      <td>Selected</td>
+      <td>Market Cap = Close * Volume <br>
+        Filtered by: Top Liquid (800) <br>
+        Smoothed over: 120 Days</td>
     </tr>
 
     
