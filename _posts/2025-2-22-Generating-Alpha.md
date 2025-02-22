@@ -273,6 +273,7 @@ In this context, we have used different source of data provided from Sharadar an
 
 
 
+
 <h3 class="toc_title">Results</h3>
 
 The trained model predicts prices for various option types including all samples, in-the-money, out-of-the-money, at-the-money, and across different maturities: short, medium, and long. 
