@@ -102,6 +102,7 @@ In this context, we have used different source of data provided from Sharadar an
     </tr>
   </thead>
   <tbody>
+    <!-- Time Series Data -->
     <tr>
       <td rowspan="2">Time Series Data</td>
       <td>SF1/SHARADAR</td>
@@ -113,6 +114,8 @@ In this context, we have used different source of data provided from Sharadar an
       <td>End-of-Day (EOD) pricing and sentiment data</td>
       <td>3 years</td>
     </tr>
+    
+    <!-- Universe Selection -->
     <tr>
       <td rowspan="4">Universe Selection</td>
       <td>Market Cap</td>
@@ -134,8 +137,10 @@ In this context, we have used different source of data provided from Sharadar an
       <td>Exclude delisted stocks</td>
       <td>No</td>
     </tr>
+    
+    <!-- Trading Volume and Liquidity -->
     <tr>
-      <td rowspan="2">Trading Volume and Liquidity</td>
+      <td rowspan="2">Trading Volume & Liquidity</td>
       <td>Filteration Number</td>
       <td>Number of liquid securities</td>
       <td>800</td>
@@ -145,6 +150,66 @@ In this context, we have used different source of data provided from Sharadar an
       <td>Moving average window to smooth trading volume</td>
       <td>120 days</td>
     </tr>
+    
+    <!-- Pipeline Parameters -->
+    <tr>
+      <td rowspan="11">Pipeline Parameters</td>
+      <td>smoothed_value</td>
+      <td>Moving average to reduce noise in factor data</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>fundamental_in</td>
+      <td>Fundamental indicators used</td>
+      <td>[‘ncf’]</td>
+    </tr>
+    <tr>
+      <td>momentum_in</td>
+      <td>Momentum calculation window</td>
+      <td>{‘momentum_252d’: 252}</td>
+    </tr>
+    <tr>
+      <td>sma_in</td>
+      <td>Simple Moving Average period</td>
+      <td>{‘sma200’: 200}</td>
+    </tr>
+    <tr>
+      <td>daily_in</td>
+      <td>Daily metrics for valuation</td>
+      <td>{‘marketcap’: 120, ‘evebitda’: 100, ‘ps’: 100, ‘pe’: 100, ‘pb’: 100}</td>
+    </tr>
+    <tr>
+      <td>over_in</td>
+      <td>Overnight sentiment period</td>
+      <td>{‘overnight_sentiment_60d’: 60}</td>
+    </tr>
+    <tr>
+      <td>direction_in</td>
+      <td>Directional movement period</td>
+      <td>{‘direction_100d’: 100}</td>
+    </tr>
+    <tr>
+      <td>sent_in</td>
+      <td>Sentiment analysis window</td>
+      <td>{‘sentiment_10d’: 10, ‘sentiment_60d’: 60}</td>
+    </tr>
+    <tr>
+      <td>vol_in</td>
+      <td>Volatility calculation window</td>
+      <td>{‘volatility_5d’: 5, ‘volatility_20d’: 20}</td>
+    </tr>
+    <tr>
+      <td>capm_in</td>
+      <td>CAPM beta estimation periods</td>
+      <td>{‘capm_60d’: 60, ‘capm_20d’: 20, ‘capm_10d’: 10, ‘capm_5d’: 5}</td>
+    </tr>
+    <tr>
+      <td>channels_in</td>
+      <td>Price channel breakout periods</td>
+      <td>{‘chan_60d’: 60, ‘chan_100d’: 100}</td>
+    </tr>
+
+    <!-- Factor Analysis -->
     <tr>
       <td rowspan="2">Factor Analysis</td>
       <td>Combined Periods</td>
@@ -156,30 +221,54 @@ In this context, we have used different source of data provided from Sharadar an
       <td>Frequency of portfolio rebalancing</td>
       <td>10 days</td>
     </tr>
+    
+    <!-- Optimizer Parameters -->
     <tr>
-      <td>Quantiles</td>
+      <td rowspan="6">Optimizer Parameters</td>
+      <td>risk_cap</td>
+      <td>Maximum risk exposure for the portfolio</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>lambda_reg</td>
+      <td>Regularization parameter for the optimizer</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>factor_max</td>
+      <td>Maximum limit for factor exposure</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>factor_min</td>
+      <td>Minimum limit for factor exposure</td>
+      <td>-10</td>
+    </tr>
+    <tr>
+      <td>weights_max</td>
+      <td>Maximum weight allocation per asset</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>weights_min</td>
+      <td>Minimum weight allocation per asset</td>
+      <td>-0.1</td>
+    </tr>
+    
+    <!-- Quantiles -->
+    <tr>
+      <td rowspan="2">Quantiles</td>
       <td>Quantile Portions</td>
       <td>Number of quantiles for analysis</td>
       <td>10</td>
     </tr>
     <tr>
-      <td>Quantiles</td>
       <td>Quantile to Analyze</td>
       <td>Focus on extremes for alpha generation</td>
       <td>1, 10</td>
     </tr>
   </tbody>
 </table>
-
-
-<h3 class="toc_title">1. Parameters Overview</h3>
-<ul>
-  <li><strong>Time Series Data:</strong> SF1 (4 years), SEP/DAILY/SHARADAR, IFT/NSA (3 years)</li>
-  <li><strong>Universe Selection:</strong> Market Cap (Mega, Large, Mid), Exchange (NYSE, NASDAQ, BATS), Currency (USD), Delisted (No)</li>
-  <li><strong>Trading Volume and Liquidity:</strong> Filteration Number (800), Smoothing Period (120 days)</li>
-  <li><strong>Factor Analysis:</strong> Combined Periods (5, 10, 20), Rebalance Period (10 days)</li>
-  <li><strong>Quantiles:</strong> Portions (10), To Analyze (1, 10)</li>
-</ul>
 
 
 
