@@ -14,6 +14,7 @@ tags:
   - Portfolio Optimization
 author: Rachael
 ---
+
 This project examines the efficiency of non-parametric models, specifically artificial neural networks (ANNs), compared to the parametric Black-Scholes (BS) pricing formula in option pricing and delta hedging strategies. This project focuses on European Volatility Index call options over the period from January 2021 to December 2021, assessing both models in terms of pricing accuracy and hedging effectiveness. 
 
 
