@@ -15,8 +15,7 @@ paginate:
 
 > ##### Introduction
 
-Since coming to the States, I have been less exposed to Malay therefore, I began to forget 
-Born as a Chinese Malaysian, I moved to the States for high school and college, and slowly lost touch with Malay, which is the national language.  As I grew up, I became more and more interested in Malaysian politics as I am still very in touch with my home country. However, all government meetings and debates are conducted in Malay, which I no longer understand. So the idea for my project is to use the Whisper AI's model to translate Malay into English. 
+Born a Chinese Malaysian, I moved to the United States for high school and college. Over time, I've become less exposed to Malay, the national language of Malaysia, and have begun to forget it. Despite this, my interest in Malaysian politics has grown as I remain deeply connected to my home country. However, all government meetings and debates are conducted in Malay, which I no longer fully understand. To bridge this gap, this project utilized Whisper AI's model to translate Malay into English. 
 
 
 
