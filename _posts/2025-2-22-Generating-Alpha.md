@@ -92,7 +92,6 @@ In this context, we have used different source of data provided from Sharadar an
 - quantile to analyse: 1, 10 - the quantiles selected for the final analyze and portfolio as we use it to select extreme quantiles to get the best results. Focusing on these extremes allows the strategy to capture the most significant deviations from the norm, which often represent the clearest trading signals. This approach helps in effectively leveraging the predictive power of the model by concentrating on areas where the potential for alpha is greatest, thereby optimizing the portfolio's performance potential.
 
 <h3 class="toc_title">1. Parameters Overview</h3>
-
 <table class="parameter-table">
   <thead>
     <tr>
