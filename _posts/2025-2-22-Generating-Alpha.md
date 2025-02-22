@@ -4,8 +4,8 @@ layout: post
 title: Alpha Generation
 subtitle: Quantitative Edge: Building Alpha-Generating Trading Systems
 description: Quantitative Edge: Building Alpha-Generating Trading Systems
-image: /assets/img/ANN.jpeg
-optimized_image: /assets/img/ANN.jpeg
+image: /assets/img/alpha.png
+optimized_image: /assets/img/alpha.png
 category: Deep Learning in Finance
 tags:
   - Factor Analysis
