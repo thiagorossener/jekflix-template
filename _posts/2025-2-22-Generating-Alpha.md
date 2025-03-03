@@ -90,18 +90,18 @@ Now we have processed and regrouped factor data, we are ready to analyze the fac
 
 
 
-<h4 class="toc_title">4 - 1: Cumulated factor return</h4>
+<h4 class="toc_title">3 - 1: Cumulated factor return</h4>
 
 With all factor scores calculated per asset, we compute the future returns for the specified periods (10), which are the returns that we would receive for holding each factor value for the specified number of days. Forward returns helps us understand how the asset's price changes over time and how well a factor predicts future returns. 
 - The forward return for each asset over 10 days is calculated using the percentage change formula on the asset's price. This is done by comparing the price at the current date to the price 10 days later. Since we want to know today what the return will be over the next 10 days, we shift the date at the start of the 10 days, effectively treating the return as "forward-looking" from that date.
 
 We then calculate the cumulated factor returns by computing the forward returns for each asset over the specified holding period. 
 
-<h4 class="toc_title">4 - 2: Quantile analysis</h4>
+<h4 class="toc_title">3 - 2: Quantile analysis</h4>
 
 Once we have the forward returns, we categorize each asset into quantiles based on its factor score. The idea is to group assets into performance buckets (e.g high vs low momentums stocks) and analyze how these groups perform over time. 
 
-<h4 class="toc_title">4 - 3: Sharpe ratio</h4>
+<h4 class="toc_title">3 - 3: Sharpe ratio</h4>
 
 We then calculate the Sharpe Ratio used to evaluate an investment strategy's risk-adjusted return.
 By computing the mean of the factor returns multiplied by the annualization factor and divided by the standard deviation, we get the risk-adjusted return.  
