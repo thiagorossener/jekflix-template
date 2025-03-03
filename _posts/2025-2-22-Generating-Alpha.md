@@ -87,49 +87,90 @@ Factor-driven alpha investment strategies, designed to delivering market-beating
 
 <h3 class="toc_title">3 - All Factors Analysis</h3>
 
-Now we have processed and regrouped factor data, we are ready to analyze the factor one by one to see if they have the potential to be combined or not.
+Now that we have preprocessed and regrouped our factor data, we can analyze each factor individually to assess its predictive power. The goal is to determine whether these factors can be effectively combined to enhance investment decision-making. 
 
 
 
 <h4 class="toc_title">3 - 1: Cumulated factor return</h4>
 
-With all factor scores calculated per asset, we compute the future returns for the specified periods (10), which are the returns that we would receive for holding each factor value for the specified number of days. Forward returns helps us understand how the asset's price changes over time and how well a factor predicts future returns. 
-- The forward return for each asset over 10 days is calculated using the percentage change formula on the asset's price. This is done by comparing the price at the current date to the price 10 days later. Since we want to know today what the return will be over the next 10 days, we shift the date at the start of the 10 days, effectively treating the return as "forward-looking" from that date.
+With all factor scores calculated per asset, we compute the future returns over a specified holding period (10 days in this case). The forward returns represent the returns an investor would receive by holding an asset for the defined period. 
+
+For each asset, the 10-day forward return is computed using the percentage change formula:
+$$
+\text{Forward Return} = \frac{\text{Price at }(t+10\text{ days}) - \text{Price at }(t)}{\text{Price at }(t)}
+$$
+Since we want to know today what the return will be over the next 10 days, we shift the date at the start of the 10 days, effectively treating the return as "forward-looking" from that date.
 
 We then calculate the cumulated factor returns by computing the forward returns for each asset over the specified holding period. 
 
-<h4 class="toc_title">3 - 2: Quantile analysis</h4>
 
-Once we have the forward returns, we categorize each asset into quantiles based on its factor score. The idea is to group assets into performance buckets (e.g high vs low momentums stocks) and analyze how these groups perform over time. 
+<h4 class="toc_title">3 - 2: Sharpe Ratio</h4>
+To evaluate each factor's effectivess in a risk-adjusted manner, we calculate the Sharpe Ratio, which measures the excess return per unit of risk:
 
-<h4 class="toc_title">3 - 3: Sharpe ratio</h4>
+$$
+\text{Sharpe Ratio} = \frac{\mathbb{E}[\text{Factor Returns}] \times \text{Annualization Factor}}{\sigma(\text{Factor Returns})}
+$$
 
-We then calculate the Sharpe Ratio used to evaluate an investment strategy's risk-adjusted return.
-By computing the mean of the factor returns multiplied by the annualization factor and divided by the standard deviation, we get the risk-adjusted return.  
+We calculate the mean of the ls_factor_returns which are the returns from a long-short factor based strategy; in which we perform factor investing whereby a long position is taken in stocks with favorable factor scores and a short position is taken in stocks with unfavorable factor scores.
+
 
 ![Screenshot 2025-03-03 at 8 39 52 AM](https://github.com/user-attachments/assets/e9b3aa5f-04ae-4a2f-a654-08f98a6f6dc5)
 
-As you can see from the table above, factors such as channels100days, direction100days, and capm 10 days as well as other factors provide strong excess returns per unit of risk while daily_pb100days, or sma200 performs poorly, which indicates that this factor may not be useful in this strategy. 
+From the analysis, factors such as channels100days, direction100days, and capm10days exhibit strong risk-adjusted returns, making them valuable for strategy development. Conversely, daily_pb100days and sma200 perform poorly, indicating they may not be useful in this particular approach. 
 
 
 <h3 class="toc_title">4 - Combined Factors</h3>
 
-According to the Sharpe Ratio, we then combine a selected list of factors that..... We then compute the feature importance using an XGBoost model which helps rank how important each factor is for predicting the asset returns and help adjust each factor by its relative importance. 
+After computing the Sharpe Ratio, we select the most predictive factors. Rather than relying on individual factors, we use XGBoost to detremine the feature importance of each selected factor. The model is trained using closing prices and factor data to quantify how valuable each factor is in predicting asset returns. The XGBoost feature importance scores help adjust each factor's weighting, ensuring that more significant factors contribute more to the final composite signal. 
 
-We then multiply the factor values by their respective feature importance score. This helps scaling the factor according to its importance, ensuring that more significant factors contribute more to the final composite score. We then sum all of the weighted factors for each asset and date and name it alpha factor. This vector represents the combined impact of all selected factors on the asset's predicted performance. The weighted metric is then able to be used for asset selection, risk management, or prediction of asset performance. 
+$$
+\text{Weighted Factor} = \text{Feature Importance} \times \text{Factor Value}
+$$
+
+$$
+\text{Alpha Vector} = \sum (\text{Weighted Factors})
+$$
+
+
+With the feature importance scores, we constuct a single composite signal - the alpha vector - which ranks assets based on their predicted performance. In an investment context, assets with higher alpha scores are expected to perform better than those with lower scores. 
+
+
+
 
 <h3 class="toc_title">5 - Optimized Alpha Vector Portfolio Analysis</h3>
 
-With the optimized alpha vector, we simulate the performance of a portfolio built using the factor values as asset weights. Since quantiles 1 and 5 are most predictive, we simulate a portfolio where only those quantiles are traded. 
 
-After backtesting the result, we obtained an annual return of 4.1% and a Sharpe Ratio of 3.54, achieving 0.92 stability and a max drawdown of -1.1%. 
+With the optimized alpha vector, we simulate the performance of a portfolio built using the factor values as asset weights. Since quantiles 1 and 5 are most predictive, we simulate a portfolio where only those quantiles are traded. 
+- long positions in assets with high alpha scores
+- short position in assets with low alpha scores
+
+After backtesting, the optmized portfolio achieved the following key performance metrics:
+
+<table>
+    <tr>
+        <th>Metric</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Annual Return</td>
+        <td>4.1%</td>
+    </tr>
+    <tr>
+        <td>Sharpe Ratio</td>
+        <td>3.54</td>
+    </tr>
+    <tr>
+        <td>Stability</td>
+        <td>0.92</td>
+    </tr>
+    <tr>
+        <td>Max Drawdown</td>
+        <td>-1.1%</td>
+    </tr>
+</table>
+
+The optimized alpha vector portfolio demonstrates that by combining multiple factors using machine learning, we can improve predictive accuracy, enhance returns, and reduce risk. 
 
 ![Screenshot 2025-03-03 at 8 57 38 AM](https://github.com/user-attachments/assets/17dce66c-8015-46d1-82be-06bca47d5a77)
 
 
-
-<h3 class="toc_title">6 - Risk Analysis</h3>
-
-![Screenshot 2025-03-03 at 9 08 20 AM](https://github.com/user-attachments/assets/cd962cb5-763a-4575-9e2f-8d54c9fb13a0)
-
-Most importantly, we conduct a risk analysis on our portfolio. The predicted risk for our portfolio is 8.4%. 
