@@ -144,6 +144,15 @@ With the optimized alpha vector, we simulate the performance of a portfolio buil
 - long positions in assets with high alpha scores
 - short position in assets with low alpha scores
 
+
+![Screenshot 2025-03-03 at 8 57 38 AM](https://github.com/user-attachments/assets/17dce66c-8015-46d1-82be-06bca47d5a77)
+
+As you can see, the factor quantiles over different holding periods (5-day, 10-day, and 20-day forward returns) display consistent patterns across timeframes. This consistency suggests that the factor used in this analysis has strong predictive power. Here are the key takeaways:
+- The higher quantiles (quantile 5) consistently exhibit higher returns across all periods.
+- The lower quantiles (quantiles 1 and 2) have relatively lower or negative returns.
+  
+The above further proves the long-short strategy where we long assets in the highest quantiles and short assets in the lowest quantiles. 
+
 After backtesting, the optmized portfolio achieved the following key performance metrics:
 
 <table>
@@ -171,6 +180,16 @@ After backtesting, the optmized portfolio achieved the following key performance
 
 The optimized alpha vector portfolio demonstrates that by combining multiple factors using machine learning, we can improve predictive accuracy, enhance returns, and reduce risk. 
 
-![Screenshot 2025-03-03 at 8 57 38 AM](https://github.com/user-attachments/assets/17dce66c-8015-46d1-82be-06bca47d5a77)
 
+<h3 class="toc_title">6 - Conclusions for Intraday Trading</h3>
 
+In theory, the above analysis can also be extended to intraday trading, where we analyze short-term price movements rather than daily or longer-term trends. 
+
+Intraday Factor Analysis Breakdown:
+1. Load intraday price data at the minute level
+2. Adjust factor timestamps to align with market open
+3. Compute short-term forward returns such as 30 minutes, 1 hour, 1.5 hours, 2 hours, and 3 hours.
+4. Evaluate factor quantiles
+   - long quantile 5 stocks
+   - short quantile 1 stocks
+It's important to note that the factors in intraday trading should effectively reflect price momentum  or mean reversion. 
