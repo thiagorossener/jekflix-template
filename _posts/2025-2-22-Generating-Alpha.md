@@ -18,13 +18,11 @@ author: Rachael
 In this project, I dove into a deep exploration of quantitative trading strategies with a primary focus on alpha generation. The core of the project was to contrust a robust trading system that leverages advanced statistical models and machine learning techniques to uncover and exploit predictive signals in financial markets. This involved defininig a liquid universe of stocks, performinig intrincate factor analysis, and employing optimization algorithms to refine the trading strategies. 
 
 The project workflow is comprised of these distinct stages:
-1. Parameters
-2. Universe definition
-3. Sector definition
-4. Alpha factors
-5. Factor analysis
-6. Factors combination
-7. Optimized alpha vector analysis
+1. Universe Data Collection
+2. Alpha factors
+3. Factor analysis
+4. Factors combination
+5. Optimized alpha vector analysis
 
 
 In this context, we have used different source of data provided from Sharadar and IFT as described below:
@@ -36,160 +34,8 @@ In this context, we have used different source of data provided from Sharadar an
 - Sentiment Analysis and News Analytics (IFT/NSA): News, blogs, social media and proprietary sources for thousands of stocks. 
 
 
-<h3 class="toc_title">1 - Parameters</h3>
-<table class="parameter-table">
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Parameter</th>
-      <th>Description</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <!-- Time Series Data -->
-    <tr>
-      <td rowspan="2">Time Series Data</td>
-      <td>SF1/SHARADAR</td>
-      <td>Historical fundamental data</td>
-      <td>4 years</td>
-    </tr>
-    <tr>
-      <td>SEP/DAILY/SHARADAR, IFT/NSA</td>
-      <td>End-of-Day (EOD) pricing and sentiment data</td>
-      <td>3 years</td>
-    </tr>
-    
-    <!-- Universe Selection -->
-    <tr>
-      <td rowspan="4">Universe Selection</td>
-      <td>Market Cap</td>
-      <td>Stock selection by size</td>
-      <td>Mega, Large, Mid</td>
-    </tr>
-    <tr>
-      <td>Exchange</td>
-      <td>Stock listing exchange</td>
-      <td>NYSE, NASDAQ, BATS</td>
-    </tr>
-    <tr>
-      <td>Currency</td>
-      <td>Denominated currency</td>
-      <td>USD</td>
-    </tr>
-    <tr>
-      <td>Delisted</td>
-      <td>Exclude delisted stocks</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Dollar Volume Universe</td>
-      <td>Selects liquid stocks</td>
-      <td>
-        Selected
-      </td>
-      <td>Market Cap = Close * Volume <br>
-        Filtered by: Top Liquid (800) <br>
-        Smoothed over: 120 Days</td>
-    </tr>
 
-    
-    <!-- Trading Volume and Liquidity -->
-    <tr>
-      <td rowspan="2">Trading Volume & Liquidity</td>
-      <td>Filteration Number</td>
-      <td>Number of liquid securities</td>
-      <td>800</td>
-    </tr>
-    <tr>
-      <td>Smoothing Universe Period</td>
-      <td>Moving average window to smooth trading volume</td>
-      <td>120 days</td>
-    </tr>
-    
-    <!-- Pipeline Parameters -->
-    <tr>
-      <td rowspan="11">Pipeline Parameters</td>
-      <td>smoothed_value</td>
-      <td>Moving average to reduce noise in factor data</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>fundamental_in</td>
-      <td>Fundamental indicators used</td>
-      <td>[‘ncf’]</td>
-    </tr>
-    <tr>
-      <td>momentum_in</td>
-      <td>Momentum calculation window</td>
-      <td>{‘momentum_252d’: 252}</td>
-    </tr>
-    <tr>
-      <td>sma_in</td>
-      <td>Simple Moving Average period</td>
-      <td>{‘sma200’: 200}</td>
-    </tr>
-    <tr>
-      <td>daily_in</td>
-      <td>Daily metrics for valuation</td>
-      <td>{‘marketcap’: 120, ‘evebitda’: 100, ‘ps’: 100, ‘pe’: 100, ‘pb’: 100}</td>
-    </tr>
-    <tr>
-      <td>over_in</td>
-      <td>Overnight sentiment period</td>
-      <td>{‘overnight_sentiment_60d’: 60}</td>
-    </tr>
-    <tr>
-      <td>direction_in</td>
-      <td>Directional movement period</td>
-      <td>{‘direction_100d’: 100}</td>
-    </tr>
-    <tr>
-      <td>sent_in</td>
-      <td>Sentiment analysis window</td>
-      <td>{‘sentiment_10d’: 10, ‘sentiment_60d’: 60}</td>
-    </tr>
-    <tr>
-      <td>vol_in</td>
-      <td>Volatility calculation window</td>
-      <td>{‘volatility_5d’: 5, ‘volatility_20d’: 20}</td>
-    </tr>
-    <tr>
-      <td>capm_in</td>
-      <td>CAPM beta estimation periods</td>
-      <td>{‘capm_60d’: 60, ‘capm_20d’: 20, ‘capm_10d’: 10, ‘capm_5d’: 5}</td>
-    </tr>
-    <tr>
-      <td>channels_in</td>
-      <td>Price channel breakout periods</td>
-      <td>{‘chan_60d’: 60, ‘chan_100d’: 100}</td>
-    </tr>
-
-    <!-- Factor Analysis -->
-    <tr>
-      <td rowspan="2">Factor Analysis</td>
-      <td>Combined Periods</td>
-      <td>Forward return time frames</td>
-      <td>(5, 10, 20)</td>
-    </tr>
-    
-    <!-- Quantiles -->
-    <tr>
-      <td rowspan="2">Quantiles</td>
-      <td>Quantile Portions</td>
-      <td>Number of quantiles for analysis</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <td>Quantile to Analyze</td>
-      <td>Focus on extremes for alpha generation</td>
-      <td>1, 10</td>
-    </tr>
-  </tbody>
-</table>
-
-
-<h3 class="toc_title">2 - Universe Data Collection</h3>
+<h3 class="toc_title">1 - Universe Data Collection</h3>
 
 <h4 class="toc_title">2 - 1: Benchmarking</h4>
 
@@ -223,7 +69,7 @@ IFT/NSA data is integrated to gauge market sentiment from:
 This sentiment data is leveraged to capture market psychology, enhancing alpha generation by anticipating potential market movements.
 
 
-<h3 class="toc_title">3 - Alpha Factors</h3>
+<h3 class="toc_title">2 - Alpha Factors</h3>
 
 Factor-driven alpha investment strategies, designed to delivering market-beating returns, come in a number of different forms. In this project, the following alpha factors are disccused:
 1. **Daily Metrics** - Captures short-term price movements using daily financial ratios and market data.
@@ -238,7 +84,7 @@ Factor-driven alpha investment strategies, designed to delivering market-beating
 
 
 
-<h3 class="toc_title">4 - All Factors Analysis</h3>
+<h3 class="toc_title">3 - All Factors Analysis</h3>
 
 Now we have processed and regrouped factor data, we are ready to analyze the factor one by one to see if they have the potential to be combined or not.
 
@@ -265,13 +111,13 @@ By computing the mean of the factor returns multiplied by the annualization fact
 As you can see from the table above, factors such as channels100days, direction100days, and capm 10 days as well as other factors provide strong excess returns per unit of risk while daily_pb100days, or sma200 performs poorly, which indicates that this factor may not be useful in this strategy. 
 
 
-<h3 class="toc_title">5 - Combined Factors</h3>
+<h3 class="toc_title">4 - Combined Factors</h3>
 
 According to the Sharpe Ratio, we then combine a selected list of factors that..... We then compute the feature importance using an XGBoost model which helps rank how important each factor is for predicting the asset returns and help adjust each factor by its relative importance. 
 
 We then multiply the factor values by their respective feature importance score. This helps scaling the factor according to its importance, ensuring that more significant factors contribute more to the final composite score. We then sum all of the weighted factors for each asset and date and name it alpha factor. This vector represents the combined impact of all selected factors on the asset's predicted performance. The weighted metric is then able to be used for asset selection, risk management, or prediction of asset performance. 
 
-<h3 class="toc_title">6 - Optimized Alpha Vector Portfolio Analysis</h3>
+<h3 class="toc_title">5 - Optimized Alpha Vector Portfolio Analysis</h3>
 
 With the optimized alpha vector, we simulate the performance of a portfolio built using the factor values as asset weights. Since quantiles 1 and 5 are most predictive, we simulate a portfolio where only those quantiles are traded. 
 
