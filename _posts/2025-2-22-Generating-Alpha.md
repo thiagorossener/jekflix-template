@@ -90,8 +90,7 @@ Factor-driven alpha investment strategies, designed to delivering market-beating
 Now that we have preprocessed and regrouped our factor data, we can analyze each factor individually to assess its predictive power. The goal is to determine whether these factors can be effectively combined to enhance investment decision-making. 
 
 
-
-<h4 class="toc_title">3 - 1: Cumulated factor return</h4>
+<h4 class="toc_title">3 - 1: Forward return</h4>
 
 With all factor scores calculated per asset, we compute the future returns over a specified holding period (10 days in this case). The forward returns represent the returns an investor would receive by holding an asset for the defined period. 
 
@@ -101,17 +100,22 @@ $$
 $$
 Since we want to know today what the return will be over the next 10 days, we shift the date at the start of the 10 days, effectively treating the return as "forward-looking" from that date.
 
-We then calculate the cumulated factor returns by computing the forward returns for each asset over the specified holding period. 
+<h4 class="toc_title">3 - 2: Factor return</h4>
 
+1. Calculate weights by subtracting the mean of factor scores at each date level.
+2. Normalize the weights
+3. Multiply the forward returns by the calculated weights
+4. We get the factor returns by grouping the weighted returns by summing them.
 
-<h4 class="toc_title">3 - 2: Sharpe Ratio</h4>
+Positive Factor Return: The factor has positively contributed to the portfolio's performance
+Negative Factor Return: Suggests that the factor negatively impacts the portfolio's performance on that day. 
+
+<h4 class="toc_title">3 - 3: Sharpe Ratio</h4>
 To evaluate each factor's effectivess in a risk-adjusted manner, we calculate the Sharpe Ratio, which measures the excess return per unit of risk:
 
 $$
 \text{Sharpe Ratio} = \frac{\mathbb{E}[\text{Factor Returns}] \times \text{Annualization Factor}}{\sigma(\text{Factor Returns})}
 $$
-
-We calculate the mean of the ls_factor_returns which are the returns from a long-short factor based strategy; in which we perform factor investing whereby a long position is taken in stocks with favorable factor scores and a short position is taken in stocks with unfavorable factor scores.
 
 
 ![Screenshot 2025-03-03 at 8 39 52 AM](https://github.com/user-attachments/assets/e9b3aa5f-04ae-4a2f-a654-08f98a6f6dc5)
@@ -121,7 +125,7 @@ From the analysis, factors such as channels100days, direction100days, and capm10
 
 <h3 class="toc_title">4 - Combined Factors</h3>
 
-After computing the Sharpe Ratio, we select the most predictive factors. Rather than relying on individual factors, we use XGBoost to detremine the feature importance of each selected factor. The model is trained using closing prices and factor data to quantify how valuable each factor is in predicting asset returns. The XGBoost feature importance scores help adjust each factor's weighting, ensuring that more significant factors contribute more to the final composite signal. 
+After computing the Sharpe Ratio, we select the most predictive factors. Rather than relying on individual factors, we use XGBoost to determine the feature importance of each selected factor. The model is trained using closing prices and factor data to quantify how valuable each factor is in predicting asset returns. The XGBoost feature importance scores help adjust each factor's weighting, ensuring that more significant factors contribute more to the final composite signal. 
 
 $$
 \text{Weighted Factor} = \text{Feature Importance} \times \text{Factor Value}
@@ -132,9 +136,9 @@ $$
 $$
 
 
-With the feature importance scores, we constuct a single composite signal - the alpha vector - which ranks assets based on their predicted performance. In an investment context, assets with higher alpha scores are expected to perform better than those with lower scores. 
+With the feature importance scores, we construct a single composite signal - the Alpha Vector.
 
-
+The Alpha Vector essentially represents a single predictive value for each asset, synthesizing information from multiple factors into 1 metric. In investment terms, 'alpha' refers to the excess return on an investment relative to the benchmark index. An alpha vector in this context is a set of scores that estimates the expected relative performance of each asset, based on the weighted factors. Assets with high scores in the alpha vector are predicted to outperform those with lower scores. 
 
 
 <h3 class="toc_title">5 - Optimized Alpha Vector Portfolio Analysis</h3>
@@ -190,6 +194,6 @@ Intraday Factor Analysis Breakdown:
 2. Adjust factor timestamps to align with market open
 3. Compute short-term forward returns such as 30 minutes, 1 hour, 1.5 hours, 2 hours, and 3 hours.
 4. Evaluate factor quantiles
-   - long quantile 5 stocks
-   - short quantile 1 stocks
-It's important to note that the factors in intraday trading should effectively reflect price momentum  or mean reversion. 
+   - Stocks in the highest quantile based on positive factors like strong momentum are candidates for long positions. 
+   - Stocks in the lowest quantile shows high volatility or negative momentum and are candidate for short positions. 
+It's important to note that the factors in intraday trading should effectively reflect price momentum, volatility, overnight news, etc) 
