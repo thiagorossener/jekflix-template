@@ -19,10 +19,11 @@ In this project, I dove into a deep exploration of quantitative trading strategi
 
 The project workflow is comprised of these distinct stages:
 1. Universe Data Collection
-2. Alpha factors
-3. Factor analysis
-4. Factors combination
-5. Optimized alpha vector analysis
+2. Alpha Factors
+3. Factor Analysis
+4. Factors Combination
+5. Optimized Alpha Vector Portfolio
+6. Risk Analysis
 
 
 In this context, we have used different source of data provided from Sharadar and IFT as described below:
@@ -127,7 +128,7 @@ After backtesting the result, we obtained an annual return of 4.1% and a Sharpe 
 
 
 
-<h3 class="toc_title">7 - Risk Analysis</h3>
+<h3 class="toc_title">6 - Risk Analysis</h3>
 
 ![Screenshot 2025-03-03 at 9 08 20 AM](https://github.com/user-attachments/assets/cd962cb5-763a-4575-9e2f-8d54c9fb13a0)
 
