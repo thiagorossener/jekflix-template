@@ -24,10 +24,8 @@ The project workflow is comprised of these distinct stages:
 4. Alpha factors
 5. Factor analysis
 6. Factors combination
-7. Risk analysis for equal weights
-8. Integraing factor data to the optimizer
-9. Optimized alpha vector analysis
-10. Prediction portfolio
+7. Optimized alpha vector analysis
+
 
 In this context, we have used different source of data provided from Sharadar and IFT as described below:
 - Sharadar Equity Prices (SHARADAR/SEP): Updated daily EOD price data for more than 14,000 US public companies.
@@ -173,44 +171,6 @@ In this context, we have used different source of data provided from Sharadar an
       <td>Combined Periods</td>
       <td>Forward return time frames</td>
       <td>(5, 10, 20)</td>
-    </tr>
-    <tr>
-      <td>Rebalance Period</td>
-      <td>Frequency of portfolio rebalancing</td>
-      <td>10 days</td>
-    </tr>
-    
-    <!-- Optimizer Parameters -->
-    <tr>
-      <td rowspan="6">Optimizer Parameters</td>
-      <td>risk_cap</td>
-      <td>Maximum risk exposure for the portfolio</td>
-      <td>0.07</td>
-    </tr>
-    <tr>
-      <td>lambda_reg</td>
-      <td>Regularization parameter for the optimizer</td>
-      <td>0.5</td>
-    </tr>
-    <tr>
-      <td>factor_max</td>
-      <td>Maximum limit for factor exposure</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <td>factor_min</td>
-      <td>Minimum limit for factor exposure</td>
-      <td>-10</td>
-    </tr>
-    <tr>
-      <td>weights_max</td>
-      <td>Maximum weight allocation per asset</td>
-      <td>0.2</td>
-    </tr>
-    <tr>
-      <td>weights_min</td>
-      <td>Minimum weight allocation per asset</td>
-      <td>-0.1</td>
     </tr>
     
     <!-- Quantiles -->
