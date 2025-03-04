@@ -23,7 +23,7 @@ The project workflow is comprised of these distinct stages:
 3. Factor Analysis
 4. Factors Combination
 5. Optimized Alpha Vector Portfolio
-6. Risk Analysis
+6. Conclusions for Intraday Trading
 
 
 In this context, we have used different source of data provided from Sharadar and IFT as described below:
