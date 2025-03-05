@@ -95,9 +95,11 @@ Now that we have preprocessed and regrouped our factor data, we can analyze each
 With all factor scores calculated per asset, we compute the future returns over a specified holding period (10 days in this case). The forward returns represent the returns an investor would receive by holding an asset for the defined period. 
 
 For each asset, the 10-day forward return is computed using the percentage change formula:
+
 $$
 \text{Forward Return} = \frac{\text{Price at }(t+10\text{ days}) - \text{Price at }(t)}{\text{Price at }(t)}
 $$
+
 Since we want to know today what the return will be over the next 10 days, we shift the date at the start of the 10 days, effectively treating the return as "forward-looking" from that date.
 
 <h4 class="toc_title">3 - 2: Factor return</h4>
