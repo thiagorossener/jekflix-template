@@ -96,9 +96,7 @@ With all factor scores calculated per asset, we compute the future returns over 
 
 For each asset, the 10-day forward return is computed using the percentage change formula:
 
-$$
-\text{Forward Return} = \frac{\text{Price at }(t+10\text{ days}) - \text{Price at }(t)}{\text{Price at }(t)}
-$$
+\[ \text{Forward Return} = \frac{\text{Price at }(t+10\text{ days}) - \text{Price at }(t)}{\text{Price at }(t)} \]
 
 Since we want to know today what the return will be over the next 10 days, we shift the date at the start of the 10 days, effectively treating the return as "forward-looking" from that date.
 
@@ -115,9 +113,7 @@ Negative Factor Return: Suggests that the factor negatively impacts the portfoli
 <h4 class="toc_title">3 - 3: Sharpe Ratio</h4>
 To evaluate each factor's effectivess in a risk-adjusted manner, we calculate the Sharpe Ratio, which measures the excess return per unit of risk:
 
-$$
-\text{Sharpe Ratio} = \frac{\mathbb{E}[\text{Factor Returns}] \times \text{Annualization Factor}}{\sigma(\text{Factor Returns})}
-$$
+\[ \text{Sharpe Ratio} = \frac{\mathbb{E}[\text{Factor Returns}] \times \text{Annualization Factor}}{\sigma(\text{Factor Returns})} \] 
 
 
 ![Screenshot 2025-03-03 at 8 39 52 AM](https://github.com/user-attachments/assets/e9b3aa5f-04ae-4a2f-a654-08f98a6f6dc5)
@@ -129,13 +125,9 @@ From the analysis, factors such as channels100days, direction100days, and capm10
 
 After computing the Sharpe Ratio, we select the most predictive factors. Rather than relying on individual factors, we use XGBoost to determine the feature importance of each selected factor. The model is trained using closing prices and factor data to quantify how valuable each factor is in predicting asset returns. The XGBoost feature importance scores help adjust each factor's weighting, ensuring that more significant factors contribute more to the final composite signal. 
 
-$$
-\text{Weighted Factor} = \text{Feature Importance} \times \text{Factor Value}
-$$
+\[ \text{Weighted Factor} = \text{Feature Importance} \times \text{Factor Value} \]
 
-$$
-\text{Alpha Vector} = \sum (\text{Weighted Factors})
-$$
+\[ \text{Alpha Vector} = \sum (\text{Weighted Factors}) \]
 
 
 With the feature importance scores, we construct a single composite signal - the Alpha Vector.
