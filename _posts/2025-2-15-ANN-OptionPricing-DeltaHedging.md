@@ -1,5 +1,5 @@
 ---
-date: 2023-12-20 12:26:40
+date: 2025-01-14 12:26:40
 layout: post
 title: Application of Artificial Neural Network in Option Pricing and Delta Hedging
 subtitle: Applied Quantitative Research Methods
