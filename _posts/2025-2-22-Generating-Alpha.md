@@ -1,5 +1,5 @@
 ---
-date: 2023-12-20 12:26:40
+date: 2025-2-15 12:26:40
 layout: post
 title: "Alpha Generation"
 subtitle: "Quantitative Edge: Building Alpha-Generating Trading Systems"
