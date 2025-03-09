@@ -1,5 +1,5 @@
 ---
-date: 2023-12-20 12:26:40
+date: 2024-11-20 12:26:40
 layout: post
 title: BTC Algorithmic Trading 
 subtitle: 
