@@ -1,7 +1,7 @@
 ---
 date: 2025-2-15 12:26:40
 layout: post
-title: "Alpha Generation"
+title: "Alpha Factor Investment Strategy"
 subtitle: "Quantitative Edge: Building Alpha-Generating Trading Systems"
 description: "Quantitative Edge: Building Alpha-Generating Trading Systems"
 image: /assets/img/alpha.png
