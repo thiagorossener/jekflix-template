@@ -1,8 +1,7 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: AI News
+title: AI News | 
+description: Break down complex AI topics into easy-to-understand insights. developed by Santhosh Kumar
 tags:
   - blog
   - template
@@ -34,7 +33,6 @@ facebook_username: facebook_username
 twitter_username: twitter_username
 instagram_username: instagram_username
 linkedin_username: linkedin_username
-medium_username: medium_username
 
 
 # Posts Settings
