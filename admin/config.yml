@@ -169,8 +169,8 @@ collections:
         name: "facebook_username"
         widget: "string"
         required: false
-      - label: "Twitter Username"
-        name: "twitter_username"
+      - label: "X Username"
+        name: "x_username"
         widget: "string"
         required: false
       - label: "Instagram Username"
@@ -255,8 +255,8 @@ collections:
             name: "facebook_username"
             widget: "string"
             required: false
-          - label: "Twitter Username"
-            name: "twitter_username"
+          - label: "X Username"
+            name: "x_username"
             widget: "string"
             required: false
           - label: "Instagram Username"
@@ -351,8 +351,8 @@ collections:
                 name: "read_now"
                 widget: "string"
                 required: false
-              - label: "Share on Twitter"
-                name: "share_on_twitter"
+              - label: "Share on X"
+                name: "share_on_x"
                 widget: "string"
                 required: false
               - label: "Share on Facebook"

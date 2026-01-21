@@ -175,15 +175,15 @@ Set the Facebook username for the website.
 facebook_username: facebook_username
 ```
 
-#### `twitter_username`
+#### `x_username`
 
 Type: *string*
 
-Set the Twitter username for the website.
+Set the X username for the website.
 
 ```yaml
 # social.yml
-twitter_username: twitter_username
+x_username: x_username
 ```
 
 #### `instagram_username`

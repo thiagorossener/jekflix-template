@@ -36,8 +36,8 @@ layout: page
 {% if page.facebook_username %}
     {% assign author_urls = author_urls | append: '"https://www.facebook.com/' | append: page.facebook_username | append: '",' %}
 {% endif %}
-{% if page.twitter_username %}
-    {% assign author_urls = author_urls | append: '"https://twitter.com/' | append: page.twitter_username | append: '",' %}
+{% if page.x_username %}
+    {% assign author_urls = author_urls | append: '"https://x.com/' | append: page.x_username | append: '",' %}
 {% endif %}
 {% if page.medium_username %}
     {% assign author_urls = author_urls | append: '"https://medium.com/@' | append: page.medium_username | append: '",' %}

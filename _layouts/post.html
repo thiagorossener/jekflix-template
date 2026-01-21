@@ -91,8 +91,8 @@
         {% if author.facebook_username %}
             {% assign author_urls = author_urls | append: '"https://www.facebook.com/' | append: author.facebook_username | append: '",' %}
         {% endif %}
-        {% if author.twitter_username %}
-            {% assign author_urls = author_urls | append: '"https://twitter.com/' | append: author.twitter_username | append: '",' %}
+        {% if author.x_username %}
+            {% assign author_urls = author_urls | append: '"https://x.com/' | append: author.x_username | append: '",' %}
         {% endif %}
         {% if author.medium_username %}
             {% assign author_urls = author_urls | append: '"https://medium.com/@' | append: author.medium_username | append: '",' %}
